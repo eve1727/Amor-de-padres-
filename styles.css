@@ -1,0 +1,29 @@
+#cuerpo{
+    background-color: rgb(251, 236, 214);
+
+}
+
+ .lista {
+    display: inline-block;
+    margin: 0 0px;
+    font-size: 30px;
+}
+
+#a1 {
+    color: black;
+    text-decoration: none;
+    background-color: #E9B872;
+}
+
+#a2 {
+    color: black;
+    text-decoration: none;
+    background-color: #90A959
+} 
+
+#a3 {
+    color: black;
+    text-decoration: none;
+    background-color: #6494AA
+}
+
