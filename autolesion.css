@@ -1,0 +1,18 @@
+#a1 {
+    text-decoration: none;
+    background-color: #608BC1;
+    font-size: 30px;
+    color: #f0f8ff;
+}
+
+#titulo{
+    font-size: 50px;
+    color: rgb(246, 240, 240);
+    margin-top: 5%;
+}
+
+header {
+    background: url(img1/autolesion.webp);
+    height: 250px;
+    background-size: cover;
+}
