@@ -1,7 +1,8 @@
 #cuerpo{
+    
     background-color: rgb(251, 236, 214);
 
-}
+} 
 
  .lista {
     display: inline-block;
@@ -26,4 +27,6 @@
     text-decoration: none;
     background-color: #6494AA
 }
+
+
 
