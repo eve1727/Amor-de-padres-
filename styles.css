@@ -17,7 +17,7 @@
 #a1 {
     color: black;
     text-decoration: none;
-    background-image: url(depresion.jpg);
+    background-image: url(ansiedad13.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 50px;
@@ -28,7 +28,7 @@
 #a2 {
     color: black;
     text-decoration: none;
-    background-image: url(images.jpg);
+    background-image: url(depresion12.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 50px;
@@ -40,7 +40,7 @@
 #a3 {
     color: black;
     text-decoration: none;
-    background-image: url(AUTOLECION.jpeg);
+    background-image: url(atolesion1.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 50px;
@@ -68,4 +68,9 @@
 
 #buscar{
     width: 120%;
+}
+
+#importancia{
+    font-size: 230%;
+    margin-left: 5%;
 }
