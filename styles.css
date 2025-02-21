@@ -1,10 +1,11 @@
 #cuerpo{
-<<<<<<< HEAD
-    
-    background-color: rgb(251, 236, 214);
-=======
     background-color: rgb(255, 255, 254);
->>>>>>> e7bb4ab7fee19abc02756799055aa145c2032d09
+    background-image: url(mage.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 420px;
 
 } 
 
@@ -17,7 +18,9 @@
 #a1 {
     color: black;
     text-decoration: none;
-    background-color: #fb9ec6;
+    background-image: url(depresion.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-left: 50px;
     border-radius: 7px;
 }
@@ -25,15 +28,20 @@
 #a2 {
     color: black;
     text-decoration: none;
-    background-color: #a9c46c;
+    background-image: url(images.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-left: 50px;
     border-radius: 7px;
+
 } 
 
 #a3 {
     color: black;
     text-decoration: none;
-    background-color: #4cc9fe;
+    background-image: url(AUTOLECION.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-left: 50px;
     border-radius: 7px;
 }
@@ -41,6 +49,3 @@
 #conocernos {
     font-size: 200%;
 }
-
-
-
