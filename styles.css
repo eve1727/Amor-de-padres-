@@ -1,6 +1,6 @@
 #cuerpo{
     background-color: rgb(255, 255, 254);
-    background-image: url(mage.jpg);
+    background-image: url(img1/imagen.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,35 +17,35 @@
 #a1 {
     color: black;
     text-decoration: none;
-    background-image: url(ansiedad13.webp);
+    background-image: url(img1/ansiedad13.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 50px;
     border-radius: 7px;
-    font-size: 200%;
+    font-size: 280%;
 }
 
 #a2 {
     color: black;
     text-decoration: none;
-    background-image: url(depresion12.webp);
+    background-image: url(img1/depresion12.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 50px;
     border-radius: 7px;
-    font-size: 200%;
+    font-size: 280%;
 
 } 
 
 #a3 {
     color: black;
     text-decoration: none;
-    background-image: url(atolesion1.webp);
+    background-image: url(img1/atolesion1.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 50px;
     border-radius: 7px;
-    font-size: 200%;
+    font-size: 280%;
 }
 
 #conocernos {
@@ -55,7 +55,8 @@
 
 #frase {
     margin-top: 15%;
-    font-size: 300%;
+    font-size: 400%;
+    font-style: oblique;
 }
 
 #regresar {
@@ -73,4 +74,23 @@
 #importancia{
     font-size: 230%;
     margin-left: 5%;
+}
+
+#foto1 {
+    width: 800px;
+}
+
+#fotolado1 {
+    display: flex;
+    margin-top: 6%;
+}
+
+#fotolado2{
+    display: flex;
+    margin-top: 6%;
+    
+}
+
+#foto2{
+    width: 600px;
 }

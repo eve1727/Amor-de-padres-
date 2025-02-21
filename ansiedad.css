@@ -1,18 +1,18 @@
 #a1 {
     text-decoration: none;
-    background-color: #f081be;
+    background-color: #272b72;
     font-size: 20px;
     color: #f0f8ff;
 }
 
 #titulo{
-    font-size: 50px;
+    font-size: 70px;
     color: rgb(246, 240, 240);
     margin-top: 10%;
 }
 
 header {
-    background: url(ANSIEDAD.jpg);
+    background: url(img1/ANSIEDAD.jpg);
     height: 400px;
     background-size: cover;
 }
