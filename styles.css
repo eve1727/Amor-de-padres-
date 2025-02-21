@@ -4,8 +4,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    height: 420px;
+    height: 320px;
 
 } 
 
@@ -23,6 +22,7 @@
     background-repeat: no-repeat;
     margin-left: 50px;
     border-radius: 7px;
+    font-size: 200%;
 }
 
 #a2 {
@@ -33,6 +33,7 @@
     background-repeat: no-repeat;
     margin-left: 50px;
     border-radius: 7px;
+    font-size: 200%;
 
 } 
 
@@ -44,8 +45,27 @@
     background-repeat: no-repeat;
     margin-left: 50px;
     border-radius: 7px;
+    font-size: 200%;
 }
 
 #conocernos {
-    font-size: 200%;
+    font-size: 230%;
+    margin-left: 5%;
+}
+
+#frase {
+    margin-top: 15%;
+    font-size: 300%;
+}
+
+#regresar {
+    font-size: 60px;
+    text-decoration: none;
+    color: black;
+    background-color: #ff9d23;
+    border-radius: 8px;
+}
+
+#buscar{
+    width: 120%;
 }
