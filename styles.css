@@ -1,11 +1,10 @@
 #cuerpo{
     background-color: rgb(255, 255, 254);
-    background-image: url(mage.jpg);
+    background-image: url(img1/imagen.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    height: 420px;
+    height: 320px;
 
 } 
 
@@ -18,34 +17,80 @@
 #a1 {
     color: black;
     text-decoration: none;
-    background-image: url(depresion.jpg);
+    background-image: url(img1/ansiedad13.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 50px;
     border-radius: 7px;
+    font-size: 280%;
 }
 
 #a2 {
     color: black;
     text-decoration: none;
-    background-image: url(images.jpg);
+    background-image: url(img1/depresion12.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 50px;
     border-radius: 7px;
+    font-size: 280%;
 
 } 
 
 #a3 {
     color: black;
     text-decoration: none;
-    background-image: url(AUTOLECION.jpeg);
+    background-image: url(img1/atolesion1.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 50px;
     border-radius: 7px;
+    font-size: 280%;
 }
 
 #conocernos {
-    font-size: 200%;
+    font-size: 230%;
+    margin-left: 5%;
+}
+
+#frase {
+    margin-top: 15%;
+    font-size: 400%;
+    font-style: oblique;
+}
+
+#regresar {
+    font-size: 60px;
+    text-decoration: none;
+    color: black;
+    background-color: #ff9d23;
+    border-radius: 8px;
+}
+
+#buscar{
+    width: 120%;
+}
+
+#importancia{
+    font-size: 230%;
+    margin-left: 5%;
+}
+
+#foto1 {
+    width: 800px;
+}
+
+#fotolado1 {
+    display: flex;
+    margin-top: 6%;
+}
+
+#fotolado2{
+    display: flex;
+    margin-top: 6%;
+    
+}
+
+#foto2{
+    width: 600px;
 }
