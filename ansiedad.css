@@ -1,14 +1,16 @@
 #a1 {
     text-decoration: none;
     background-color: #272b72;
-    font-size: 20px;
+    font-size: 30px;
     color: #f0f8ff;
 }
 
 #titulo{
+    display: flex;
     font-size: 70px;
     color: rgb(246, 240, 240);
-    margin-top: 15%;
+    margin-top: 5%;
+    
 }
 
 header {
