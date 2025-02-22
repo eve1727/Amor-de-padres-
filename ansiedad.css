@@ -8,7 +8,7 @@
 #titulo{
     font-size: 50px;
     color: rgb(246, 240, 240);
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 header {
@@ -16,3 +16,4 @@ header {
     height: 400px;
     background-size: cover;
 }
+
