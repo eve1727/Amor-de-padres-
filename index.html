@@ -1,46 +1,54 @@
-         <!DOCTYPE html>
-         <html lang="en">
+  <!DOCTYPE html>
+    <html lang="en">
          <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" type="text/css" href="styles.css">
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="styles.css">
          <title>AMORDEPADRES</title>
-         </head>
+       </head>
           <body id="cuerpo">
             <!--Agregar frase a color, en el centro y en la parte de cabecera-->
             <header>
                <center>
-                <h1 style="color: rgb(49, 32, 16);" id="frase">"ES MÁS FÁCIL CONSTRUIR HIJOS FUERTES QUE 
+                <h1 style="color: rgb(49, 32, 16);" id="frase" style="size: 7px;">"ES MÁS FÁCIL CONSTRUIR HIJOS FUERTES QUE 
                REPARAR ADULTOS ROTOS" 
                 </h1>
                </center>
-            </header>
-
-
-               <!--Creacion de las ventanas que se veran-->
-               <center>
-                  <div>
-                     <hr style="margin-top: 15.5%;">
-                  <ul style="list-style:none">
-                    
-                     <h3 style="font-size: 260%;" >Selecciona el que te interese conocer:</h3>
-                     
-                     <li class="lista"><a href="ansiedad.html" id="a1">Ansiedad</a></li>
-                     <li class="lista"><a href="depresion.html" id="a2">Depresion</a></li>
-                     <li class="lista"><a href="autolesion.html" id="a3">Autolesion</a></li>
-                  </ul>
-                  </div>
-                
-                  <hr size="2px" color="black">
-
-
-                  <!-- Bienvenida y conocer lo que somos-->
+            </heade>
+               
+              <div><!-- Div para separar la creacion de las ventanas que se veran -->
                   
-                     <!-- Agregar partes de la seccion para identificarlas mejor -->
+               <hr style="margin-top: 15.5%;">
+                <ul style="list-style:none">
+                       <!-- Creacion del buscador -->
+                      <input type="search" id="buscador" placeholder="Escribe aqui">
+                      <button type="submit">Buscar</button>
+                  <center>
+               
+                      <h3 style="font-size: 260%;" >Selecciona el que te interese conocer:</h3>
+                     
+                      <li class="lista"><a href="ansiedad.html" id="a1" >Ansiedad</a></li>
+                      <li class="lista"><a href="depresion.html" id="a2">Depresion</a></li>
+                      <li class="lista"><a href="autolesion.html" id="a3">Autolesion</a></li>
+                       <br>
+                      <li class="lista"><a href="contactos.html" id="a4">Contactos de ayuda</a></li>
+                 </ul>
+               
+                </div>
+                   
+                <hr size="2px" color="black">
+
+
+                  <!-- Bienvenida de inicio y explicacion -->
                      
                         <h2 style="font-size: 250%; margin-top: 6%;">Hola! Bienvenido al lugar donde conoceras un poco sobre la mente adolescente.</h2>
-                </center>
-                <div id="fotolado1">
+                 </center>
+
+                 <!-- Class que nos ayuda a que tenga espacio en la pantalla y no este pegado -->
+         <div class="container">
+              
+            <!-- Partes para el inicio -->
+            <div id="fotolado1">
                         <p id="conocernos"> En la actualidad cada vez se ve más a los adolescentes tener  
                            una salud mental inestable, presentando desde depresion hasta autolesiones asi mismos. 
                            Es por eso  que los padres de familia deben de estar 
@@ -54,23 +62,30 @@
                            </center>
          
                   </div>
+               
 
                  <div id="fotolado2">
+                  <center>
+                     <img src="img1/abrazo.webp" width="50%" id="foto2"/>
+                     </center>
                   <p id="importancia"> 
                      Debemos de conocer estos tipos de padecimientos para aportarle
                      al adolescente una mejor relacion padre - hijo y crear lazos más fuertes 
                      con ellos y hacer que tengan más confianza para que te puedan contar sus problemas y 
                      brindar la ayuda adecuada. 
                   </p>
-                  <!--Agregar imagen para separar-->
-                  <center>
-                  <img src="img1/abrazo.webp" width="50%" id="foto2" />
-                  </center>
-                 </div>
+               </div>
+               
+            </div>
+
           </body>
+          
+          <!-- Creacion del pie de cabeza -->
           <footer>
+            <br>
             <center>
             <a href="#frase" id="regresar">Regresar</a>
+            <p>Creadoras: Evelyn, Yaretzi y Karla </p>
             <p>Coperight 2025</p>
             </center>
             <marquee behavior="sroll" direction="left" style="background-color: rgb(235, 187, 121);"> GRACIAS POR VISITAR </marquee>

@@ -1,5 +1,5 @@
 #cuerpo{
-    background-color: rgb(255, 255, 254);
+    background-color: rgb(252, 247, 241);
     background-image: url(img1/imagen.webp);
     background-position: center center;
     background-repeat: no-repeat;
@@ -48,6 +48,18 @@
     font-size: 280%;
 }
 
+#a4 {
+    color: black;
+    text-decoration: none;
+    background-image: url(img1/autolesion11.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 50px;
+    border-radius: 7px;
+    font-size: 280%;
+
+}
+
 #conocernos {
     font-size: 230%;
     margin-left: 5%;
@@ -77,7 +89,8 @@
 }
 
 #foto1 {
-    width: 800px;
+    width: 500px;
+    margin-top: 30%;
 }
 
 #fotolado1 {
@@ -86,11 +99,23 @@
 }
 
 #fotolado2{
-    display: flex;
+    display:flex;
     margin-top: 6%;
     
 }
 
 #foto2{
-    width: 600px;
+    width: 500px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    padding: 8%;
+    box-shadow: 0 0 10px rgb(136, 136, 134);
+}
+
+#buscador{
+    border-radius: 8px;
 }
