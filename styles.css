@@ -118,4 +118,15 @@
 
 #buscador{
     border-radius: 8px;
+    width: 250px;
+    padding: 15px 15px;
+    font-size: 100%;
+}
+
+#botonbusqueda {
+    width: 100px ;
+    padding: 15px;
+    background-color: #fac196;
+    font-size: 100%;
+    border-radius: 8px;
 }
