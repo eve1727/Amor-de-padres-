@@ -14,8 +14,21 @@
 }
 
 header {
-    background: url(img1/ANSIEDAD.jpg);
+    background: url(img1/Ansiedad.jpg);
     height: 400px;
     background-size: cover;
 }
+
+#descripcion{
+    font-size: 230%;
+    margin-left: 5%;
+}
+
+#sintomas{
+    font-size: 230%;
+    margin-left: 5%;
+
+}
+
+
 
