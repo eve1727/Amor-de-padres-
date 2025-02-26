@@ -9,15 +9,15 @@
     display: flex;
     font-size: 70px;
     color: rgb(246, 240, 240);
-    margin-top: 10%;
-    margin-left: 12%;
+    margin-top: 7%;
+    margin-left: 8%;
     
 
     
 }
 
 header {
-    background: url(img1/IM.jpg);
+    background: url(img1/Ansiedad.jpg);
     height: 400px;
     background-size: cover;
 }
@@ -43,14 +43,9 @@ header {
 .container{
     width: 80%;
     margin: 0 auto;
-    margin-top: 7%;
-    background-color: rgb(198, 232, 255);
+    margin-top: 7%;    background-color: rgb(250, 233, 134);
     padding: 5%;
-    box-shadow: 0 0 10px rgb(136, 136, 134);
+    box-shadow: 0 0 10px rgb(34, 34, 33);
 
 }
-
-
-
-
 
