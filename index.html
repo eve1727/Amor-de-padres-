@@ -4,34 +4,35 @@
          <meta charset="UTF-8">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" type="text/css" href="styles.css">
+
          <title>AMORDEPADRES</title>
        </head>
-          <body id="cuerpo">
-            <!--Agregar frase a color, en el centro y en la parte de cabecera-->
+          <body id="cuerpo" >
+            <!--Agregar frase a color, y video en la cabecera -->
             <header>
-               <center>
-                <h1 style="color: rgb(49, 32, 16);" id="frase" style="size: 7px;">"ES MÁS FÁCIL CONSTRUIR HIJOS FUERTES QUE 
-               REPARAR ADULTOS ROTOS" 
-                </h1>
-               </center>
-            </heade>
+               <div class="imagen">
+                 <h1 id="frase" style="size: 7px;">"ES MÁS FÁCIL CONSTRUIR HIJOS FUERTES QUE 
+                 REPARAR ADULTOS ROTOS" 
+                 </h1>
+               </div>
+            <video autoplay muted loop>
+               <source src="familia.mp4">
+            </video>
+            </header>
                
               <div><!-- Div para separar la creacion de las ventanas que se veran -->
                   
-               <hr style="margin-top: 15.5%;">
+               <hr style="margin-top: 1%;">
                 <ul style="list-style:none">
-                       <!-- Creacion del buscador -->
-                      <input type="search" id="buscador" placeholder="Escribe aqui">
-                      <button type="submit" id="botonbusqueda">Buscar</button>
                   <center>
                
                       <h3 style="font-size: 260%;" >Selecciona el que te interese conocer:</h3>
                      
-                      <li class="lista"><a href="ansiedad.html" id="a1" >Ansiedad</a></li>
-                      <li class="lista"><a href="depresion.html" id="a2">Depresion</a></li>
-                      <li class="lista"><a href="autolesion.html" id="a3">Autolesion</a></li>
+                      <li class="lista"><a href="ansiedad.html" class="a1" >Ansiedad</a></li>
+                      <li class="lista"><a href="depresion.html" class="a2">Depresion</a></li>
+                      <li class="lista"><a href="autolesion.html" class="a3">Autolesion</a></li>
                        <br>
-                      <li class="lista"><a href="contactos.html" id="a4">Contactos de ayuda</a></li>
+                      <li class="lista"><a href="contactos.html" class="a4">Contactos de ayuda</a></li>
                  </ul>
                
                 </div>
@@ -41,7 +42,11 @@
 
                   <!-- Bienvenida de inicio y explicacion -->
                      
-                        <h2 style="font-size: 250%; margin-top: 6%;">Hola! Bienvenido al lugar donde conoceras un poco sobre la mente adolescente.</h2>
+                  <!-- Creacion del buscador -->
+                     <input type="search" id="buscador" placeholder="Escribe aqui">
+                     <button type="submit" id="botonbusqueda">Buscar</button>
+
+                        <h2 style="font-size: 250%; margin-top: 2%; margin-left: 3%;">Hola! Bienvenido al lugar donde conoceras un poco sobre la mente adolescente.</h2>
                  </center>
 
                  <!-- Class que nos ayuda a que tenga espacio en la pantalla y no este pegado -->
@@ -63,8 +68,8 @@
          
                   </div>
                
-
-                 <div id="fotolado2">
+             <!--Parrafo con imagen al lado -->
+             <div id="fotolado2">
                   <center>
                      <img src="img1/abrazo.webp" width="50%" id="foto2"/>
                      </center>

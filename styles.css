@@ -1,20 +1,36 @@
-#cuerpo{
-    background-color: rgb(252, 247, 241);
-    background-image: url(img1/imagen.webp);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 320px;
-
+#cuerpo{ 
+    background-color: rgb(251, 246, 237);
 } 
 
- .lista {
+header { /*Video en el encabezado*/
+    height: 80vh;
+    overflow: hidden; /*Recorta el video al tamaño de la cabecera*/
+    position: relative; /*Posisiona el video dependiendo de top, left etc...*/
+}
+
+header video{
+    width: 100%;
+    background-position: center center;
+}
+header .imagen{
+    position: absolute;/* Nos sirve para poder posicionar nuestra frase arriba del video*/
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);/*Nos permite mover la frase(como los margin pero mejor)*/
+    text-align: center;
+    color: #382213;
+    text-shadow: 2px;
+    font-size: 240%;
+}
+
+ .lista { /*Para que las ventanas aparezcan todas a un costado*/
     display: inline-block;
     margin: 0 0px;
     font-size: 30px;
 }
 
-#a1 {
+
+.a1 { /*Vista de las ventanas*/
     color: black;
     text-decoration: none;
     background-image: url(img1/ansiedad13.webp);
@@ -23,9 +39,15 @@
     margin-left: 50px;
     border-radius: 7px;
     font-size: 280%;
+
 }
 
-#a2 {
+.a1:hover{/*Opacea la ventana cuando la flechita pasa por la ventana*/
+    opacity: 50%;
+    color: rgb(172, 168, 168);
+}
+
+.a2 {
     color: black;
     text-decoration: none;
     background-image: url(img1/depresion12.webp);
@@ -36,8 +58,12 @@
     font-size: 280%;
 
 } 
+.a2:hover{/*Opacea la ventana cuando la flechita pasa por la ventana*/
+    opacity: 50%;
+    color: rgb(172, 168, 168);
+}
 
-#a3 {
+.a3 {
     color: black;
     text-decoration: none;
     background-image: url(img1/atolesion1.webp);
@@ -47,8 +73,12 @@
     border-radius: 7px;
     font-size: 280%;
 }
+.a3:hover{/*Opacea la ventana cuando la flechita pasa por la ventana*/
+    opacity: 50%;
+    color: rgb(172, 168, 168);
+}
 
-#a4 {
+.a4 {
     color: black;
     text-decoration: none;
     background-image: url(img1/autolesion11.webp);
@@ -60,18 +90,14 @@
 
 }
 
-#conocernos {
+#conocernos { /*Primer parrafo del inicio*/
     font-size: 230%;
     margin-left: 5%;
 }
 
-#frase {
-    margin-top: 15%;
-    font-size: 400%;
-    font-style: oblique;
-}
 
-#regresar {
+
+#regresar { /*Boton de regreso hasta abajo*/
     font-size: 60px;
     text-decoration: none;
     color: black;
@@ -79,36 +105,32 @@
     border-radius: 8px;
 }
 
-#buscar{
-    width: 120%;
-}
-
-#importancia{
+#importancia{ /*Segundo parrafo inicio*/
     font-size: 230%;
     margin-left: 5%;
 }
 
-#foto1 {
+#foto1 { /* Foto al costado del primer parrafo*/
     width: 500px;
     margin-top: 30%;
 }
 
-#fotolado1 {
+#fotolado1 { /* Hace que el primer parrafo y la foto aparezcan una a cada lado*/
     display: flex;
-    margin-top: 6%;
+    margin-top: 3%;
 }
 
-#fotolado2{
+#fotolado2{  /* Hace que el segundo parrafo y la foto aparezcan una a cada lado*/
     display:flex;
     margin-top: 6%;
     
 }
 
-#foto2{
+#foto2{ /* foto al costado del segundo parrafo*/
     width: 500px;
 }
 
-.container {
+.container { /* Hace que exista un espacio entre la pantalla y el sitio web */
     width: 80%;
     margin: 0 auto;
     background-color: rgb(255, 255, 255);
@@ -116,14 +138,15 @@
     box-shadow: 0 0 10px rgb(136, 136, 134);
 }
 
-#buscador{
+#buscador{ /* propiedades del input de busqueda */
     border-radius: 8px;
     width: 250px;
     padding: 15px 15px;
     font-size: 100%;
+    margin-top: 10px;
 }
 
-#botonbusqueda {
+#botonbusqueda { /* propiedades del boton de buscar*/
     width: 100px ;
     padding: 15px;
     background-color: #fac196;

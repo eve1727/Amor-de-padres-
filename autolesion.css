@@ -1,38 +1,54 @@
-#a1 {
+#a1 { /*Volver al inicio*/
     text-decoration: none;
-    background-color: #608BC1;
+    background-color: #58ccf9;
     font-size: 30px;
-    color: #f0f8ff;
-    margin-top: 18% ;
+    color: #020202;
+    margin-left: 0%;
 }
 
-#titulo{
+#titulo{ /*Palabra introductoria*/
     font-size: 70px;
     color: rgb(246, 240, 240);
     margin-top: 5%;
 }
 
-header {
+header { /*Imegen de fondo*/
     background: url(img1/autolesion.webp);
-    height: 250px;
+    height: 230px;
     background-size: cover;
     background-position: center;
 }
 
-.container{
+#container1{ /* Hace que tengamos espaciado en la pantalla con nuestro parrafo 1 */
     width: 80%;
     margin: 0 auto;
-    background-color: rgb(191, 217, 255);
+    background-color: #bde4fc;
     padding: 8%;
     box-shadow: 0 0 10px rgb(136, 136, 134);
 }
 
-#significado {
+.significado { /* Agrega estilo a nuestras primeras palabras del container */
     text-align: left;
     margin-top: 0%;
-    font-size: 250%;
+    font-size: 200%;
 }
 
-#parrafo1{
+.parrafo1{ /*Agrega tamaño a los parrafos*/
     font-size: 230%;
+}
+
+#container2{ /* Hace que tengamos espaciado entre nuestra pantalla con el parrafo 2*/
+    width: 80%;
+    margin: 0 auto;
+    background-color: #a0dbf9;
+    padding: 8%;
+    box-shadow: 0 0 10px rgb(136, 136, 134);
+}
+
+#container3{ /* Hace que tengamos espaciado entre nuestra pantalla con el parrafo 3*/
+    width: 80%;
+    margin: 0 auto;
+    background-color: #6eb2dd;
+    padding: 8%;
+    box-shadow: 0 0 10px rgb(136, 136, 134);
 }
