@@ -3,10 +3,11 @@
     background-color: #608BC1;
     font-size: 30px;
     color: #f0f8ff;
+    margin-top: 18% ;
 }
 
 #titulo{
-    font-size: 50px;
+    font-size: 70px;
     color: rgb(246, 240, 240);
     margin-top: 5%;
 }
@@ -15,5 +16,23 @@ header {
     background: url(img1/autolesion.webp);
     height: 250px;
     background-size: cover;
+    background-position: center;
 }
 
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(191, 217, 255);
+    padding: 8%;
+    box-shadow: 0 0 10px rgb(136, 136, 134);
+}
+
+#significado {
+    text-align: left;
+    margin-top: 0%;
+    font-size: 250%;
+}
+
+#parrafo1{
+    font-size: 230%;
+}
