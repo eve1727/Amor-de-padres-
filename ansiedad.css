@@ -40,7 +40,8 @@ header {/*Ajustes de mi encabezado*/
 .container1{/*El espacio de la pantalla sobre mi parrafo*/
     width: 80%;
     margin: 0 auto;
-    margin-top: 7%;    background-color: rgb(153, 253, 215);
+    margin-top: 7%;    
+    background-color: rgb(223, 190, 128);
     padding: 5%;
     box-shadow: 0 0 10px rgb(34, 34, 33);
 
