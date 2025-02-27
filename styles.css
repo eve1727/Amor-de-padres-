@@ -34,7 +34,7 @@ header .imagen{
 .a1 { /*Vista de las ventanas*/
     color: black;
     text-decoration: none;
-    background-image: linear-gradient(rgba(116, 116, 119, 0.37), rgba(82, 80, 80, 0.356)), 
+    background-image: linear-gradient(rgba(136, 136, 138, 0.486), rgba(160, 157, 157, 0.356)), 
     url(img1/ansiedad13.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,7 +52,8 @@ header .imagen{
 .a2 {
     color: black;
     text-decoration: none;
-    background-image: url(img1/depresion12.webp);
+    background-image:linear-gradient(rgba(136, 136, 138, 0.486), rgba(160, 157, 157, 0.356)), 
+    url(img1/depresion12.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 50px;
@@ -68,7 +69,8 @@ header .imagen{
 .a3 {
     color: black;
     text-decoration: none;
-    background-image: url(img1/atolesion1.webp);
+    background-image:linear-gradient(rgba(136, 136, 138, 0.486), rgba(160, 157, 157, 0.356)), 
+    url(img1/atolesion1.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 50px;
