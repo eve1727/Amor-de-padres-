@@ -18,7 +18,8 @@ header .imagen{
     top: 50%;
     transform: translateY(-50%);/*Nos permite mover la frase(como los margin pero mejor)*/
     text-align: center;
-    color: #382213;
+    color: #4b2a15;
+    font-family: 'Times New Roman', Times, serif;
     text-shadow: 2px;
     font-size: 240%;
 }
@@ -81,7 +82,7 @@ header .imagen{
 .a4 {
     color: black;
     text-decoration: none;
-    background-image: url(img1/autolesion11.webp);
+    background-color: rgb(252, 200, 121);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 50px;

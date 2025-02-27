@@ -1,28 +1,25 @@
-#a1 {
+#a1 {/*Para volver al inicio de la pantalla */
     text-decoration: none;
-    background-color: #272b72;
+    background-color: #89898b;
     font-size: 30px;
     color: #f0f8ff;
 }
-
 #titulo{
     display: flex;
     font-size: 70px;
-    color: rgb(246, 240, 240);
-    margin-top: 7%;
-    margin-left: 8%;
-    
+    color: rgb(71, 69, 69);
 
-    
 }
 
-header {
-    background: url(img1/Ansiedad.jpg);
+
+header {/*Ajustes de mi encabezado*/
+    background-image: url(img1/Imageb.jpg);
     height: 400px;
     background-size: cover;
+    box-shadow: 0 0 10px rgb(43, 43, 41);
 }
 
-#descripcion{
+#descripcion{/*Tamaño de mi texto*/
     font-size: 230%;
     margin-left: 5%;
 }
@@ -40,10 +37,10 @@ header {
 
 }
 
-.container{
+.container1{/*El espacio de la pantalla sobre mi parrafo*/
     width: 80%;
     margin: 0 auto;
-    margin-top: 7%;    background-color: rgb(250, 233, 134);
+    margin-top: 7%;    background-color: rgb(153, 253, 215);
     padding: 5%;
     box-shadow: 0 0 10px rgb(34, 34, 33);
 
