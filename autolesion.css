@@ -1,28 +1,29 @@
 #a1 { /*Volver al inicio*/
     text-decoration: none;
-    background-color: #58ccf9;
+    background-color: #FDA1A2;
     font-size: 30px;
-    color: #020202;
-    margin-left: 0%;
+    color: #fefcfc;
+    margin-left: 2%;
 }
 
 #titulo{ /*Palabra introductoria*/
     font-size: 70px;
-    color: rgb(246, 240, 240);
-    margin-top: 5%;
+    color: white;
+    display: flex;
 }
 
-header { /*Imegen de fondo*/
-    background: url(img1/autolesion.webp);
-    height: 230px;
-    background-size: cover;
-    background-position: center;
+header { /*Imegen de fondo encabezado*/
+   height: 400px;
+   background-image: url(img1/autolesion.webp);
+   background-size: cover;
+   background-position: center;
+   box-shadow: 0 0 10px rgb(43, 43, 41);
 }
 
 #container1{ /* Hace que tengamos espaciado en la pantalla con nuestro parrafo 1 */
     width: 80%;
     margin: 0 auto;
-    background-color: #bde4fc;
+    background-color: white;
     padding: 8%;
     box-shadow: 0 0 10px rgb(136, 136, 134);
 }
@@ -35,12 +36,13 @@ header { /*Imegen de fondo*/
 
 .parrafo1{ /*Agrega tamaño a los parrafos*/
     font-size: 230%;
+    color: #100f0f;
 }
 
 #container2{ /* Hace que tengamos espaciado entre nuestra pantalla con el parrafo 2*/
     width: 80%;
     margin: 0 auto;
-    background-color: #a0dbf9;
+    background-color: white;
     padding: 8%;
     box-shadow: 0 0 10px rgb(136, 136, 134);
 }
@@ -48,7 +50,7 @@ header { /*Imegen de fondo*/
 #container3{ /* Hace que tengamos espaciado entre nuestra pantalla con el parrafo 3*/
     width: 80%;
     margin: 0 auto;
-    background-color: #6eb2dd;
+    background-color: white;
     padding: 8%;
     box-shadow: 0 0 10px rgb(136, 136, 134);
 }
