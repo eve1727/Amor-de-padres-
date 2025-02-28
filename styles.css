@@ -28,7 +28,7 @@ header .imagen{
     text-shadow: 2px;
     font-size: 200%;
     opacity: 85%;
-    font-family: "Unbounded", sans-serif;
+    font-family: "Rubik Mono One", monospace;
 }
 
  .lista { /*Para que las ventanas aparezcan todas a un costado*/
