@@ -5,9 +5,11 @@
     color: #f0f8ff;
 }
 #titulo{
+    font-family: 'Times New Roman', Times, serif;
     display: flex;
-    font-size: 70px;
+    font-size: 100px;
     color: rgb(71, 69, 69);
+    margin-left: 22%;
 
 }
 
@@ -38,12 +40,30 @@ header {/*Ajustes de mi encabezado*/
 }
 
 .container1{/*El espacio de la pantalla sobre mi parrafo*/
-    width: 80%;
+    font-size: 100%;
     margin: 0 auto;
-    margin-top: 7%;    
-    background-color: rgb(223, 190, 128);
-    padding: 5%;
-    box-shadow: 0 0 10px rgb(34, 34, 33);
+    margin-top: 5%;    
+    background-color: rgb(170, 233, 248);
+    padding: 3%;
+
+}
+
+.container2{
+    font-size:  100%;
+    margin: 0 auto;
+    margin-top: 5%;   
+    background-color: rgb(245, 252, 157);
+    padding: 3%;
+
+
+}
+
+.container3{
+    font-size:  100%;
+    margin: 0 auto;
+    margin-top: 5%;   
+    background-color: rgb(248, 152, 215);
+    padding: 3%;
 
 }
 
