@@ -1,16 +1,29 @@
+
+body{/*Imagen fondo*/
+    background-image: url(img1/azul.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
 #a1 { /*Volver al inicio*/
     text-decoration: none;
     background-color: #FDA1A2;
     font-size: 30px;
     color: #fefcfc;
     margin-left: 2%;
+    font-family: "Cinzel",serif;
+    size: 100%;
 }
 
 #titulo{ /*Palabra introductoria*/
-    font-size: 70px;
+    font-size: 80px;
     color: white;
     display: flex;
     margin: auto;
+    transform: translateY(50%) translateX(15%);
+    font-family: "Cinzel", serif;
 }
 
 header { /*Imegen de fondo encabezado*/
@@ -18,40 +31,47 @@ header { /*Imegen de fondo encabezado*/
    background-image: url(img1/autolesion.webp);
    background-size: cover;
    background-position: center;
-   box-shadow: 0 0 10px rgb(43, 43, 41);
+   opacity: 90%;
 }
 
 #container1{ /* Hace que tengamos espaciado en la pantalla con nuestro parrafo 1 */
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     background-color: white;
     padding: 8%;
-    box-shadow: 0 0 10px rgb(136, 136, 134);
+    box-shadow: 0 0 20px rgb(136, 136, 134);
+    border-radius: 8%;
 }
 
 .significado { /* Agrega estilo a nuestras primeras palabras del container */
     text-align: left;
     margin-top: 0%;
-    font-size: 200%;
+    font-size: 250%;
+    font-family: "Cinzel", serif;
 }
 
 .parrafo1{ /*Agrega tamaño a los parrafos*/
-    font-size: 230%;
+    font-size: 240%;
     color: #100f0f;
+    font-family: "Roboto", sans-serif;
 }
 
 #container2{ /* Hace que tengamos espaciado entre nuestra pantalla con el parrafo 2*/
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     background-color: white;
     padding: 8%;
-    box-shadow: 0 0 10px rgb(136, 136, 134);
+    box-shadow: 0 0 20px rgb(136, 136, 134);
+    border-radius: 8%;
+
 }
 
 #container3{ /* Hace que tengamos espaciado entre nuestra pantalla con el parrafo 3*/
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 8%;
-    box-shadow: 0 0 10px rgb(136, 136, 134);
+    box-shadow: 0 0 20px rgb(136, 136, 134);
+    border-radius: 8%;
+    margin-bottom: 8%;
 }
