@@ -18,12 +18,13 @@ body{/*Imagen fondo*/
 }
 
 #titulo{ /*Palabra introductoria*/
-    font-size: 80px;
+    font-size: 95px;
     color: white;
     display: flex;
     margin: auto;
-    transform: translateY(50%) translateX(15%);
+    transform: translateY(17%) translateX(10%);
     font-family: "Cinzel", serif;
+    opacity: 90%;
 }
 
 header { /*Imegen de fondo encabezado*/

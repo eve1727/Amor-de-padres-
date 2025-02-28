@@ -4,11 +4,20 @@
          <meta charset="UTF-8">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" type="text/css" href="styles.css">
+         <!--Fuente para parrafos-->
          <link rel="preconnect" href="https://fonts.googleapis.com">
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
          <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-
-         <title>AMORDEPADRES</title>
+        <!--Fuente para palabra de Importancia-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <!--Fuente para Frase-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+         
+        <title>AMORDEPADRES</title>
        </head>
           <body id="cuerpo" >
             <!--Agregar frase a color, y video en la cabecera -->
@@ -18,29 +27,35 @@
                  REPARAR ADULTOS ROTOS" 
                  </h1>
                </div>
-            <video autoplay muted loop>
+           
+               <video autoplay muted loop><!--Poner video-->
                <source src="familia.mp4">
-            </video>
+               </video>
             </header>
                
               <div><!-- Div para separar la creacion de las ventanas que se veran -->
                   
                <hr style="margin-top: 1%;">
-                <ul style="list-style:none">
+               
+            <nav class="menu">
+               <ul style="list-style:none">
                   <center>
                
                       <h3 style="font-size: 260%;" >Selecciona el que te interese conocer:</h3>
-                     
+                     <br>
                       <li class="lista"><a href="ansiedad.html" class="a1" >Ansiedad</a></li>
                       <li class="lista"><a href="depresion.html" class="a2">Depresion</a></li>
                       <li class="lista"><a href="autolesion.html" class="a3">Autolesion</a></li>
-                       <br>
-
-                       <hr style="margin-top: 3%;"><!-- Para separacion -->
-                      <li class="lista"><a href="contactos.html" class="a4">Contactos de ayuda</a></li>
+                       <!-- Para separacion -->
+                        <br>
+                        <br>
+                        <br>
+                      <li class="lista"><a href="contactos.html" class="a4">Contactos
+                        de ayuda</a></li>
                  </ul>
-               
-                </div>
+               </nav>
+                
+               </div>
                    
                 <hr size="2px" color="black">
 
@@ -56,8 +71,9 @@
 
                  <!-- Class que nos ayuda a que tenga espacio en la pantalla y no este pegado -->
          <div class="container">
-              
-            <!-- Partes para el inicio -->
+            <h3 id="subtema">IMPORTANCIA</h3>
+               <!-- Partes para el inicio -->
+               <!--Primer parrafo e imagen -->
             <div id="fotolado1">
                         <p id="conocernos"> En la actualidad cada vez se ve más a los adolescentes tener  
                            una salud mental inestable. 
@@ -69,15 +85,15 @@
                         </p>
                         <center>
                            <img src="img1/familia.webp" width="50%" id="foto1"/>
-                           </center>
+                        </center>
          
                   </div>
                
-             <!--Parrafo con imagen al lado -->
+             <!--Segundo parrafo con imagen al lado -->
              <div id="fotolado2">
-                  <center>
+                  
                      <img src="img1/abrazo.webp" width="50%" id="foto2"/>
-                     </center>
+                  
                   <p id="importancia"> 
                      La importancia de conocer estos tipos de padecimientos es de gran relevancia.
                      Ya que podemos tener una mejor relacion padre - hijo, y crear lazos más fuertes 
@@ -88,6 +104,11 @@
                
             </div>
 
+
+
+
+
+          
           </body>
           
           <!-- Creacion del pie de cabeza -->
