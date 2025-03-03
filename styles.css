@@ -1,6 +1,68 @@
-#cuerpo{ 
+#cuerpo{ /*Caracteristicas de todo el cuerpo de el sitio web*/
     background-color: rgb(251, 246, 237);
+    margin: 0%;
+    padding: 0%;
 } 
+
+#encabezado{/*Encabezado parte de arriba*/
+    height: 100%;
+    background-color: #ebccb5;
+    text-align: center;
+}
+
+#listaencabezado{ /*Caracteristicas en general de la lista*/
+    list-style: none;
+    display: flex;
+}
+
+#amordepadres{/*Le da tipografia al texto de amor de padres y lo posiciona*/
+    font-family:  "Libre Baskerville", serif;
+    margin-bottom: 2%;
+    
+}
+
+#buscador1{/*Caracteristicas del boton*/
+    border-radius: 8px;
+    width: 250px;
+    padding: 15px 15px;
+    font-size: 100%;
+    margin-top: 10px;
+    margin-left: 0%;
+    margin-right: 0%;
+    transform: translateX(0%); /*Permite mover de una mejor manera el buscador en el header*/
+}
+#buscador2{/*Caracteristcas del input que acompaña al boton*/
+    width: 100px ;
+    padding: 15px;
+    background-color: #fac196;
+    font-size: 100%;
+    border-radius: 8px;
+    transform: translateX(10%) translateY(17%);
+}
+
+#posicionar{/*Pocisionar el buscador*/
+    margin-left: 9%;
+}
+
+#a4 {/*Creacion de la ventana de ayuda*/
+    color: rgb(0, 0, 0);
+    background-size: cover;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    margin-top: 19%;
+    border-radius: 7px;
+    font-size: 125%;
+    transform: translateY(-70%) translateX(30%);
+    font-family: "Libre Baskerville", serif;
+
+}
+
+#a4:hover{/*Opacea la ventana cuando la flechita pasa por la ventana*/
+    opacity: 40%;
+    color: rgb(0, 0, 0);
+    box-shadow:  0 0 17px rgb(255, 255, 255);
+}
+
 
 .menu{/*Darle color en el apartado de las ventanas y que cubra todo*/
     background-color: #f1eae1;
@@ -94,23 +156,6 @@ header .imagen{
     box-shadow:  0 0 17px rgb(43, 43, 41);
 }
 
-.a4 {
-    color: black;
-    text-decoration: none;
-    background-color: rgb(252, 200, 121);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-left: 50px;
-    border-radius: 7px;
-    font-size: 280%;
-
-}
-
-.a4:hover{/*Opacea la ventana cuando la flechita pasa por la ventana*/
-    opacity: 40%;
-    color: rgb(8, 7, 7);
-    box-shadow:  0 0 17px rgb(43, 43, 41);
-}
 
 #conocernos { /*Primer parrafo del inicio*/
     font-size: 210%;
@@ -161,22 +206,6 @@ header .imagen{
     margin-bottom: 10%;
 }
 
-#buscador{ /* propiedades del input de busqueda */
-    border-radius: 8px;
-    width: 250px;
-    padding: 15px 15px;
-    font-size: 100%;
-    margin-top: 10px;
-}
-
-#botonbusqueda { /* propiedades del boton de buscar*/
-    width: 100px ;
-    padding: 15px;
-    background-color: #fac196;
-    font-size: 100%;
-    border-radius: 8px;
-}
-
-#pie {
+#pie {/*Propiedades del footer*/
     background-color: rgb(255, 231, 198);
 }
