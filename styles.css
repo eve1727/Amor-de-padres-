@@ -5,9 +5,16 @@
 } 
 
 #encabezado{/*Encabezado parte de arriba*/
-    height: 100%;
+    height: 15%;
     background-color: #ebccb5;
     text-align: center;
+    position: fixed;
+    bottom: 90%;
+    right: 0%;
+    left: 0%;
+    top: 0.1%;
+    z-index: 10; /*Hace que muestre el encabezado arriba del video*/
+    
 }
 
 #listaencabezado{ /*Caracteristicas en general de la lista*/
