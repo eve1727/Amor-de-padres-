@@ -1,78 +1,186 @@
 
-body{/*Imagen fondo*/
-    background-image: url(img1/azul.webp);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+body{/*color de fondo*/
+   background-color:#fac9c9;
 }
 
-
-#a1 { /*Volver al inicio*/
+.a1 { /*Volver al inicio*/
     text-decoration: none;
-    background-color: #FDA1A2;
-    font-size: 30px;
+    font-size: 40px;
     color: #fefcfc;
     margin-left: 2%;
     font-family: "Cinzel",serif;
     size: 100%;
+    border-radius: 8%;
+}
+.a1:hover{/*hace que el "volver al inicio" cambie de color cuando el cursor pasa por ahi*/
+  color: rgb(46, 45, 45);
+  background-color: #c3bebe;
+  box-shadow: 0 0 15px rgb(47, 47, 46);  
+}
+
+#encabezado{ /*agrega el encabezado de volver al inicio */
+    position: fixed;
+    background-image: none;
+    background-color: #d89595;
+    bottom: 90%;
+    right: 0%;
+    left: 0;
+    top: 0%;
+    height: 7%;
+    z-index: 9;
+    margin-top: 0%;
+    opacity: 100%;
+    width: 100%;
 }
 
 #titulo{ /*Palabra introductoria*/
-    font-size: 95px;
-    color: white;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
     display: flex;
-    margin: auto;
-    transform: translateY(17%) translateX(10%);
+    margin-top: 4%;
+    transform: translateY(35%) translateX(10%);
     font-family: "Cinzel", serif;
-    opacity: 88%;
+    opacity: 89%;
 }
 
 header { /*Imegen de fondo encabezado*/
-   height: 400px;
+   height: 500px;
    background-image: url(img1/autolesion.webp);
    background-size: cover;
    background-position: center;
-   opacity: 90%;
+   opacity: 95%;
+   
 }
 
-#container1{ /* Hace que tengamos espaciado en la pantalla con nuestro parrafo 1 */
-    width: 75%;
-    margin: 0 auto;
-    background-color: white;
-    padding: 8%;
-    box-shadow: 0 0 20px rgb(136, 136, 134);
-    border-radius: 8%;
+.par1{ /* Hace que tengamos espaciado en la pantalla con nuestro parrafo 1 */
+    width: 85%;
+    margin-left: 0%;
+    margin-top: 0%;
+    background-color:#f5efef;
+    padding: 7.5%;
 }
 
 .significado { /* Agrega estilo a nuestras primeras palabras del container */
     text-align: left;
-    margin-top: 0%;
-    font-size: 250%;
-    font-family: "Cinzel", serif;
+    margin-top: 1%;
+    font-size: 280%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 8%;
 }
 
 .parrafo1{ /*Agrega tamaño a los parrafos*/
-    font-size: 240%;
+    font-size: 230%;
     color: #100f0f;
-    font-family: "Roboto", sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 9%;
 }
 
-#container2{ /* Hace que tengamos espaciado entre nuestra pantalla con el parrafo 2*/
-    width: 75%;
-    margin: 0 auto;
-    background-color: white;
-    padding: 8%;
-    box-shadow: 0 0 20px rgb(136, 136, 134);
-    border-radius: 8%;
-
+#lado{  /*hace que el texto del primer div y la imagen aparezcan a un lado*/
+    display: flex;
+    margin-top: 3%;
 }
 
-#container3{ /* Hace que tengamos espaciado entre nuestra pantalla con el parrafo 3*/
-    width: 75%;
-    margin: 0 auto;
-    background-color: rgb(255, 255, 255);
-    padding: 8%;
-    box-shadow: 0 0 20px rgb(136, 136, 134);
+#par2{ /*caracteristicas del segundo parrafo*/
+    background-image: url(img1/chica2.webp);
+    background-size: 100%;
+    height: 600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color:#f1f1f1;
+    padding: 2.5%;
+}
+
+#par3{ /*caracteristicas del tercer parrafo*/
+    background-color:#f0f0f0;
+    height: 600px;
+    width: 85%;
+    margin-left: 0%;
+    padding: 7.5%;
+    background-image: url(img1/chica1.webp);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    margin-bottom: 0%;
+}
+
+#par4{ /* caracteristicas de la division del apartado 4 */
+    background-color:#ffffff;
+    height: 600px;
+    width: 85%;
+    margin-left: 0%;
+    padding: 7.5%;
+}
+
+#separacion{
+    display: flex;
+    height: 600px;
+}
+
+#acuadro{
+    font-size: 300%;
+    background-color: #d89595;
+    width: 30%;
+    height: 90%;
     border-radius: 8%;
-    margin-bottom: 8%;
+    margin-right: 5%;
+    box-shadow:  0 0 17px rgb(168, 168, 168);
+}
+
+#bcuadro{
+    font-size: 300%;
+    background-color: #e8cccc;
+    width: 30%;
+    height: 90%;
+    border-radius: 8%;
+    margin-right: 5%;
+    box-shadow:  0 0 17px rgb(168, 168, 168);
+}
+
+
+#dcuadro{
+    font-size: 300%;
+    background-color: #cfb1b1;
+    width: 30%;
+    height: 90%;
+    border-radius: 8%;
+    box-shadow:  0 0 17px rgb(168, 168, 168);
+}
+
+
+
+#columnas{ /*Separa el texto del parrafo3 en columnas*/
+    columns: 3 10px;
+    margin-top: 5%;
+    color: #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    column-rule: 15px #d89595 dotted;
+}
+
+#pie{ /*Caracteristicas del footer*/
+    background-color: #fac9c9;
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+
+#Apie{ /*Caracteristicas de visitar otro sitio*/
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+    font-size: 200%;
+    margin-top: 4%;
+}
+
+#Apie:hover{/*Hace que cuando el cursor pase por arriba del "Otro sitio de ayuda" cambie*/
+    background-color: #c3bebe;
+    margin-bottom: 7%;
+    border-radius: 10%;
+    color: #4374ab;
+}
+
+#pielogo{ /*Propiedades del "AmorDePadres en footer*/
+    margin-top: 5%;
+    margin-left: 3%;
+    font-size: 200%;
+    margin-right: 50%;
+    font-family:  "Libre Baskerville", serif;
 }

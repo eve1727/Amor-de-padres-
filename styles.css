@@ -14,6 +14,7 @@
     left: 0%;
     top: 0.1%;
     z-index: 10; /*Hace que muestre el encabezado arriba del video*/
+    opacity: 85%;
     
 }
 
@@ -100,7 +101,7 @@ header .imagen{
     font-family: "Rubik Mono One", monospace;
 }
 
- .lista { /*Para que las ventanas aparezcan todas a un costado*/
+.lista { /*Para que las ventanas aparezcan todas a un costado*/
     display: inline-block;
     margin: 0 0px;
     font-size: 30px;
@@ -168,14 +169,6 @@ header .imagen{
     font-size: 210%;
     margin-left: 5%;
     font-family: "Lora", serif;
-}
-
-#regresar { /*Boton de regreso hasta abajo*/
-    font-size: 60px;
-    text-decoration: none;
-    color: black;
-    background-color: #ff9d23;
-    border-radius: 8px;
 }
 
 #importancia{ /*Segundo parrafo inicio*/
