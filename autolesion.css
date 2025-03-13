@@ -10,16 +10,15 @@ body{/*color de fondo*/
     margin-left: 2%;
     font-family: "Cinzel",serif;
     size: 100%;
-    border-radius: 8%;
 }
 .a1:hover{/*hace que el "volver al inicio" cambie de color cuando el cursor pasa por ahi*/
-  color: rgb(46, 45, 45);
-  background-color: #c3bebe;
+  color: rgb(219, 219, 219);
+  background-color: #ad4747;
   box-shadow: 0 0 15px rgb(47, 47, 46);  
 }
 
 #encabezado{ /*agrega el encabezado de volver al inicio */
-    position: fixed;
+    position: fixed;/*Hace que la barra se quede estatica*/
     background-image: none;
     background-color: #d89595;
     bottom: 90%;
@@ -45,19 +44,11 @@ body{/*color de fondo*/
 
 header { /*Imegen de fondo encabezado*/
    height: 500px;
-   background-image: url(img1/autolesion.webp);
+   background-image: url(img2/autolesion.webp);
    background-size: cover;
    background-position: center;
    opacity: 95%;
    
-}
-
-.par1{ /* Hace que tengamos espaciado en la pantalla con nuestro parrafo 1 */
-    width: 85%;
-    margin-left: 0%;
-    margin-top: 0%;
-    background-color:#f5efef;
-    padding: 7.5%;
 }
 
 .significado { /* Agrega estilo a nuestras primeras palabras del container */
@@ -75,13 +66,21 @@ header { /*Imegen de fondo encabezado*/
     margin-left: 9%;
 }
 
+.par1{ /* Hace que tengamos espaciado en la pantalla con nuestro apartado 1 */
+    width: 85%;
+    margin-left: 0%;
+    margin-top: 0%;
+    background-color:#f5efef;
+    padding: 7.5%;
+}
+
 #lado{  /*hace que el texto del primer div y la imagen aparezcan a un lado*/
     display: flex;
     margin-top: 3%;
 }
 
-#par2{ /*caracteristicas del segundo parrafo*/
-    background-image: url(img1/chica2.webp);
+#par2{ /*caracteristicas del division del apartado 2*/
+    background-image: url(img2/chica2.webp);
     background-size: 100%;
     height: 600px;
     background-position: center center;
@@ -90,17 +89,29 @@ header { /*Imegen de fondo encabezado*/
     padding: 2.5%;
 }
 
-#par3{ /*caracteristicas del tercer parrafo*/
+#par3{ /*caracteristicas de la division del apartado 3*/
     background-color:#f0f0f0;
     height: 600px;
     width: 85%;
     margin-left: 0%;
     padding: 7.5%;
-    background-image: url(img1/chica1.webp);
-    background-position: center bottom;
+    background-image: url(img2/chica1.webp);
+    background-position: bottom right;
     background-repeat: no-repeat;
+    background-position-x: 85%;
     background-size: 20%;
     margin-bottom: 0%;
+}
+
+#columnas{ /*Separa el texto del parrafo 3 en columnas*/
+    columns: 3 10px;
+    margin-top: 5%;
+    color: #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    column-rule: 15px #d89595 dotted;
+}
+#frasepapas{
+    z-index: 1000%;
 }
 
 #par4{ /* caracteristicas de la division del apartado 4 */
@@ -111,12 +122,12 @@ header { /*Imegen de fondo encabezado*/
     padding: 7.5%;
 }
 
-#separacion{
+#separacion{/*hace que nuestros cuadros del 4to apartado esten separados*/
     display: flex;
     height: 600px;
 }
 
-#acuadro{
+#acuadro{/*Caracteristicas del 1er cuadro de la 4ta division*/
     font-size: 300%;
     background-color: #d89595;
     width: 30%;
@@ -126,7 +137,7 @@ header { /*Imegen de fondo encabezado*/
     box-shadow:  0 0 17px rgb(168, 168, 168);
 }
 
-#bcuadro{
+#bcuadro{/*Caracteristicas del 2do cuadro de la 4ta division*/
     font-size: 300%;
     background-color: #e8cccc;
     width: 30%;
@@ -137,23 +148,13 @@ header { /*Imegen de fondo encabezado*/
 }
 
 
-#dcuadro{
+#dcuadro{/*Caracteristicas del 3er cuadro de la 4ta division*/
     font-size: 300%;
     background-color: #cfb1b1;
     width: 30%;
     height: 90%;
     border-radius: 8%;
     box-shadow:  0 0 17px rgb(168, 168, 168);
-}
-
-
-
-#columnas{ /*Separa el texto del parrafo3 en columnas*/
-    columns: 3 10px;
-    margin-top: 5%;
-    color: #000000;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    column-rule: 15px #d89595 dotted;
 }
 
 #pie{ /*Caracteristicas del footer*/
