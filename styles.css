@@ -4,7 +4,9 @@
     padding: 0%;
 } 
 
-#encabezado{/*Encabezado parte de arriba*/
+/*BARRA*/
+
+#encabezado{/*Barra parte de arriba*/
     height: 15%;
     background-color: #ebccb5;
     text-align: center;
@@ -13,20 +15,23 @@
     right: 0%;
     left: 0%;
     top: 0.1%;
-    z-index: 10; /*Hace que muestre el encabezado arriba del video*/
+    z-index: 10; /*Hace que muestre la barra arriba del video*/
     opacity: 85%;
     
 }
 
-#listaencabezado{ /*Caracteristicas en general de la lista*/
+#listaencabezado{ /*Caracteristicas en general de la lista para los elemtos de la barra*/
     list-style: none;
     display: flex;
 }
 
-#amordepadres{/*Le da tipografia al texto de amor de padres y lo posiciona*/
+#amordepadres{/*Le da tipografia al texto de amor de padres y lo ajusta en la barra*/
     font-family:  "Libre Baskerville", serif;
     margin-bottom: 2%;
-    
+    font-size: 230%;
+    text-align: center;
+    margin-top: 2%;
+    margin-right: 21%;
 }
 
 #buscador1{/*Caracteristicas del boton*/
@@ -65,19 +70,17 @@
 
 }
 
-#a4:hover{/*Opacea la ventana cuando la flechita pasa por la ventana*/
+#a4:hover{/*Opacea la ventana de ayuda cuando la flechita pasa por la ventana*/
     opacity: 40%;
     color: rgb(0, 0, 0);
     box-shadow:  0 0 17px rgb(255, 255, 255);
 }
 
 
-.menu{/*Darle color en el apartado de las ventanas y que cubra todo*/
-    background-color: #f1eae1;
-    padding: 10px 0;
-}
+/*ENCABEZADO*/
 
-header { /*Video en el encabezado*/
+
+header { /* Pone el video en el encabezado*/
     height: 80vh;
     overflow: hidden; /*Recorta el video al tamaño de la cabecera*/
     position: relative; /*Posisiona el video dependiendo de top, left etc...*/
@@ -88,7 +91,7 @@ header video{/*Propiedades para el video*/
     background-position: center center;
 
 }
-header .imagen{
+header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     position: absolute;/* Nos sirve para poder posicionar nuestra frase arriba del video*/
     width: 100%;
     top: 50%;
@@ -101,16 +104,22 @@ header .imagen{
     font-family: "Rubik Mono One", monospace;
 }
 
-.lista { /*Para que las ventanas aparezcan todas a un costado*/
+
+/*VENTANAS DE PADECIMIENTOS*/
+
+
+.menu{/*Darle color en el fondo donde estan las ventanas de padecimientos*/
+    background-color: #f1eae1;
+    padding: 10px 0;
+}
+
+.lista { /*Para que las ventanas después del video aparezcan todas a un costado*/
     display: inline-block;
     margin: 0 0px;
     font-size: 30px;
 }
-#subtema{/*Palabra Importante en parrafos*/
-    font-size: 280%;
-}
 
-.a1 { /*Vista de las ventanas*/
+.a1 { /*Vista de la ventana 1*/
     color: black;
     text-decoration: none;
     background-image: linear-gradient(rgba(136, 136, 138, 0.486), rgba(160, 157, 157, 0.356)), 
@@ -123,13 +132,13 @@ header .imagen{
 
 }
 
-.a1:hover{/*Opacea la ventana cuando la flechita pasa por la ventana*/
+.a1:hover{/*Opacea la ventana 1 cuando la flechita pasa por la ventana*/
     opacity: 40%;
     color: rgb(8, 8, 8);
     box-shadow:  0 0 17px rgb(43, 43, 41); 
 }
 
-.a2 {
+.a2 { /*Vista de la ventana 2*/
     color: black;
     text-decoration: none;
     background-image:linear-gradient(rgba(136, 136, 138, 0.486), rgba(160, 157, 157, 0.356)), 
@@ -141,13 +150,13 @@ header .imagen{
     font-size: 280%;
 
 } 
-.a2:hover{/*Opacea la ventana cuando la flechita pasa por la ventana*/
+.a2:hover{/*Opacea la ventana 2 cuando la flechita pasa por la ventana*/
     opacity: 40%;
     color: rgb(10, 9, 9);
     box-shadow:  0 0 17px rgb(43, 43, 41);
 }
 
-.a3 {
+.a3 {/*Vista de la ventana 3*/
     color: black;
     text-decoration: none;
     background-image:linear-gradient(rgba(136, 136, 138, 0.486), rgba(160, 157, 157, 0.356)), 
@@ -158,12 +167,19 @@ header .imagen{
     border-radius: 7px;
     font-size: 280%;
 }
-.a3:hover{/*Opacea la ventana cuando la flechita pasa por la ventana*/
+.a3:hover{/*Opacea la ventana 3 cuando la flechita pasa por la ventana*/
     opacity: 40%;
     color: rgb(10, 8, 8);
     box-shadow:  0 0 17px rgb(43, 43, 41);
 }
 
+
+/*CONTENIDO*/
+
+
+#subtema{/*Palabra "Importante" en apartado*/
+    font-size: 280%;
+}
 
 #conocernos { /*Primer parrafo del inicio*/
     font-size: 210%;
@@ -205,6 +221,8 @@ header .imagen{
     box-shadow: 0 0 10px rgb(136, 136, 134);
     margin-bottom: 10%;
 }
+
+/*PIE PAGINA*/
 
 #pie {/*Propiedades del footer*/
     background-color: rgb(255, 231, 198);

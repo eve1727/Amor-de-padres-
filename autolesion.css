@@ -3,6 +3,9 @@ body{/*color de fondo*/
    background-color:#fac9c9;
 }
 
+
+/*Cosas de la barra*/
+
 .a1 { /*Volver al inicio*/
     text-decoration: none;
     font-size: 40px;
@@ -10,14 +13,27 @@ body{/*color de fondo*/
     margin-left: 2%;
     font-family: "Cinzel",serif;
     size: 100%;
+    margin-right: 45%;
 }
 .a1:hover{/*hace que el "volver al inicio" cambie de color cuando el cursor pasa por ahi*/
   color: rgb(219, 219, 219);
-  background-color: #ad4747;
+  background-color: #946060;
   box-shadow: 0 0 15px rgb(47, 47, 46);  
 }
 
-#encabezado{ /*agrega el encabezado de volver al inicio */
+#ayuda{/*Caracteristicas de contactos ayuda*/
+    font-size: 200%;
+    text-decoration: none;
+    color: #f1f1f1;
+    margin-bottom: 10%;
+}
+
+#ayuda:hover{
+    background-color: #946060;
+    box-shadow: 0 0 15px rgb(47, 47, 46); 
+}
+
+#encabezado{ /*agrega la barra de volver al inicio */
     position: fixed;/*Hace que la barra se quede estatica*/
     background-image: none;
     background-color: #d89595;
@@ -30,7 +46,12 @@ body{/*color de fondo*/
     margin-top: 0%;
     opacity: 100%;
     width: 100%;
+    display: flex;
 }
+
+
+/*Encabezado*/
+
 
 #titulo{ /*Palabra introductoria*/
     font-size: 100px;
@@ -51,7 +72,11 @@ header { /*Imegen de fondo encabezado*/
    
 }
 
-.significado { /* Agrega estilo a nuestras primeras palabras del container */
+
+/*Contenido*/
+
+
+.significado { /* Agrega estilo a nuestras primeras palabras del todos los div */
     text-align: left;
     margin-top: 1%;
     font-size: 280%;
@@ -59,7 +84,7 @@ header { /*Imegen de fondo encabezado*/
     margin-left: 8%;
 }
 
-.parrafo1{ /*Agrega tamaño a los parrafos*/
+.parrafo1{ /*Agrega especificaciones similares a los parrafos de todos los div*/
     font-size: 230%;
     color: #100f0f;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -74,7 +99,7 @@ header { /*Imegen de fondo encabezado*/
     padding: 7.5%;
 }
 
-#lado{  /*hace que el texto del primer div y la imagen aparezcan a un lado*/
+#lado{  /*hace que el texto del par1 y la imagen aparezcan a un lado*/
     display: flex;
     margin-top: 3%;
 }
@@ -109,9 +134,6 @@ header { /*Imegen de fondo encabezado*/
     color: #000000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     column-rule: 15px #d89595 dotted;
-}
-#frasepapas{
-    z-index: 1000%;
 }
 
 #par4{ /* caracteristicas de la division del apartado 4 */
@@ -156,6 +178,9 @@ header { /*Imegen de fondo encabezado*/
     border-radius: 8%;
     box-shadow:  0 0 17px rgb(168, 168, 168);
 }
+
+/*Pie de pagina*/
+
 
 #pie{ /*Caracteristicas del footer*/
     background-color: #fac9c9;
