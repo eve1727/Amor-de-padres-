@@ -27,16 +27,16 @@
 
 #icono{/*caracteristicas del icono de amor de padres en la barra*/
     height: 110px;
-    margin-top: -8%;
+    margin-top: -16%;
 }
 
-#iconopalabra{
+#iconopalabra{/*Agrega palabra a un lado del icono*/
     font-family: "Libre Baskerville", serif;
     margin-top: 13%;
     font-size: 150%;
 }
 
-#ayuda{
+#ayuda{/*Agrega el apartado de contacto de ayuda en la bara*/
     text-decoration: none;
     font-size: 170%;
     color: black;
@@ -49,22 +49,22 @@
     color: #cccccc;
 }
 
-#buscador1{/*Caracteristicas del boton para buscar*/
+#buscador1{/*Caracteristicas del input para buscar*/
     border-radius: 8px;
     width: 250px;
     padding: 15px 15px;
     font-size: 100%;
     margin-top: 10px;
     margin-right: 0%;
-    transform: translateX(0%); /*Permite mover de una mejor manera el buscador en el header*/
+    transform: translateX(-5%); /*Permite mover de una mejor manera el buscador en el header*/
 }
-#buscador2{/*Caracteristcas del input que acompaña al boton para que el usiario ingrese lo que quiere buscar*/
+#buscador2{/*Caracteristcas del boton que acompaña al input*/
     width: 100px ;
     padding: 15px;
     background-color: #fac196;
     font-size: 100%;
     border-radius: 8px;
-    transform: translateX(10%) translateY(17%);
+    transform: translateX(-5%) translateY(17%);
 }
 
 #posicionar{/*Pocisionar el buscador*/
