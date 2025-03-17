@@ -10,12 +10,12 @@
     height: 15%;
     background-color: #ebccb5;
     text-align: center;
-    position: fixed;
-    bottom: 90%;
+    position: fixed;/*hace que la barra se quede estatica*/
+    bottom: 0%;
     right: 0%;
     left: 0%;
     top: 0.1%;
-    z-index: 10; /*Hace que muestre la barra arriba del video*/
+    z-index: 100; /*Hace que muestre la barra arriba de cualquier elemento*/
     opacity: 85%;
     
 }
@@ -25,26 +25,40 @@
     display: flex;
 }
 
-#amordepadres{/*Le da tipografia al texto de amor de padres y lo ajusta en la barra*/
-    font-family:  "Libre Baskerville", serif;
-    margin-bottom: 2%;
-    font-size: 230%;
-    text-align: center;
-    margin-top: 2%;
-    margin-right: 21%;
+#icono{/*caracteristicas del icono de amor de padres en la barra*/
+    height: 110px;
+    margin-top: -8%;
 }
 
-#buscador1{/*Caracteristicas del boton*/
+#iconopalabra{
+    font-family: "Libre Baskerville", serif;
+    margin-top: 13%;
+    font-size: 150%;
+}
+
+#ayuda{
+    text-decoration: none;
+    font-size: 170%;
+    color: black;
+    background-color: #dc9865;
+    border-radius: 10px 10px;
+}
+
+#ayuda:hover{
+    background-color: #f1eae1;
+    color: #cccccc;
+}
+
+#buscador1{/*Caracteristicas del boton para buscar*/
     border-radius: 8px;
     width: 250px;
     padding: 15px 15px;
     font-size: 100%;
     margin-top: 10px;
-    margin-left: 0%;
     margin-right: 0%;
     transform: translateX(0%); /*Permite mover de una mejor manera el buscador en el header*/
 }
-#buscador2{/*Caracteristcas del input que acompaña al boton*/
+#buscador2{/*Caracteristcas del input que acompaña al boton para que el usiario ingrese lo que quiere buscar*/
     width: 100px ;
     padding: 15px;
     background-color: #fac196;
@@ -54,26 +68,7 @@
 }
 
 #posicionar{/*Pocisionar el buscador*/
-    margin-left: 6%;
-}
-
-#a4 {/*Creacion de la ventana de ayuda*/
-    color: rgb(0, 0, 0);
-    background-size: cover;
-    text-decoration: none;
-    background-repeat: no-repeat;
-    margin-top: 19%;
-    border-radius: 7px;
-    font-size: 125%;
-    transform: translateY(-70%) translateX(30%);
-    font-family: "Libre Baskerville", serif;
-
-}
-
-#a4:hover{/*Opacea la ventana de ayuda cuando la flechita pasa por la ventana*/
-    opacity: 40%;
-    color: rgb(0, 0, 0);
-    box-shadow:  0 0 17px rgb(255, 255, 255);
+    margin-left: 380px;
 }
 
 
@@ -109,7 +104,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
 
 
 .menu{/*Darle color en el fondo donde estan las ventanas de padecimientos*/
-    background-color: #f1eae1;
+    background-color: #f5ece1;
     padding: 10px 0;
 }
 
@@ -139,7 +134,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
 }
 
 .a2 { /*Vista de la ventana 2*/
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     background-image:linear-gradient(rgba(136, 136, 138, 0.486), rgba(160, 157, 157, 0.356)), 
     url(img1/depresion12.webp);
@@ -157,7 +152,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
 }
 
 .a3 {/*Vista de la ventana 3*/
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     background-image:linear-gradient(rgba(136, 136, 138, 0.486), rgba(160, 157, 157, 0.356)), 
     url(img1/atolesion1.webp);
@@ -176,6 +171,14 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
 
 /*CONTENIDO*/
 
+.container { /* Hace que exista un espacio entre la pantalla y el sitio web */
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    padding: 8%;
+    box-shadow: 0 0 10px rgb(136, 136, 134);
+    margin-bottom: 10%;
+}
 
 #subtema{/*Palabra "Importante" en apartado*/
     font-size: 280%;
@@ -213,14 +216,6 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     width: 500px;
 }
 
-.container { /* Hace que exista un espacio entre la pantalla y el sitio web */
-    width: 80%;
-    margin: 0 auto;
-    background-color: rgb(255, 255, 255);
-    padding: 8%;
-    box-shadow: 0 0 10px rgb(136, 136, 134);
-    margin-bottom: 10%;
-}
 
 /*PIE PAGINA*/
 

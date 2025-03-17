@@ -99,10 +99,11 @@ header { /*Imegen de fondo encabezado*/
     padding: 7.5%;
 }
 
-#lado{  /*hace que el texto del par1 y la imagen aparezcan a un lado*/
+#lado{  /*hace que el texto del la primera parte y la imagen aparezcan a un lado*/
     display: flex;
     margin-top: 3%;
 }
+
 
 #par2{ /*caracteristicas del division del apartado 2*/
     background-image: url(img2/chica2.webp);
@@ -113,6 +114,7 @@ header { /*Imegen de fondo encabezado*/
     background-color:#f1f1f1;
     padding: 2.5%;
 }
+
 
 #par3{ /*caracteristicas de la division del apartado 3*/
     background-color:#f0f0f0;
@@ -203,10 +205,17 @@ header { /*Imegen de fondo encabezado*/
     color: #4374ab;
 }
 
-#pielogo{ /*Propiedades del "AmorDePadres en footer*/
+#pielogo{ /*Propiedades del "AmorDePadres a un lado del icono*/
     margin-top: 5%;
     margin-left: 3%;
-    font-size: 200%;
     margin-right: 50%;
+    font-size: 170%;
     font-family:  "Libre Baskerville", serif;
+}
+
+#icono{/*Agrega la imagen del icono*/
+    height: 60%;
+    margin-top: 2%;
+    opacity: 90%;
+    transform: translateX(30%);
 }

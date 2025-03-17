@@ -28,64 +28,69 @@
             <!--Header para la barra-->
             <header id="encabezado"><!--hace que se muestre la barra arriba-->
                <ul id="listaencabezado"><!--Lista para poner elementos del encabezado-->
-                 
-                  <li id="amordepadres"><!--Agrega palabra representativa-->
-                  AMOR DE PADRES
-                  </li> 
                   
-                   <li id="a4"><!--Agrega el apartado de ayuda-->
-                    <a href="contactos.html" id="a4">Contactos de ayuda</a>
-                   </li>
-                  
-                  <!--Creacion del lugar de busqueda-->
-                  <li id="posicionar"><!--Lugar para escribir-->
-                  <input type="search" placeholder="Escriba aqui" id="buscador1">
-                  </li>
+                     <li id="amordepadres"><!--Agrega la imagen del icono en la barra-->
+                       <img src="img1/icono.webp" id="icono">
+                     </li> 
+                    
+                     <li><!--Agrega la palabra del sitio a un lado de el icono-->
+                        <h2 id="iconopalabra">AMORDEPADRES</h2>
+                     </li>
 
-                   <li><!--boton-->
-                  <button type="submit" id="buscador2">Buscar</button>
-                  </li>
-               
+                     <!--Agrega el apartada de contactos de ayuda moviendo este elemento para un buen acomodo-->
+                     <li style="transform: translatey(20%) translateX(350px);">
+                     <a href="contactos.html" id="ayuda">CONTACTOS DE AYUDA</a>
+                     </li>
+                     
+                     <!--Creacion del lugar de busqueda-->
+                     <li id="posicionar"><!--Lugar para escribir-->
+                     <input type="search" placeholder="Escriba aqui" id="buscador1">
+                     </li>
+
+                     <li><!--boton para el lugar de busqueda-->
+                     <button type="submit" id="buscador2">Buscar</button>
+                     </li>
+                  
                </ul><!--Fin de la lista-->
             </header><!--Fin de la barra-->
             
-            <!--Agregar frase a color, y video en la cabecera -->
+            <!--Header que agrega frase a color, y video en la cabecera -->
             <header>
-               <div class="imagen">
-                  <h1 id="frase" style="size: 7px;">"ES MEJOR CONSTRUIR HIJOS FUERTES QUE 
-                  REPARAR ADULTOS ROTOS" 
-                  </h1>
+                <div class="imagen">
+                     <h1 id="frase" style="size: 7px;">"ES MEJOR CONSTRUIR HIJOS FUERTES QUE 
+                     REPARAR ADULTOS ROTOS" 
+                     </h1>
                </div>
            
-               <video autoplay muted loop><!--Poner video-->
-               <source src="familia.mp4">
+               <video autoplay muted loop><!--Indica como se mostrara el video que si con sonido, cuantas veces se reproducira etc..-->
+               <source src="img1/familia.mp4"><!--Agregamos el video de fondo-->
                </video>
             </header>
                
               <div><!-- Div para separar la creacion de las ventanas que se veran -->
-                  
-               <hr style="margin-top: 1%;">
-               
-            <nav class="menu"><!--crea el apartado de las ventanas-->
-               <ul style="list-style:none"><!--Crea una lista para poner las ventanas como elementos-->
-                  <center>
-               
-                      <h3 style="font-size: 260%;" >Selecciona el que te interese conocer:</h3>
-                     <br>
-                      <li class="lista"><a href="ansiedad.html" class="a1" >Ansiedad</a></li>
-                      <li class="lista"><a href="depresion.html" class="a2">Depresión</a></li>
-                      <li class="lista"><a href="autolesion.html" class="a3">Autolesión</a></li>
-                       <!-- Para separacion del texto -->
-                        <br>
-                        <br>
-                 </ul>
-             </nav>
+                        
+ 
+                       <nav class="menu"><!--crea el apartado de las ventanas que los usuarios podrán navegar-->
+                          <ul style="list-style:none;text-align: center;"><!--Crea una lista para poner las ventanas como elementos-->
+                     
+                           <h3 style="font-size: 260%;" >Selecciona el que te interese conocer:</h3>
+                           
+                           <br><!--Hace un salto de linea entre la indicacion y las ventanas-->
+                          
+                           <li class="lista"><a href="ansiedad.html" class="a1" >Ansiedad</a></li>
+                           <li class="lista"><a href="depresion.html" class="a2">Depresión</a></li>
+                           <li class="lista"><a href="autolesion.html" class="a3">Autolesión</a></li>
+                           <!-- Para separacion del texto -->
+                              <br><!--Hace que tengamos mas espacio entre ventenas y contenido-->
+                              <br>
+                          </ul><!--Fin de la lista para las ventanas-->
+                        </nav><!--fin del apartado para navegar por las ventanas-->
                 
                </div>
                    
                 <hr size="2px" color="black"><!--Agrega un linea para dividir el apartado de las ventanas-->
 
-
+                   <center>
                   <!-- Bienvenida de inicio-->
                         <h2 style="font-size: 290%; margin-top: 2%; margin-left: 3%;">Hola! Bienvenido al lugar donde conoceras un poco sobre la mente adolescente.</h2>
                  </center>
