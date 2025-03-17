@@ -1,96 +1,116 @@
+body {/*color de fondo*/
+ background-color: #f9fc62;
+}
+
 #a1 {/*Para volver al inicio de la pantalla */
     text-decoration: none;
-    background-color: #f7b12f;
-    font-size: 40px;
-    color: #f0f8ff;
+    background-color: #f7b12f;/*color del container*/
+    font-size: 40px;/*tamaño del volver al inicio*/
+    color: #ffffff;/*color de la letra*/
 }
 
 #titulo{/*ajustes de mi frase*/
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;/*estilo de letra de mi frase*/
     display: flex;
-    font-size: 100px;
-    color: rgb(253, 135, 0);
-    margin-left: 16%;
-    margin-top: 13%;
+    font-size: 100px;/*tamaño de mi frase*/
+    color: rgb(253, 135, 0);/*color de mi frase*/
+    margin-left: 16%;/*separacion del lado derecho de mi frase*/
+    margin-top: 13%;/*separacion de mi frase con el para que este mas abajo */
 
 }
 
 header {/*Ajustes de mi encabezado*/
-    background-image: url(img1/imagen7.webp);
-    opacity: 95%;
-    height: 600px;
-    width: 100%;
+    background-image: url(img1/imagen7.webp);/*imagen que se presenta en el emcabezado*/
+    opacity: 95%;/*para que se vea mas opaca*/
+    height: 600px;/*tamaño de la imagen*/
+    width: 100%;/*para que ocupe el 100% del espacio en el encabezado*/
     background-position: center center;
     background-size: cover;
 }
 
 #descripcion{/*Tamaño de mi texto*/
     font-size: 230%;
-    margin-left: 5%;
+    margin-left: 5%;/*separacion del texto de lado derecho*/
 }
 
 #sintomas{/*Tamaño de mi texto*/
     font-size: 230%;
-    margin-left: 5%;
+    margin-left: 5%;/*separacion del texto de lado derecho*/
 
 }
 
 #causas{/*Tamaño de mi texto*/
     font-size: 230%;
-    margin-left: 5%;
+    margin-left: 5%;/*separacion del texto de lado derecho*/
 
+}
 
+.containerA{
+    background-color: rgb(255, 145, 0);
+    width: 100%;/*largor del container (que abarque todo el largo de la pantalla)*/
+    padding: 0.01%;
+    margin-top: 3%;
+    height: 100px
+}
+
+.containerB{
+    background-color: rgb(255, 145, 0);
+    width: 100%;/*largor del container (que abarque todo el largo de la pantalla)*/
+    padding: 0.01%;
+    margin-top: 0%;
+    height: 100px;
+}
+
+.containerC{
+    background-color: rgb(255, 145, 0);
+    width: 100%;/*largor del container (que abarque todo el largo de la pantalla)*/
+    padding: 0.01%;
+    margin-top: 0%;
+    height: 100px;
 }
 
 .container1{/*El espacio de la pantalla sobre mi parrafo*/
-    font-size: 100%;
+    font-size: 20%;
     margin: 0 auto;
-    margin-top: 10%;   
-    background-color: rgba(252, 197, 135, 0.295);
-    padding: 3%;
-    box-shadow: 0 0 10px rgb(233, 115, 5);
+    margin-top: 0%;  
+    background-color:  rgb(236, 236, 236);/*color de mi container */
+    padding: 0.3%;
 
 }
 
-.container2{/*El espacio de la pantalla sobre mi parrafo*/
-    font-size:  100%;
-    margin: 0 auto;  
-    margin-top: 5%; 
-    background-color: rgb(229, 181, 241);
-    padding: 3%;
-    box-shadow: 0 0 10px rgb(146, 9, 238);
-
-
+.container2{
+    font-size: 20%;
+    margin: 0 auto;
+    margin-top: 0%;
+    background-color:   rgb(236, 236, 236);/*color de mi container */
+    padding: 0.10%;
+    
 }
 
-.container3{/*El espacio de la pantalla sobre mi parrafo*/
-    font-size:  100%;
+.container3{
+    font-size: 20%;
     margin: 0 auto;
+    margin-top: 0%;
+    background-color:  rgb(236, 236, 236);/*color de mi container */
+    padding: 0.3%;
+    
+}
+
+.container{/*container de mis card */
+    display: flex;
+}
+
+.card{
+    border-radius: 10px;/*borde del container para que este mas redondo*/
+    margin-left: 10px;/*para que cunado pase le raton por encima se deslizen al lado derecho */
+    height: 200px;/* tamaño del container */
+    background-color: rgb(255, 155, 25);/*color del container*/
+    flex: 1;/*para crecer y ocupar todo el espacio disponible dentro de su contenedor*/
+    transition: 3s all ease;/*para que la transicion se aplique en todas las propiedades, 3s la duracion de la transicio, all indica que la transicion se aplique en todas,ease define la funcion de temporizacion */
     margin-top: 5%;
-    background-color: rgb(207, 252, 171);
-    padding: 3%;
-    box-shadow: 0 0 10px rgb(102, 243, 20);
-
 }
 
-foto1{
-    width: 500px;
-    margin-top: 30%;
+.card:hover{/*para cuando el raton pase por encima container produsca el movimiento (card=los componentes)*/
+    flex: 2;
+    background-color: rgb(248, 148, 54);
 }
-
-foto01{
-    display: flex;
-    margin-top: 3%;
-} 
-
-foto2{
-    width: 500px;
-    margin-top: 30%;
-}
-
-foto02{
-    display: flex;
-    margin-top: 3%;
-}
-
-

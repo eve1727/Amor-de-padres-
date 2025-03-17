@@ -1,0 +1,35 @@
+.fondo{ /* imagen que va a tener el sitio*/
+  background-image: url(img1/imagen\ 2.jpg);
+  background-position: center center;
+  background-size: cover;
+  height:300px;
+}
+
+
+#a1{ /*poner color y tamaño en el apartado de "volver al inicio"*/
+  text-decoration: none;
+  background-color: rgb(252, 13, 228);
+  font-size: 30px;
+  color: rgb(19, 17, 18);
+  
+}
+
+.container { /*Ponerle color el tamaño en el container 1*/
+  background-color: rgb(246, 226, 160);
+  padding:0.15%;
+  text-align: center;
+}
+
+  .container2 { /*Poner color el tamaño en el container 2*/
+  background-color: rgb(183, 218, 239);
+  padding: 0.15%;
+  text-align: center;
+  
+}
+
+.container3 { /*Poner color el tamaño en el container 3*/
+  background-color: rgb(232, 176, 209);
+  padding: 0.15;
+  text-align:center;
+
+}
