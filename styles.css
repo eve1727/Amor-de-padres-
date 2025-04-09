@@ -6,6 +6,7 @@
 
 /*BARRA*/
 
+
 #encabezado{/*Barra parte de arriba*/
     height: 15%;
     background-color: #ebccb5;
@@ -31,14 +32,14 @@
 }
 
 #iconopalabra{/*Agrega palabra a un lado del icono*/
-    font-family: "Libre Baskerville", serif;
-    margin-top: 13%;
-    font-size: 150%;
+    font-family: "Rozha One", serif;
+    margin-top: 7%;
+    font-size: 230%;
 }
 
-#ayuda{/*Agrega el apartado de contacto de ayuda en la bara*/
+#ayuda{/*Agrega el apartado de contacto de ayuda en la barra*/
     text-decoration: none;
-    font-size: 170%;
+    font-size: 160%;
     color: black;
     background-color: #dc9865;
     border-radius: 10px 10px;
@@ -76,15 +77,15 @@
 
 
 header { /* Pone el video en el encabezado*/
-    height: 80vh;
-    overflow: hidden; /*Recorta el video al tamaño de la cabecera*/
+    height: 110vh;
+    overflow: hidden;
     position: relative; /*Posisiona el video dependiendo de top, left etc...*/
 }
 
 header video{/*Propiedades para el video*/
     width: 100%;
     background-position: center center;
-
+    background-size: 1000%;
 }
 header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     position: absolute;/* Nos sirve para poder posicionar nuestra frase arriba del video*/
@@ -92,16 +93,45 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     top: 50%;
     transform: translateY(-50%);/*Nos permite mover la frase(como los margin pero mejor)*/
     text-align: center;
-    color: #4b2a15;
+    color: #200f06;
     text-shadow: 2px;
-    font-size: 200%;
+    font-size: 230%;
     opacity: 85%;
-    font-family: "Rubik Mono One", monospace;
+    font-family: "Lexend", sans-serif;
+}
+
+/* Presentar sitio web */
+#presentacion{
+    background-color:#fcf2ea;
+    background-size: 100%;
+    width: 100%;
+    height: 500px;
+
+}
+
+#quienes{
+    font-family: "DM Sans", sans-serif;
+    text-align: left;
+    font-size: 250%;
+    margin-top: -0.3%;
+    margin-left: 3%;
+    transform: translateY(60%);
+}
+
+#ima1{
+    margin-left: 60%;
+    height: 100%;
+    margin-top: -4%;
 }
 
 
 /*VENTANAS DE PADECIMIENTOS*/
 
+#seleccionar{
+    font-family: "DM Sans", sans-serif;
+    font-style: normal;
+    font-size: 250%;
+}
 
 .menu{/*Darle color en el fondo donde estan las ventanas de padecimientos*/
     background-color: #f5ece1;
@@ -123,8 +153,8 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     background-repeat: no-repeat;
     margin-left: 50px;
     border-radius: 7px;
-    font-size: 280%;
-
+    font-size: 250%;
+    font-family: "Lexend", sans-serif;
 }
 
 .a1:hover{/*Opacea la ventana 1 cuando la flechita pasa por la ventana*/
@@ -142,7 +172,8 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     background-repeat: no-repeat;
     margin-left: 50px;
     border-radius: 7px;
-    font-size: 280%;
+    font-size: 250%;
+    font-family: "Lexend", sans-serif;
 
 } 
 .a2:hover{/*Opacea la ventana 2 cuando la flechita pasa por la ventana*/
@@ -154,13 +185,15 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
 .a3 {/*Vista de la ventana 3*/
     color: rgb(0, 0, 0);
     text-decoration: none;
-    background-image:linear-gradient(rgba(136, 136, 138, 0.486), rgba(160, 157, 157, 0.356)), 
-    url(img1/atolesion1.webp);
+    background-image:linear-gradient(rgba(171, 171, 173, 0.486), rgba(176, 173, 173, 0.356)), 
+    url(img1/image-2.webp);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 60%;
     margin-left: 50px;
     border-radius: 7px;
-    font-size: 280%;
+    font-size: 250%;
+    font-family: "Lexend", sans-serif;
 }
 .a3:hover{/*Opacea la ventana 3 cuando la flechita pasa por la ventana*/
     opacity: 40%;
@@ -170,6 +203,11 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
 
 
 /*CONTENIDO*/
+
+#bienvenida{
+    font-family: "DM Sans", sans-serif;
+    font-size: 250%;
+}
 
 .container { /* Hace que exista un espacio entre la pantalla y el sitio web */
     width: 80%;
@@ -182,18 +220,19 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
 
 #subtema{/*Palabra "Importante" en apartado*/
     font-size: 280%;
+    font-family: "DM Sans", sans-serif;
 }
 
 #conocernos { /*Primer parrafo del inicio*/
     font-size: 210%;
     margin-left: 5%;
-    font-family: "Lora", serif;
+    font-family: "Assistant", sans-serif;
 }
 
 #importancia{ /*Segundo parrafo inicio*/
     font-size: 230%;
     margin-left: 5%;
-    font-family: "Lora", serif;
+    font-family: "Assistant", sans-serif;
 }
 
 #foto1 { /* Foto al costado del primer parrafo*/

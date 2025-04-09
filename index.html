@@ -4,22 +4,22 @@
          <meta charset="UTF-8">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" type="text/css" href="styles.css">
-         <!--Fuente para parrafos-->
+       <!--Fuente para palabra amor de padres, frase,-->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+         <!--Fuente para palabras introductorias y de seleccionar una ventana-->
          <link rel="preconnect" href="https://fonts.googleapis.com">
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-        <!--Fuente para palabra de Importancia-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <!--Fuente para Frase-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
-         <!--Fuente para palabra amordepadres-->
+         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+         <!--Fuente para los parrafos-->
          <link rel="preconnect" href="https://fonts.googleapis.com">
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
        
          <title>AMORDEPADRES</title>
        </head>
@@ -66,6 +66,12 @@
                <source src="img1/familia.mp4"><!--Agregamos el video de fondo-->
                </video>
             </header>
+
+            <div id="presentacion">
+                <h2 id="quienes">¿QUIENES SOMOS?</h2>
+                <img src="img1/saludo.webp" id="ima1"/>
+
+            </div>
                
               <div><!-- Div para separar la creacion de las ventanas que se veran -->
                         
@@ -73,7 +79,7 @@
                        <nav class="menu"><!--crea el apartado de las ventanas que los usuarios podrán navegar-->
                           <ul style="list-style:none;text-align: center;"><!--Crea una lista para poner las ventanas como elementos-->
                      
-                           <h3 style="font-size: 260%;" >Selecciona el que te interese conocer:</h3>
+                           <h3 id="seleccionar" >Selecciona el que te interese conocer:</h3>
                            
                            <br><!--Hace un salto de linea entre la indicacion y las ventanas-->
                           
@@ -90,14 +96,12 @@
                    
                 <hr size="2px" color="black"><!--Agrega un linea para dividir el apartado de las ventanas-->
 
-                   <center>
-                  <!-- Bienvenida de inicio-->
-                        <h2 style="font-size: 290%; margin-top: 2%; margin-left: 3%;">Hola! Bienvenido al lugar donde conoceras un poco sobre la mente adolescente.</h2>
-                 </center>
+                   
+                 
 
                  
          <div class="container"><!-- Div que nos ayuda a que tenga espacio en la pantalla y no este pegado -->
-            <h3 id="subtema">IMPORTANCIA</h3>
+            <h3 id="subtema">CONOCE MÁS...</h3>
               
             <!--Primer parrafo e imagen -->
             
@@ -144,4 +148,5 @@
             <!--Agrega texto en movimiento-->
             <marquee behavior="sroll" direction="left" style="background-color: rgb(235, 187, 121);"> GRACIAS POR VISITAR </marquee>
           </footer>
+          <script src="./js/test.js"></script>
    </html>
