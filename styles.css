@@ -7,6 +7,24 @@
 /*BARRA*/
 
 
+
+.material-symbols-outlined {
+    font-size: 400%;
+    font-weight: 500;
+}
+.material-symbols-outlined:hover{
+    background-color: #b78266;
+}
+
+#search{
+    transform: translateX(830%);
+}
+
+#Menus{
+    transform:  translateX(850%);
+}
+
+
 #encabezado{/*Barra parte de arriba*/
     height: 15%;
     background-color: #ebccb5;
@@ -39,38 +57,16 @@
 
 #ayuda{/*Agrega el apartado de contacto de ayuda en la barra*/
     text-decoration: none;
-    font-size: 160%;
+    font-size: 200%;
     color: black;
-    background-color: #dc9865;
     border-radius: 10px 10px;
+    font-family: "Rozha One", serif;
 }
 
 #ayuda:hover{
-    background-color: #f1eae1;
-    color: #cccccc;
+    background-color: #b78266;
 }
 
-#buscador1{/*Caracteristicas del input para buscar*/
-    border-radius: 8px;
-    width: 250px;
-    padding: 15px 15px;
-    font-size: 100%;
-    margin-top: 10px;
-    margin-right: 0%;
-    transform: translateX(-5%); /*Permite mover de una mejor manera el buscador en el header*/
-}
-#buscador2{/*Caracteristcas del boton que acompaña al input*/
-    width: 100px ;
-    padding: 15px;
-    background-color: #fac196;
-    font-size: 100%;
-    border-radius: 8px;
-    transform: translateX(-5%) translateY(17%);
-}
-
-#posicionar{/*Pocisionar el buscador*/
-    margin-left: 380px;
-}
 
 
 /*ENCABEZADO*/
@@ -101,27 +97,32 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
 }
 
 /* Presentar sitio web */
-#presentacion{
+
+#inicio{
     background-color:#fcf2ea;
     background-size: 100%;
-    width: 100%;
     height: 500px;
-
+    margin-top: -4%;
+}
+#presentacion{
+    display: flex;
 }
 
 #quienes{
     font-family: "DM Sans", sans-serif;
-    text-align: left;
     font-size: 250%;
-    margin-top: -0.3%;
     margin-left: 3%;
-    transform: translateY(60%);
+}
+
+#introducirnos{
+    font-family: "National Park", sans-serif;
+    font-weight: 500;
+    margin-left: 5%;
 }
 
 #ima1{
-    margin-left: 60%;
     height: 100%;
-    margin-top: -4%;
+    margin-top: -5%;
 }
 
 
@@ -155,6 +156,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     border-radius: 7px;
     font-size: 250%;
     font-family: "Lexend", sans-serif;
+    transform: translateY(15%);
 }
 
 .a1:hover{/*Opacea la ventana 1 cuando la flechita pasa por la ventana*/
@@ -209,13 +211,18 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     font-size: 250%;
 }
 
+#introducirnos{
+    font-size: 190%;
+    font-family:"Assistant", sans-serif;
+}
+
 .container { /* Hace que exista un espacio entre la pantalla y el sitio web */
     width: 80%;
     margin: 0 auto;
     background-color: rgb(255, 255, 255);
     padding: 8%;
     box-shadow: 0 0 10px rgb(136, 136, 134);
-    margin-bottom: 10%;
+    margin-bottom: 2%;
 }
 
 #subtema{/*Palabra "Importante" en apartado*/

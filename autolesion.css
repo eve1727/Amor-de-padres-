@@ -9,23 +9,31 @@ body{/*color de fondo*/
     font-size: 300%;
 }
 
-.a1 { /*Volver al inicio*/
-    text-decoration: none;
-    font-size: 40px;
-    color: #fefcfc;
-    margin-left: 2%;
-    font-family: "Cinzel",serif;
-    size: 100%;
-    margin-right: 45%;
-}
-.a1:hover{/*hace que el "volver al inicio" cambie de color cuando el cursor pasa por ahi*/
-  color: rgb(219, 219, 219);
-  background-color: #946060;
-  box-shadow: 0 0 15px rgb(47, 47, 46);  
+.material-symbols-outlined{
+   font-weight: 400;
 }
 
+.inicio{
+    font-size: 240%;
+    text-decoration: none;
+    color: #fefcfc;
+    transform: translateX(50%);
+}
+
+.inicio:hover{
+    background-color: #946060;
+}
+
+#regresar{
+    margin-top: 0.5%;
+    margin-right: 60%;
+    font-size: 230%;
+    color: #fefcfc;
+}
+
+
 #ayuda{/*Caracteristicas de contactos ayuda*/
-    font-size: 190%;
+    font-size: 220%;
     text-decoration: none;
     color: #f1f1f1;
     margin-bottom: 10%;

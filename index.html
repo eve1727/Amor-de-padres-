@@ -3,8 +3,7 @@
          <head>
          <meta charset="UTF-8">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" type="text/css" href="styles.css">
-       <!--Fuente para palabra amor de padres, frase,-->
+       <!--Fuente para cosas en la barra-->
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
@@ -16,10 +15,22 @@
          <link rel="preconnect" href="https://fonts.googleapis.com">
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
          <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
-
+         <!--Fuente para frase-->
          <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+           <link rel="preconnect" href="https://fonts.googleapis.com">
+           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+           <link href="https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap" rel="stylesheet">
+
+           <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+          
+
+       <link rel="stylesheet" type="text/css" href="styles.css">
+
+       
        
          <title>AMORDEPADRES</title>
        </head>
@@ -36,19 +47,21 @@
                      <li><!--Agrega la palabra del sitio a un lado de el icono-->
                         <h2 id="iconopalabra">AMORDEPADRES</h2>
                      </li>
-
+ 
                      <!--Agrega el apartada de contactos de ayuda moviendo este elemento para un buen acomodo-->
-                     <li style="transform: translatey(20%) translateX(350px);">
+                     <li style="transform: translatey(15%) translateX(500px);">
                      <a href="contactos.html" id="ayuda">CONTACTOS DE AYUDA</a>
                      </li>
                      
-                     <!--Creacion del lugar de busqueda-->
-                     <li id="posicionar"><!--Lugar para escribir-->
-                     <input type="search" placeholder="Escriba aqui" id="buscador1">
-                     </li>
+                     <span class="material-symbols-outlined" id="search">
+                        search
+                        </span>
 
-                     <li><!--boton para el lugar de busqueda-->
-                     <button type="submit" id="buscador2">Buscar</button>
+
+                     <li>
+                        <i class="material-symbols-outlined" id="Menus">
+                           menu
+                        </i>
                      </li>
                   
                </ul><!--Fin de la lista-->
@@ -57,7 +70,7 @@
             <!--Header que agrega frase a color, y video en la cabecera -->
             <header>
                 <div class="imagen">
-                     <h1 id="frase" style="size: 7px;">"ES MEJOR CONSTRUIR HIJOS FUERTES QUE 
+                     <h1  style="size: 7px;">"ES MEJOR CONSTRUIR HIJOS FUERTES QUE 
                      REPARAR ADULTOS ROTOS" 
                      </h1>
                </div>
@@ -66,12 +79,22 @@
                <source src="img1/familia.mp4"><!--Agregamos el video de fondo-->
                </video>
             </header>
-
+           
+            <!--Inicia presentación del sitio-->
+            
+            
+         <div id="inicio">
+                <h2 id="quienes">¿QUIÉNES SOMOS?</h2>
             <div id="presentacion">
-                <h2 id="quienes">¿QUIENES SOMOS?</h2>
+                <p id="introducirnos" style="font-size: 210%;">Somos un sitio web que está dirgido principalemente a ayudar a los padres de familia, para que conozcan sobre distintos padecimientos
+                  que pueden llegar a tener sus hijos en la etapa de la adolescencia, y con ello tener un pensamiento más consiente sobre sus hijos.
+                </p>
                 <img src="img1/saludo.webp" id="ima1"/>
 
             </div>
+         </div>
+
+         <hr size="2px" color="black">
                
               <div><!-- Div para separar la creacion de las ventanas que se veran -->
                         
@@ -79,7 +102,7 @@
                        <nav class="menu"><!--crea el apartado de las ventanas que los usuarios podrán navegar-->
                           <ul style="list-style:none;text-align: center;"><!--Crea una lista para poner las ventanas como elementos-->
                      
-                           <h3 id="seleccionar" >Selecciona el que te interese conocer:</h3>
+                           <h3 id="seleccionar" >Aquí puedes seleccionar el padecimiento que te interese: </h3>
                            
                            <br><!--Hace un salto de linea entre la indicacion y las ventanas-->
                           
@@ -135,7 +158,7 @@
                <img src="img1/abrazo.webp" width="50%" id="Foto2">
                   
                   <p id="importancia"> 
-                     La importancia de conocer estos tipos de padecimientos es de gran relevancia.
+                     <span style="color: #ff9d23;" >La importancia de conocer estos tipos de padecimientos es de gran relevancia.</span>
                      Ya que podemos tener una mejor relación padre - hijo, y crear lazos más fuertes 
                      con ellos haciendo, que tengan más confianza en contar sus problemáticas, sabiendo que puedes 
                      brindarles la ayuda adecuada. 
@@ -149,13 +172,12 @@
           
           <!-- Creacion del pie de cabeza -->
           <footer id="pie"><!--Cambia color footer-->
-            <br>
-            <center>
-            <p>Creadoras: Evelyn, Yaretzi y Karla </p>
-            <p>Coperight 2025</p>
-            </center>
+
+            
+            
+              <p id="pieFrase">AMORDEPADRES</p>
+            
             <!--Agrega texto en movimiento-->
-            <marquee behavior="sroll" direction="left" style="background-color: rgb(235, 187, 121);"> GRACIAS POR VISITAR </marquee>
           </footer>
           <script src="./js/test.js"></script>
    </html>
