@@ -261,14 +261,6 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
 #foto2{ /* foto al costado del segundo parrafo*/
     width: 500px;
 }
-
-
-/*PIE PAGINA*/
-
-#pie {/*Propiedades del footer*/
-    background-color: rgb(255, 231, 198);
-}
-
 .card {/*para el tamaño de la imag*/
     width: 500px;/*define el ancho de la tarjeta*/
     height: 400px;/*define la altura de la tarjeta*/
@@ -315,3 +307,19 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     box-sizing: border-box;/*incluye el padding en el tamaño total*/
     text-align: center;
   }
+
+
+/*PIE PAGINA*/
+
+#pie {/*Propiedades del footer*/
+    background-color: rgb(255, 231, 198);
+    height: 300px;
+    width: 100%;
+}
+
+#pieFrase{
+    transform: translateY(600%) translateX(40%);
+    font-size: 220%;
+    opacity: 80%;
+}
+
