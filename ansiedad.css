@@ -49,6 +49,7 @@ header {/*Ajustes de mi encabezado*/
     background-color: rgb(255, 145, 0);
     width: 100%;/*largor del container (que abarque todo el largo de la pantalla)*/
     padding: 0.01%;
+    border-radius: 15px;
     margin-top: 3%;
     height: 100px
 }
@@ -57,6 +58,7 @@ header {/*Ajustes de mi encabezado*/
     background-color: rgb(255, 145, 0);
     width: 100%;/*largor del container (que abarque todo el largo de la pantalla)*/
     padding: 0.01%;
+    border-radius: 15px;
     margin-top: 0%;
     height: 100px;
 }
@@ -65,21 +67,25 @@ header {/*Ajustes de mi encabezado*/
     background-color: rgb(255, 145, 0);
     width: 100%;/*largor del container (que abarque todo el largo de la pantalla)*/
     padding: 0.01%;
+    border-radius: 15px;
     margin-top: 0%;
     height: 100px;
 }
 
 .container1{/*El espacio de la pantalla sobre mi parrafo*/
     font-size: 20%;
+    border-radius: 15px;
     margin: 0 auto;
     margin-top: 0%;  
     background-color:  rgb(236, 236, 236);/*color de mi container */
     padding: 0.3%;
+    height: 600px;
 
 }
 
 .container2{
     font-size: 20%;
+    border-radius: 15px;
     margin: 0 auto;
     margin-top: 0%;
     background-color:   rgb(236, 236, 236);/*color de mi container */
@@ -89,28 +95,10 @@ header {/*Ajustes de mi encabezado*/
 
 .container3{
     font-size: 20%;
+    border-radius: 15px;
     margin: 0 auto;
     margin-top: 0%;
     background-color:  rgb(236, 236, 236);/*color de mi container */
     padding: 0.3%;
     
-}
-
-.container{/*container de mis card */
-    display: flex;
-}
-
-.card{
-    border-radius: 10px;/*borde del container para que este mas redondo*/
-    margin-left: 10px;/*para que cunado pase le raton por encima se deslizen al lado derecho */
-    height: 200px;/* tamaño del container */
-    background-color: rgb(255, 155, 25);/*color del container*/
-    flex: 1;/*para crecer y ocupar todo el espacio disponible dentro de su contenedor*/
-    transition: 3s all ease;/*para que la transicion se aplique en todas las propiedades, 3s la duracion de la transicio, all indica que la transicion se aplique en todas,ease define la funcion de temporizacion */
-    margin-top: 5%;
-}
-
-.card:hover{/*para cuando el raton pase por encima container produsca el movimiento (card=los componentes)*/
-    flex: 2;
-    background-color: rgb(248, 148, 54);
 }

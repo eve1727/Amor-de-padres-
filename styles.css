@@ -148,7 +148,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     color: black;
     text-decoration: none;
     background-image: linear-gradient(rgba(136, 136, 138, 0.486), rgba(160, 157, 157, 0.356)), 
-    url(img1/ansiedad13.webp);
+    url(img1/Aim.webp);
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 50px;
@@ -261,3 +261,50 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
 #pie {/*Propiedades del footer*/
     background-color: rgb(255, 231, 198);
 }
+
+.card {/*para el tamaño de la imag*/
+    width: 500px;/*define el ancho de la tarjeta*/
+    height: 400px;/*define la altura de la tarjeta*/
+    perspective: 1000px;/*profundidad para el efecto 3D*/
+  }
+  
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;/*suavidad del giro*/
+    transform-style: preserve-3d;/*mantiene el efecto 3D*/
+  }
+  
+  .card:hover .card-inner {/*al pasar el mause se gira 180 grados*/
+    transform: rotateY(180deg);
+  }
+  
+  .card-front, .card-back {/*la cara frontal y trasera compraten estas reglas*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;/*oculta la cara trasera al frente*/
+    border-radius: 10px;/*bordes redondos*/
+    overflow: hidden;/*oculta lo que salga del borde*/
+  }
+  
+  .card-front img {/*estilo de la cara trasera con el texto*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*asegura que la imagen llene bien el espacio*/
+  }
+  
+  .card-back {/*estilo de la cara trasera con el texto*/
+    background-color: #fac177;
+    font-size: 40px;
+    opacity: 60%;
+    color: rgb(250, 250, 249);
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;/*centra verticalmente*/
+    justify-content: center;/*centra horizontalmente*/
+    padding: 20px;
+    box-sizing: border-box;/*incluye el padding en el tamaño total*/
+    text-align: center;
+  }
