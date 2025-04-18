@@ -1,33 +1,14 @@
 #cuerpo{ /*Caracteristicas de todo el cuerpo de el sitio web*/
-    background-color: rgb(251, 246, 237);
+    background-color: #fbf6ed;
     margin: 0%;
     padding: 0%;
 } 
 
 /*BARRA*/
 
-
-
-.material-symbols-outlined {
-    font-size: 400%;
-    font-weight: 500;
-}
-.material-symbols-outlined:hover{
-    background-color: #b78266;
-}
-
-#search{
-    transform: translateX(830%);
-}
-
-#Menus{
-    transform:  translateX(850%);
-}
-
-
 #encabezado{/*Barra parte de arriba*/
     height: 15%;
-    background-color: #ebccb5;
+    background-color: #f8e6bb;
     text-align: center;
     position: fixed;/*hace que la barra se quede estatica*/
     bottom: 0%;
@@ -35,7 +16,7 @@
     left: 0%;
     top: 0.1%;
     z-index: 100; /*Hace que muestre la barra arriba de cualquier elemento*/
-    opacity: 85%;
+    opacity: 100%;
     
 }
 
@@ -49,24 +30,86 @@
     margin-top: -16%;
 }
 
-#iconopalabra{/*Agrega palabra a un lado del icono*/
-    font-family: "Rozha One", serif;
-    margin-top: 7%;
-    font-size: 230%;
-}
 
 #ayuda{/*Agrega el apartado de contacto de ayuda en la barra*/
     text-decoration: none;
     font-size: 200%;
     color: black;
     border-radius: 10px 10px;
-    font-family: "Rozha One", serif;
+    font-family: "DM Sans", sans-serif;
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
 }
 
 #ayuda:hover{
-    background-color: #b78266;
+    background-color: #d0af60;
 }
 
+/* Estilos para el botón de menú hamburguesa */
+.hamburger-btn {
+    font-size: 70px; /* Tamaño del icono o texto del botón */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+    border: none; /* Elimina los bordes del botón */
+    background: none; /* Elimina cualquier fondo del botón */
+    position: fixed; /* Se posiciona de manera absoluta dentro de su contenedor */
+    top: 10px; /* Se coloca a 20 píxeles desde la parte superior */
+    right: 20px; /* Se coloca a 20 píxeles desde la derecha */
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    border-radius: 20%;
+    height: 80px;
+}
+
+.hamburger-btn:hover{
+    background-color: #d0af60;
+}
+
+/* Estilos del menú lateral */
+.side-menu {
+    position: fixed; /* Fija el menú en la pantalla sin moverse con el contenido */
+    right: -250px; /* Inicialmente, coloca el menú fuera de la vista en el lado derecho */
+    top: 0; /* Se coloca en la parte superior de la pantalla */
+    width: 250px; /* Ancho del menú lateral */
+    height: 100%; /* Ocupa toda la altura de la pantalla */
+    background-color: #b59e7d; /* Color de fondo */
+    color: white; /* Color del texto en blanco */
+    transition: right 0.3s ease; /* Transición suave al mover el menú */
+    padding-top: 60px; /* Espacio superior dentro del menú para evitar que los elementos queden pegados arriba */
+}
+
+/* Estilos de la lista dentro del menú */
+.side-menu ul {
+    list-style: none; /* Elimina los estilos predeterminados de la lista (viñetas) */
+    padding: 0; /* Elimina el padding por defecto de la lista */
+}
+
+/* Estilos para cada elemento de la lista */
+.side-menu ul li {
+    padding: 15px; /* Agrega espaciado dentro de cada elemento */
+    text-align: center; /* Centra el texto en cada elemento */
+    font-size: 170%;
+}
+
+/* Estilos para los enlaces dentro de la lista */
+.side-menu ul li a {
+    color: white; /* Color del texto en blanco */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    display: block; /* Hace que los enlaces ocupen toda la anchura disponible para mejorar la usabilidad */
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre los enlaces */
+.side-menu ul li a:hover {
+    background-color: #ccc2aa; /* Cambia el fondo a un tono más claro cuando se pasa el mouse */
+}
+
+/* Clase que activa el menú */
+.side-menu.active {
+    right: 0; /* Mueve el menú a la posición visible cuando se activa */
+}
+
+/*Clase que desactiva el menú */
+.side-menu.disabled {
+    left: 100%;
+}
 
 
 /*ENCABEZADO*/
@@ -74,7 +117,7 @@
 
 header { /* Pone el video en el encabezado*/
     height: 110vh;
-    overflow: hidden;
+    overflow: hidden;/*Recorta el video al tamaño del sitio*/
     position: relative; /*Posisiona el video dependiendo de top, left etc...*/
 }
 
@@ -97,30 +140,32 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
 }
 
 /* Presentar sitio web */
-
-#inicio{
-    background-color:#fcf2ea;
+  
+/* Propiedades para presentarnos como sitio */
+   
+#inicio{ /*Propiedades para el div que divide esta seccion*/
+    background-color:#fbf6ed;
     background-size: 100%;
     height: 500px;
     margin-top: -4%;
 }
-#presentacion{
+#presentacion{/* Propiedades para otro div que pone los elementos a un lado de otro */
     display: flex;
 }
 
-#quienes{
+#quienes{/* le da propiedad a "Quienes somos"*/
     font-family: "DM Sans", sans-serif;
     font-size: 250%;
     margin-left: 3%;
 }
 
-#introducirnos{
-    font-family: "National Park", sans-serif;
+#introducirnos{/* le da propiedades al parrafo */
+    font-family: "DM Sans", sans-serif;
     font-weight: 500;
     margin-left: 5%;
 }
 
-#ima1{
+#ima1{ /*propiedades para la imagen*/
     height: 100%;
     margin-top: -5%;
 }
@@ -135,7 +180,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
 }
 
 .menu{/*Darle color en el fondo donde estan las ventanas de padecimientos*/
-    background-color: #f5ece1;
+    background-color: #F1Eada;
     padding: 10px 0;
 }
 
@@ -157,6 +202,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     font-size: 250%;
     font-family: "Lexend", sans-serif;
     transform: translateY(15%);
+    transition: box-shadow 0.3s ease;
 }
 
 .a1:hover{/*Opacea la ventana 1 cuando la flechita pasa por la ventana*/
@@ -176,6 +222,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     border-radius: 7px;
     font-size: 250%;
     font-family: "Lexend", sans-serif;
+    transition: box-shadow 0.3s ease;
 
 } 
 .a2:hover{/*Opacea la ventana 2 cuando la flechita pasa por la ventana*/
@@ -196,6 +243,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     border-radius: 7px;
     font-size: 250%;
     font-family: "Lexend", sans-serif;
+    transition: box-shadow 0.3s ease;
 }
 .a3:hover{/*Opacea la ventana 3 cuando la flechita pasa por la ventana*/
     opacity: 40%;
@@ -213,10 +261,10 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
 
 #introducirnos{
     font-size: 190%;
-    font-family:"Assistant", sans-serif;
+    font-family:"DM Sans", sans-serif;
 }
 
-.container { /* Hace que exista un espacio entre la pantalla y el sitio web */
+.container3 { /* Hace que exista un espacio entre la pantalla y el sitio web */
     width: 80%;
     margin: 0 auto;
     background-color: rgb(255, 255, 255);
@@ -225,21 +273,21 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     margin-bottom: 2%;
 }
 
-#subtema{/*Palabra "Importante" en apartado*/
-    font-size: 280%;
+#subtema{/*Palabra "Conoce mas" en apartado*/
+    font-size: 230%;
     font-family: "DM Sans", sans-serif;
 }
 
 #conocernos { /*Primer parrafo del inicio*/
     font-size: 210%;
     margin-left: 5%;
-    font-family: "Assistant", sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
 #importancia{ /*Segundo parrafo inicio*/
-    font-size: 230%;
+    font-size: 210%;
     margin-left: 5%;
-    font-family: "Assistant", sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
 #foto1 { /* Foto al costado del primer parrafo*/
@@ -312,14 +360,37 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
 /*PIE PAGINA*/
 
 #pie {/*Propiedades del footer*/
-    background-color: rgb(255, 231, 198);
+    background-color: #F1Eada;
     height: 300px;
     width: 100%;
 }
 
-#pieFrase{
-    transform: translateY(600%) translateX(40%);
+#pieFrase{/*Propiedades de la palabra "Amor de padres" en el footer*/
+    transform: translateY(-50%) translateX(75%);
     font-size: 220%;
     opacity: 80%;
 }
 
+.nosotros{/* Propiedades para el apartado "sobre nosotras*/
+    font-size: 200%;
+    margin-left: 5%;
+    transform: translateY(200%);
+}
+
+.redes1{/*Agrega el apartado de nuestras redes*/
+    font-size: 200%;
+    margin-left: 5%;
+    transform: translateY(220%);
+}
+
+.Copyright{/*Agrega el copyright en el footer*/
+    font-size: 160%;
+    transform: translateY(200%) translateX(45%);
+    opacity: 50%;
+}
+
+#parte2{
+    background-color: #cec1a8;
+    height: 40%;
+    margin-top: 10%;
+}
