@@ -1,7 +1,3 @@
-/* Muestra la bienvenida al sitio*/
-var bienvenida = " Hola! bienvenido a donde conoceras un poco sobre la mente adolescente";
-alert(bienvenida);
-
 // Obtiene el botón con el ID 'hamburger-btn' y agrega un evento de escucha al hacer clic
 document.getElementById('hamburger-btn').addEventListener('click', function() {
 

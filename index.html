@@ -28,21 +28,23 @@
                     
  
                      <!--Agrega el apartada de contactos de ayuda moviendo este elemento para un buen acomodo-->
-                     <li style="transform: translatey(20%) translateX(880px);">
+                     <li style="transform: translatey(20%) translateX(870px);">
                      <a href="contactos.html" id="ayuda">Contactos de ayuda</a>
                      </li>
                      
 
-                        <div class="container">
-                           <button id="hamburger-btn" class="hamburger-btn">&#9776;</button>
-                           <nav id="side-menu" class="side-menu">
+                        <div class="container"><!--Div que ayudara a crear el area del menu-->
+                           <button id="hamburger-btn" class="hamburger-btn">&#9776;</button><!--Agregamos el boton con id para javascript y con clase, 
+                           los numeros que aparecen ahí es el codigo para que se ponga el boton-->
+
+                           <nav id="side-menu" class="side-menu"><!--Creamos el nav por que sera una ventana de navegacion para el usuario-->
                             
-                              <button id="cerrar">Cerrar</button>
+                           <button id="cerrar" class="cerrar2">Cerrar</button><!--agregamos el boton de cerrar el menu-->
                              <ul>
-                               <li><a href="#home">Padecimientos</a></li>
-                               <li><a href="#about">Acerca de</a></li>
-                               <li><a href="#services">Sugerencias</a></li>
-                               <li><a href="#contact">Contactanos</a></li>
+                               <li><a href="#padecimientos">Padecimientos</a></li>
+                               <li><a href="#acercade">Acerca de</a></li>
+                               <li><a href="#sugerencias">Sugerencias</a></li>
+                               <li><a href="#contactanos">Contactanos</a></li>
                              </ul>
                            </nav>
                          </div>
@@ -66,10 +68,10 @@
             <!--Inicia presentación del sitio-->
             
             
-         <div id="inicio">
+         <div>
                 <h2 id="quienes">¿QUIÉNES SOMOS?</h2>
             <div id="presentacion">
-                <p id="introducirnos" style="font-size: 210%;">Somos un sitio web que está dirgido principalemente a ayudar a los padres de familia, para que conozcan sobre distintos padecimientos
+                <p id="introducirnos" style="font-size: 210%;">Somos un sitio web que <span style="color: #ff9d23;" >esta dirgido principalmente a ayudar a los padres de familia,</span> para que conozcan sobre distintos padecimientos
                   que pueden llegar a tener sus hijos en la etapa de la adolescencia, y con ello tener un pensamiento más consiente sobre sus hijos.
                 </p>
                 <img src="img1/saludo.webp" id="ima1"/>
@@ -156,9 +158,9 @@
           
           <!-- Creacion del pie de cabeza -->
           <footer id="pie"><!--Cambia color footer-->
-               
-             <p class="nosotros">Sobre nosotras</p>
-             <p class="redes1">Redes sociales</p>
+            
+             <h5 class="nosotros">Sobre nosotras</h5>
+             <h5 class="redes1">Redes sociales</h5>
              
              <div id="parte2">
              <p class="Copyright">Copyright 2025</p>

@@ -1,42 +1,59 @@
 
 body{/*color de fondo*/
-   background-color:#fac9c9;
+   background-color:#F1EADA;
 }
 
+#encabezado{ /*agrega la barra de volver al inicio */
+    position: fixed;/*Hace que la barra se quede estatica*/
+    background-image: none;
+    background-color: #cec1a8;
+    bottom: 90%;
+    right: 0%;
+    left: 0;
+    top: 0%;
+    height: 13%;
+    z-index: 9;
+    margin-top: 0%;
+    opacity: 100%;
+    width: 100%;
+    display: flex;
+}
 
 /*Cosas de la barra*/
 #regresar{
     font-size: 300%;
 }
-
+/*Propiedad del icono flecha*/
 .material-symbols-outlined{
-   font-weight: 400;
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 900,
+      'GRAD' 9,
+      'height' 200,
 }
-
+/*Flecha*/
 .inicio{
     font-size: 240%;
     text-decoration: none;
     color: #fefcfc;
     transform: translateX(50%);
+    height: 990px;
+    width: 60px;
 }
 
 .inicio:hover{
-    background-color: #946060;
-}
-
-#regresar{
-    margin-top: 0.5%;
-    margin-right: 60%;
-    font-size: 230%;
-    color: #fefcfc;
+    background-color: #b59e7d;
 }
 
 
 #ayuda{/*Caracteristicas de contactos ayuda*/
-    font-size: 220%;
+    font-size: 210%;
     text-decoration: none;
     color: #f1f1f1;
-    margin-bottom: 10%;
+    margin-left: 980%;
+    transform: translateY(60px);
+    font-family: "Lexend", sans-serif;
+    
 }
 
 #ayuda:hover{
@@ -44,21 +61,96 @@ body{/*color de fondo*/
     box-shadow: 0 0 15px rgb(47, 47, 46); 
 }
 
-#encabezado{ /*agrega la barra de volver al inicio */
-    position: fixed;/*Hace que la barra se quede estatica*/
-    background-image: none;
-    background-color: #d89595;
-    bottom: 90%;
-    right: 0%;
-    left: 0;
-    top: 0%;
-    height: 7%;
-    z-index: 9;
-    margin-top: 0%;
-    opacity: 100%;
-    width: 100%;
-    display: flex;
+
+/* Estilos para el botón de menú hamburguesa */
+.hamburger-btn {
+    font-size: 70px; /* Tamaño del icono o texto del botón */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+    border: none; /* Elimina los bordes del botón */
+    background: none; /* Elimina cualquier fondo del botón */
+    position: fixed; /* Se posiciona de manera absoluta dentro de su contenedor */
+    top: 10px; /* Se coloca a 20 píxeles desde la parte superior */
+    right: 20px; /* Se coloca a 20 píxeles desde la derecha */
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    border-radius: 20%;
+    height: 80px;
+    color: #fefcfc;
 }
+
+.hamburger-btn:hover{
+    background-color: #b59e7d;
+}
+
+/* Estilos del menú lateral */
+.side-menu {
+    position: fixed; /* Fija el menú en la pantalla sin moverse con el contenido */
+    right: -250px; /* Inicialmente, coloca el menú fuera de la vista en el lado derecho */
+    top: 0; /* Se coloca en la parte superior de la pantalla */
+    width: 250px; /* Ancho del menú lateral */
+    height: 100%; /* Ocupa toda la altura de la pantalla */
+    background-color: #b59e7d; /* Color de fondo */
+    color: white; /* Color del texto en blanco */
+    transition: right 0.3s ease; /* Transición suave al mover el menú */
+    padding-top: 60px; /* Espacio superior dentro del menú para evitar que los elementos queden pegados arriba */
+}
+
+/* Estilos de la lista dentro del menú */
+.side-menu ul {
+    list-style: none; /* Elimina los estilos predeterminados de la lista (viñetas) */
+    padding: 0; /* Elimina el padding por defecto de la lista */
+}
+
+/* Estilos para cada elemento de la lista */
+.side-menu ul li {
+    padding: 15px; /* Agrega espaciado dentro de cada elemento */
+    text-align: center; /* Centra el texto en cada elemento */
+    font-size: 170%;
+}
+
+/* Estilos para los enlaces dentro de la lista */
+.side-menu ul li a {
+    color: white; /* Color del texto en blanco */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    display: block; /* Hace que los enlaces ocupen toda la anchura disponible para mejorar la usabilidad */
+    transition: background-color 0.3s ease;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    font-size: 90%;
+}
+
+/* Efecto al pasar el mouse sobre los enlaces */
+.side-menu ul li a:hover {
+    background-color: #ccc2aa; /* Cambia el fondo a un tono más claro cuando se pasa el mouse */
+}
+
+/*Cerrar el menu boton*/
+.cerrar2{
+    font-size: 30px; /* Tamaño del icono o texto del botón */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+    border: none; /* Elimina los bordes del botón */
+    background: none; /* Elimina cualquier fondo del botón */
+    color: white;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    width: 90%;
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+}
+
+.cerrar2:hover{
+    background-color: #cea97f;
+    color: rgb(216, 214, 214);
+}
+
+/* Clase que activa el menú */
+.side-menu.active {
+    right: 0; /* Mueve el menú a la posición visible cuando se activa */
+}
+
+/*Clase que desactiva el menú */
+.side-menu.disabled {
+    left: 100%;
+}
+
 
 
 /*Encabezado*/
@@ -90,15 +182,17 @@ header { /*Imegen de fondo encabezado*/
 .significado { /* Agrega estilo a nuestras primeras palabras del todos los div */
     text-align: left;
     margin-top: 1%;
-    font-size: 280%;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 340%;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
     margin-left: 8%;
 }
 
 .parrafo1{ /*Agrega especificaciones similares a los parrafos de todos los div*/
     font-size: 230%;
     color: #100f0f;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:"DM Sans", sans-serif;
+    font-weight: 300;
     margin-left: 9%;
 }
 
@@ -106,7 +200,7 @@ header { /*Imegen de fondo encabezado*/
     width: 85%;
     margin-left: 0%;
     margin-top: 0%;
-    background-color:#f5efef;
+    background-color:#ffffff;
     padding: 7.5%;
 }
 
@@ -145,8 +239,10 @@ header { /*Imegen de fondo encabezado*/
     columns: 3 10px;
     margin-top: 5%;
     color: #000000;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    column-rule: 15px #d89595 dotted;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 100%;
+    column-rule: 15px #e9d6b2 dotted;
 }
 
 #par4{ /* caracteristicas de la division del apartado 4 */
@@ -162,9 +258,28 @@ header { /*Imegen de fondo encabezado*/
     height: 600px;
 }
 
+#consejos{
+    font-size: 300%;
+    text-align: right;
+    margin-top: 0.5%;
+    color: black;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+}
+
+#cons12{
+    font-family:"DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 60%;
+    margin-left: 9%;
+    margin-right: 4%;
+    margin-top: -30%;
+    text-align: center;
+}
+
 #acuadro{/*Caracteristicas del 1er cuadro de la 4ta division*/
     font-size: 300%;
-    background-color: #d89595;
+    background-color: #f2ce8c;
     width: 30%;
     height: 90%;
     border-radius: 8%;
@@ -174,7 +289,7 @@ header { /*Imegen de fondo encabezado*/
 
 #bcuadro{/*Caracteristicas del 2do cuadro de la 4ta division*/
     font-size: 300%;
-    background-color: #e8cccc;
+    background-color: #f7ddad;
     width: 30%;
     height: 90%;
     border-radius: 8%;
@@ -185,7 +300,7 @@ header { /*Imegen de fondo encabezado*/
 
 #dcuadro{/*Caracteristicas del 3er cuadro de la 4ta division*/
     font-size: 300%;
-    background-color: #cfb1b1;
+    background-color: #f3e0bf;
     width: 30%;
     height: 90%;
     border-radius: 8%;
@@ -196,7 +311,7 @@ header { /*Imegen de fondo encabezado*/
 
 
 #pie{ /*Caracteristicas del footer*/
-    background-color: #fac9c9;
+    background-color: #e9dcd6;
     width: 100%;
     height: 200px;
     display: flex;

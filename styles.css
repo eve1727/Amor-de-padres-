@@ -36,7 +36,7 @@
     font-size: 200%;
     color: black;
     border-radius: 10px 10px;
-    font-family: "DM Sans", sans-serif;
+    font-family:"Lexend", sans-serif;
     transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
 }
 
@@ -94,11 +94,32 @@
     text-decoration: none; /* Elimina el subrayado de los enlaces */
     display: block; /* Hace que los enlaces ocupen toda la anchura disponible para mejorar la usabilidad */
     transition: background-color 0.3s ease;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    font-size: 90%;
 }
 
 /* Efecto al pasar el mouse sobre los enlaces */
 .side-menu ul li a:hover {
     background-color: #ccc2aa; /* Cambia el fondo a un tono más claro cuando se pasa el mouse */
+}
+
+/*Cerrar el menu boton*/
+.cerrar2{
+    font-size: 30px; /* Tamaño del icono o texto del botón */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+    border: none; /* Elimina los bordes del botón */
+    background: none; /* Elimina cualquier fondo del botón */
+    color: white;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    width: 90%;
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+}
+
+.cerrar2:hover{
+    background-color: #cea97f;
+    color: rgb(216, 214, 214);
 }
 
 /* Clase que activa el menú */
@@ -139,7 +160,6 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     font-family: "Lexend", sans-serif;
 }
 
-/* Presentar sitio web */
   
 /* Propiedades para presentarnos como sitio */
    
@@ -161,7 +181,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
 
 #introducirnos{/* le da propiedades al parrafo */
     font-family: "DM Sans", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     margin-left: 5%;
 }
 
@@ -176,6 +196,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
 #seleccionar{
     font-family: "DM Sans", sans-serif;
     font-style: normal;
+    font-weight: 600;
     font-size: 250%;
 }
 
@@ -365,28 +386,52 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     width: 100%;
 }
 
+
+.nosotros{/* Propiedades para el apartado "sobre nosotras*/
+    font-size: 170%;
+    margin-left: 5%;
+    transform: translateY(200%);
+    width: 20%;
+    color: #362d18;
+    transition: color 0.32s ease;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+}
+
+.nosotros:hover{
+    color:  #d69601;
+    opacity: 100%;
+    
+}
+
+.redes1{/*Agrega el apartado de nuestras redes*/
+    font-size: 170%;
+    margin-left: 5%;
+    transform: translateY(220%);
+    width: 20%;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    color: #362d18;
+}
+
+.redes1:hover{
+    color: #d69601;
+}
+
 #pieFrase{/*Propiedades de la palabra "Amor de padres" en el footer*/
     transform: translateY(-50%) translateX(75%);
     font-size: 220%;
     opacity: 80%;
-}
-
-.nosotros{/* Propiedades para el apartado "sobre nosotras*/
-    font-size: 200%;
-    margin-left: 5%;
-    transform: translateY(200%);
-}
-
-.redes1{/*Agrega el apartado de nuestras redes*/
-    font-size: 200%;
-    margin-left: 5%;
-    transform: translateY(220%);
+    font-family:"Lexend", sans-serif;
+    font-weight: 500;
 }
 
 .Copyright{/*Agrega el copyright en el footer*/
     font-size: 160%;
     transform: translateY(200%) translateX(45%);
     opacity: 50%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 200;
 }
 
 #parte2{
