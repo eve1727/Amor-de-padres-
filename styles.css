@@ -33,7 +33,7 @@
 
 #ayuda{/*Agrega el apartado de contacto de ayuda en la barra*/
     text-decoration: none;
-    font-size: 200%;
+    font-size: 240%;
     color: black;
     border-radius: 10px 10px;
     font-family:"Lexend", sans-serif;
@@ -51,11 +51,12 @@
     border: none; /* Elimina los bordes del botón */
     background: none; /* Elimina cualquier fondo del botón */
     position: fixed; /* Se posiciona de manera absoluta dentro de su contenedor */
-    top: 10px; /* Se coloca a 20 píxeles desde la parte superior */
+    top: 20px;/* Se coloca a 20 píxeles desde la parte superior */
     right: 20px; /* Se coloca a 20 píxeles desde la derecha */
     transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
-    border-radius: 20%;
-    height: 80px;
+    height: 130.2px;
+    width: 8%;
+    transform: translateY(-20%) translateX(14%);
 }
 
 .hamburger-btn:hover{
@@ -118,8 +119,7 @@
 }
 
 .cerrar2:hover{
-    background-color: #cea97f;
-    color: rgb(216, 214, 214);
+    background-color: #5e5a51;
 }
 
 /* Clase que activa el menú */
@@ -290,7 +290,6 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     margin: 0 auto;
     background-color: rgb(255, 255, 255);
     padding: 8%;
-    box-shadow: 0 0 10px rgb(136, 136, 134);
     margin-bottom: 2%;
 }
 
@@ -412,9 +411,24 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     font-family: "Lexend", sans-serif;
     font-weight: 500;
     color: #362d18;
+    transition: color 0.32s ease;
 }
 
 .redes1:hover{
+    color: #d69601;
+}
+
+#pie-padecimientos{
+    font-size: 170%;
+    margin-left: 30%;
+    width: 20%;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    color: #362d18;
+    transition: color 0.32s ease;
+    text-decoration: none;
+}
+#pie-padecimientos:hover{
     color: #d69601;
 }
 
@@ -437,5 +451,5 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
 #parte2{
     background-color: #cec1a8;
     height: 40%;
-    margin-top: 10%;
+    margin-top: 5%;
 }

@@ -20,47 +20,39 @@ body{/*color de fondo*/
 }
 
 /*Cosas de la barra*/
-#regresar{
-    font-size: 300%;
-}
-/*Propiedad del icono flecha*/
-.material-symbols-outlined{
-      font-variation-settings:
-      'FILL' 0,
-      'wght' 900,
-      'GRAD' 9,
-      'height' 200,
-}
+
 /*Flecha*/
+#container{
+    display: block;
+}
 .inicio{
-    font-size: 240%;
+    font-size: 380%;
     text-decoration: none;
     color: #fefcfc;
     transform: translateX(50%);
-    height: 990px;
-    width: 60px;
+    height: 995px;
+    font-weight: 300px ;
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
 }
 
 .inicio:hover{
     background-color: #b59e7d;
 }
 
-
-#ayuda{/*Caracteristicas de contactos ayuda*/
-    font-size: 210%;
+/*agregamos propiedades para el apartado de ayuda*/
+#ayuda{
+    margin-left: 830%;
     text-decoration: none;
-    color: #f1f1f1;
-    margin-left: 980%;
-    transform: translateY(60px);
-    font-family: "Lexend", sans-serif;
-    
+    font-size: 220%;
+    font-family:"Lexend", sans-serif ;
+    font-weight: 400;
+    color:#f3f3f3;
+    transition: .3s linear ;
 }
 
 #ayuda:hover{
-    background-color: #946060;
-    box-shadow: 0 0 15px rgb(47, 47, 46); 
+    color: #af8382;
 }
-
 
 /* Estilos para el botón de menú hamburguesa */
 .hamburger-btn {
@@ -71,10 +63,11 @@ body{/*color de fondo*/
     position: fixed; /* Se posiciona de manera absoluta dentro de su contenedor */
     top: 10px; /* Se coloca a 20 píxeles desde la parte superior */
     right: 20px; /* Se coloca a 20 píxeles desde la derecha */
-    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
-    border-radius: 20%;
-    height: 80px;
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/ 
+    height: 113.5px;
+    width: 8%;
     color: #fefcfc;
+    transform: translateY(-15%) translateX(13%);
 }
 
 .hamburger-btn:hover{
@@ -133,12 +126,12 @@ body{/*color de fondo*/
     font-family: "Lexend", sans-serif;
     font-weight: 600;
     width: 90%;
+    transform: translateX(6%);
     transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
 }
 
 .cerrar2:hover{
-    background-color: #cea97f;
-    color: rgb(216, 214, 214);
+    background-color: #af8382;
 }
 
 /* Clase que activa el menú */
@@ -192,7 +185,7 @@ header { /*Imegen de fondo encabezado*/
     font-size: 230%;
     color: #100f0f;
     font-family:"DM Sans", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     margin-left: 9%;
 }
 
@@ -222,12 +215,11 @@ header { /*Imegen de fondo encabezado*/
 
 
 #par3{ /*caracteristicas de la division del apartado 3*/
-    background-color:#f0f0f0;
+    background-color: #ffffff;
     height: 600px;
     width: 85%;
     margin-left: 0%;
     padding: 7.5%;
-    background-image: url(img2/chica1.webp);
     background-position: bottom right;
     background-repeat: no-repeat;
     background-position-x: 85%;
@@ -240,13 +232,13 @@ header { /*Imegen de fondo encabezado*/
     margin-top: 5%;
     color: #000000;
     font-family: "DM Sans", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 100%;
     column-rule: 15px #e9d6b2 dotted;
 }
 
 #par4{ /* caracteristicas de la division del apartado 4 */
-    background-color:#ffffff;
+    background-color:#fbf6ed;
     height: 600px;
     width: 85%;
     margin-left: 0%;
@@ -311,7 +303,7 @@ header { /*Imegen de fondo encabezado*/
 
 
 #pie{ /*Caracteristicas del footer*/
-    background-color: #e9dcd6;
+    background-color: #F1Eada;
     width: 100%;
     height: 200px;
     display: flex;
