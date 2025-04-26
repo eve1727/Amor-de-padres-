@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="ia.css">
+
+    <!-- In your <head> tag -->
+<script src="https://cdn.botpress.cloud/webchat/v2.4/inject.js"></script>
+</head>
+<body>
+
+<header id="cabecera">
+    <a href="index.html" id="regresar">Regresar</a>
+</header>
+
+
+<!-- Put this on your page BEFORE the script below -->
+<div id="webchat" style="width: 500px; height: 500px;"></div>
+
+<!-- In your <body> tag -->
+<script>
+  window.botpress.on("webchat:ready", () => {
+    window.botpress.open();
+  });
+  window.botpress.init({
+  "botId": "6b5c515d-7ced-4f52-8452-f1afc5366898",
+  "configuration": {
+    "composerPlaceholder": "Escribe aqui",
+    "botName": "Lia",
+    "botAvatar": "https://files.bpcontent.cloud/2025/04/26/02/20250426024038-IXPQOHOG.jpeg",
+    "botDescription": "Soy una IA que está para ayudarte :>",
+    "website": {},
+    "email": {},
+    "phone": {},
+    "termsOfService": {},
+    "privacyPolicy": {},
+    "color": "#ffbc21",
+    "variant": "soft",
+    "themeMode": "light",
+    "fontFamily": "rubik",
+    "radius": 2,
+    "additionalStylesheetUrl": "https://files.bpcontent.cloud/2025/04/26/02/20250426024427-SZXB534I.css"
+  },
+  "clientId": "ad4c0a79-24ae-488f-bfce-3eee4060ce4a",
+  "selector": "#webchat"
+});
+</script>
+
+</body>
+<footer id="pie">
+
+</footer>
+</html>

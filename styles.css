@@ -30,6 +30,18 @@
     margin-top: -16%;
 }
 
+/*Estilos para el icono*/
+ #mensajes{
+    font-size: 200%;
+    margin-left: 720%;
+    margin-top: 20%;
+    color: #200f06;
+    transition: color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+ }
+
+ #mensajes:hover{
+    color: #d0af60;
+ }
 
 #ayuda{/*Agrega el apartado de contacto de ayuda en la barra*/
     text-decoration: none;
@@ -37,11 +49,11 @@
     color: black;
     border-radius: 10px 10px;
     font-family:"Lexend", sans-serif;
-    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    transition: color 0.3s ease;/*Agrega una transicion suave para el fondo*/
 }
 
 #ayuda:hover{
-    background-color: #d0af60;
+    color: #d0af60;
 }
 
 /* Estilos para el botón de menú hamburguesa */
@@ -239,6 +251,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     url(img1/depresion12.webp);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 60%;
     margin-left: 50px;
     border-radius: 7px;
     font-size: 250%;
@@ -272,6 +285,30 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     box-shadow:  0 0 17px rgb(43, 43, 41);
 }
 
+#lista2{
+    display: flex;
+}
+.a4{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-image:linear-gradient(rgba(171, 171, 173, 0.486), rgba(176, 173, 173, 0.356)), 
+    url(img1/tdah.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60%;
+    margin-left: 100%;
+    transform: translateY(60%);
+    border-radius: 7px;
+    font-size: 250%;
+    font-family: "Lexend", sans-serif;
+    transition: box-shadow 0.3s ease;
+}
+
+.a4:hover{
+    opacity: 40%;
+    color: rgb(10, 8, 8);
+    box-shadow:  0 0 17px rgb(43, 43, 41);
+}
 
 /*CONTENIDO*/
 
