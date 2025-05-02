@@ -1,41 +1,288 @@
 body{
-    background-color: #f1e8b8;
+    background-color: #fbf6ed;
 }
 
-#cabecera{
+.barra{
+  position: fixed;/*Hace que la barra se quede estatica*/
+    background-image: none;
+    background-color: #f8e6bb;
+    bottom: 90%;
+    right: 0%;
+    left: 0;
+    top: 0%;
+    height: 10%;
+    z-index: 100;
+    margin-top: 0%;
+    opacity: 100%;
+    width: 100%;
+    display: flex;
+}
+
+
+#container{
+  display: block;
+}
+.inicio{
+  font-size: 300%;
+  text-decoration: none;
+  color: #8d5f46;
+  transform: translateX(50%);
+  height: 995px;
+  font-weight: 300px ;
+  transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+}
+
+.inicio:hover{
+  background-color: #d0af60;
+}
+
+/*agregamos propiedades para el apartado de ayuda*/
+#ayuda{
+  margin-left: 830%;
+  margin-top: 0%;
+  text-decoration: none;
+  font-size: 220%;
+  font-family:"Lexend", sans-serif ;
+  font-weight: 400;
+  color:#8d5f46;
+  transition: .3s linear ;
+}
+
+#ayuda:hover{
+  color: #d0af60;
+}
+
+/* Estilos para el botón de menú hamburguesa */
+.hamburger-btn {
+  font-size: 60px; /* Tamaño del icono o texto del botón */
+  cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+  border: none; /* Elimina los bordes del botón */
+  background: none; /* Elimina cualquier fondo del botón */
+  position: fixed; /* Se posiciona de manera absoluta dentro de su contenedor */
+  top: 10px; /* Se coloca a 20 píxeles desde la parte superior */
+  right: 20px; /* Se coloca a 20 píxeles desde la derecha */
+  transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/ 
+  height: 80px;
+  width: 8%;
+  color: #8d5f46;
+  transform: translateY(-15%) translateX(-10%);
+}
+
+.hamburger-btn:hover{
+  background-color: #d0af60;
+}
+
+/* Estilos del menú lateral */
+.side-menu {
+  position: fixed; /* Fija el menú en la pantalla sin moverse con el contenido */
+  right: -250px; /* Inicialmente, coloca el menú fuera de la vista en el lado derecho */
+  top: 0; /* Se coloca en la parte superior de la pantalla */
+  width: 250px; /* Ancho del menú lateral */
+  height: 100%; /* Ocupa toda la altura de la pantalla */
+  background-color: #b59e7d; /* Color de fondo */
+  color: white; /* Color del texto en blanco */
+  transition: right 0.3s ease; /* Transición suave al mover el menú */
+  padding-top: 60px; /* Espacio superior dentro del menú para evitar que los elementos queden pegados arriba */
+}
+
+/* Estilos de la lista dentro del menú */
+.side-menu ul {
+  list-style: none; /* Elimina los estilos predeterminados de la lista (viñetas) */
+  padding: 0; /* Elimina el padding por defecto de la lista */
+}
+
+/* Estilos para cada elemento de la lista */
+.side-menu ul li {
+  padding: 15px; /* Agrega espaciado dentro de cada elemento */
+  text-align: center; /* Centra el texto en cada elemento */
+  font-size: 170%;
+}
+
+/* Estilos para los enlaces dentro de la lista */
+.side-menu ul li a {
+  color: white; /* Color del texto en blanco */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  display: block; /* Hace que los enlaces ocupen toda la anchura disponible para mejorar la usabilidad */
+  transition: background-color 0.3s ease;
+  font-family: "Lexend", sans-serif;
+  font-weight: 300;
+  font-size: 90%;
+}
+
+/* Efecto al pasar el mouse sobre los enlaces */
+.side-menu ul li a:hover {
+  background-color: #ccc2aa; /* Cambia el fondo a un tono más claro cuando se pasa el mouse */
+}
+
+/*Cerrar el menu boton*/
+.cerrar2{
+  font-size: 30px; /* Tamaño del icono o texto del botón */
+  cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+  border: none; /* Elimina los bordes del botón */
+  background: none; /* Elimina cualquier fondo del botón */
+  color: white;
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+  width: 90%;
+  transform: translateX(6%);
+  transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+}
+
+.cerrar2:hover{
+  background-color: #d0af60;
+}
+
+/* Clase que activa el menú */
+.side-menu.active {
+  right: 0; /* Mueve el menú a la posición visible cuando se activa */
+}
+
+/*Clase que desactiva el menú */
+.side-menu.disabled {
+  left: 100%;
+}
+
+/* Propiedades para el header*/
+
+.cabecera{
     height: 300px;
-    background-size: cover;
-    background-position: center;
+    background-image: url(ia.img/ia\ header.webp);
+    background-position: bottom;
     opacity: 95%;
-    background-color: aliceblue;
+    margin-top: 3%;
 }
 
-#regresar{
-    text-decoration: none;
-    font-size: 300%;
-    color: black;
+.fondo{
+   height: 300px;
+   background-color: rgba(0, 0, 0, 0.1); /* Fondo negro semitransparente (50% de opacidad) */
+   margin-top: 3%;
+ }
+ 
+#frase{
+  font-size: 450%;
+  font-family: "Lexend", sans-serif;
+  text-align: center;
+  transform: translateY(80%) translateX(-1%);
+  color: #fbf6ed;
 }
 
 
+/*Propiedades para la ia*/
 
 #webchat .bpWebchat {
-    position: relative;
+    position: relative;/*Posiciona la ia de manera relativa*/
     width: 230%;
     height: 500%;
-    margin-top: 40%;
+    margin-top: 25%;
     margin-left: 30%;
     color: aqua;
+    z-index: 8;
   }
 
-  #webchat .bpFab {
-    display: none;
-  }
+/*Propiedades para presentar a Lia*/
 
-  #pie{
-    margin-top: 30%;
-    background-color: #F1Eada;
-    height: 300px;
-    width: 100%;
-  }
+#presentar{
+  background-color: #F1Eada;
+  height: 500px;
+  width: 70%;
+  margin-left: 17%;
+  border-radius: 5%;
+  margin-top: -30%;
+  box-shadow: 5px 5px  20px #888885;
+}
+
+#lia{
+  font-size: 250%;
+  font-family: "DM Sans", sans-serif;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+#lia-texto{
+  font-size: 170%;
+  font-family: "DM Sans", sans-serif;
+  padding: 6%;
+  font-weight: 300;
+}
+
+/*Propiedades del footer*/
+
+#pie {
+  background-color: #F1Eada;
+  height: 300px;
+  width: 100%;
+  margin-top: 10%;
+}
+ #perrito{
+  transform: translateY(-100%) translateX(-56%);
+ }
+
+.nosotros{/* Propiedades para el apartado "sobre nosotras*/
+  font-size: 170%;
+  margin-left: 5%;
+  transform: translateY(200%);
+  width: 20%;
+  color: #362d18;
+  transition: color 0.32s ease;
+  font-family: "Lexend", sans-serif;
+  font-weight: 500;
+}
+
+.nosotros:hover{
+  color:  #d69601;
+  opacity: 100%;
+  
+}
+
+.redes1{/*Agrega el apartado de nuestras redes*/
+  font-size: 170%;
+  margin-left: 5%;
+  transform: translateY(220%);
+  width: 20%;
+  font-family: "Lexend", sans-serif;
+  font-weight: 500;
+  color: #362d18;
+  transition: color 0.32s ease;
+}
+
+.redes1:hover{
+  color: #d69601;
+}
+
+#pie-padecimientos{
+  font-size: 170%;
+  margin-left: 30%;
+  width: 20%;
+  font-family: "Lexend", sans-serif;
+  font-weight: 500;
+  color: #362d18;
+  transition: color 0.32s ease;
+  text-decoration: none;
+}
+#pie-padecimientos:hover{
+  color: #d69601;
+}
+
+#pieFrase{/*Propiedades de la palabra "Amor de padres" en el footer*/
+  transform: translateY(-50%) translateX(75%);
+  font-size: 220%;
+  opacity: 80%;
+  font-family:"Lexend", sans-serif;
+  font-weight: 500;
+}
+
+.Copyright{/*Agrega el copyright en el footer*/
+  font-size: 160%;
+  transform: translateY(200%) translateX(45%);
+  opacity: 50%;
+  font-family:"Lexend", sans-serif;
+  font-weight: 200;
+}
+
+#parte2{
+  background-color: #cec1a8;
+  height: 40%;
+  margin-top: 5%;
+}
 
   

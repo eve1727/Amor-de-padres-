@@ -46,7 +46,7 @@
 #ayuda{/*Agrega el apartado de contacto de ayuda en la barra*/
     text-decoration: none;
     font-size: 240%;
-    color: black;
+    color: #200f06;
     border-radius: 10px 10px;
     font-family:"Lexend", sans-serif;
     transition: color 0.3s ease;/*Agrega una transicion suave para el fondo*/
@@ -170,6 +170,10 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     font-size: 230%;
     opacity: 85%;
     font-family: "Lexend", sans-serif;
+}
+
+.fondo2{
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo negro semitransparente (50% de opacidad) */
 }
 
   

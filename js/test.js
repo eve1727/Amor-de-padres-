@@ -19,3 +19,4 @@ document.getElementById('cerrar').addEventListener('click', function() {
     var sideMenu = document.getElementById('side-menu');
     sideMenu.classList.add('disabled');
 });
+

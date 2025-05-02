@@ -41,9 +41,9 @@ body{/*color de fondo*/
 
 /*agregamos propiedades para el apartado de ayuda*/
 #ayuda{
-    margin-left: 830%;
+    margin-left: 750%;
     text-decoration: none;
-    font-size: 220%;
+    font-size: 240%;
     font-family:"Lexend", sans-serif ;
     font-weight: 400;
     color:#f3f3f3;

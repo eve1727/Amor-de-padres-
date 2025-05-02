@@ -5,51 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="ia.css">
+      <!--Fuente para casi todo el sitio-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+      <!--Fuente para frase y nombre de ventanas-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+       <!--icono flecha-->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <!-- In your <head> tag -->
-<script src="https://cdn.botpress.cloud/webchat/v2.4/inject.js"></script>
+      <!-- agregas el lugar de la ia -->
+     <script src="https://cdn.botpress.cloud/webchat/v2.4/inject.js"></script>
+
 </head>
-<body>
+  <body>
 
-<header id="cabecera">
-    <a href="index.html" id="regresar">Regresar</a>
-</header>
+        <!--Creacion de la barra para regresar-->
+              
+     <header class="barra">
 
+          <span class="material-symbols-outlined">
+           <a href="index.html" class="inicio">
+            arrow_back
+           </a>
+          </span>
 
-<!-- Put this on your page BEFORE the script below -->
-<div id="webchat" style="width: 500px; height: 500px;"></div>
+        <h3><a href="contactos.html" id="ayuda">Ayuda</a></h3><!--Agrega apartado de ayuda-->
 
-<!-- In your <body> tag -->
-<script>
-  window.botpress.on("webchat:ready", () => {
-    window.botpress.open();
-  });
-  window.botpress.init({
-  "botId": "6b5c515d-7ced-4f52-8452-f1afc5366898",
-  "configuration": {
-    "composerPlaceholder": "Escribe aqui",
-    "botName": "Lia",
-    "botAvatar": "https://files.bpcontent.cloud/2025/04/26/02/20250426024038-IXPQOHOG.jpeg",
-    "botDescription": "Soy una IA que está para ayudarte :>",
-    "website": {},
-    "email": {},
-    "phone": {},
-    "termsOfService": {},
-    "privacyPolicy": {},
-    "color": "#ffbc21",
-    "variant": "soft",
-    "themeMode": "light",
-    "fontFamily": "rubik",
-    "radius": 2,
-    "additionalStylesheetUrl": "https://files.bpcontent.cloud/2025/04/26/02/20250426024427-SZXB534I.css"
-  },
-  "clientId": "ad4c0a79-24ae-488f-bfce-3eee4060ce4a",
-  "selector": "#webchat"
-});
-</script>
+         <div class="container"><!--Div que ayudara a crear el area del menu-->
+            
+            <button id="hamburger-btn" class="hamburger-btn">&#9776;</button><!--Agregamos el boton con id para javascript y con clase, 
+            los numeros que aparecen ahí es el codigo para que se ponga el boton-->
 
-</body>
-<footer id="pie">
+            <nav id="side-menu" class="side-menu"><!--Creamos el nav porque sera una ventana de navegacion para el usuario-->
+            
+              <button id="cerrar" class="cerrar2">Cerrar</button><!--agregamos el boton de cerrar el menu-->
+                <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="#padecimientos">Padecimientos</a></li>
+                  <li><a href="#acercade">Acerca de</a></li>
+                  <li><a href="#sugerencias">Sugerencias</a></li>
+                  <li><a href="#contactanos">Contactanos</a></li>
+                </ul>
+            </nav>
+         </div>
 
-</footer>
-</html>
+        </header>
+
+        <!--Creacion de la cabecera-->
+      <header class="cabecera">
+        <div class="fondo">
+          <h2 id="frase">Ayuda al instante</h2>
+        </div>
+      </header>
+
+        <!--Agregamos el chat con la IA-->
+
+      <!-- agregegas el id que vas a utilizar en tu script -->
+      <div id="webchat" style="width: 500px; height: 500px;"></div>
+
+      <!-- script que agrega la ia al abrir la ventanan y aparte agrega especificaciones como color o bigrafia de la ia-->
+      <!--Este fue dado por el sitio donde se hizo la ia-->
+      <script>
+        window.botpress.on("webchat:ready", () => {
+          window.botpress.open();
+        });
+        window.botpress.init({
+        "botId": "6b5c515d-7ced-4f52-8452-f1afc5366898",
+        "configuration": {
+          "composerPlaceholder": "Escribe aqui",
+          "botName": "Lía",
+          "botAvatar": "https://files.bpcontent.cloud/2025/04/26/02/20250426024038-IXPQOHOG.jpeg",
+          "botDescription": "Soy una IA que está para ayudarte :>",
+          "website": {},
+          "email": {},
+          "phone": {},
+          "termsOfService": {},
+          "privacyPolicy": {},
+          "color": "#fae3ab",
+          "variant": "solid",
+          "themeMode": "light",
+          "fontFamily": "rubik",
+          "radius": 3.5,
+          "additionalStylesheetUrl": "https://files.bpcontent.cloud/2025/04/26/02/20250426024427-SZXB534I.css"
+        },
+        "clientId": "ad4c0a79-24ae-488f-bfce-3eee4060ce4a",
+        "selector": "#webchat"
+      });
+      </script>
+      
+      <!-- apartado que estara detras de la ia-->
+      <div id="presentar">
+         <h3 id="lia">Sobre Lía</h3>
+         <p id="lia-texto">Lía es una IA (inteligencia artificial) que fue creada con el mero propósito de brindarte ayuda o consejo a tiempo real; 
+          con ella puedes aclarar tus dudas y tener una conversación óptima y eficiente.
+          <span style="color: #d69601;">Cabe aclarar que Lia no sustituye a un profesional en ningún ámbito.</span>
+           Toma este espacio como un lugar seguro en donde puedes pedir consejo y ser escuchado.
+         </p>
+      </div>
+
+      </body>
+      
+      <!-- Creacion del footer-->
+
+      <footer id="pie"><!--Cambia color footer-->
+        
+        <img src="ia.img/perrito.webp" id="perrito"/>
+       
+        <div style="margin-top: -30%;">
+        <h5 class="nosotros">Sobre nosotras</h5>
+        <h5 class="redes1">Redes sociales</h5>
+        <a href="#introducirnos" id="pie-padecimientos">Padecimientos</a>
+       </div>
+       
+       <div id="parte2">
+        <p class="Copyright">Copyright 2025</p>
+        <p id="pieFrase">AMOR DE PADRES</p>
+        </div>
+
+      </footer>
+      <script src="./js/ia.js"></script>
+      </html>
