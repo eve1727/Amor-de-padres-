@@ -11,7 +11,7 @@ body{/*color de fondo*/
     right: 0%;
     left: 0;
     top: 0%;
-    height: 13%;
+    height: 10%;
     z-index: 9;
     margin-top: 0%;
     opacity: 100%;
@@ -26,12 +26,12 @@ body{/*color de fondo*/
     display: block;
 }
 .inicio{
-    font-size: 380%;
+    font-size: 300%;
     text-decoration: none;
     color: #fefcfc;
     transform: translateX(50%);
-    height: 995px;
-    font-weight: 300px ;
+    height: 95px;
+    font-weight: 900px ;
     transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
 }
 
@@ -41,17 +41,19 @@ body{/*color de fondo*/
 
 /*agregamos propiedades para el apartado de ayuda*/
 #ayuda{
-    margin-left: 750%;
+    margin-left: 770%;
     text-decoration: none;
     font-size: 240%;
     font-family:"Lexend", sans-serif ;
     font-weight: 400;
     color:#f3f3f3;
     transition: .3s linear ;
+   transform: translateY(700%);
 }
 
 #ayuda:hover{
     color: #af8382;
+    text-shadow: 4px 4px 15px black;
 }
 
 /* Estilos para el botón de menú hamburguesa */
@@ -64,7 +66,7 @@ body{/*color de fondo*/
     top: 10px; /* Se coloca a 20 píxeles desde la parte superior */
     right: 20px; /* Se coloca a 20 píxeles desde la derecha */
     transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/ 
-    height: 113.5px;
+    height: 85px;
     width: 8%;
     color: #fefcfc;
     transform: translateY(-15%) translateX(13%);
@@ -154,13 +156,14 @@ body{/*color de fondo*/
     color: rgb(255, 255, 255);
     display: flex;
     margin-top: 4%;
-    transform: translateY(35%) translateX(10%);
-    font-family: "Cinzel", serif;
+    transform: translateY(28%) translateX(10%);
+    font-family: "Lexend", sans-serif ;
     opacity: 89%;
+    text-shadow: 4px 4px 15px black;
 }
 
 header { /*Imegen de fondo encabezado*/
-   height: 500px;
+   height: 400px;
    background-image: url(img2/autolesion.webp);
    background-size: cover;
    background-position: center;

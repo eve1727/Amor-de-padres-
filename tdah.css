@@ -1,0 +1,20 @@
+.encabezado{
+    background-image: url(tdah.img/fondo.header.webp);
+    background-size: cover;
+    background-position: 50%; 
+    height:400px;
+    opacity: 95%;
+    
+}
+
+#palabra{
+    font-size: 600%;
+    color: beige;
+    margin-left: 15%;
+    transform: translateY(28%);
+    opacity: 100%;
+    font-family: "Lexend", sans-serif  ;
+    text-shadow: 4px 4px 10px black;
+}
+
+/*Barra*/
