@@ -1,12 +1,21 @@
+body{
+    padding: 2%;
+}
+/*Para que tenga un desplazamiento más sueave*/
+html{
+    scroll-behavior: smooth;
+}
+/*Creacion del encabezado con imagen de fondo*/
 .encabezado{
     background-image: url(tdah.img/fondo.header.webp);
     background-size: cover;
     background-position: 50%; 
     height:400px;
     opacity: 95%;
+    transform: translateY(-10%);
     
 }
-
+/*Palabra de tdah en adolescentes*/
 #palabra{
     font-size: 600%;
     color: beige;
@@ -18,3 +27,173 @@
 }
 
 /*Barra*/
+
+/*Se dan propiedades a la barra*/
+.barra{
+    background-color: #e0d8cd;
+    width: 100%;
+    height: 85px;
+    position: fixed;/*Hace qur la barra quede estatica*/
+    bottom: 90%;
+    right: 0%;
+    left: 0;
+    top: 0%;
+    z-index: 100;
+}
+
+/*Propiedades de la flecha*/
+#flecha{
+    font-size: 300%;
+    text-decoration: none;
+    color: #fefcfc;
+    transform: translateX(50%);
+    height: 95px;
+    font-weight: 900px ;
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+}
+
+#flecha:hover{
+    background-color:#B59E7D;
+}
+
+
+/*Contenido*/
+
+/*Caracteristicas del div de la primera parte*/
+#parte1{
+    padding: 5%;
+    background-color: #ffffff;
+}
+/*Propiedades para la imagen que esta en el 1er apartado*/
+#imagen1{
+    height: 300px;
+    transform: translateX(170%) translateY(-140%);
+}
+
+/*Caracteristicas de la palabra Qué es... en el 1er div*/
+.palabra1{
+    font-size: 230%;
+    font-family:  "DM Sans", sans-serif;
+    margin-left: 10%; 
+    font-weight: 600;   
+}
+/*Caracteristicas del primer parrafo en la 1era division*/
+.parrafo1{
+    font-size: 200%;
+    font-family: "DM Sans", sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+    transform: translateY(-10%);
+}
+/*Propiedades para la zona donde explica los tipos que hay en la 1era division*/
+.tipos{
+    font-size: 200%;
+    font-family: "DM Sans", sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 5%;
+}
+
+
+          /* Segunda division (2do div) */
+
+
+/*Le da caracteristicas al segundo div*/
+#parte2{
+    background-color: #f5f5ed;
+    transform: translateY(-40%);
+    height: 800px;
+}
+
+/*Caracteristicas de la imagen en el segundo apartado (el cerebro)*/
+#imagen2{
+    margin-top: -2%;
+}
+
+/*Caracteristica de la palabra ¿Por qué se causa? */
+#palabra2{
+    text-align: center;
+    font-size: 230%;
+    font-family:  "DM Sans", sans-serif;
+    margin-left: 30%;
+    transform: translateY(250%);
+}
+
+/*Caracteristica del pequeño parrafo en el segundo apartado*/
+#parrafo2{
+    font-size: 200%;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: -40%;
+    padding-left: 10%;
+    padding-right: 5%;
+    z-index: 10%;
+}
+
+/*Propiedades de la lista de posibles causas en segundo apartado*/
+#lista{
+    font-size: 205%;
+    font-family: "DM Sans", sans-serif;
+    text-align: left;
+    margin-left: 45%;
+    margin-top: 5;
+    padding-left: 10%;
+    padding-right: 5%;
+    z-index: 10%;
+}
+
+
+    /*Tercera division (3er div)*/
+
+
+/*Le agrega caracteristicas a la palabra de ¿Cómo saber...*/
+#palabra3{
+    text-align: left;
+    font-size: 230%;
+    font-family:  "DM Sans", sans-serif;
+    margin-top: -15%;
+   padding-left: 5%;
+}
+/*Propiedades del parrafo*/
+#parrafo3{
+    font-size: 200%;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 50%;
+    transform: translateY(40%);
+}
+
+/*Propiedades generales de todo el contenedor de la parte donde se podra hacer scroll*/
+.contenedor {
+    width: 500px;
+    height: 300px;
+    border: 3px #222;
+    border-radius: 2%;
+    font-size: 200%;
+    color: #080808;
+    background-color: #f9f9f9;
+    padding: 10px;
+    overflow-y: scroll;/*Se agrega para que la lista no se desborde y solo aparezca la barra de desplazamiento en vertical */
+    transform: translateY(-70%) translateX(150%);
+  }
+
+  /* Utilizamos webkit para dar propiedades exactas a la barra de desplazamiento*/
+
+  /*Hace visible la barra de desplazar y le agrega una anchura*/
+  .contenedor::-webkit-scrollbar {
+    width: 30px;
+  }
+  /*Le cambia el fondo de donde esta la barra de desplazamiento*/
+  .contenedor::-webkit-scrollbar-track {
+    background: #e0d8cd;
+  }
+  /*cambia el thumb que desplaza*/
+  .contenedor::-webkit-scrollbar-thumb {
+    background: #b59e7b;
+  }
+  /*Agregamos un efecto hover al thumb para que resalte que lo esta seleccionando*/
+  .contenedor::-webkit-scrollbar-thumb:hover{
+    background: #b99052;
+  }

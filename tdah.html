@@ -10,21 +10,90 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-     <!--Fuente para frase y nombre de ventanas-->
+     <!--Fuente para frase-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+     <!--Link para poner icono flecha-->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
 <body>
+     
+  <!--Creacion de la barra-->
+        <header class="barra">
+             
+          <!--Flecha-->
+          <span class="material-symbols-outlined"><a href="index.html" id="flecha">
+            arrow_back
+        </a></span>
+        
+        </header>
+          
+      <!--Creacion del encabezado-->
+        <header class="encabezado"> 
+          <div style=" background-color: rgba(0, 0, 0, 0.1); height: 400px;"><!--agrega fondo semitranparente y altura-->
+            <h2 id="palabra">TDAH <br>EN LA ADOLESCENCIA</h2>
+          </div>
+        </header>
+        
 
-    
-    
-   <header class="encabezado"> 
-     <div style=" background-color: rgba(0, 0, 0, 0.3); height: 400px;">
-       <h2 id="palabra">TDAH <br>EN LA ADOLESCENCIA</h2>
-     </div>
-   </header>
+        <!--Contenido-->
+          <!--Inicio parte 1-->
+       <div id="parte1">
+          
+        <h2 class="palabra1">¿QUÉ ES?</h2>
+              <p class="parrafo1">Es un padecimiento que está causado por una diferencia en el cerebro que afecta a la atención y al comportamiento. 
+                Aunque suele diagnosticarse en la infancia, en muchos casos los síntomas persisten durante la adolescencia y la adultez.</p>
+             
+                <p class="palabra1">Tipos de TDAH:</p>
+                  <!--Agregamos tipos de tdah-->
+                  <p class="tipos"> <span style="color: #5E5A51;">- Hiperactividad: </span>Se presenta con inquietud, dificultad para permanecer sentado o hablar en exceso.</p>
+                  <p class="tipos"> <span style="color: #5E5A51;">- Desatento: </span> Lo podemos ver como tener dificultad para concentrarse, completar tareas y organizarse.</p>
+                  <p class="tipos"> <span style="color: #5E5A51;">- Combinados: </span> En este se presentan los dos anteriores y puede tener un variación en su intensidad.</p>
+                     
+                  <img src="IMG_0983-Photoroom-Photoroom.png" id="imagen1"/>
+       </div>
+
+       <!--Inicio parte 2-->
+       <div id="parte2">
+           
+           <h2 id="palabra2">¿POR QUÉ SE CAUSA?</h2>
+        
+              <img src="IMG_0942.JPG" id="imagen2" />
+       
+                <p id="parrafo2">En la actualidad aún no se sabe causa exacta de porque se desarrolla este padecimiento, pero algunos factores que se pueden tener en cuenta son: </p>
+                  <p id="lista"><span style="color: #E9A752;">-La Heradibilidad<br>
+                    -Los genes<br>
+                    -Lesiones cerebrales <br>
+                    -Los entornos sociales</p>
+                  </span>
+       </div>
+
+       <!--Inicio parte 3-->
+       <div>
+         <h2 id="palabra3">¿CÓMO SE PUEDE SABER QUE TU HIJO PADECE DE ESTO?</h2>
+           <p id="parrafo3">Los síntomas de los adolescentes con TDAH son muy parecidos a los de los niños, 
+            pero es un poco más difícil identificarlos. Sin embargo aquí te dejamos algunos comportamientos:</p>
+              
+               <!--Cracion de apartado para que el padre pueda hacer scroll-->
+                  <div class="contenedor">
+                    <ul class="lista">
+                      <li>1</li><!--Aqui van algunas causas-->
+                      <li>2</li>
+                      <li>3</li>
+                      <li>4</li>
+                      <li>5</li>
+                      <li>6</li>
+                      <li>7</li>
+                      <li>8</li>
+                      <li>9</li>
+                      <li>10</li>
+                    </ul>
+                  </div>
+          
+        </div>
+
 </body>
 <script src="./js/tdah.js"></script>
 </html>
