@@ -11,7 +11,7 @@ html{
 /*BARRA*/
 
 #encabezado{/*Barra parte de arriba*/
-    height: 15%;
+    height: 12%;
     background-color: #f8e6bb;
     text-align: center;
     position: fixed;/*hace que la barra se quede estatica*/
@@ -19,136 +19,143 @@ html{
     right: 0%;
     left: 0%;
     top: 0.1%;
-    z-index: 100; /*Hace que muestre la barra arriba de cualquier elemento*/
+    z-index: 1000; /*Hace que muestre la barra arriba de cualquier elemento*/
     opacity: 100%;
-    
 }
 
-#listaencabezado{ /*Caracteristicas en general de la lista para los elemtos de la barra*/
+.listaencabezado{ /*Caracteristicas en general de TODA la lista para los elemtos de la barra*/
     list-style: none;
     display: flex;
+    position: relative;
+    z-index: 10;
+}
+
+.padecimientos{
+    text-decoration: none;
+    font-size: 180%;
+    font-weight: 300;
+    color: #200f06;
+    font-family:"Lexend", sans-serif;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    border: solid #f8e6bb;
+    padding: 30px;
+}
+
+
+/* Pone el submenu en bloque cuando se pasa el cursor por arriba */
+.listaencabezado li:hover ul{
+    display: block;
+}
+
+/* Le da el estilo hover a padecimientos */
+.listaencabezado .padecimientos:hover{
+    color: white;
+    background-color: #d69601;
+}
+
+/* Estilos en general del submenu */
+.listaencabezado ul{
+    display: none;
+    position: absolute;
+    top: 220%;
+    left: 236.3%;
+    line-height: 40px;
+    background-color: #dcb352;
+    border-radius: 3%;
+    list-style: none;
+    padding: 2%;
+    width: 70%;
+    font-size: 150%;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+}
+
+.listaencabezado ul a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Lexend", sans-serif;
+}
+
+.listaencabezado ul a:hover{
+   color: #b5903b;
+
 }
 
 #icono{/*caracteristicas del icono de amor de padres en la barra*/
-    height: 110px;
-    margin-top: -16%;
+    height: 100px;
+    margin-top: -18%;
 }
 
 /*Estilos para el icono*/
  #mensajes{
-    font-size: 200%;
-    margin-left: 720%;
-    margin-top: 20%;
     color: #200f06;
-    transition: color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    border: solid #f8e6bb;
+    margin-left: 530.8%;
+    padding: 40px;
+    padding-top: 50%;
+    transform: translateY(900px);
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
  }
 
  #mensajes:hover{
-    color: #d0af60;
+    color: white;
+    background-color: #d69601;
+ }
+
+ #mensajes2{
+    font-size: 400%;
+    font-weight: 200;
+    margin-top: 0%;
+    padding-top: 0%;
  }
 
 #ayuda{/*Agrega el apartado de contacto de ayuda en la barra*/
     text-decoration: none;
-    font-size: 240%;
+    font-size: 180%;
+    font-weight: 300;
     color: #200f06;
-    border-radius: 10px 10px;
     font-family:"Lexend", sans-serif;
     transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    border: solid #f8e6bb;
+    padding: 30px;
+    
 }
 
 #ayuda:hover{
-    color: #d0af60;
-    text-shadow: 4px 4px 15px #7d7c7c;
-}
-
-/* Estilos para el botón de menú hamburguesa */
-.hamburger-btn {
-    font-size: 70px; /* Tamaño del icono o texto del botón */
-    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
-    border: none; /* Elimina los bordes del botón */
-    background: none; /* Elimina cualquier fondo del botón */
-    position: fixed; /* Se posiciona de manera absoluta dentro de su contenedor */
-    top: 20px;/* Se coloca a 20 píxeles desde la parte superior */
-    right: 20px; /* Se coloca a 20 píxeles desde la derecha */
-    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
-    height: 130.2px;
-    width: 8%;
-    transform: translateY(-20%) translateX(14%);
-}
-
-.hamburger-btn:hover{
-    background-color: #d0af60;
-}
-
-/* Estilos del menú lateral */
-.side-menu {
-    position: fixed; /* Fija el menú en la pantalla sin moverse con el contenido */
-    right: -250px; /* Inicialmente, coloca el menú fuera de la vista en el lado derecho */
-    top: 0; /* Se coloca en la parte superior de la pantalla */
-    width: 250px; /* Ancho del menú lateral */
-    height: 100%; /* Ocupa toda la altura de la pantalla */
-    background-color: #b59e7d; /* Color de fondo */
-    color: white; /* Color del texto en blanco */
-    transition: right 0.3s ease; /* Transición suave al mover el menú */
-    padding-top: 60px; /* Espacio superior dentro del menú para evitar que los elementos queden pegados arriba */
-}
-
-/* Estilos de la lista dentro del menú */
-.side-menu ul {
-    list-style: none; /* Elimina los estilos predeterminados de la lista (viñetas) */
-    padding: 0; /* Elimina el padding por defecto de la lista */
-}
-
-/* Estilos para cada elemento de la lista */
-.side-menu ul li {
-    padding: 15px; /* Agrega espaciado dentro de cada elemento */
-    text-align: center; /* Centra el texto en cada elemento */
-    font-size: 170%;
-}
-
-/* Estilos para los enlaces dentro de la lista */
-.side-menu ul li a {
-    color: white; /* Color del texto en blanco */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    display: block; /* Hace que los enlaces ocupen toda la anchura disponible para mejorar la usabilidad */
-    transition: background-color 0.3s ease;
-    font-family: "Lexend", sans-serif;
-    font-weight: 300;
-    font-size: 90%;
-}
-
-/* Efecto al pasar el mouse sobre los enlaces */
-.side-menu ul li a:hover {
-    background-color: #ccc2aa; /* Cambia el fondo a un tono más claro cuando se pasa el mouse */
-}
-
-/*Cerrar el menu boton*/
-.cerrar2{
-    font-size: 30px; /* Tamaño del icono o texto del botón */
-    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
-    border: none; /* Elimina los bordes del botón */
-    background: none; /* Elimina cualquier fondo del botón */
     color: white;
-    font-family: "Lexend", sans-serif;
-    font-weight: 600;
-    width: 90%;
-    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    height: 450px;
+    background-color: #d69601;
 }
 
-.cerrar2:hover{
-    background-color: #5e5a51;
+#sugerencias{
+    text-decoration: none;
+    font-size: 180%;
+    color: #200f06;
+    font-family:"Lexend", sans-serif;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    font-weight: 300;
+    border: solid #f8e6bb;
+    padding: 30px;
 }
 
-/* Clase que activa el menú */
-.side-menu.active {
-    right: 0; /* Mueve el menú a la posición visible cuando se activa */
+#sugerencias:hover{
+    color: white;
+    height: 450px;
+    background-color: #d69601;   
 }
 
-/*Clase que desactiva el menú */
-.side-menu.disabled {
-    left: 100%;
+#encabezado2{
+    height: 20%;
+    background-color: #e5c275;
+    text-align: center;
+    position: fixed;/*hace que la barra se quede estatica*/
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    top: -5%;
+    opacity: 100%;
+    z-index: 10;
+    opacity: 75%;
 }
-
 
 /*ENCABEZADO*/
 
@@ -162,7 +169,7 @@ header { /* Pone el video en el encabezado*/
 header video{/*Propiedades para el video*/
     width: 100%;
     background-position: center center;
-    background-size: 1000%;
+    z-index: 9;
 }
 header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     position: absolute;/* Nos sirve para poder posicionar nuestra frase arriba del video*/
@@ -175,10 +182,6 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     font-size: 230%;
     opacity: 85%;
     font-family: "Lexend", sans-serif;
-}
-
-.fondo2{
-    background-color: rgba(0, 0, 0, 0.2); /* Fondo negro semitransparente (50% de opacidad) */
 }
 
   
@@ -217,7 +220,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
 #seleccionar{
     font-family: "DM Sans", sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 530;
     font-size: 250%;
 }
 
@@ -245,6 +248,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     font-family: "Lexend", sans-serif;
     transform: translateY(15%);
     transition: box-shadow 0.3s ease;
+    font-weight: 350;
 }
 
 .a1:hover{/*Opacea la ventana 1 cuando la flechita pasa por la ventana*/
@@ -266,6 +270,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     font-size: 250%;
     font-family: "Lexend", sans-serif;
     transition: box-shadow 0.3s ease;
+    font-weight: 350;
 
 } 
 .a2:hover{/*Opacea la ventana 2 cuando la flechita pasa por la ventana*/
@@ -287,6 +292,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     font-size: 250%;
     font-family: "Lexend", sans-serif;
     transition: box-shadow 0.3s ease;
+    font-weight: 350;
 }
 .a3:hover{/*Opacea la ventana 3 cuando la flechita pasa por la ventana*/
     opacity: 40%;
@@ -311,6 +317,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     font-size: 250%;
     font-family: "Lexend", sans-serif;
     transition: box-shadow 0.3s ease;
+    font-weight: 350;
 }
 
 .a4:hover{

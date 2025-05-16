@@ -20,15 +20,36 @@
 </head>
 <body>
      
-  <!--Creacion de la barra-->
-        <header class="barra">
-             
-          <!--Flecha-->
-          <span class="material-symbols-outlined"><a href="index.html" id="flecha">
+        <header id="barra1">
+                 <!--Flecha-->
+          <span class="material-symbols-outlined" style="margin-top: 5%;"><a href="index.html" id="flecha">
             arrow_back
         </a></span>
-        
         </header>
+
+  <!--Creacion de la barra2-->
+        <header class="barra2">
+
+          <div style="display: flex;">
+           
+            
+          <img src="img1/icono.webp" alt="amor de padres" id="icono">
+
+          <a href="ia.html"></a>
+            <span class="material-symbols-outlined" id="mensajes2">
+            forum
+            </span>
+           </a>
+
+          <h3><a href="sugerencias.html" id="sugerencias">Sugerencias</a></h3>
+
+          <h3><a href="contactos.html" class="ayuda">Ayuda</a></h3>
+
+
+          </div>
+
+        </header>
+
           
       <!--Creacion del encabezado-->
         <header class="encabezado"> 
@@ -37,7 +58,34 @@
           </div>
         </header>
         
+        
+    <div class="container">
+     
+      <button id="hamburger-btn" class="hamburger-btn"><img src="iconos.tdah/flecha.svg"  id="picar"/>
+      </button>
+    
+        <nav id="padecimientos" class="padecimientos">
 
+          <button id="cerrar" class="cerrar2"><img src="iconos.tdah/cerrar.svg" alt="cerrar" id="close"></button><!--agregamos el boton de cerrar el menu-->
+          <ul style="list-style: none;">
+             <li> <a href="ansiedad.html" class="ventana2">Ansiedad</a></li>
+             <hr>
+             <li><a href="depresion.html" class="ventana2">Depresión</a></li>
+             <hr>
+             <li><a href="autolesion.html" class="ventana2">Autolesión</a></li>
+             <hr>
+             <li><a href="tdah.html" class="ventana2">TDAH</a></li>
+             <hr>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+
+          </ul>
+        
+        </nav>
+    </div>
         <!--Contenido-->
           <!--Inicio parte 1-->
        <div id="parte1">
@@ -52,7 +100,7 @@
                   <p class="tipos"> <span style="color: #5E5A51;">- Desatento: </span> Lo podemos ver como tener dificultad para concentrarse, completar tareas y organizarse.</p>
                   <p class="tipos"> <span style="color: #5E5A51;">- Combinados: </span> En este se presentan los dos anteriores y puede tener un variación en su intensidad.</p>
                      
-                  <img src="IMG_0983-Photoroom-Photoroom.png" id="imagen1"/>
+                  <img src="tdah.img/chica1.webp" id="imagen1"/>
        </div>
 
        <!--Inicio parte 2-->
@@ -60,7 +108,7 @@
            
            <h2 id="palabra2">¿POR QUÉ SE CAUSA?</h2>
         
-              <img src="IMG_0942.JPG" id="imagen2" />
+              <img src="tdah.img/cerebro.webp" id="imagen2" />
        
                 <p id="parrafo2">En la actualidad aún no se sabe causa exacta de porque se desarrolla este padecimiento, pero algunos factores que se pueden tener en cuenta son: </p>
                   <p id="lista"><span style="color: #E9A752;">-La Heradibilidad<br>
@@ -77,11 +125,15 @@
             pero es un poco más difícil identificarlos. Sin embargo aquí te dejamos algunos comportamientos:</p>
               
                <!--Cracion de apartado para que el padre pueda hacer scroll-->
+               <img src="deslizar.png" id="deslizar"/>
                   <div class="contenedor">
-                    <ul class="lista">
-                      <li>1</li><!--Aqui van algunas causas-->
-                      <li>2</li>
-                      <li>3</li>
+                    <ul id="lista2">
+                      <li>Tener dificultades para escuchar y prestar atención</li><!--Aqui van algunas causas-->
+                      <br>
+                      <li>Distraerse fácilmente</li>
+                      <br>
+                      <li>Sentirse inquietas, ansiosas, frustradas o aburridas</li>
+                      <br>
                       <li>4</li>
                       <li>5</li>
                       <li>6</li>
@@ -95,5 +147,20 @@
         </div>
 
 </body>
+
+ <!-- Creacion del pie de cabeza -->
+ <footer id="pie"><!--Cambia color footer-->
+            
+  <h5 class="nosotros">Sobre nosotras</h5>
+  <h5 class="redes1">Redes sociales</h5>
+  <a href="#introducirnos" id="pie-padecimientos">Padecimientos</a>
+  
+  <div id="parte3">
+  <p class="Copyright">Copyright 2025</p>
+   <p id="pieFrase">AMOR DE PADRES</p>
+  </div>
+
+</footer>
+
 <script src="./js/tdah.js"></script>
 </html>

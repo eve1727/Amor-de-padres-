@@ -22,46 +22,55 @@
             
             <!--Header para la barra-->
             <header id="encabezado"><!--hace que se muestre la barra arriba-->
-               <ul id="listaencabezado"><!--Lista para poner elementos del encabezado-->
+
+               
+               <ul class="listaencabezado"><!--Lista para poner elementos del encabezado-->
                   
                      <li id="amordepadres"><!--Agrega la imagen del icono en la barra-->
                        <img src="img1/icono.webp" id="icono">
                      </li> 
 
+                  
+                     <li style="position: fixed; z-index: 100; margin-left: 43.2%; margin-top: 1%;" >
+                        <a href="#" class="padecimientos" style="margin-top: -100px;">Padecimientos</a>
+                              <ul style="margin-left: -212%; margin-top: -5%;">
+                                    <li><a href="ansiedad.html">Ansiedad</a></li>
+                                    <li><a href="depresion.html">Depresión</a></li>
+                                    <li><a href="autolesion.html">Autolesión</a></li>
+                                    <li><a href="tdah.html">TDAH</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                              </ul>
+                     </li>
+                  
+     
+                     <li style="transform: translateX(343.5%) translateY(16%);">
+                      <a href="sugerencias.html" id="sugerencias">Sugerencias</a>
+                     </li>
+  
+                     <!--Agrega el apartada de contactos de ayuda moviendo este elemento para un buen acomodo-->
+                     <li style="transform: translateY(14%) translateX(521.5%);">
+                     <a href="contactos.html" id="ayuda">Ayuda</a>
+                     </li>
+
                      <li>
                       <a href="ia.html" id="mensajes">
-                      <span class="material-symbols-outlined" id="mensajes">
+                      <span class="material-symbols-outlined" id="mensajes2">
                       forum
                       </span>
                      </a></li>
-                    
-  
-                     <!--Agrega el apartada de contactos de ayuda moviendo este elemento para un buen acomodo-->
-                     <li style="transform: translatey(20%) translateX(810%);">
-                     <a href="contactos.html" id="ayuda">Ayuda</a>
-                     </li>
-                     
 
-                        <div class="container"><!--Div que ayudara a crear el area del menu-->
-                           <button id="hamburger-btn" class="hamburger-btn">&#9776;</button><!--Agregamos el boton con id para javascript y con clase, 
-                           los numeros que aparecen ahí es el codigo para que se ponga el boton-->
 
-                           <nav id="side-menu" class="side-menu"><!--Creamos el nav para que cuando este active aparezca lo que tenga en ella-->
-                            
-                           <button id="cerrar" class="cerrar2">Cerrar</button><!--agregamos el boton de cerrar el menu-->
-                             <ul>
-                             
-                               <li><a href="#padecimientos">Padecimientos</a></li>
-                               <li><a href="#acercade">Acerca de</a>
-                               <li><a href="#sugerencias">Sugerencias</a></li>
-                               <li><a href="#contactanos">Contactanos</a></li>
-                             </ul>
-                           </nav>
-                         </div>
-                  
-               </ul><!--Fin de la lista-->
+               </ul>
     
             </header><!--Fin de la barra-->
+
+            <header id="encabezado2">
+
+            </header>
             
             <!--Header que agrega frase a color, y video en la cabecera -->
             <header>

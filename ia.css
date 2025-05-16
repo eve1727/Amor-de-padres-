@@ -3,7 +3,7 @@ body{
 }
 
 .barra{
-  position: fixed;/*Hace que la barra se quede estatica*/
+   position: fixed;/*Hace que la barra se quede estatica*/
     background-image: none;
     background-color: #f8e6bb;
     bottom: 90%;

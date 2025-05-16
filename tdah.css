@@ -12,7 +12,8 @@ html{
     background-position: 50%; 
     height:400px;
     opacity: 95%;
-    transform: translateY(-10%);
+    transform: translateY(-0%);
+    z-index: 100;
     
 }
 /*Palabra de tdah en adolescentes*/
@@ -26,29 +27,168 @@ html{
     text-shadow: 4px 4px 10px black;
 }
 
+.hamburger-btn{
+    height: 110px;
+    width: 8%;
+    z-index: 8;
+    position: fixed;
+    margin-left: -4%;
+    transform: translateY(-190%) translateX(-50%);
+    background-color: #DDE6ED;
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    border: 1px solid #222;
+    border-radius: 30%;
+}
+
+.hamburger-btn:hover{
+    background-color: #2F4156;
+}
+
+
+#padecimientos{
+    width: 13%;
+    height: 320px;
+    background-color:#D3DADC;
+    top: 25%;
+    left: -2%;
+    position:fixed;
+    z-index: 9;
+    border-radius: 5%;
+    transition: left 0.3s ease; /* Transición suave al mover el menú */
+}
+
+#picar{
+   height: 40%;
+   transform: translateX(80%);
+}
+
+.ventana2{
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 180%;
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    color:#080808;
+    display: block; /* Hace que los enlaces ocupen toda la anchura disponible para mejorar la usabilidad */
+}
+    .ventana2:hover{
+    background-color: #526166;
+    color: #f9f9f9 ;
+    height:40px;
+    }
+
+/*Cerrar el menu boton*/
+.cerrar2{
+    font-size: 30px; /* Tamaño del icono o texto del botón */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+    border: none; /* Elimina los bordes del botón */
+    background: none; /* Elimina cualquier fondo del botón */
+    color: black;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    width: 30%;
+    margin-top: 10%;
+    transform: translateX(130%);
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    display: block;
+}
+
+.cerrar2:hover{
+    background-color: #2F4156;
+    color: #e0d8cd;
+}
+
+
+/* Clase que activa el menú */
+.padecimientos.active {
+    margin-left: 0%; /* Mueve el menú a la posición visible cuando se activa */
+}
+
+.padecimientos.disabled{
+    margin-left: -90%;
+}
+
+
 /*Barra*/
 
+#barra1{
+    background-color: #d1c8ba;
+    width: 100%;
+    height: 120px;
+    position: fixed;/*Hace que la barra quede estatica*/
+    bottom: 90%;
+    right: 0%;
+    left: 0;
+    top: 1%;
+    z-index: 10;
+}
+
+#icono{
+    height: 80px;
+    margin-left: 2%;
+}
+
+.ayuda{
+    text-decoration: none;
+    font-size: 180%;
+    font-weight: 400;
+    color: #200f06;
+    font-family:"Lexend", sans-serif;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    margin-left: 810%;
+}
+
+.ayuda:hover{
+    color: #d18624;
+}
+
+
+#mensajes2{
+    color: #200f06;
+    font-size: 400%;
+    font-weight: 200;
+    transform: translateX(1950%);
+    margin-top: 1%;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+}
+
+#mensajes2:hover{
+    color: #d18624;
+}
+
+#sugerencias{
+    text-decoration: none;
+    font-size: 170%;
+    color: #200f06;
+    font-family:"Lexend", sans-serif;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    font-weight: 400;
+    margin-left: 430%;
+}
+
+#sugerencias:hover{
+    color: #d18624;
+}
+
 /*Se dan propiedades a la barra*/
-.barra{
+.barra2{
     background-color: #e0d8cd;
     width: 100%;
-    height: 85px;
+    height: 80px;
     position: fixed;/*Hace qur la barra quede estatica*/
     bottom: 90%;
     right: 0%;
     left: 0;
     top: 0%;
-    z-index: 100;
+    z-index: 10;
 }
 
 /*Propiedades de la flecha*/
 #flecha{
-    font-size: 300%;
+    font-size: 180%;
     text-decoration: none;
-    color: #fefcfc;
-    transform: translateX(50%);
+    color: #ffffff;
     height: 95px;
-    font-weight: 900px ;
+    font-weight: 900;
     transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
 }
 
@@ -58,6 +198,7 @@ html{
 
 
 /*Contenido*/
+
 
 /*Caracteristicas del div de la primera parte*/
 #parte1{
@@ -154,29 +295,40 @@ html{
     font-family:  "DM Sans", sans-serif;
     margin-top: -15%;
    padding-left: 5%;
+   margin-left: 10%;
 }
 /*Propiedades del parrafo*/
 #parrafo3{
     font-size: 200%;
     font-family: "DM Sans", sans-serif;
     text-align: center;
-    padding-left: 5%;
-    padding-right: 50%;
+    padding-left: 45%;
+    padding-right: 45%;
+    margin-left: -30%;
     transform: translateY(40%);
+}
+
+
+#deslizar{
+    transform: translateY(-90px) translateX(1320px);
+}
+#lista2{
+    font-size: 75%;
+    font-family: "DM Sans", sans-serif; 
 }
 
 /*Propiedades generales de todo el contenedor de la parte donde se podra hacer scroll*/
 .contenedor {
     width: 500px;
     height: 300px;
-    border: 3px #222;
+    border: 1px solid #222;
     border-radius: 2%;
     font-size: 200%;
     color: #080808;
     background-color: #f9f9f9;
     padding: 10px;
     overflow-y: scroll;/*Se agrega para que la lista no se desborde y solo aparezca la barra de desplazamiento en vertical */
-    transform: translateY(-70%) translateX(150%);
+    transform: translateY(-90%) translateX(150%);
   }
 
   /* Utilizamos webkit para dar propiedades exactas a la barra de desplazamiento*/
@@ -197,3 +349,84 @@ html{
   .contenedor::-webkit-scrollbar-thumb:hover{
     background: #b99052;
   }
+
+
+  /*PIE PAGINA*/
+
+#pie {/*Propiedades del footer*/
+    background-color: #F1Eada;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+   left: 0%;
+   right: 0%;
+}
+
+
+.nosotros{/* Propiedades para el apartado "sobre nosotras*/
+    font-size: 170%;
+    margin-left: 5%;
+    transform: translateY(200%);
+    width: 20%;
+    color: #362d18;
+    transition: color 0.32s ease;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+}
+
+.nosotros:hover{
+    color:  #d69601;
+    opacity: 100%;
+    
+}
+
+.redes1{/*Agrega el apartado de nuestras redes*/
+    font-size: 170%;
+    margin-left: 5%;
+    transform: translateY(220%);
+    width: 20%;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    color: #362d18;
+    transition: color 0.32s ease;
+}
+
+.redes1:hover{
+    color: #d69601;
+}
+
+#pie-padecimientos{
+    font-size: 170%;
+    margin-left: 30%;
+    width: 20%;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    color: #362d18;
+    transition: color 0.32s ease;
+    text-decoration: none;
+}
+#pie-padecimientos:hover{
+    color: #d69601;
+}
+
+#pieFrase{/*Propiedades de la palabra "Amor de padres" en el footer*/
+    transform: translateY(-50%) translateX(75%);
+    font-size: 220%;
+    opacity: 80%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 500;
+}
+
+.Copyright{/*Agrega el copyright en el footer*/
+    font-size: 160%;
+    transform: translateY(200%) translateX(45%);
+    opacity: 50%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 200;
+}
+
+#parte3{
+    background-color: #cec1a8;
+    height: 40%;
+    margin-top: 5%;
+}
