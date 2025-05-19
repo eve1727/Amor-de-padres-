@@ -5,111 +5,10 @@ body{
 html{
     scroll-behavior: smooth;
 }
-/*Creacion del encabezado con imagen de fondo*/
-.encabezado{
-    background-image: url(tdah.img/fondo.header.webp);
-    background-size: cover;
-    background-position: 50%; 
-    height:400px;
-    opacity: 95%;
-    transform: translateY(-0%);
-    z-index: 100;
-    
-}
-/*Palabra de tdah en adolescentes*/
-#palabra{
-    font-size: 600%;
-    color: beige;
-    margin-left: 15%;
-    transform: translateY(28%);
-    opacity: 100%;
-    font-family: "Lexend", sans-serif  ;
-    text-shadow: 4px 4px 10px black;
-}
-
-.hamburger-btn{
-    height: 110px;
-    width: 8%;
-    z-index: 8;
-    position: fixed;
-    margin-left: -4%;
-    transform: translateY(-190%) translateX(-50%);
-    background-color: #DDE6ED;
-    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
-    border: 1px solid #222;
-    border-radius: 30%;
-}
-
-.hamburger-btn:hover{
-    background-color: #2F4156;
-}
-
-
-#padecimientos{
-    width: 13%;
-    height: 320px;
-    background-color:#D3DADC;
-    top: 25%;
-    left: -2%;
-    position:fixed;
-    z-index: 9;
-    border-radius: 5%;
-    transition: left 0.3s ease; /* Transición suave al mover el menú */
-}
-
-#picar{
-   height: 40%;
-   transform: translateX(80%);
-}
-
-.ventana2{
-    text-decoration: none;
-    font-family: "DM Sans", sans-serif;
-    font-size: 180%;
-    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
-    color:#080808;
-    display: block; /* Hace que los enlaces ocupen toda la anchura disponible para mejorar la usabilidad */
-}
-    .ventana2:hover{
-    background-color: #526166;
-    color: #f9f9f9 ;
-    height:40px;
-    }
-
-/*Cerrar el menu boton*/
-.cerrar2{
-    font-size: 30px; /* Tamaño del icono o texto del botón */
-    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
-    border: none; /* Elimina los bordes del botón */
-    background: none; /* Elimina cualquier fondo del botón */
-    color: black;
-    font-family: "Lexend", sans-serif;
-    font-weight: 600;
-    width: 30%;
-    margin-top: 10%;
-    transform: translateX(130%);
-    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
-    display: block;
-}
-
-.cerrar2:hover{
-    background-color: #2F4156;
-    color: #e0d8cd;
-}
-
-
-/* Clase que activa el menú */
-.padecimientos.active {
-    margin-left: 0%; /* Mueve el menú a la posición visible cuando se activa */
-}
-
-.padecimientos.disabled{
-    margin-left: -90%;
-}
-
 
 /*Barra*/
 
+/*Propiedades de la barra donde esta la flecha*/
 #barra1{
     background-color: #d1c8ba;
     width: 100%;
@@ -119,6 +18,34 @@ html{
     right: 0%;
     left: 0;
     top: 1%;
+    z-index: 10;
+}
+
+/*Propiedades de la flecha*/
+#flecha{
+    font-size: 180%;
+    text-decoration: none;
+    color: #ffffff;
+    height: 95px;
+    font-weight: 900;
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+}
+
+#flecha:hover{
+    background-color:#B59E7D;
+}
+
+
+/*Se dan propiedades a la barra donde esta el icono y demas elementos*/
+.barra2{
+    background-color: #e0d8cd;
+    width: 100%;
+    height: 80px;
+    position: fixed;/*Hace qur la barra quede estatica*/
+    bottom: 90%;
+    right: 0%;
+    left: 0;
+    top: 0%;
     z-index: 10;
 }
 
@@ -169,31 +96,116 @@ html{
     color: #d18624;
 }
 
-/*Se dan propiedades a la barra*/
-.barra2{
-    background-color: #e0d8cd;
-    width: 100%;
-    height: 80px;
-    position: fixed;/*Hace qur la barra quede estatica*/
-    bottom: 90%;
-    right: 0%;
-    left: 0;
-    top: 0%;
-    z-index: 10;
+
+        /*Creacion del encabezado con imagen de fondo*/
+
+/* Estilos para el encabezado */
+.encabezado{
+    background-image: url(tdah.img/fondo.header.webp);
+    background-size: cover;
+    background-position: 50%; 
+    height:400px;
+    opacity: 95%;
+    transform: translateY(-0%);
+    z-index: 100;
+    
 }
 
-/*Propiedades de la flecha*/
-#flecha{
-    font-size: 180%;
-    text-decoration: none;
-    color: #ffffff;
-    height: 95px;
-    font-weight: 900;
+/*Palabra de tdah en adolescentes*/
+#palabra{
+    font-size: 600%;
+    color: beige;
+    margin-left: 15%;
+    transform: translateY(28%);
+    opacity: 100%;
+    font-family: "Lexend", sans-serif  ;
+    text-shadow: 4px 4px 10px black;
+}
+
+/* Estilos para el boton donde  donde se veran varios padecimientos*/
+.hamburger-btn{
+    height: 110px;
+    width: 8%;
+    z-index: 8;
+    position: fixed;
+    margin-left: -4%;
+    transform: translateY(-190%) translateX(-50%);
+    background-color: #DDE6ED;
     transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    border: 1px solid #222;
+    border-radius: 30%;
 }
 
-#flecha:hover{
-    background-color:#B59E7D;
+/*Hover del boton*/
+.hamburger-btn:hover{
+    background-color: #2F4156;
+}
+
+/*Mueve la flecha del boton*/
+#picar{
+    height: 40%;
+    transform: translateX(80%);
+ }
+
+/*Propiedades del submenu en la izquierda*/
+#padecimientos{
+    width: 13%;
+    height: 320px;
+    background-color:#D3DADC;
+    top: 25%;
+    left: -2%;
+    position:fixed;
+    z-index: 9;
+    border-radius: 5%;
+    transition: left 0.3s ease; /* Transición suave al mover el menú */
+}
+
+/* Estilos que utilizan todas las ventanas del submenu*/
+.ventana2{
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 180%;
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    color:#080808;
+    display: block; /* Hace que los enlaces ocupen toda la anchura disponible para mejorar la usabilidad */
+}
+
+.ventana2:hover{
+    background-color: #526166;
+    color: #f9f9f9 ;
+    height:40px;
+ }
+
+/*Cerrar el menu boton*/
+.cerrar2{
+    font-size: 30px; /* Tamaño del icono o texto del botón */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+    border: none; /* Elimina los bordes del botón */
+    background: none; /* Elimina cualquier fondo del botón */
+    color: black;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    width: 30%;
+    margin-top: 10%;
+    transform: translateX(130%);
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    display: block;
+}
+
+.cerrar2:hover{
+    background-color: #2F4156;
+    color: #e0d8cd;
+}
+
+
+/* Clase que activa el menú */
+.padecimientos.active {
+    margin-left: 0%; /* Mueve el menú a la posición visible cuando se activa */
+}
+
+/*Clase que desactiva el menu*/
+.padecimientos.disabled{
+    margin-left: -90%;
 }
 
 

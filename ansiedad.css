@@ -1,30 +1,55 @@
 body {/*color de fondo*/
- background-color: #f9fc62;
+ background-color: #FFFDE7;
 }
 
 #a1 {/*Para volver al inicio de la pantalla */
     text-decoration: none;
-    background-color: #f7b12f;/*color del container*/
+    background-color: #f0f0de;/*color del container*/
     font-size: 40px;/*tamaño del volver al inicio*/
     color: #ffffff;/*color de la letra*/
 }
 
+#a1:hover{/*hace que el "volver al inicio" cambie de color cuando el cursor pasa por ahi*/
+    color: rgb(255, 253, 253);
+    background-color: #ebe7e1;
+    box-shadow: 0 0 15px rgb(47, 47, 46);  
+  }
+
+#encabezado{ /*agrega la barra de volver al inicio */
+    position: fixed;/*Hace que la barra se quede estatica*/
+    background-image: none;
+    background-color: #f0f0de;
+    bottom: 90%;
+    right: 0%;
+    left: 0;
+    top: 0%;
+    height: 10%;
+    z-index: 9;
+    margin-top: 0%;
+    opacity: 100%;
+    width: 100%;
+    display: flex;
+}
+
+
 #titulo{/*ajustes de mi frase*/
-    font-family: 'Courier New', Courier, monospace;/*estilo de letra de mi frase*/
+    font-family: "Lexend", sans-serif;/*estilo de letra de mi frase*/
+    font-style: italic;
+    font-weight: 700;
     display: flex;
     font-size: 100px;/*tamaño de mi frase*/
-    color: rgb(253, 135, 0);/*color de mi frase*/
-    margin-left: 16%;/*separacion del lado derecho de mi frase*/
-    margin-top: 13%;/*separacion de mi frase con el para que este mas abajo */
+    color: #000000  ;/*color de mi frase*/
+    margin-left: 20%;/*separacion del lado derecho de mi frase*/
+    padding-top: 140px;/*separacion de mi frase con el para que este mas abajo */
 
 }
 
 header {/*Ajustes de mi encabezado*/
-    background-image: url(img1/imagen7.webp);/*imagen que se presenta en el emcabezado*/
-    opacity: 95%;/*para que se vea mas opaca*/
-    height: 600px;/*tamaño de la imagen*/
+    background-image: url(ansiedad.img/persona.webp);/*imagen que se presenta en el emcabezado*/
+    margin-top: 0%;
+    height: 500px;/*tamaño de la imagen*/
     width: 100%;/*para que ocupe el 100% del espacio en el encabezado*/
-    background-position: center center;
+    background-position: center;
     background-size: cover;
 }
 
@@ -36,7 +61,6 @@ header {/*Ajustes de mi encabezado*/
 #sintomas{/*Tamaño de mi texto*/
     font-size: 230%;
     margin-left: 5%;/*separacion del texto de lado derecho*/
-
 }
 
 #causas{/*Tamaño de mi texto*/
@@ -46,59 +70,168 @@ header {/*Ajustes de mi encabezado*/
 }
 
 .containerA{
-    background-color: rgb(255, 145, 0);
+    background-color: #F9E79F;
     width: 100%;/*largor del container (que abarque todo el largo de la pantalla)*/
     padding: 0.01%;
     border-radius: 15px;
-    margin-top: 3%;
-    height: 100px
+    margin-top: 1%;
+    height: 80px;
+    font-family: "Lexend", sans-serif;;
 }
 
 .containerB{
-    background-color: rgb(255, 145, 0);
+    background-color: #F9E79F;
     width: 100%;/*largor del container (que abarque todo el largo de la pantalla)*/
     padding: 0.01%;
     border-radius: 15px;
     margin-top: 0%;
-    height: 100px;
+    height: 80px;
+    font-family: "Lexend", sans-serif;;
 }
 
 .containerC{
-    background-color: rgb(255, 145, 0);
+    background-color: #F9E79F;
     width: 100%;/*largor del container (que abarque todo el largo de la pantalla)*/
     padding: 0.01%;
     border-radius: 15px;
     margin-top: 0%;
-    height: 100px;
+    height: 80px;
+    font-family:"Lexend", sans-serif; ;
 }
 
 .container1{/*El espacio de la pantalla sobre mi parrafo*/
-    font-size: 20%;
     border-radius: 15px;
     margin: 0 auto;
     margin-top: 0%;  
-    background-color:  rgb(236, 236, 236);/*color de mi container */
-    padding: 0.3%;
-    height: 600px;
+    background-color:#f4f6f7  ;/*color de mi container */
+    padding: 50px;
+    height: 417px;
+    align-items: flex-start;/*Alinea verticalmente ambos*/
+    display: flex;
 
 }
 
-.container2{
+.imagen-ansiedad{/*ajustes de la imagen*/
+    width: 510px;
+    margin-top: 0.1px;
+    margin-right: 50px;
+    border-radius: 70px;
+}
+
+.texto-ansiedad p {/*Ajustes del texto */
+    font-family: "DM Sans", sans-serif;
+    font-size: 40px;
+    margin-top: 50px;
+    line-height: 1.6;/*ajusta la altura de las lineas para mejorar la legibilidad*/
+}
+
+.container2{/*El espacio de la pantalla sobre mi parrafo*/
     font-size: 20%;
     border-radius: 15px;
     margin: 0 auto;
     margin-top: 0%;
-    background-color:   rgb(236, 236, 236);/*color de mi container */
+    background-color: #FBFAF8;/*color de mi container */
     padding: 0.10%;
-    
+    height: 500px;
+    align-items: flex-start;/*Alinea arriba*/
+    display: flex;/*alinea los elementos hijos en fila (horizontal) */
+    justify-content: space-between;/*espacio entre texto e imagenes */
 }
 
-.container3{
+.texto-ansiedad2 {/*Ajustes del texto */
+    font-family: "DM Sans", sans-serif;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-left: 50px;
+    line-height: 1.6;/*ajusta la altura de las lineas para mejorar la legibilidad*/
+    flex: 1;/*ocupa todo el espacio disponible ala izquierda */
+    padding-right: 20px;/*espacio entre el texto y las imagenes*/
+}
+
+.imagenes{
+    margin-top: 5%;
+    width: 200px;
+    margin-right: 400px;
+}
+
+.container3{/*El espacio de la pantalla sobre mi parrafo*/
     font-size: 20%;
     border-radius: 15px;
     margin: 0 auto;
     margin-top: 0%;
-    background-color:  rgb(236, 236, 236);/*color de mi container */
-    padding: 0.3%;
+    background-color: #f4f6f7 ;/*color de mi container */
+    padding: 50px;
+    height: 500px;
+    align-items: flex-start;/*Alinea verticalmente ambos*/
+    display: flex;
     
 }
+
+.imagen-ansiedad3{/*Ajustes de la imagen*/
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.texto-ansiedad3 p {/*Ajustes del texto*/
+    font-family: "DM Sans", sans-serif;
+    font-size: 38px;
+    margin-top: 50px;
+    line-height: 1.6;/*ajusta la altura de las lineas para mejorar la legibilidad*/
+    margin-left: 10px;
+}
+
+.text{
+    margin-left: 330px;
+    font-size: 60px;
+    font-family:"Lexend", sans-serif; 
+}
+
+/* Contenedor que alinea las tarjetas en fila y permite que se ajusten automáticamente */
+.cards-container {
+    display: flex; /* Organiza en fila */
+    gap: 70px; /* Espacio entre tarjetas */
+    margin-top: 20px;
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    flex-wrap: wrap; /* Permite que bajen si no caben */
+  }
+  
+  /* Estilo base de cada tarjeta */
+  .card {
+    background: #FFF59D; /* Fondo blanco */
+    width: 250px; /* Ancho fijo */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta lo que se salga del borde */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra suave */
+    transition: transform 0.3s ease;       /* Transición para el efecto hover */
+    cursor: pointer; /* Cambia el cursor al pasar encima */
+  }
+  
+  /* Aumenta ligeramente el tamaño al pasar el mouse */
+  .card:hover {
+    transform: scale(1.05); /* Agranda un poco la tarjeta */
+  }
+  
+  /* Imagen dentro de la tarjeta */
+  .card img {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene proporciones */
+    display: block; /* Quita espacios fantasma */
+  }
+  
+  /* Contenido oculto inicialmente */
+  .card-content {
+    padding: 15px; /* Espacio interno */
+    display: none; /* Oculto por defecto */
+  }
+  
+  /* Muestra el contenido al pasar el mouse sobre la tarjeta */
+  .card:hover .card-content {
+    display: block; /* Hace visible el contenido */
+  }
+  
+  /* Estilo del título dentro de la tarjeta */
+  .card-title {
+    font-weight: bold; /* Texto en negrita */
+    margin-bottom: 10px; /* Espacio debajo del título */
+  }

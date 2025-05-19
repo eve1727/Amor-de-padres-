@@ -1,0 +1,40 @@
+.encabezado{
+    background-image: url(bitacora.img/fondo.webp);
+    height: 270px;
+    margin-top: -5%;
+    background-size: cover;
+    background-position: 60%; 
+    opacity: 85%;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+#palabra{
+    font-size: 400%;
+    text-align: center;
+    margin-left: 35%;
+    font-family:  "Lexend", sans-serif  ;
+    color: beige;
+}
+
+#inicio{
+    font-size: 230%;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    color: #ebb34c;
+}
+
+#inicio:hover{
+    background-color: rgb(159, 159, 159);
+    color: azure;
+}
+
+#bienvenida{
+    justify-content: center;
+    padding: 5%;
+    text-align: center;
+    font-size: 180%;
+    font-family: "DM Sans", sans-serif;
+}
+
