@@ -19,15 +19,32 @@
 
 </head>
 <body>
+
+
+  <div id="content">
      
   <!--Cracion de la barra donde estara la flecha-->
-        <header id="barra1">
-          <span class="material-symbols-outlined" style="margin-top: 5%;"><a href="index.html" id="flecha">
+       <header id="barra1">
+        <ul style="display: flex;">
+         
+         <li style="margin-left: -5%;"><span class="material-symbols-outlined">
+            <a href="index.html" id="flecha">
             arrow_back
-        </a></span>
-        </header>
+          </a></span>
+         </li>
 
+         <li>
+        <h3><a href="sugerencias.html" id="sugerencias">Sugerencias</a></h3>
+         </li>
+         
+         <li>
+        <h3><a href="contactos.html" class="ayuda">Ayuda</a></h3>
+         </li>
+
+        </ul>
+       </header>
   
+
         <!--Creacion de la barra2 donde esta el icono y demás elementos-->
         <header class="barra2">
 
@@ -36,15 +53,18 @@
             
           <img src="img1/icono.webp" alt="amor de padres" id="icono">
 
-          <a href="ia.html"></a>
+
+            <!-- Controles para aumentar y disminuir el tamaño de la fuente -->
+        <div class="controls">
+          <button id="increase-font" onclick="changeFontSize(1)">A+</button> <!-- Aumenta el tamaño de fuente -->
+          <button id="decrease-font" onclick="changeFontSize(-1)">a-</button> <!-- Disminuye el tamaño de fuente -->
+       </div>
+
+          <a href="ia.html">
             <span class="material-symbols-outlined" id="mensajes2">
             forum
             </span>
            </a>
-
-          <h3><a href="sugerencias.html" id="sugerencias">Sugerencias</a></h3>
-
-          <h3><a href="contactos.html" class="ayuda">Ayuda</a></h3>
 
 
           </div>
@@ -78,8 +98,9 @@
              <hr>
              <li><a href="tdah.html" class="ventana2">TDAH</a></li>
              <hr>
-             <li></li>
-             <li></li>
+             <li><a href="TOC.hmtl" class="ventana2">TOC</a></li>
+             <hr>
+             <li><a href="disocial.hmtl" class="ventana2">TD</a></li>
              <li></li>
              <li></li>
              <li></li>
@@ -89,22 +110,62 @@
         </nav>
     </div>
 
+  <div id="text-content">
+     <div id="pagina1">
+
+         <ul id="pagina">
+      
+          <li><a href="#que es" class="ventanas">¿Qué es?</a></li>
+          <li><a href="#parte2" class="ventanas">Causas</a></li>
+          <li><a href="#parte21" class="ventanas">Sintomas</a></li>
+          <li><a href="#parte4" class="ventanas">Consejos</a></li>
+         
+         </ul>
+         <hr style="width: 75%; margin-left: 6%;">
+     </div>
 
         <!--Contenido-->
            <!--Inicio parte 1-->
        <div id="parte1">
           
-        <h2 class="palabra1">¿QUÉ ES?</h2>
+        <h2 class="palabra1" id="que es">¿QUÉ ES?</h2>
               <p class="parrafo1">Es un padecimiento que está causado por una diferencia en el cerebro que afecta a la atención y al comportamiento. 
                 Aunque suele diagnosticarse en la infancia, en muchos casos los síntomas persisten durante la adolescencia y la adultez.</p>
              
                 <p class="palabra1">Tipos de TDAH:</p>
-                  <!--Agregamos tipos de tdah-->
-                  <p class="tipos"> <span style="color: #5E5A51;">- Hiperactividad: </span>Se presenta con inquietud, dificultad para permanecer sentado o hablar en exceso.</p>
-                  <p class="tipos"> <span style="color: #5E5A51;">- Desatento: </span> Lo podemos ver como tener dificultad para concentrarse, completar tareas y organizarse.</p>
-                  <p class="tipos"> <span style="color: #5E5A51;">- Combinados: </span> En este se presentan los dos anteriores y puede tener un variación en su intensidad.</p>
-                     
-                  <img src="tdah.img/chica1.webp" id="imagen1"/>
+                 
+                <!--Agregamos tipos de tdah-->
+                  <div class="tipos1">
+                        
+                      <div class="tipos2">
+                            <div class="tipos3">
+                              <img src="iconos.tdah/inatencion.svg" style="transform: translateY(190%) translateX(320%); "/>
+                                <h2 style="font-weight: 400; transform: translateY(180%) translateX(30%);">Inatención</h2>
+                                <p>Problemas para prestar atención,
+                                   distraerse con facilidad, problemas para organizarse, seguir instrucciones o conversaciones.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tipos2">
+                          <div class="tipos3">
+                            <img src="iconos.tdah/hiperactividad.svg" style="transform: translateY(145%) translateX(260%); "/>
+                            <h2 style="font-weight: 400; transform: translateY(90%) translateX(20%);">Hiperactividad<br>-Impulsividad</h2>
+                            <p>Inquietud, hablar en exceso, 
+                              problemas para controlar sus acciones y palabras.</p>
+                          </div>
+                        </div>
+                        
+                        <div class="tipos2">
+                          <div class="tipos3">
+                            <img src="iconos.tdah/combinados.svg" style="transform: translateY(110%) translateX(260%); " />
+                            <h2 style="font-weight: 400; transform: translateY(130%) translateX(25%);">Combinados</h2>
+                            <p>En este se presentan los dos anteriores y puede tener un variación en su intensidad.</p>
+                          </div>
+                        </div>
+
+                  </div>
+                 
+                  
        </div>
 
        <!--Inicio parte 2-->
@@ -115,7 +176,7 @@
               <img src="tdah.img/cerebro.webp" id="imagen2" />
        
                 <p id="parrafo2">En la actualidad aún no se sabe causa exacta de porque se desarrolla este padecimiento, pero algunos factores que se pueden tener en cuenta son: </p>
-                  <p id="lista"><span style="color: #E9A752;">-La Heradibilidad<br>
+                  <p id="lista"><span style="color: #E9A752;" >-La Heradibilidad<br>
                     -Los genes<br>
                     -Lesiones cerebrales <br>
                     -Los entornos sociales</p>
@@ -123,7 +184,10 @@
        </div>
 
        <!--Inicio parte 3-->
+
        <div>
+          <hr style="transform: translateY(-10px); color: #000;" id="parte21">
+
          <h2 id="palabra3">¿CÓMO SE PUEDE SABER QUE TU HIJO PADECE DE ESTO?</h2>
            <p id="parrafo3">Los síntomas de los adolescentes con TDAH son muy parecidos a los de los niños, 
             pero es un poco más difícil identificarlos. Sin embargo aquí te dejamos algunos comportamientos:</p>
@@ -132,39 +196,51 @@
                <img src="iconos.tdah/deslizar.png" id="deslizar"/>
                   <div class="contenedor">
                     <ul id="lista2">
-                      <li>Tener dificultades para escuchar y prestar atención</li><!--Aqui van algunas causas-->
+                      <li>Tener dificultades para escuchar </li><!--Aqui van algunas causas-->
                       <br>
-                      <li>Distraerse fácilmente</li>
+                      <li>Reacciona muy mal ante las frustraciones.</li>
                       <br>
-                      <li>Sentirse inquietas, ansiosas, frustradas o aburridas</li>
+                      <li>Dificultad para mantener la atención a un estimulo o varios a la vez</li>
                       <br>
-                      <li>4</li>
-                      <li>5</li>
-                      <li>6</li>
-                      <li>7</li>
-                      <li>8</li>
-                      <li>9</li>
-                      <li>10</li>
+                      <li>Casi siempre se olvida de hacer las cosas o empieza y no acaba.</li>
+                      <br>
+                      <li>Hacer acciones precipitadas que pueden provocar un resultado negativo</li>
+                      <br>
+                      <li>Tener dificultades para permanecer sentados en silencio cuando deben hacerlo</li>
                     </ul>
                   </div>
           
         </div>
 
-</body>
+        <!--Creacion de la 4ta parte-->
 
- <!-- Creacion del pie de cabeza -->
-    <footer id="pie"><!--Cambia color footer-->
-            
-        <h5 class="nosotros">Sobre nosotras</h5>
-        <h5 class="redes1">Redes sociales</h5>
-        <a href="#introducirnos" id="pie-padecimientos">Padecimientos</a>
+        <div id="parte4">
+          <h2 id="palabra4">CONSEJOS GENERALES</h2>
+           
+          <div class="cuadros">
+            <div class="cuadro">
+             <h2>1</h2>
+            </div>
+            <div class="cuadro">
+              <h2>2</h2>
+            </div>
+            <div class="cuadro">
+              <h2>3</h2>
+            </div>
+          </div>
         
-        <div id="parte3">
-        <p class="Copyright">Copyright 2025</p>
-        <p id="pieFrase">AMOR DE PADRES</p>
+
+          <div id="cons1">
+
+          </div>
+      
         </div>
 
-    </footer>
+    </div>
+
+  </div>
+
+</body>
 
 <script src="./js/tdah.js"></script>
 </html>

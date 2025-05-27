@@ -6,11 +6,10 @@ html{
     scroll-behavior: smooth;
 }
 
-/*Barra*/
 
 /*Propiedades de la barra donde esta la flecha*/
 #barra1{
-    background-color: #d1c8ba;
+    background-color: #eddab1;
     width: 100%;
     height: 120px;
     position: fixed;/*Hace que la barra quede estatica*/
@@ -21,24 +20,39 @@ html{
     z-index: 10;
 }
 
-/*Propiedades de la flecha*/
-#flecha{
-    font-size: 180%;
-    text-decoration: none;
-    color: #ffffff;
-    height: 95px;
-    font-weight: 900;
-    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+#barra1 ul{
+    list-style: none;
 }
 
-#flecha:hover{
-    background-color:#B59E7D;
+#barra1 ul li{
+    padding: 3%;
+}
+.controls{
+    transform: translateX(1190%);
+    margin-top: 0.8%;
 }
 
+/* Estilo general de los botones */
+button {
+    padding: 1px; /* Espaciado interno para hacerlos más grandes */
+    margin: 2px; /* Espaciado entre botones */
+    font-size: 35px; /* Tamaño de fuente adecuado */
+    font-family: "Lexend", sans-serif;
+    font-weight: 250;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    cursor: pointer; /* Cambia el cursor a 'mano' cuando el usuario pase sobre ellos */
+    border: none; /* Elimina los bordes del botón */
+    background: none; /* Elimina cualquier fondo del botón */
+
+}
+
+button:hover{
+    color: #5fa6f2;
+}
 
 /*Se dan propiedades a la barra donde esta el icono y demas elementos*/
 .barra2{
-    background-color: #e0d8cd;
+    background-color:#fff4da;
     width: 100%;
     height: 80px;
     position: fixed;/*Hace qur la barra quede estatica*/
@@ -56,16 +70,16 @@ html{
 
 .ayuda{
     text-decoration: none;
-    font-size: 180%;
-    font-weight: 400;
+    font-size: 150%;
+    font-weight: 270;
     color: #200f06;
     font-family:"Lexend", sans-serif;
     transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
-    margin-left: 810%;
+    margin-left: 1150%;
 }
 
 .ayuda:hover{
-    color: #d18624;
+    color: #ffffff;
 }
 
 
@@ -73,40 +87,52 @@ html{
     color: #200f06;
     font-size: 400%;
     font-weight: 200;
-    transform: translateX(1950%);
-    margin-top: 1%;
+    transform: translateX(1150px) translateY(20%);
     transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
 }
 
 #mensajes2:hover{
-    color: #d18624;
+    color: #5fa6f2;;
 }
 
 #sugerencias{
     text-decoration: none;
-    font-size: 170%;
+    font-size: 150%;
     color: #200f06;
     font-family:"Lexend", sans-serif;
     transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
-    font-weight: 400;
-    margin-left: 430%;
+    font-weight: 270;
+    margin-left: 630%;
 }
 
 #sugerencias:hover{
-    color: #d18624;
+    color: #ffffff;
 }
 
+#flecha{
+   text-decoration: none;
+   font-size: 210%;
+   color: #080808;
+   font-weight: 500;
+   transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+   position: fixed;
+   z-index: 100;
+}
+
+#flecha:hover{
+    color: #ffffff;
+}
 
         /*Creacion del encabezado con imagen de fondo*/
 
 /* Estilos para el encabezado */
 .encabezado{
-    background-image: url(tdah.img/fondo.header.webp);
+    background-image: url(tdah.img/mujer.webp);
     background-size: cover;
-    background-position: 50%; 
+    background-position-y:70%; 
     height:400px;
     opacity: 95%;
-    transform: translateY(-0%);
+    transform: translateY(2.5%);
     z-index: 100;
     
 }
@@ -124,8 +150,8 @@ html{
 
 /* Estilos para el boton donde  donde se veran varios padecimientos*/
 .hamburger-btn{
-    height: 110px;
-    width: 8%;
+    height: 115px;
+    width: 7%;
     z-index: 8;
     position: fixed;
     margin-left: -4%;
@@ -149,8 +175,8 @@ html{
 
 /*Propiedades del submenu en la izquierda*/
 #padecimientos{
-    width: 13%;
-    height: 320px;
+    width: 14%;
+    height: 450px;
     background-color:#D3DADC;
     top: 25%;
     left: -2%;
@@ -165,6 +191,7 @@ html{
     text-decoration: none;
     font-family: "DM Sans", sans-serif;
     font-size: 180%;
+    font-weight: 300;
     transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
     color:#080808;
     display: block; /* Hace que los enlaces ocupen toda la anchura disponible para mejorar la usabilidad */
@@ -195,6 +222,7 @@ html{
 .cerrar2:hover{
     background-color: #2F4156;
     color: #e0d8cd;
+    border-radius: 9%;
 }
 
 
@@ -208,6 +236,39 @@ html{
     margin-left: -90%;
 }
 
+#pagina1{
+    width: 60%;
+    margin-left: 23%;
+    margin-top: 5%;
+}
+
+#pagina{
+    display: flex;
+    list-style: none;
+
+}
+
+#pagina li{
+    padding: 2%;
+}
+
+#pagina li a{
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+}
+
+#pagina li a:hover{
+    color: #5fa6f2;
+}
+
+.ventanas{
+    text-decoration: none;
+    font-size: 200%;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    color: #080808;
+    text-align: center;
+}
+
 
 /*Contenido*/
 
@@ -216,11 +277,7 @@ html{
 #parte1{
     padding: 5%;
     background-color: #ffffff;
-}
-/*Propiedades para la imagen que esta en el 1er apartado*/
-#imagen1{
-    height: 300px;
-    transform: translateX(170%) translateY(-140%);
+    z-index: 1000;
 }
 
 /*Caracteristicas de la palabra Qué es... en el 1er div*/
@@ -228,7 +285,7 @@ html{
     font-size: 230%;
     font-family:  "DM Sans", sans-serif;
     margin-left: 10%; 
-    font-weight: 600;   
+    font-weight: 700;   
 }
 /*Caracteristicas del primer parrafo en la 1era division*/
 .parrafo1{
@@ -237,14 +294,48 @@ html{
     padding-left: 10%;
     padding-right: 10%;
     transform: translateY(-10%);
+    justify-content: center;
 }
 /*Propiedades para la zona donde explica los tipos que hay en la 1era division*/
-.tipos{
-    font-size: 200%;
+.tipos1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tipos1 .tipos2{
+    position: relative;
+    width: 320px;
+    height: 300px;
+    background-color: #DDE6ED;
+    border: 1px solid rgba(43, 42, 42, 0.1);
+    box-shadow: 0 25px 25px rgba(95, 94, 94, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 30px 8px;
+    transition: all 0.3s ease;
+    
+}
+
+.tipos1 .tipos2:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+}
+
+.tipos3{
+    display: inline-block;
+    transform: translateY(-25%);
     font-family: "DM Sans", sans-serif;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 5%;
+}
+
+.tipos1 p{
+    font-size: 120%;
+    font-weight: 280;
+    justify-content: center;
+    padding: 6%;
 }
 
 
@@ -254,7 +345,6 @@ html{
 /*Le da caracteristicas al segundo div*/
 #parte2{
     background-color: #f5f5ed;
-    transform: translateY(-40%);
     height: 800px;
 }
 
@@ -276,12 +366,12 @@ html{
 #parrafo2{
     font-size: 200%;
     font-family: "DM Sans", sans-serif;
-    text-align: center;
     margin-left: 40%;
-    margin-top: -40%;
+    margin-top: -43%;
     padding-left: 10%;
     padding-right: 5%;
     z-index: 10%;
+    justify-content: center;
 }
 
 /*Propiedades de la lista de posibles causas en segundo apartado*/
@@ -299,15 +389,15 @@ html{
 
     /*Tercera division (3er div)*/
 
-
 /*Le agrega caracteristicas a la palabra de ¿Cómo saber...*/
 #palabra3{
     text-align: left;
     font-size: 230%;
     font-family:  "DM Sans", sans-serif;
-    margin-top: -15%;
-   padding-left: 5%;
-   margin-left: 10%;
+    margin-top: 5%;
+    padding: 5%;
+    margin-left: 10%;
+
 }
 /*Propiedades del parrafo*/
 #parrafo3{
@@ -317,7 +407,6 @@ html{
     padding-left: 45%;
     padding-right: 45%;
     margin-left: -30%;
-    transform: translateY(40%);
 }
 
 
@@ -361,6 +450,63 @@ html{
   .contenedor::-webkit-scrollbar-thumb:hover{
     background: #b99052;
   }
+
+    /*Creacion de la 4ta ventana*/
+
+#parte4{
+    background-image: url(fondo.jpeg);
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+
+#palabra4{
+    text-align: right;
+    font-size: 230%;
+    margin-right: 2%;
+    font-family:  "DM Sans", sans-serif;
+}
+
+/*Propiedades del div que contiene todo de todo*/
+.cuadros {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*Propiedades de cada cuadro que se despliega*/
+  .cuadros .cuadro {
+    position: relative;
+    width: 380px;
+    height: 350px;
+    background-color: #ece4d1;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin: 0 -65px;
+  }
+  
+  .cuadros:hover .cuadro {
+    margin: 0 10px;
+  }
+  
+  .cuadros .cuadro::before {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+
 
 
   /*PIE PAGINA*/
@@ -442,3 +588,46 @@ html{
     height: 40%;
     margin-top: 5%;
 }
+
+
+#content {
+    background: white;
+    /* Fondo blanco para resaltar el contenido */
+  
+    border-radius: 8px;
+    /* Bordes redondeados para suavizar la caja */
+  
+  }
+  
+  /* Estilos para todos los párrafos dentro de #content */
+  /* Inicialmente están ocultos y desplazados hacia abajo */
+  #content p {
+    opacity: 0;
+    /* Transparencia total, párrafos invisibles inicialmente */
+  
+    transform: translateY(30px);
+    /* Desplaza los párrafos 30px hacia abajo */
+  
+    transition: 
+      opacity 0.6s cubic-bezier(.4,0,.2,1),
+      transform 0.6s cubic-bezier(.4,0,.2,1);
+    /* Transiciones suaves para opacidad y posición con curva de animación personalizada */
+  
+    will-change: opacity, transform;
+    /* Optimiza el rendimiento indicando que estos dos estilos cambiarán */
+  
+    margin-bottom: 1%;
+    /* Margen inferior para separar los párrafos */
+  }
+  
+  /* Estilos para párrafos que tienen la clase 'visible' */
+  /* Aquí están completamente visibles y en posición original */
+  #content p.visible {
+    opacity: 1;
+    /* Opacidad total, párrafo visible */
+  
+    transform: translateY(10);
+    /* Sin desplazamiento vertical, posición natural */
+  }
+
+  
