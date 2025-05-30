@@ -31,8 +31,9 @@ html{
 }
 
 #icono{/*caracteristicas del icono de amor de padres en la barra*/
-    height: 100px;
-    margin-top: -18%;
+    height: 130px;
+    margin-top: -27%;
+    margin-left: -45px;
 }
 
 /*Inicia padecimientos con su submenu*/

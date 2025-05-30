@@ -2,23 +2,24 @@ body {/*color de fondo*/
  background-color: #FFFDE7;
 }
 
+
 #a1 {/*Para volver al inicio de la pantalla */
     text-decoration: none;
-    background-color: #f0f0de;/*color del container*/
+    background-color: #f8e6bb;/*color del container*/
     font-size: 40px;/*tamaño del volver al inicio*/
     color: #ffffff;/*color de la letra*/
 }
 
 #a1:hover{/*hace que el "volver al inicio" cambie de color cuando el cursor pasa por ahi*/
     color: rgb(255, 253, 253);
-    background-color: #ebe7e1;
+    background-color: #ebc670;
     box-shadow: 0 0 15px rgb(47, 47, 46);  
   }
 
 #encabezado{ /*agrega la barra de volver al inicio */
     position: fixed;/*Hace que la barra se quede estatica*/
     background-image: none;
-    background-color: #f0f0de;
+    background-color: #f8e6bb;
     bottom: 90%;
     right: 0%;
     left: 0;
@@ -33,21 +34,22 @@ body {/*color de fondo*/
 
 
 #titulo{/*ajustes de mi frase*/
-    font-family: "Lexend", sans-serif;/*estilo de letra de mi frase*/
+    font-family: "Lexend", sans-serif  ;/*estilo de letra de mi frase*/
+    text-shadow: 4px 4px 10px black;
     font-style: italic;
-    font-weight: 700;
+    font-weight: 800;
     display: flex;
     font-size: 100px;/*tamaño de mi frase*/
-    color: #000000  ;/*color de mi frase*/
-    margin-left: 20%;/*separacion del lado derecho de mi frase*/
-    padding-top: 140px;/*separacion de mi frase con el para que este mas abajo */
+    color: beige ;/*color de mi frase*/
+    margin-left: 19%;/*separacion del lado derecho de mi frase*/
+    padding-top: 6%;/*separacion de mi frase con el para que este mas abajo */
 
 }
 
 header {/*Ajustes de mi encabezado*/
-    background-image: url(ansiedad.img/persona.webp);/*imagen que se presenta en el emcabezado*/
+    background-image: url(ansiedad.img/ejemplo-de-foto-principal.webp);/*imagen que se presenta en el emcabezado*/
     margin-top: 0%;
-    height: 500px;/*tamaño de la imagen*/
+    height: 400px;/*tamaño de la imagen*/
     width: 100%;/*para que ocupe el 100% del espacio en el encabezado*/
     background-position: center;
     background-size: cover;
@@ -185,6 +187,7 @@ header {/*Ajustes de mi encabezado*/
     margin-left: 330px;
     font-size: 60px;
     font-family:"Lexend", sans-serif; 
+    text-shadow: 4px 4px 10px black;
 }
 
 /* Contenedor que alinea las tarjetas en fila y permite que se ajusten automáticamente */
@@ -198,7 +201,7 @@ header {/*Ajustes de mi encabezado*/
   
   /* Estilo base de cada tarjeta */
   .card {
-    background: #FFF59D; /* Fondo blanco */
+    background: #ffe985; /* Fondo*/
     width: 250px; /* Ancho fijo */
     border-radius: 10px; /* Bordes redondeados */
     overflow: hidden; /* Oculta lo que se salga del borde */
