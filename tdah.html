@@ -20,10 +20,10 @@
 </head>
 <body>
 
-
+<!--Div para que el texto vaya apareciendo-->
   <div id="content">
      
-  <!--Cracion de la barra donde estara la flecha-->
+    <!--Cracion de la barra donde estara la flecha-->
        <header id="barra1">
         <ul style="display: flex;">
          
@@ -110,7 +110,8 @@
         </nav>
     </div>
 
-  <div id="text-content">
+    <!--Div para llamar el texto en js-->
+   <div id="text-content">
      <div id="pagina1">
 
          <ul id="pagina">
@@ -176,11 +177,15 @@
               <img src="tdah.img/cerebro.webp" id="imagen2" />
        
                 <p id="parrafo2">En la actualidad aún no se sabe causa exacta de porque se desarrolla este padecimiento, pero algunos factores que se pueden tener en cuenta son: </p>
-                  <p id="lista"><span style="color: #E9A752;" >-La Heradibilidad<br>
-                    -Los genes<br>
-                    -Lesiones cerebrales <br>
-                    -Los entornos sociales</p>
+                <ul id="lista1">
+                  <img src="iconos.tdah/personas.svg" id="personas1"><img src="iconos.tdah/circulo.svg"><li>La heradibilidad</li>
+                  <img src="iconos.tdah/adn.svg" style="transform: translateY(-65%) translateX(190%);"><img src="iconos.tdah/circulo.svg"><li>Los genes</li>
+                </ul>
+                  <ul id="lista2">
+                    <img src="iconos.tdah/cerebro.svg" style="transform: translateY(-60%) translateX(180%);"><img src="iconos.tdah/circulo.svg"><li id="letras1">Lesiones <br>cerebrales</li>
+                    <img src="iconos.tdah/circulo.svg" id="icono2"> <img src="iconos.tdah/sociedad.svg" style="transform: translateY(-140%) translateX(-160%);"><li id="letras">El entorno social</li>
                   </span>
+                </ul>
        </div>
 
        <!--Inicio parte 3-->
@@ -188,14 +193,15 @@
        <div>
           <hr style="transform: translateY(-10px); color: #000;" id="parte21">
 
+          <img src="tdah.img/lamparas.webp" style="margin-left: 82%;">
          <h2 id="palabra3">¿CÓMO SE PUEDE SABER QUE TU HIJO PADECE DE ESTO?</h2>
-           <p id="parrafo3">Los síntomas de los adolescentes con TDAH son muy parecidos a los de los niños, 
-            pero es un poco más difícil identificarlos. Sin embargo aquí te dejamos algunos comportamientos:</p>
-              
+           <p id="parrafo3">Los síntomas de los adolescentes con TDAH son muy parecidos a los de los <br>niños, 
+            pero es un poco más difícil identificarlos. Sin embargo aquí te dejamos algunos comportamientos que puedes llegar a tener en cuenta:</p>
+
                <!--Cracion de apartado para que el padre pueda hacer scroll-->
                <img src="iconos.tdah/deslizar.png" id="deslizar"/>
                   <div class="contenedor">
-                    <ul id="lista2">
+                    <ul id="lista3">
                       <li>Tener dificultades para escuchar </li><!--Aqui van algunas causas-->
                       <br>
                       <li>Reacciona muy mal ante las frustraciones.</li>
@@ -215,32 +221,67 @@
         <!--Creacion de la 4ta parte-->
 
         <div id="parte4">
+            
           <h2 id="palabra4">CONSEJOS GENERALES</h2>
            
           <div class="cuadros">
-            <div class="cuadro">
-             <h2>1</h2>
+            
+            <div class="cuadro" style="background-color: #e7e3f1;">
+             <h2>Busque apoyo</h2>
+             <img src="iconos.tdah/ayuda.svg">
+             <p style="justify-content: center;">Algo que debe de recordar es que al criar a un adolescente con 
+              TDAH no tiene porque hacerlo solo. </p>
+             <p><a href="contactos.html">Recibir ayuda</a></p>
             </div>
-            <div class="cuadro">
-              <h2>2</h2>
-            </div>
-            <div class="cuadro">
-              <h2>3</h2>
-            </div>
-          </div>
-        
 
-          <div id="cons1">
+            <div class="cuadro" style="background-color: #cbe6ee;">
+              <h2>Paciencia</h2>
+              <img src="iconos.tdah/reloj2.svg">
+              <p style="justify-content: center;">Recuerde que habrá dias buenos y otros no tanto, aún así evite concentrarse solo en las dificultades y 
+                mejor mantener una mente realista pero positiva</p>
+            </div>
+
+            <div class="cuadro" style="background-color: #fdf8e2;">
+              <h2>Aprender</h2>
+              <img src="iconos.tdah/libro.svg">
+              <p style="justify-content: center;">Aprenda todo lo que pueda. Esto puede ayudarlo a tener más 
+                paciencia y sentirse menos frustrado por el comportamiento de su hijo </p>
+            </div>
 
           </div>
       
         </div>
 
-    </div>
+    </div><!--Fin del div que tiene todo el texto que va apareciendo-->
+  </div><!--Fin del div para que el texto vaya apareciendo-->
 
-  </div>
 
 </body>
+
+<footer id="pie"><!--Cambia color footer-->
+            
+  <h5 class="nosotros">Sobre nosotras</h5>
+  <h5 class="redes1">Redes sociales</h5>
+  <a href="#introducirnos" id="pie-padecimientos">Padecimientos</a>
+  
+  <!--Cambia el color donde este el nombre del sitio y otros-->
+  <div id="parte5">
+    
+    <!--Lista para agregar bitacora junto con redes sociales-->
+    <ul id="lista4">
+
+       <li><a href="bitacora.html"><img src="iconos.index/calendario.svg" id="bitacora"/></a></li>
+       <li style="background-color: #ff9d23; background: none;"><a href="#"><img src="iconos.index/facebook.svg" id="facebook"></a></li>
+       
+
+    </ul>
+      <div style="margin-top: -7%; display: flex; justify-content: space-between;">
+          <p class="Copyright">Copyright 2025</p>
+          <p id="pieFrase">AMOR DE PADRES</p>
+      </div>
+  </div>
+
+</footer>
 
 <script src="./js/tdah.js"></script>
 </html>
