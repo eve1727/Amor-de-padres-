@@ -37,23 +37,33 @@ body {/*color de fondo*/
     font-family: "Lexend", sans-serif  ;/*estilo de letra de mi frase*/
     text-shadow: 4px 4px 10px black;
     font-style: italic;
-    font-weight: 800;
+    font-weight: 900;
     display: flex;
     font-size: 100px;/*tamaño de mi frase*/
     color: beige ;/*color de mi frase*/
-    margin-left: 19%;/*separacion del lado derecho de mi frase*/
-    padding-top: 6%;/*separacion de mi frase con el para que este mas abajo */
+    margin-left: 20%;/*separacion del lado derecho de mi frase*/
+    padding-top: 8%;/*separacion de mi frase con el para que este mas abajo */
 
 }
 
 header {/*Ajustes de mi encabezado*/
-    background-image: url(ansiedad.img/ejemplo-de-foto-principal.webp);/*imagen que se presenta en el emcabezado*/
+    background-image: url(ansiedad.img/enca2.jpg);/*imagen que se presenta en el emcabezado*/
     margin-top: 0%;
-    height: 400px;/*tamaño de la imagen*/
+    height: 500px;/*tamaño de la imagen*/
     width: 100%;/*para que ocupe el 100% del espacio en el encabezado*/
     background-position: center;
     background-size: cover;
 }
+
+.ventanas{
+    text-decoration: none;
+    font-size: 200%;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    color: #080808;
+    text-align: center;
+}
+
 
 #descripcion{/*Tamaño de mi texto*/
     font-size: 230%;
@@ -115,7 +125,7 @@ header {/*Ajustes de mi encabezado*/
 
 .imagen-ansiedad{/*ajustes de la imagen*/
     width: 510px;
-    margin-top: 0.1px;
+    margin-top: 0%;
     margin-right: 50px;
     border-radius: 70px;
 }
@@ -123,7 +133,7 @@ header {/*Ajustes de mi encabezado*/
 .texto-ansiedad p {/*Ajustes del texto */
     font-family: "DM Sans", sans-serif;
     font-size: 40px;
-    margin-top: 50px;
+    margin-top: 70px;
     line-height: 1.6;/*ajusta la altura de las lineas para mejorar la legibilidad*/
 }
 
@@ -143,7 +153,7 @@ header {/*Ajustes de mi encabezado*/
 .texto-ansiedad2 {/*Ajustes del texto */
     font-family: "DM Sans", sans-serif;
     font-size: 40px;
-    margin-top: 60px;
+    margin-top: 90px;
     margin-left: 50px;
     line-height: 1.6;/*ajusta la altura de las lineas para mejorar la legibilidad*/
     flex: 1;/*ocupa todo el espacio disponible ala izquierda */
@@ -178,7 +188,7 @@ header {/*Ajustes de mi encabezado*/
 .texto-ansiedad3 p {/*Ajustes del texto*/
     font-family: "DM Sans", sans-serif;
     font-size: 38px;
-    margin-top: 50px;
+    margin-top: 80px;
     line-height: 1.6;/*ajusta la altura de las lineas para mejorar la legibilidad*/
     margin-left: 10px;
 }
@@ -202,7 +212,7 @@ header {/*Ajustes de mi encabezado*/
   /* Estilo base de cada tarjeta */
   .card {
     background: #ffe985; /* Fondo*/
-    width: 250px; /* Ancho fijo */
+    width: 350px; /* Ancho fijo */
     border-radius: 10px; /* Bordes redondeados */
     overflow: hidden; /* Oculta lo que se salga del borde */
     box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra suave */
@@ -212,7 +222,7 @@ header {/*Ajustes de mi encabezado*/
   
   /* Aumenta ligeramente el tamaño al pasar el mouse */
   .card:hover {
-    transform: scale(1.05); /* Agranda un poco la tarjeta */
+    transform: scale(1.08); /* Agranda un poco la tarjeta */
   }
   
   /* Imagen dentro de la tarjeta */
@@ -237,4 +247,108 @@ header {/*Ajustes de mi encabezado*/
   .card-title {
     font-weight: bold; /* Texto en negrita */
     margin-bottom: 10px; /* Espacio debajo del título */
+    font-size: 30px; /*tamaño del titulo*/
   }
+
+  /*PIE PAGINA*/
+
+#pie {/*Propiedades del footer*/
+    background-color: #F1Eada;
+    height: 300px;
+    width: 100%;
+    margin-top: -3%;
+}
+
+.nosotros{/* Propiedades para el apartado "sobre nosotras*/
+    font-size: 170%;
+    margin-left: 5%;
+    transform: translateY(200%);
+    width: 20%;
+    color: #362d18;
+    transition: color 0.32s ease;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+}
+
+.nosotros:hover{
+    color:  #d69601;
+    opacity: 100%;
+    
+}
+
+.redes1{/*Agrega el apartado de nuestras redes*/
+    font-size: 170%;
+    margin-left: 5%;
+    transform: translateY(220%);
+    width: 20%;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    color: #362d18;
+    transition: color 0.32s ease;
+}
+
+.redes1:hover{
+    color: #d69601;
+}
+
+/* estilos para el apartado que dice padecimientos*/
+#pie-padecimientos{
+    font-size: 170%;
+    margin-left: 30%;
+    width: 20%;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    color: #362d18;
+    transition: color 0.32s ease;
+    text-decoration: none;
+}
+#pie-padecimientos:hover{
+    color: #d69601;
+}
+
+/* agrega el estilo al segundo pie de cabeza*/
+#parte5{
+    background-color: #cec1a8;
+    height: 40%;
+    margin-top: 5%;
+}
+
+#pieFrase{/*Propiedades de la palabra "Amor de padres" en el footer*/
+    margin-right: 2%;
+    font-size: 220%;
+    opacity: 80%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 500;
+}
+
+/*Agrega los iconos de facebook y bitacora*/
+#lista4{
+   display: flex;
+   list-style: none;
+   opacity: 55%;
+}
+
+/*icono de la bitacora*/
+#bitacora{
+    margin-left: 35%;
+    height: 45%;
+    transform: translateX(570%);
+    margin-top: 37%;
+    opacity: 85%;
+}
+
+/*Icono facebook*/
+#facebook{
+    height: 40%;
+    transform: translateX(520px) translateY(40px);
+}
+
+
+.Copyright{/*Agrega el copyright en el footer*/
+    font-size: 130%;
+    opacity: 50%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 300;
+    margin-left: 611px;
+    margin-top: 6.3%;
+}
