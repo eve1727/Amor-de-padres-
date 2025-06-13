@@ -27,35 +27,60 @@
    
     <!--Creacion de la barra para regresar-->
         
-            <header id="encabezado">
-                <span class="material-symbols-outlined"><a href="index.html" class="inicio">
-                    arrow_back
-                </a></span>
-                
-              <h3><a href="contactos.html" id="ayuda">Ayuda</a></h3>
+            
+              <!--Cracion de la barra donde estara la flecha-->
+       <header id="barra1">
+        <ul style="display: flex;">
+         
+         <li style="margin-left: -5%;"><span class="material-symbols-outlined">
+            <a href="index.html" id="flecha">
+            arrow_back
+          </a></span>
+         </li>
 
-                <div class="container"><!--Div que ayudara a crear el area del menu-->
-                    <button id="hamburger-btn" class="hamburger-btn">&#9776;</button><!--Agregamos el boton con id para javascript y con clase, 
-                    los numeros que aparecen ahí es el codigo para que se ponga el boton-->
+         <li>
+        <h3><a href="sugerencias.html" id="sugerencias">Sugerencias</a></h3>
+         </li>
+         
+         <li>
+        <h3><a href="contactos.html" class="ayuda">Ayuda</a></h3>
+         </li>
+
+        </ul>
+       </header>
+  
+
+        <!--Creacion de la barra2 donde esta el icono y demás elementos-->
+        <header class="barra2">
+
+          <div style="display: flex;">
+           
+            
+          <img src="img1/icono2.png" id="icono">
+
+
+            <!-- Controles para aumentar y disminuir el tamaño de la fuente -->
+        <div class="controls">
+          <button id="increase-font" onclick="changeFontSize(1)">A+</button> <!-- Aumenta el tamaño de fuente -->
+          <button id="decrease-font" onclick="changeFontSize(-1)">a-</button> <!-- Disminuye el tamaño de fuente -->
+       </div>
+
+          <a href="ia.html">
+            <span class="material-symbols-outlined" id="mensajes2">
+            forum
+            </span>
+           </a>
+
+
+          </div>
+
+        </header>
+
     
-                    <nav id="side-menu" class="side-menu"><!--Creamos el nav porque sera una ventana de navegacion para el usuario-->
-                     
-                    <button id="cerrar" class="cerrar2">Cerrar</button><!--agregamos el boton de cerrar el menu-->
-                      <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="#padecimientos">Padecimientos</a></li>
-                        <li><a href="#acercade">Acerca de</a></li>
-                        <li><a href="#sugerencias">Sugerencias</a></li>
-                        <li><a href="#contactanos">Contactanos</a></li>
-                      </ul>
-                    </nav>
-                  </div>
-
-            </header>
 
     
             <!--Imagen y frase del encabezado-->
-            <header>
+            <header id="encabezado">
                 <center>
                 <h1 id="titulo">AUTOLESIONES <br> EN LA ADOLESCENCIA</h1>
                 </center>
@@ -79,7 +104,7 @@
                  </p>
             
                   <center>
-                  <img src="img2/chica3.webp" style="opacity: 85%; width: 250px; margin-top: 10%; border: 10px #cab18e solid; border-radius: 8%; margin-left: 20%;">
+                  <img src="lineas-removebg-preview.png" id="lineas">
                  </center>
                 
                 </div>
@@ -90,8 +115,23 @@
          
          <div id="par2"> <!--Crea la segunda division-->
              <h2 class="significado" style="color: #af8382; margin-left: 60%; margin-bottom: 4%;">¿POR QUÉ SE CAUSA?</h2>
-              <p class="parrafo1" style="margin-left: 60%; margin-top: 1%; color: rgb(0, 0, 0);"> No existe causa exacta pero, mayoritariamente se llega a padecer por cambios demasiados fuertes o malos en la vida del adolescente, por sufrir de burlas o 
-              comentarios negativos, por haber mucha violencia en su alrededor, por no tener amor propio, por sentirse incomprendidos, abrumados, solos o inútiles. </p>
+             <p id="parrafo2">Actualmente existen variedad de causas, cada una dependiendo del entorno y salud mental del adolescente, 
+                sin embargo aquí desglozamos algunas muy generalmente:</p>
+             <div class="contenedor">
+                <ul id="lista3">
+                  <li>Por problemas de salud mental</li><!--Aqui van algunas causas-->
+                  <br>
+                  <li>Castigarse por errores que creen haber cometido.</li>
+                  <br>
+                  <li>Por afrontar situaciones difíciles. </li>
+                  <br>
+                  <li>Tener incapacidad de expresar o procesar emociones fuertes</li>
+                  <br>
+                  <li>Sentirse aislado o sin apoyo por parte de la familia, amigos o compañeros </li>
+                  <br>
+                  <li>La presión para ser perfecto, encajar en ciertas normas o alcanzar ciertas expectativas.</li>
+                </ul>
+              </div>
               <img src="img2/nota.webp" style="transform: translateX(5%) translateY(170%); width: 25%;">
           </div>
 
@@ -101,17 +141,15 @@
          
                 <h2 style="font-family: DM Sans, sans-serif; font-size: 290%; text-align: center; font-weight: 600; color: #47423a;">¿CÓMO SE PUEDE SABER QUE TU HIJO PADECE DE ESTO?</h2>
                 
-                <ul style="font-size: 250%; list-style: none;"><!--Creacion de lista para causas-->
-                
-                <div id="columnas"><!--Div para apartar las causas en columnas-->
-                    <li>Uso seguido de ropa con mangas largas (incluso cuando hace calor).<br><br></li>
-                    <li>Ver quemaduras, cortes o cicatrices en el cuerpo del adolescente.<br><br></li>
-                    <li>Ver al adolescente muy inseguro, con vergüenza, con dolor o demasiado 
-                        apagado (esto solo en algunos casos). </li>
-                </div>
-                
-                </ul><!--Fin de la lista para causas-->
-        
+                <div class="card">
+                    <img src="iconos.autolesion/cursor-fill.svg" alt="">
+                    <div class="card__content">
+                      
+                      <p class="card__title"></p>
+                      <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    </div>
+                  </div>
+                  
            </div><!--Fin de la tercera division-->
 
     

@@ -3,9 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ayuda</title>
+    <link rel="stylesheet" type="text/css" href="contactos.css">
+
+     <!--Fuente para casi todo el sitio-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+     <!--Fuente para frase-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+     <!--Link para poner icono flecha-->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    
+     <!--Creacion de la barra2 donde esta el icono y demás elementos-->
+     <header class="barra2">
+
+        <div style="display: flex;">
+         
+          
+        <img src="img1/icono2.png" alt="amor de padres" id="icono">
+  
+  
+          <!-- Controles para aumentar y disminuir el tamaño de la fuente -->
+      <div class="controls">
+        <button id="increase-font" onclick="changeFontSize(1)">A+</button> <!-- Aumenta el tamaño de fuente -->
+        <button id="decrease-font" onclick="changeFontSize(-1)">a-</button> <!-- Disminuye el tamaño de fuente -->
+     </div>
+  
+        <a href="ia.html">
+          <span class="material-symbols-outlined" id="mensajes2">
+          forum
+          </span>
+         </a>
+  
+  
+        </div>
+  
+      </header>
+       
+      <!--Cracion de 2da mini barra-->
+         <header id="barra1">
+          <ul style="display: flex;">
+           
+            <!--Flecha-->
+           <li style="margin-left: -5%;"><span class="material-symbols-outlined">
+              <a href="index.html" id="flecha">
+              arrow_back
+            </a></span>
+           </li>
+  
+           <!--Sugerencias-->
+           <li>
+          <h3><a href="sugerencias.html" id="sugerencias">Sugerencias</a></h3>
+           </li>
+           
+           <!--Ayuda-->
+           <li>
+          <h3><a href="contactos.html" class="ayuda">Ayuda</a></h3>
+           </li>
+  
+          </ul>
+         </header>
+
+         <header id="encabezado">
+            <div>
+                <h2>AYUDA</h2>
+            </div>
+         </header>
+
+         <div id="cuerpo">
+               <h3 class="par1"><span style="color: #ff9d23;">¿Necesitas ayuda?</span> Bienvenido al espacio donde encontraras la ayuda adecuada 
+                para ti, tanto si requieres de nuestra ayuda o si deseas buscar la ayuda adecuada para ti al momento. Sientete seguro de explorar y pedir o encontrar
+                la ayuda que para ti sea la mejor.
+              </h3>
+
+                <h2 id="funciona">¿CÓMO FUNCIONA?</h2>
+
+                <p class="par1">Navegar en este apartado es sencillo todo basta con algunos cliks y listo, sin embargo aquí te dejamos una breve explicación:</p>
+              <div style="display: flex;">
+                <div class="cuadro">
+  
+                
+                  <div id="cuadro2">
+                    <img src="iconos.contactos/person-walking.svg" style="margin: 5% 0 0 40%;">
+                    <p style="margin-left: 2%; font-family: Lexend, sans-serif;">Ayuda autodidacta</p>
+                    <p style="justify-content: center;">En este espacio podrás buscar por tu propia cuenta el lugar que
+                      crees que se adecue a tu situación siendo asi completamente autodidacto</p>
+                  </div>
+                </div>
+
+                <div class="cuadro2">
+
+                  <div>
+                    <img src="iconos.contactos/people.svg" style="margin: 5% 0 0 40%;">
+                    <p style="margin-left: 3%; font-family: Lexend, sans-serif;">Servicio de ayuda</p>
+                    <p style="justify-content: center;">Mediante este espacio te ofrecemos nuestra ayuda para ayudarte a 
+                      encontrar el sitio o doctor adecuado para ti de una forma más privada y segura.</p>
+                  </div>
+                </div>
+              </div>
+
+             
+
+               
+                <div>
+   <!--Creación del pequeño menu para mostrar los padecimientos-->
+   <div class="container">
+     
+    <!--Boton para abrirlo-->
+    <button id="hamburger-btn" class="hamburger-btn">
+      <h2><a href="servicio.html" id="servicio">Servicio de ayuda</a></h2>
+    </button>
+
+
+</div>
+  
 </body>
+
+<script src="./js/contactos.js"></script>
 </html>

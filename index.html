@@ -19,7 +19,7 @@
          <title>AMORDEPADRES</title>
        </head>
           <body id="cuerpo" >
-            
+
             <!--Header para la barra-->
             <header id="encabezado"><!--hace que se muestre la barra arriba-->
 
@@ -32,7 +32,7 @@
 
                   
                      <!--Agregamos el submenu en la barra para los distintos padecimientos-->
-                     <li style="position: fixed; z-index: 100; margin-left: 43.2%; margin-top: 1%;" >
+                     <li style="position: fixed; z-index: 100; margin-left: 35%; margin-top: 1%;" >
                         <a href="#" class="padecimientos" style="margin-top: -100px;">Padecimientos</a>
                               <ul style="margin-left: -212%; margin-top: -5%;">
                                     <li><a href="ansiedad.html">Ansiedad</a></li>
@@ -48,14 +48,20 @@
                      </li>
                       
                      <!--Agregamos apartado de sugerencias-->
-                     <li style="transform: translateX(343.5%) translateY(16%);">
+                     <li style="transform: translateX(253.5%) translateY(16%);">
                       <a href="sugerencias.html" id="sugerencias">Sugerencias</a>
                      </li>
   
                      <!--Agrega el apartada de contactos de ayuda moviendo este elemento para un buen acomodo-->
-                     <li style="transform: translateY(14%) translateX(521.5%);">
+                     <li style="transform: translateY(14%) translateX(384.5%);">
                      <a href="contactos.html" id="ayuda">Ayuda</a>
                      </li>
+
+                     <!-- Controles para aumentar y disminuir el tamaño de la fuente -->
+                    <div class="controls">
+                      <button id="increase-font" onclick="changeFontSize(1)">A+</button> <!-- Aumenta el tamaño de fuente -->
+                      <button id="decrease-font" onclick="changeFontSize(-1)">a-</button> <!-- Disminuye el tamaño de fuente -->
+                  </div>
 
                      <!--Agregamos apartado para hablar con la IA-->
                      <li>
@@ -89,9 +95,9 @@
             </header>
            
             <!--Inicia presentación del sitio-->
-            
-            
-         <div>
+            <div id="content">
+       <div id="text-content">
+        
                 <h2 id="quienes">¿QUIÉNES SOMOS?</h2>
             <div id="presentacion">
                 <p id="introducirnos" style="font-size: 210%;">
@@ -103,7 +109,7 @@
                 <img src="img1/saludo.webp" id="ima1"/>
 
             </div>
-         </div>
+         
 
          <hr size="2px" color="black">
                
@@ -177,7 +183,7 @@
                                   <img src="img1/familia.webp" alt="Foto 1" />
                                 </div>
                                 <div class="card-back">
-                                  <p>“Ser PAPÁ es amar sin limítes y guiar con el CORAZÓN.”</p>
+                                  <p style="margin-top: -15%;">“Ser PAPÁ es amar sin limítes y guiar con el CORAZÓN.”</p>
                                 </div>
                               </div>
                             </div>
@@ -194,7 +200,7 @@
                   <img src="img1/abrazo.webp"  id="Foto2"/>
                                 </div>
                                 <div class="card-back">
-                                  <p>“Los adolecentes necesitan limítes, pero también mucha contenció.”</p>
+                                  <p style="margin-top: -15%;">“Los adolecentes necesitan limítes, pero también mucha contenció.”</p>
                                 </div>
                               </div>
                             </div>
@@ -207,10 +213,13 @@
                   </p>
                </div>
                
-            </div><!--Fin del 2do div-->
+                  </div><!--Fin del 2do div-->
 
-        
+               </div>
+            </div>
+          
           </body>
+
           
           <!-- Creacion del pie de cabeza -->
           <footer id="pie"><!--Cambia color footer-->

@@ -72,7 +72,7 @@ html{
     padding: 3%;
 }
 .controls{
-    transform: translateX(1190%);
+    transform: translateX(1150%);
     margin-top: 0.8%;
 }
 
@@ -91,7 +91,7 @@ button {
 }
 
 button:hover{
-    color: #5fa6f2;
+    color: #f8af07;
 }
 
 /*Se dan propiedades a la barra donde esta el icono y demas elementos*/
@@ -108,8 +108,9 @@ button:hover{
 }
 
 #icono{
-    height: 80px;
-    margin-left: 2%;
+    height: 110px;
+    margin-left: -2%;
+    margin-top: -2%;
 }
 
 .ayuda{
@@ -131,12 +132,12 @@ button:hover{
     color: #200f06;
     font-size: 400%;
     font-weight: 200;
-    transform: translateX(1150px) translateY(20%);
+    transform: translateX(1100px) translateY(20%);
     transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
 }
 
 #mensajes2:hover{
-    color: #5fa6f2;
+    color: #f8af07;
 }
 
 #sugerencias{
@@ -200,7 +201,7 @@ button:hover{
     position: fixed;
     margin-left: -4%;
     transform: translateY(-190%) translateX(-50%);
-    background-color: #DDE6ED;
+    background-color: #eddab1;
     transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
     border: 1px solid #222;
     border-radius: 30%;
@@ -208,7 +209,7 @@ button:hover{
 
 /*Hover del boton*/
 .hamburger-btn:hover{
-    background-color: #2F4156;
+    background-color: #c7a660;
 }
 
 /*Mueve la flecha del boton*/
@@ -221,7 +222,7 @@ button:hover{
 #padecimientos{
     width: 14%;
     height: 450px;
-    background-color:#D3DADC;
+    background-color:#fbf6d9;
     top: 25%;
     left: -2%;
     position:fixed;
@@ -242,7 +243,7 @@ button:hover{
 }
 
 .ventana2:hover{
-    background-color: #526166;
+    background-color: #c9ab69;
     color: #f9f9f9 ;
     height:40px;
  }
@@ -264,7 +265,7 @@ button:hover{
 }
 
 .cerrar2:hover{
-    background-color: #2F4156;
+    background-color: #c9ab69;
     color: #e0d8cd;
     border-radius: 9%;
 }
@@ -301,7 +302,7 @@ button:hover{
 }
 
 #pagina li a:hover{
-    color: #5fa6f2;
+    color: #ecad24;
 }
 
 .ventanas{
@@ -353,8 +354,8 @@ button:hover{
     position: relative;
     width: 320px;
     height: 300px;
-    background-color: #DDE6ED;
-    border: 1px solid rgba(43, 42, 42, 0.1);
+    background-color: #FEFAF8;
+    border: 2px solid rgba(23, 23, 23, 0.1);
     box-shadow: 0 25px 25px rgba(95, 94, 94, 0.25);
     display: flex;
     justify-content: center;
@@ -489,7 +490,7 @@ button:hover{
     transform: translateY(230px) translateX(1200px);
 }
 #lista3{
-    font-size: 75%;
+    font-size: 80%;
     font-family: "DM Sans", sans-serif; 
 }
 

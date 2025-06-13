@@ -1,5 +1,5 @@
 #cuerpo{ /*Caracteristicas de todo el cuerpo de el sitio web*/
-    background-color: #fbf6ed;
+    background-color: #ffffff;
     margin: 0%;
     padding: 0%;
 } 
@@ -9,6 +9,48 @@ html{
 }
 
 /*BARRA*/
+
+    /*Texto que vaya apareciendo estilos*/
+
+    #content {
+        background: white;
+        /* Fondo blanco para resaltar el contenido */
+      
+        border-radius: 8px;
+        /* Bordes redondeados para suavizar la caja */
+      
+      }
+      
+      /* Estilos para todos los párrafos dentro de #content */
+      /* Inicialmente están ocultos y desplazados hacia abajo */
+      #content p {
+        opacity: 0;
+        /* Transparencia total, párrafos invisibles inicialmente */
+      
+        transform: translateY(30px);
+        /* Desplaza los párrafos 30px hacia abajo */
+      
+        transition: 
+          opacity 0.9s cubic-bezier(.4,0,.2,1),
+          transform 0.9s cubic-bezier(.4,0,.2,1);
+        /* Transiciones suaves para opacidad y posición con curva de animación personalizada */
+      
+        will-change: opacity, transform;
+        /* Optimiza el rendimiento indicando que estos dos estilos cambiarán */
+      
+        margin-bottom: 1%;
+        /* Margen inferior para separar los párrafos */
+      }
+      
+      /* Estilos para párrafos que tienen la clase 'visible' */
+      /* Aquí están completamente visibles y en posición original */
+      #content p.visible {
+        opacity: 1;
+        /* Opacidad total, párrafo visible */
+      
+        transform: translateY(10);
+        /* Sin desplazamiento vertical, posición natural */
+      }
 
 #encabezado{/*Barra parte de arriba*/
     height: 12%;
@@ -124,12 +166,32 @@ html{
     background-color: #d69601;
 }
 
+.controls{
+    transform: translateX(630%);
+}
+
+/* Estilo general de los botones */
+button {
+    padding: 1px; /* Espaciado interno para hacerlos más grandes */
+    margin: 2px; /* Espaciado entre botones */
+    font-size: 35px; /* Tamaño de fuente adecuado */
+    font-family: "Lexend", sans-serif;
+    font-weight: 250;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    cursor: pointer; /* Cambia el cursor a 'mano' cuando el usuario pase sobre ellos */
+    border: none; /* Elimina los bordes del botón */
+    background: none; /* Elimina cualquier fondo del botón */
+}
+
+button:hover{
+    color: #5fa6f2;
+}
 
 /*Estilos para el icono de mensajes (el enlace)*/
  #mensajes{
     color: #200f06;
     border: solid #f8e6bb;
-    margin-left: 530.8%;
+    margin-left: 400.8%;
     padding: 40px;
     padding-top: 50%;
     transform: translateY(900px);
@@ -137,8 +199,7 @@ html{
  }
 
  #mensajes:hover{
-    color: white;
-    background-color: #d69601;
+    color: #5fa6f2;
  }
 
  /*Estilos para el icono de mensajes (el icono)*/
@@ -195,11 +256,12 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
 /* Propiedades para presentarnos como sitio */
    
 #inicio{ /*Propiedades para el div que divide esta seccion*/
-    background-color:#fbf6ed;
+    background-color:#ffffff;
     background-size: 100%;
     height: 500px;
     margin-top: -4%;
 }
+
 #presentacion{/* Propiedades para otro div que pone los elementos a un lado de otro */
     display: flex;
 }
@@ -612,3 +674,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     margin-left: 611px;
     margin-top: 6.3%;
 }
+
+
+
+

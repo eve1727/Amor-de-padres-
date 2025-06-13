@@ -1,0 +1,271 @@
+.cuerpo{
+    padding: 2%;
+}
+    
+    /*Barra*/
+
+ /*Se dan propiedades a la barra donde esta el icono y demas elementos*/
+  .barra2{
+    background-color:#fff4da;
+    width: 100%;
+    height: 80px;
+    position: fixed;/*Hace qur la barra quede estatica*/
+    bottom: 90%;
+    right: 0%;
+    left: 0;
+    top: 0%;
+    z-index: 1000;
+}
+
+/*Propiedades del icono*/
+#icono{
+    height: 110px;
+    margin-left: -2%;
+    margin-top: -2%;
+}
+
+ /*Aumentar o disminuir el texto boton*/
+.controls{
+    transform: translateX(1150%);
+    margin-top: 0.8%;
+}
+
+/* Estilo general de los botones */
+.barra2 button {
+    padding: 1px; /* Espaciado interno para hacerlos más grandes */
+    margin: 2px; /* Espaciado entre botones */
+    font-size: 35px; /* Tamaño de fuente adecuado */
+    font-family: "Lexend", sans-serif;
+    font-weight: 250;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    cursor: pointer; /* Cambia el cursor a 'mano' cuando el usuario pase sobre ellos */
+    border: none; /* Elimina los bordes del botón */
+    background: none; /* Elimina cualquier fondo del botón */
+
+}
+
+.barra2 button:hover{
+    color: #5fa6f2;
+}
+
+/*Propiedades del icono de mensajes */
+#mensajes2{
+    color: #200f06;
+    font-size: 400%;
+    font-weight: 200;
+    transform: translateX(1100px) translateY(20%);
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+}
+
+#mensajes2:hover{
+    color: #5fa6f2;
+}
+
+
+
+/*Propiedades de la barra donde esta la flecha*/
+#barra1{
+    background-color: #eddab1;
+    width: 100%;
+    height: 120px;
+    position: fixed;/*Hace que la barra quede estatica*/
+    bottom: 90%;
+    right: 0%;
+    left: 0;
+    top: 1%;
+    z-index: 10;
+}
+
+/*Propiedades de la lista que contiene cada elemento de la 2da barra*/
+#barra1 ul{
+    list-style: none;
+}
+
+/*Padding de cada elemento de la lista de la 2da barra*/
+#barra1 ul li{
+    padding: 3%;
+}
+
+/*Flecha para regresar el inicio*/
+#flecha{
+    text-decoration: none;
+    font-size: 210%;
+    color: #080808;
+    font-weight: 500;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    position: fixed;
+    z-index: 100;
+ }
+ 
+ #flecha:hover{
+     color: #ffffff;
+ }
+ 
+/*Propiedades para "sugerencias" en 2da mini barra*/
+#sugerencias{
+    text-decoration: none;
+    font-size: 150%;
+    color: #200f06;
+    font-family:"Lexend", sans-serif;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    font-weight: 270;
+    margin-left: 630%;
+}
+
+#sugerencias:hover{
+    color: #ffffff;
+}
+
+/*Propiedades para "ayuda" en 2da mini barra*/
+.ayuda{
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: 270;
+    color: #200f06;
+    font-family:"Lexend", sans-serif;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    margin-left: 1150%;
+}
+
+.ayuda:hover{
+    color: #ffffff;
+}
+
+
+#encabezado{
+    background-image: url(contactos.img/IMG_0922.webp);
+    background-size: cover;
+    background-position-y:50%; 
+    height:400px;
+    opacity: 95%;
+    transform: translateY(0%);
+    position: relative;
+    padding: 5%;
+}
+
+#encabezado div{
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo negro semitransparente (50% de opacidad) */
+    height: 500px;
+    width: 111%;
+    transform: translateX(-5%) translateY(-21%);
+}
+
+#encabezado h2{
+    font-size: 600%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transform: translateY(180%);
+    opacity: 100%;
+    font-family: "Lexend", sans-serif  ;
+}
+
+.par1{
+    font-size: 170%;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 5%;
+    justify-content: center;
+}
+
+#funciona{
+    text-align: center;
+    font-family:"DM Sans", sans-serif ;
+    font-weight: 500;
+    font-size: 200%;
+    margin-top: 5%;
+}
+
+#continuacion{
+    font-size: 170%;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 10%;
+    justify-content: center;
+}
+
+/* Estilos para el boton*/
+.hamburger-btn{
+    height: 280px;
+    width: 40%;
+    background-image: url(contactos.img/personas.webp);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+    background-position-x: 30%;
+    border-radius: 10%;
+    z-index: 5;
+    margin-left: 50%;
+    margin-top: 5%;
+    border: 1px solid rgba(43, 42, 42, 0.1);
+    box-shadow: 0 25px 25px rgba(95, 94, 94, 0.25);
+    transition: all 0.3s ease;
+}
+
+/*Hover del boton*/
+.hamburger-btn:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+}
+
+#servicio{
+    font-family: "DM Sans", sans-serif;
+    font-size: 300%;
+    font-weight: 550;
+    color: rgb(11, 11, 11);
+    text-decoration: none;
+    transform: translateY(150%);
+}
+
+
+.cuadro {
+    width: 400px;
+    height: 350px;
+    background-color: #f3e1e1 ;
+    background-size: 80%;
+    border-radius: 10px;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s;
+    padding: 1%;
+    margin-left: 14%;
+    margin-right: 10%;
+    display: flex;
+    font-family: "DM Sans", sans-serif;
+    font-size: 150%;
+    font-weight: 400;
+  }
+
+  .cuadro:hover {
+    transform: rotate(-5deg) scale(1.0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  #cuadro2{
+    padding-left: 5%;
+  }
+
+  .cuadro2 {
+    width: 400px;
+    height: 350px;
+    background-color: #f3e1e1 ;
+    background-size: 80%;
+    border-radius: 10px;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s;
+    padding: 1%;
+    margin-left: 2%;
+    display: flex;
+    font-family: "DM Sans", sans-serif;
+    font-size: 150%;
+    font-weight: 400;
+  }
+
+  .cuadro2:hover {
+    transform: rotate(-5deg) scale(1.0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }

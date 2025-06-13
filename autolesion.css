@@ -19,133 +19,123 @@ body{/*color de fondo*/
     display: flex;
 }
 
-/*Cosas de la barra*/
+/*Propiedades de la barra donde esta la flecha*/
 
-/*Flecha*/
-#container{
-    display: block;
-}
-.inicio{
-    font-size: 300%;
-    text-decoration: none;
-    color: #fefcfc;
-    transform: translateX(50%);
-    height: 95px;
-    font-weight: 900px ;
-    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+#barra1{
+    background-color: #eddab1;
+    width: 100%;
+    height: 120px;
+    position: fixed;/*Hace que la barra quede estatica*/
+    bottom: 90%;
+    right: 0%;
+    left: 0;
+    top: 1%;
+    z-index: 10;
 }
 
-.inicio:hover{
-    background-color: #b59e7d;
+#barra1 ul{
+    list-style: none;
 }
 
-/*agregamos propiedades para el apartado de ayuda*/
-#ayuda{
-    margin-left: 770%;
-    text-decoration: none;
-    font-size: 240%;
-    font-family:"Lexend", sans-serif ;
-    font-weight: 400;
-    color:#f3f3f3;
-    transition: .3s linear ;
-   transform: translateY(700%);
+#barra1 ul li{
+    padding: 3%;
+}
+.controls{
+    transform: translateX(1140%);
+    margin-top: 0.8%;
 }
 
-#ayuda:hover{
-    color: #af8382;
-}
-
-/* Estilos para el botón de menú hamburguesa */
-.hamburger-btn {
-    font-size: 70px; /* Tamaño del icono o texto del botón */
-    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+/* Estilo general de los botones */
+button {
+    padding: 1px; /* Espaciado interno para hacerlos más grandes */
+    margin: 2px; /* Espaciado entre botones */
+    font-size: 35px; /* Tamaño de fuente adecuado */
+    font-family: "Lexend", sans-serif;
+    font-weight: 250;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    cursor: pointer; /* Cambia el cursor a 'mano' cuando el usuario pase sobre ellos */
     border: none; /* Elimina los bordes del botón */
     background: none; /* Elimina cualquier fondo del botón */
-    position: fixed; /* Se posiciona de manera absoluta dentro de su contenedor */
-    top: 10px; /* Se coloca a 20 píxeles desde la parte superior */
-    right: 20px; /* Se coloca a 20 píxeles desde la derecha */
-    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/ 
-    height: 85px;
-    width: 8%;
-    color: #fefcfc;
-    transform: translateY(-15%) translateX(13%);
+
 }
 
-.hamburger-btn:hover{
-    background-color: #b59e7d;
+button:hover{
+    color: #bde22a;
 }
 
-/* Estilos del menú lateral */
-.side-menu {
-    position: fixed; /* Fija el menú en la pantalla sin moverse con el contenido */
-    right: -250px; /* Inicialmente, coloca el menú fuera de la vista en el lado derecho */
-    top: 0; /* Se coloca en la parte superior de la pantalla */
-    width: 250px; /* Ancho del menú lateral */
-    height: 100%; /* Ocupa toda la altura de la pantalla */
-    background-color: #b59e7d; /* Color de fondo */
-    color: white; /* Color del texto en blanco */
-    transition: right 0.3s ease; /* Transición suave al mover el menú */
-    padding-top: 60px; /* Espacio superior dentro del menú para evitar que los elementos queden pegados arriba */
+/*Se dan propiedades a la barra donde esta el icono y demas elementos*/
+.barra2{
+    background-color:#fff4da;
+    width: 100%;
+    height: 80px;
+    position: fixed;/*Hace qur la barra quede estatica*/
+    bottom: 90%;
+    right: 0%;
+    left: 0;
+    top: 0%;
+    z-index: 10;
 }
 
-/* Estilos de la lista dentro del menú */
-.side-menu ul {
-    list-style: none; /* Elimina los estilos predeterminados de la lista (viñetas) */
-    padding: 0; /* Elimina el padding por defecto de la lista */
+#icono{
+    height: 110px;
+    margin-left: -2%;
+    margin-top: -2%;
 }
 
-/* Estilos para cada elemento de la lista */
-.side-menu ul li {
-    padding: 15px; /* Agrega espaciado dentro de cada elemento */
-    text-align: center; /* Centra el texto en cada elemento */
-    font-size: 170%;
+.ayuda{
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: 270;
+    color: #200f06;
+    font-family:"Lexend", sans-serif;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    margin-left: 1150%;
 }
 
-/* Estilos para los enlaces dentro de la lista */
-.side-menu ul li a {
-    color: white; /* Color del texto en blanco */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    display: block; /* Hace que los enlaces ocupen toda la anchura disponible para mejorar la usabilidad */
-    transition: background-color 0.3s ease;
-    font-family: "Lexend", sans-serif;
-    font-weight: 300;
-    font-size: 90%;
-}
-
-/* Efecto al pasar el mouse sobre los enlaces */
-.side-menu ul li a:hover {
-    background-color: #ccc2aa; /* Cambia el fondo a un tono más claro cuando se pasa el mouse */
-}
-
-/*Cerrar el menu boton*/
-.cerrar2{
-    font-size: 30px; /* Tamaño del icono o texto del botón */
-    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
-    border: none; /* Elimina los bordes del botón */
-    background: none; /* Elimina cualquier fondo del botón */
-    color: white;
-    font-family: "Lexend", sans-serif;
-    font-weight: 600;
-    width: 90%;
-    transform: translateX(6%);
-    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
-}
-
-.cerrar2:hover{
-    background-color: #af8382;
-}
-
-/* Clase que activa el menú */
-.side-menu.active {
-    right: 0; /* Mueve el menú a la posición visible cuando se activa */
-}
-
-/*Clase que desactiva el menú */
-.side-menu.disabled {
-    left: 100%;
+.ayuda:hover{
+    color: #ffffff;
 }
 
 
+#mensajes2{
+    color: #200f06;
+    font-size: 400%;
+    font-weight: 200;
+    transform: translateX(1100px) translateY(20%);
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+}
+
+#mensajes2:hover{
+    color: #bde22a;
+}
+
+#sugerencias{
+    text-decoration: none;
+    font-size: 150%;
+    color: #200f06;
+    font-family:"Lexend", sans-serif;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    font-weight: 270;
+    margin-left: 630%;
+}
+
+#sugerencias:hover{
+    color: #ffffff;
+}
+
+#flecha{
+   text-decoration: none;
+   font-size: 210%;
+   color: #080808;
+   font-weight: 500;
+   transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+   position: fixed;
+   z-index: 100;
+}
+
+#flecha:hover{
+    color: #ffffff;
+}
 
 /*Encabezado*/
 
@@ -161,13 +151,15 @@ body{/*color de fondo*/
     text-shadow: 4px 4px 15px black;
 }
 
-header { /*Imegen de fondo encabezado*/
+#encabezado{ /*Imegen de fondo encabezado*/
    height: 400px;
-   background-image: url(img2/autolesion.webp);
+   background-image: url(mono2.jpeg);
    background-size: cover;
    background-position: center;
    opacity: 95%;
-   
+   background-position-y: 90%;
+   position: static;
+   margin-top: 9%; 
 }
 
 
@@ -184,11 +176,12 @@ header { /*Imegen de fondo encabezado*/
 }
 
 .parrafo1{ /*Agrega especificaciones similares a los parrafos de todos los div*/
-    font-size: 230%;
+    font-size: 210%;
     color: #100f0f;
     font-family:"DM Sans", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     margin-left: 9%;
+    justify-content: center;
 }
 
 .par1{ /* Hace que tengamos espaciado en la pantalla con nuestro apartado 1 */
@@ -204,6 +197,12 @@ header { /*Imegen de fondo encabezado*/
     margin-top: 3%;
 }
 
+#lineas{
+    transform: translateX(20%);
+    margin-top: -5%;
+    height: 100%;
+}
+
 
 #par2{ /*caracteristicas del division del apartado 2*/
     background-image: url(img2/chica2.webp);
@@ -211,9 +210,61 @@ header { /*Imegen de fondo encabezado*/
     height: 600px;
     background-position: center center;
     background-repeat: no-repeat;
-    background-color:#f1f1f1;
     padding: 2.5%;
 }
+
+#parrafo2{
+    font-size: 180%;
+    font-family: "DM Sans", sans-serif;
+    text-align: right;
+    margin-left: 55%;
+    justify-content: left;
+}
+
+#lista3{
+    font-size: 80%;
+    font-family: "DM Sans", sans-serif;
+}
+
+/*Propiedades generales de todo el contenedor de la parte donde se podra hacer scroll*/
+.contenedor {
+    width: 500px;
+    height: 250px;
+    border: 1px solid #222;
+    border-radius: 2%;
+    font-size: 200%;
+    color: #080808;
+    background-color: #f9f9f9;
+    padding: 10px;
+    overflow-y: scroll;/*Se agrega para que la lista no se desborde y solo aparezca la barra de desplazamiento en vertical */
+    transform: translateY(10%) translateX(160%);
+    box-shadow: 0 25px 25px rgba(147, 147, 147, 0.25);
+    transition: 0.5s;
+  }
+
+  .contenedor:hover{
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  }
+
+  /* Utilizamos webkit para dar propiedades exactas a la barra de desplazamiento*/
+
+  /*Hace visible la barra de desplazar y le agrega una anchura*/
+  .contenedor::-webkit-scrollbar {
+    width: 30px;
+  }
+  /*Le cambia el fondo de donde esta la barra de desplazamiento*/
+  .contenedor::-webkit-scrollbar-track {
+    background: #f3e1e1;
+  }
+  /*cambia el thumb que desplaza*/
+  .contenedor::-webkit-scrollbar-thumb {
+    background: #d49892;
+  }
+  /*Agregamos un efecto hover al thumb para que resalte que lo esta seleccionando*/
+  .contenedor::-webkit-scrollbar-thumb:hover{
+    background: #e3beba;
+  }
+
 
 
 #par3{ /*caracteristicas de la division del apartado 3*/
@@ -229,61 +280,68 @@ header { /*Imegen de fondo encabezado*/
     margin-bottom: 0%;
 }
 
-#columnas{ /*Separa el texto del parrafo 3 en columnas*/
-    columns: 3 10px;
-    margin-top: 5%;
-    color: #000000;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
-    font-size: 100%;
-    column-rule: 15px #e9d6b2 dotted;
-}
-
-#par4{ /* caracteristicas de la division del apartado 4 */
-    background-color:#fbf6ed;
-    height: 600px;
-    width: 85%;
-    margin-left: 0%;
-    padding: 7.5%;
-}
-
-#separacion{/*hace que nuestros cuadros del 4to apartado esten separados*/
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
     display: flex;
-    height: 600px;
-}
-
-#consejos{
-    font-size: 300%;
-    text-align: right;
-    margin-top: 0.5%;
-    color: black;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 600;
-}
-
-#cons1{
-    font-family:"Lexend", sans-serif ;
-    font-weight: 350;
-    font-size: 55%;
-    margin-left: 9%;
-    margin-right: 4%;
-    margin-top: -30%;
-}
-#cons2{
-    font-family: "Lexend", sans-serif ;
-    font-weight: 350;
-    font-size: 55%;
-    margin-top: -6%;
-    margin-left: 5%;
-}
-#cons3{
-    font-family: "Lexend", sans-serif ;
-    font-weight: 350;
-    font-size: 55%;
-    margin-top: -3%;
-    margin-left: 5%;
-}
-
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card:hover svg {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+  
 #acuadro{/*Caracteristicas del 1er cuadro de la 4ta division*/
     font-size: 300%;
     background-color: #edd6d5;
@@ -371,12 +429,6 @@ header { /*Imegen de fondo encabezado*/
     font-weight: 500;
 }
 
-#icono{/*Agrega la imagen del icono*/
-    height: 60%;
-    margin-top: 5%;
-    opacity: 90%;
-    margin-left: 45%;
-}
 
 #pie-2{
     background-color: #d0bcb6;
