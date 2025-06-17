@@ -2,6 +2,130 @@
     padding: 2%;
 }
     
+
+
+/* Estilos para el boton donde  donde se veran varios padecimientos*/
+.hamburger-btn{
+    height: 115px;
+    width: 7%;
+    z-index: 8;
+    position: fixed;
+    margin-left: 10%;
+    transform: translateY(190%) translateX(-210%);
+    background-color: #eddab1;
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    border: 1px solid #222;
+    border-radius: 30%;
+}
+
+/*Hover del boton*/
+.hamburger-btn:hover{
+    background-color: #c7a660;
+}
+
+/*Mueve la flecha del boton*/
+#picar{
+    height: 40%;
+    transform: translateX(80%);
+ }
+
+/*Propiedades del submenu en la izquierda*/
+#padecimientos{
+    width: 14%;
+    height: 450px;
+    background-color:#fbf6d9;
+    top: 25%;
+    left: -2%;
+    position:fixed;
+    z-index: 9;
+    border-radius: 5%;
+    transition: left 0.3s ease; /* Transición suave al mover el menú */
+}
+
+/* Estilos que utilizan todas las ventanas del submenu*/
+.ventana2{
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 180%;
+    font-weight: 300;
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    color:#080808;
+    display: block; /* Hace que los enlaces ocupen toda la anchura disponible para mejorar la usabilidad */
+}
+
+.ventana2:hover{
+    background-color: #c9ab69;
+    color: #f9f9f9 ;
+    height:40px;
+ }
+
+/*Cerrar el menu boton*/
+.cerrar2{
+    font-size: 30px; /* Tamaño del icono o texto del botón */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+    border: none; /* Elimina los bordes del botón */
+    background: none; /* Elimina cualquier fondo del botón */
+    color: black;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    width: 30%;
+    margin-top: 10%;
+    transform: translateX(130%);
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    display: block;
+}
+
+.cerrar2:hover{
+    background-color: #c9ab69;
+    color: #e0d8cd;
+    border-radius: 9%;
+}
+
+
+/* Clase que activa el menú */
+.padecimientos.active {
+    margin-left: 0%; /* Mueve el menú a la posición visible cuando se activa */
+}
+
+/*Clase que desactiva el menu*/
+.padecimientos.disabled{
+    margin-left: -90%;
+}
+
+#pagina1{
+    width: 60%;
+    margin-left: 23%;
+    margin-top: 5%;
+}
+
+#pagina{
+    display: flex;
+    list-style: none;
+
+}
+
+#pagina li{
+    padding: 2%;
+}
+
+#pagina li a{
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+}
+
+#pagina li a:hover{
+    color: #ecad24;
+}
+
+.ventanas{
+    text-decoration: none;
+    font-size: 200%;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    color: #080808;
+    text-align: center;
+}
+
+
     /*Barra*/
 
  /*Se dan propiedades a la barra donde esta el icono y demas elementos*/
@@ -86,21 +210,6 @@
     padding: 3%;
 }
 
-/*Flecha para regresar el inicio*/
-#flecha{
-    text-decoration: none;
-    font-size: 210%;
-    color: #080808;
-    font-weight: 500;
-    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
-    position: fixed;
-    z-index: 100;
- }
- 
- #flecha:hover{
-     color: #ffffff;
- }
- 
 /*Propiedades para "sugerencias" en 2da mini barra*/
 #sugerencias{
     text-decoration: none;
@@ -109,7 +218,7 @@
     font-family:"Lexend", sans-serif;
     transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
     font-weight: 270;
-    margin-left: 630%;
+    margin-left: 1490%;
 }
 
 #sugerencias:hover{
@@ -124,7 +233,7 @@
     color: #200f06;
     font-family:"Lexend", sans-serif;
     transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
-    margin-left: 1150%;
+    margin-left: 1250%;
 }
 
 .ayuda:hover{
@@ -188,7 +297,7 @@
 }
 
 /* Estilos para el boton*/
-.hamburger-btn{
+.hamburger-btn1{
     height: 280px;
     width: 40%;
     background-image: url(contactos.img/personas.webp);
@@ -206,7 +315,7 @@
 }
 
 /*Hover del boton*/
-.hamburger-btn:hover{
+.hamburger-btn1:hover{
     transform: translateY(-5px);
     box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
 }
@@ -218,6 +327,12 @@
     color: rgb(11, 11, 11);
     text-decoration: none;
     transform: translateY(150%);
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+}
+
+
+#servicio:hover{
+    color: #e3e9ef;
 }
 
 

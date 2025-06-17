@@ -1,7 +1,13 @@
 
 body{/*color de fondo*/
-   background-color:#F1EADA;
+   background-color:#FFFFFF;
 }
+
+/*Para que tenga un desplazamiento más sueave*/
+html{
+    scroll-behavior: smooth;
+}
+
 
 #encabezado{ /*agrega la barra de volver al inicio */
     position: fixed;/*Hace que la barra se quede estatica*/
@@ -82,6 +88,20 @@ button:hover{
     margin-top: -2%;
 }
 
+#inicio2{
+    text-decoration: none;
+    font-size: 185%;
+    font-weight: 270;
+    color: #200f06;
+    font-family:"Lexend", sans-serif;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    margin-left: 1400%;
+}
+
+#inicio2:hover{
+    color: #ffffff;
+}
+
 .ayuda{
     text-decoration: none;
     font-size: 150%;
@@ -89,7 +109,7 @@ button:hover{
     color: #200f06;
     font-family:"Lexend", sans-serif;
     transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
-    margin-left: 1150%;
+    margin-left: 1250%;
 }
 
 .ayuda:hover{
@@ -109,34 +129,6 @@ button:hover{
     color: #bde22a;
 }
 
-#sugerencias{
-    text-decoration: none;
-    font-size: 150%;
-    color: #200f06;
-    font-family:"Lexend", sans-serif;
-    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
-    font-weight: 270;
-    margin-left: 630%;
-}
-
-#sugerencias:hover{
-    color: #ffffff;
-}
-
-#flecha{
-   text-decoration: none;
-   font-size: 210%;
-   color: #080808;
-   font-weight: 500;
-   transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
-   position: fixed;
-   z-index: 100;
-}
-
-#flecha:hover{
-    color: #ffffff;
-}
-
 /*Encabezado*/
 
 
@@ -153,7 +145,7 @@ button:hover{
 
 #encabezado{ /*Imegen de fondo encabezado*/
    height: 400px;
-   background-image: url(mono2.jpeg);
+   background-image: url(img2/mono2.webp);
    background-size: cover;
    background-position: center;
    opacity: 95%;
@@ -163,7 +155,167 @@ button:hover{
 }
 
 
+
+/* Estilos para el boton donde  donde se veran varios padecimientos*/
+.hamburger-btn{
+    height: 115px;
+    width: 7%;
+    z-index: 8;
+    position: fixed;
+    margin-left: -4%;
+    transform: translateY(90%) translateX(-19%);
+    background-color: #eddab1;
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    border: 1px solid #222;
+    border-radius: 30%;
+}
+
+/*Hover del boton*/
+.hamburger-btn:hover{
+    background-color: #c7a660;
+}
+
+/*Mueve la flecha del boton*/
+#picar{
+    height: 40%;
+    transform: translateX(80%);
+ }
+
+/*Propiedades del submenu en la izquierda*/
+#padecimientos{
+    width: 14%;
+    height: 450px;
+    background-color:#fbf6d9;
+    top: 25%;
+    left: -2%;
+    position:fixed;
+    z-index: 9;
+    border-radius: 5%;
+    transition: left 0.3s ease; /* Transición suave al mover el menú */
+}
+
+/* Estilos que utilizan todas las ventanas del submenu*/
+.ventana2{
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 180%;
+    font-weight: 300;
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    color:#080808;
+    display: block; /* Hace que los enlaces ocupen toda la anchura disponible para mejorar la usabilidad */
+}
+
+.ventana2:hover{
+    background-color: #c9ab69;
+    color: #f9f9f9 ;
+    height:40px;
+ }
+
+/*Cerrar el menu boton*/
+.cerrar2{
+    font-size: 30px; /* Tamaño del icono o texto del botón */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+    border: none; /* Elimina los bordes del botón */
+    background: none; /* Elimina cualquier fondo del botón */
+    color: black;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    width: 30%;
+    margin-top: 10%;
+    transform: translateX(130%);
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    display: block;
+}
+
+.cerrar2:hover{
+    background-color: #c9ab69;
+    color: #e0d8cd;
+    border-radius: 9%;
+}
+
+
+/* Clase que activa el menú */
+.padecimientos.active {
+    margin-left: 0%; /* Mueve el menú a la posición visible cuando se activa */
+}
+
+/*Clase que desactiva el menu*/
+.padecimientos.disabled{
+    margin-left: -90%;
+}
+
+
+
+#paginair{
+    list-style: none;
+    display: flex;
+    margin-left: 25%;
+    margin-top: 4%;
+}
+
+#paginair li{
+    margin-left: 3%;
+}
+
+#paginair a{
+    text-decoration: none;
+    font-size: 200%;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    color: #080808;
+    text-align: center;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+}
+
+#paginair a:hover{
+    color: #bde22a;
+}
+
+
 /*Contenido*/
+
+
+/*Texto que vaya apareciendo estilos*/
+
+#content {
+    background: white;
+    /* Fondo blanco para resaltar el contenido */
+  
+    border-radius: 8px;
+    /* Bordes redondeados para suavizar la caja */
+  
+  }
+  
+  /* Estilos para todos los párrafos dentro de #content */
+  /* Inicialmente están ocultos y desplazados hacia abajo */
+  #content p {
+    opacity: 0;
+    /* Transparencia total, párrafos invisibles inicialmente */
+  
+
+    transition: 
+      opacity 0.6s cubic-bezier(.4,0,.2,1),
+      transform 0.6s cubic-bezier(.4,0,.2,1);
+    /* Transiciones suaves para opacidad y posición con curva de animación personalizada */
+  
+    will-change: opacity, transform;
+    /* Optimiza el rendimiento indicando que estos dos estilos cambiarán */
+  
+    margin-bottom: 1%;
+    /* Margen inferior para separar los párrafos */
+  }
+  
+  /* Estilos para párrafos que tienen la clase 'visible' */
+  /* Aquí están completamente visibles y en posición original */
+  #content p.visible {
+    opacity: 1;
+    /* Opacidad total, párrafo visible */
+  
+    transform: translateY(10);
+    /* Sin desplazamiento vertical, posición natural */
+  }
+
+
 
 
 .significado { /* Agrega estilo a nuestras primeras palabras del todos los div */
@@ -176,10 +328,9 @@ button:hover{
 }
 
 .parrafo1{ /*Agrega especificaciones similares a los parrafos de todos los div*/
-    font-size: 210%;
-    color: #100f0f;
-    font-family:"DM Sans", sans-serif;
-    font-weight: 300;
+    font-size: 180%;
+    font-family: "DM Sans", sans-serif;
+    text-align: left;
     margin-left: 9%;
     justify-content: center;
 }
@@ -280,166 +431,231 @@ button:hover{
     margin-bottom: 0%;
 }
 
-.card {
+#causas{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-size: 290%;
+    text-align: center;
+    color: #47423a;
+    margin-top: -3%;
+    transform: translateY(-50%);
+}
+
+/*Propiedades para la zona donde damos consejos los tipos que hay en la 3era division*/
+.tipos1{
     position: relative;
-    width: 300px;
-    height: 200px;
-    background-color: #f2f2f2;
-    border-radius: 10px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    overflow: hidden;
-    perspective: 1000px;
-    box-shadow: 0 0 0 5px #ffffff80;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .card svg {
-    width: 48px;
-    fill: #333;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-  }
-  
-  .card__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #f2f2f2;
-    transform: rotateX(-90deg);
-    transform-origin: bottom;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .card:hover .card__content {
-    transform: rotateX(0deg);
-  }
-  
-  .card__title {
-    margin: 0;
-    font-size: 24px;
-    color: #333;
-    font-weight: 700;
-  }
-  
-  .card:hover svg {
-    scale: 0;
-  }
-  
-  .card__description {
-    margin: 10px 0 0;
-    font-size: 14px;
-    color: #777;
-    line-height: 1.4;
-  }
-  
-#acuadro{/*Caracteristicas del 1er cuadro de la 4ta division*/
-    font-size: 300%;
-    background-color: #edd6d5;
-    width: 30%;
-    height: 90%;
-    border-radius: 8%;
-    margin-right: 5%;
-    box-shadow:  0 0 17px rgb(168, 168, 168);
+    align-items: center;
 }
 
-#bcuadro{/*Caracteristicas del 2do cuadro de la 4ta division*/
-    font-size: 300%;
-    background-color: #edd6d5;
-    width: 30%;
-    height: 90%;
-    border-radius: 8%;
-    margin-right: 5%;
-    box-shadow:  0 0 17px rgb(168, 168, 168);
-}
-
-
-#dcuadro{/*Caracteristicas del 3er cuadro de la 4ta division*/
-    font-size: 300%;
-    background-color: #edd6d5;
-    width: 30%;
-    height: 90%;
-    border-radius: 8%;
-    box-shadow:  0 0 17px rgb(168, 168, 168);
-}
-
-/*Pie de pagina*/
-
-
-#pie{ /*Caracteristicas del footer*/
-    background-color: #F1Eada;
-    width: 100%;
-    height: 260px;
+.tipos1 .tipos2{
+    position: relative;
+    width: 280px;
+    height: 280px;
+    border: 2px solid rgba(23, 23, 23, 0.1);
+    box-shadow: 0 25px 25px rgba(95, 94, 94, 0.25);
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 30px 24px;
+    transition: all 0.3s ease;
+    
 }
 
-     /*Propiedades de distintas ventanas en el footer*/
+.tipos1 .tipos2:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+}
 
-#pie-cosas{
-    display: block;
+.tipos2 p{
     font-family: "DM Sans", sans-serif;
-    font-weight: 300;
+    font-size: 125%;
+    justify-items: left;
+    text-align: center;
+    padding: 3%;
+}
+
+#parte4{
+    background-color: #fbfbfb;
+}
+
+
+#palabra4{
+    text-align: center;
+    font-size: 230%;
+    margin-right: 2%;
+    padding-top: 10%;
+    font-family:  "DM Sans", sans-serif;
+    font-weight: 600;
+}
+
+  
+/*Propiedades del div que contiene todo de todo*/
+.cuadros {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -2%;
+  }
+  
+  /*Propiedades de cada cuadro que se despliega*/
+  .cuadros .cuadro {
+    position: relative;
+    width: 400px;
+    height: 395px;
+    background-color: #f8f8ec;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(114, 113, 113, 0.25);
+    display: inline-block;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin: 5% -55px;
+    
+  }
+  
+  .cuadros:hover .cuadro {
+    margin: 5% 10px;
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  }
+  
+  .cuadros h2{
+    margin-top: 15%;
     font-size: 190%;
-    margin-top: 3%;
-    margin-left: 5%;
-}
-
-#Apie{ /*Caracteristicas de visitar otro sitio*/
-    text-decoration: none;
-    color: rgb(37, 37, 37);
-    margin-top: 4%;
-    height: 20%;
-    transition: color 0.3s ease;/*Agrega una transicion suave para el fondo*/
-}
-
-#Apie:hover{/*Hace que cuando el cursor pase por arriba del "Otro sitio de ayuda" cambie*/
-    color: #ff8787;
-}
-
-
-#nosotras{
-    transition: color 0.3s ease;/*Agrega una transicion suave para el fondo*/
-}
-#nosotras:hover{
-    color: #ff8787;
-}
-
-#redes{
-    transition: color 0.3s ease;/*Agrega una transicion suave para el fondo*/
-}
-#redes:hover{
-    color: #ff8787;
-}
-
-      /*Cosas de el segundo apartado del footer*/
-
-#pielogo{ /*Propiedades del "AmorDePadres a un lado del icono*/
-    margin-top: 9%;
-    font-size: 170%;
-    font-family: "Lexend", sans-serif ;
-    font-weight: 500;
-}
-
-
-#pie-2{
-    background-color: #d0bcb6;
-    height: 100px;
-}
-
-#Copyright{
-    margin-left: 46%;
-    font-size: 150%;
     font-family: "DM Sans", sans-serif;
-    font-weight: 300;
-    transform: translateY(90%);
-    opacity: 50%;
+    font-weight: 400;
+    color: #040505;
+  }
+
+  .cuadros p{
+    font-size: 130%;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 350;
+    padding: 2%;
+  }
+
+  .cuadros p a{
+    color: #27103b;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+
+  }
+
+  .cuadros a:hover{
+    color: #c4c9ce;
+  }
+
+
+  /*PIE PAGINA*/
+
+  #pie {/*Propiedades del footer*/
+    background-color: #F1Eada;
+    height: 400px;
+    width: 107%;
+    margin-top: 1%;
+    margin-left: -4%;
 }
+
+
+.nosotros{/* Propiedades para el apartado "sobre nosotras*/
+    font-size: 150%;
+    margin-left: 8%;
+    transform: translateY(270%);
+    width: 20%;
+    color: #362d18;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+}
+
+.nosotros a{
+    text-decoration: none;
+    color: #362d18;
+    transition: color 0.32s ease;
+}
+
+.nosotros a:hover{
+    color:  #d69601;
+    opacity: 100%;
+}
+
+.redes1{/*Agrega el apartado de nuestras redes*/
+    font-size: 150%;
+    margin-left: 8%;
+    transform: translateY(290%);
+    width: 20%;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    color: #362d18;
+    transition: color 0.32s ease;
+    margin-bottom: 9.5%;
+}
+
+.redes1:hover{
+    color: #d69601;
+}
+
+/* estilos para el apartado que dice padecimientos*/
+#pie-padecimientos{
+    font-size: 150%;
+    margin-left: 8%;
+    width: 20%;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    color: #362d18;
+    transition: color 0.32s ease;
+    text-decoration: none;
+}
+#pie-padecimientos:hover{
+    color: #d69601;
+}
+
+/* agrega el estilo al segundo pie de cabeza*/
+#parte5{
+    background-color: #cec1a8;
+    height: 40%;
+    margin-top: 2%;
+}
+
+#pieFrase{/*Propiedades de la palabra "Amor de padres" en el footer*/
+    font-size: 220%;
+    opacity: 80%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 500;
+    text-align: right;
+    margin-right: 4%;
+    transform: translateY(-300%);
+}
+
+/*Agrega los iconos de facebook y bitacora*/
+#lista4{
+   display: flex;
+   list-style: none;
+   opacity: 55%;
+}
+
+/*icono de la bitacora*/
+#bitacora{
+    margin-left: 35%;
+    height: 45%;
+    transform: translateX(570%);
+    margin-top: 37%;
+    opacity: 85%;
+}
+
+/*Icono facebook*/
+#facebook{
+    height: 40%;
+    transform: translateX(520px) translateY(40px);
+}
+
+
+.Copyright{/*Agrega el copyright en el footer*/
+    font-size: 130%;
+    opacity: 50%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 300;
+    margin-left: 611px;
+    margin-top: 6.3%;
+}
+

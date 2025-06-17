@@ -130,23 +130,6 @@ html{
 
 }
 
-/*Agregamos estilo al apartado de sugerencias en la barra*/
-#sugerencias{
-    text-decoration: none;
-    font-size: 180%;
-    color: #200f06;
-    font-family:"Lexend", sans-serif;
-    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
-    font-weight: 300;
-    border: solid #f8e6bb;
-    padding: 30px;
-}
-
-#sugerencias:hover{
-    color: white;
-    height: 450px;
-    background-color: #d69601;   
-}
 
 #ayuda{/*Agrega el apartado de contacto de ayuda en la barra*/
     text-decoration: none;
@@ -167,7 +150,7 @@ html{
 }
 
 .controls{
-    transform: translateX(630%);
+    transform: translateX(880%);
 }
 
 /* Estilo general de los botones */
@@ -191,7 +174,7 @@ button:hover{
  #mensajes{
     color: #200f06;
     border: solid #f8e6bb;
-    margin-left: 400.8%;
+    margin-left: 550.8%;
     padding: 40px;
     padding-top: 50%;
     transform: translateY(900px);
