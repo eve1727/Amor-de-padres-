@@ -1,66 +1,169 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEPRESION</title>
-    <link rel="stylesheet" href="depresion.css"
+    <title>deprecion</title>
+    <link rel="stylesheet" type="text/css" href="depresion.css">
+    <!--Fuente para frase-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">  
+    <!--Fuente para texto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Fuente para palabra amordepadres-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <!--Creacion de la barra para regresar-->
+    <header id="encabezado"> <img src="img1/icono2.png" id="icono">
 
-    <div class="fondo">
-        <a href="index.html" id="a1">VOLVER AL INICIO </a> 
+    <a href="index.html" class="a1">VOLVER AL INICIO</a>
+    </header>
+
+
+    <!--Imagen y frase del encabezado-->
+    <header>
         <center>
-        <h1 style="color:rgb(253, 250, 253); font-size: 60px; font-family: 'Times New Roman', Times, serif;" >DEPRESIÓN EN LOS ADOLESCENTES</h1>
-        <p>Hola</p>
-    </center>
+    <h1 id="titulo">DEPRECIÓN <br> EN LA ADOLESCENCIA</h1>
+       </center>
+   </header>
+   
+      <br><!--Salto de linea entre encabezado y contenido-->
+         
+        <!--Contenido-->
+    <div class="par1"> <!--Primera division -->
+
+           <h2 class="significado" style="color:#323232">¿QUÉ ES?</h2>
+         
+           <div id="lado">
+            <p class="parrafo1"> Es un padecimiento que el adolescente realiza cuando se siente mal o quiere liberar sus
+            emociones de alguna manera, es importante saber que varias veces este padecimiento
+           no se puede ver a simple vista y para ello se necesita prestar más atención al comportamiento del adolecente. De igual
+           manera tener en cuenta que las autolesiones se pueden presentar como rasguños, cortadas, quemaduras o golpes.
+           </p>
+         </div>
+   
+    </div>
     
-   <br>
-   <br>
-  <div class="container">
-    <!--Primera pregunta con sus respectiva respuesta y modificaciones-->
-    <h1 style="font-size: 50px; font-family: 'Times New Roman', Times, serif;">¿QUÉ ES LA DEPRECIÓN?</h1>
-    <h1 style="font-size: 38px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">La depresión es un transtorno del estado
-    de animo que se caracteriza por sentimientos persistentes de tristeza,perdida de interes o placer en actividades que antes disfrutaba.No es solo
-    un sentimiento temporal de tristeza es  una condición que puede inferir significativamente con la vida de una person.</h1>
-    <p>hola lupita, por fin aprendiste git</p>
-  </div>
-  <br>
-  <br>   
+          <div id="par2"> <!--Segunda division-->
+             <h2 class="significado" style="color: #323232; margin-left: 45%; margin-bottom: 4%;">¿Las causas obtenidas?</h2>
+             <p class="parrafo1" style="margin-left: 45%; margin-top: 1%; color: rgb(0, 0, 0);"> Se obtienen a sufrir de depresión se deben a factores genéticos,estrés,traumas,condiciones
+                médicas,aislamiento social, problemas de salud mental.Es importante recordar ya que cada persona es diferente,y lo que puede causar depresión es una persona puede no afectar a otra
+                de la misma manera. </p>
+
+             <!--Creación del pequeño menu para mostrar los padecimientos-->
+    <div class="container">
+     
+      <button id="hamburger-btn" class="hamburger-btn"><img src="iconos.tdah/flecha.svg"  id="picar"/>
+      </button>
+    
+        <nav id="padecimientos" class="padecimientos">
+
+          <button id="cerrar" class="cerrar2"><img src="iconos.tdah/cerrar.svg" alt="cerrar" id="close"></button><!--agregamos el boton de cerrar el menu-->
+          <ul style="list-style: none;">
+             <li> <a href="ansiedad.html" class="ventana2">Ansiedad</a></li>
+             <hr>
+             <li><a href="depresion.html" class="ventana2">Depresión</a></li>
+             <hr>
+             <li><a href="autolesion.html" class="ventana2">Autolesión</a></li>
+             <hr>
+             <li><a href="tdah.html" class="ventana2">TDAH</a></li> 
+             <hr>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li> 
+
+          </ul>
+        
+        </nav> 
+    </div>
+
+    <!--Div para llamar el texto en js-->
+   <div id="text-content">
+     <div id="pagina1">
+      
+        <img src="sintomas.webp" style="transform: translateX(-40%) translateY(60%); width: 9%;">
+          </div>
+
+         <div id="par3"><!--Tercera division-->
+         
+           <h2 class="significado" style="color: #0b1a91; font-size: 250%; margin-left: 10%;">hola ¿CÓMO SE PUEDE SABER QUE TU HIJO PADECE DE ESTO?</h2>
+             
+            <ul style="font-size: 250%; list-style: none;"><!--Creacion de lista para causas-->
+            <div id="columnas"><!--Div para apartar las causas en columnas-->
+                <li>Cambio en el estado de ánimo.<br><br></li>
+                <li>Aislamiento Social.<br><br></li>
+                <li>Dificultidades de sueño <br><br></li>
+                <li>Fatiga y falta de energía.<br><br></li>
+                <li>Quejas fisicas.<br><br></li>
+                <li>Perdida de apetito.
+                    Falta de apetito <br><br></li>
+            </div>
+           </ul>
+        
+         </div>
+
+     <div id="par4">
+        <div class="text">
+            <p>CONSEJOS GENERALES</p>
+        </div>
+          <div id="separacion">
+               
+                 <!--Consejos para los padres-->
+                <div id="acuadro">
+                <img src="depresion.img/imgen1.webp" style="height: 40%; transform: translateX(25%) translateY(10%);">
+                <p style="font-size: 80%; margin-left: 3%; margin-top: 15%;">Comunicate con tu hijo mas seguido,no pierdan la confianza
+                de sus hijos. </p>
+                </div>
+
+                <div id="bcuadro">
+                <img src="depresion.img/img-3-removebg-preview.webp" style="height: 55%; transform: translateX(10%) translateY(-10%);">
+                <p style="font-size: 80%; margin-left: 3%; margin-top: -5%;">Estar al pendiente de las actitudes de tu hijo o de cualquier otra 
+                alerta diferente de tu hijo. </p>
+                </div>
+
+                <div id="dcuadro"> 
+                 <img src="depresion.img/img-5-removebg-preview.webp" style="height: 45%; transform: translateX(35%) translateY(-10%);">
+                 <p style="font-size: 80%; margin-left: 5%; margin-top: -15%;">Cuida su comportamiento y (brindarles confianza y apollo) que eso, para 
+                ellos es fundamental.
+                 </p>
+                </div>
+        
+         </div>
+    </div>
+  </body>
+
+    <footer id="pie"><!--Cambia color footer-->
+            
+  <h5 class="nosotros">Sobre nosotras</h5>
+  <h5 class="redes1">Redes sociales</h5>
+  <a href="#introducirnos" id="pie-padecimientos">Padecimientos</a>
   
-     <div class="container2">
-      <!--Segunda pregunta con sus respectiva respuesta y modificaciones-->
-        <h3 style="font-size: 50px; font-family: 'Times New Roman', Times, serif;">¿QUÉ CAUSAS SE OBTIENEN A TENER ESTE SINTOMA</h3>
-        <h3 style="font-size: 38px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >Las casusa que se obtienen a sufrir de depresión se deben a factores 
-         genéticos,estrés,traumas,condiciones médicas,aislamiento social,
-         problemas de salud mental.Es importante 
-        recordar que cada persona es diferente,y lo que puede causar depresión es una persona puede no afectar a otra
-        de la misma manera.</h3>
-     </div>
- <br>
- <br>
+  <!--Cambia el color donde este el nombre del sitio y otros-->
+  <div id="parte5">
+    
+    <!--Lista para agregar bitacora junto con redes sociales-->
+    <ul id="lista4">
 
-     <div class="container3">
-      <!--Tercera pregunta con su respectiva  respuesta y modificaciones-->
-        <h4 style="font-size: 50px; font-family: 'Times New Roman', Times, serif; " >¿COMO SE VE UN ADOLESCENTE CON EL PADECIMIENTO?
-            <h4 style="font-size: 38px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif" >Un adolescente que sufe de depreción puede mostrar una variedad de sintomas como por ejem:
-            Cambio en el estado de ánimo,
-            aislamiento social,
-            perdida de interés,dificultades de sueño,
-            cambios en el apetito,
-            fatiga y falta de energía y quejas físicas.</h4>
-        </h4>
-     </div>
-    <!--imagen 2 debajo del sitio-->
-   <center>
-     <img src="imagen-3.webp"height="400"
-   </center>
+       <li><a href="bitacora.html"><img src="iconos.index/calendario.svg" id="bitacora"/></a></li>
+       <li style="background-color: #ff9d23; background: none;"><a href="#"><img src="iconos.index/facebook.svg" id="facebook"></a></li>
+       
 
+    </ul>
+      <div style="margin-top: -7%; display: flex; justify-content: space-between;">
+          <p class="Copyright">Copyright 2025</p>
+          <p id="pieFrase">AMOR DE PADRES</p>
+      </div>
+  </div>
 
-   <br>
-   <br>
-    <!-- Creacion del pie de cabeza -->
-     <marquee behavior="sroll" direction="left" style="font-size: 30px; background-color: rgb(211, 170, 250);">"Sufres de depreción no pierdas tiempo, en pedir ayuda No estas SOL@" </marquee>
+</footer>
 
-</body>
-</html>
+</html> 

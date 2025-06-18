@@ -1,35 +1,374 @@
-.fondo{ /* imagen que va a tener el sitio*/
-  background-image: url(img1/imagen\ 2.jpg);
-  background-position: center center;
-  background-size: cover;
-  height:300px;
+ody{/*color del fondo*/
+   background-color:#f2e1e1;
+}
+
+.a1 { /*Volver al inicio*/
+    text-decoration: none;
+    font-size: 40px;
+    color: #fefcfc;
+    margin-left: 2%;
+    font-family: "Cinzel",serif;
+    size:100%;
+}
+.a1:hover{/*hace que el "volver al inicio" cambie de color cuando el cursor pasa por ahi*/
+  color: rgb(219, 219, 219);
+  background-color: #e0e0c4;
+  box-shadow: 0 0 15px rgb(47, 47, 46);  
+}
+
+/*Estilos del icono*/
+#icono{
+    height: 110px;
+    margin-left: -2%;
+    margin-top: -2%;
+}
+
+#encabezado{ /*agrega el encabezado de volver al inicio */
+    position: fixed;/*Hace que la barra se quede estatica*/
+    background-image: none;
+    background-color: #f6e1b1;
+    bottom: 90%;
+    right: 0%;
+    left: 0;
+    top: 0%;
+    height: 10%;
+    z-index: 9;
+    margin-top: 0%;
+    opacity: 100%;
+    width: 100%;
+}
+
+#titulo{ /*Palabra introductoria*/
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin-top: 4%;
+    transform: translateY(35%) translateX(10%);
+    font-family: "Cinzel", serif;
+    opacity: 89%;
+}
+
+header { /*Imegen de fondo encabezado*/
+   height: 500px;
+   background-image: url(depresion.img/imagen\ 2.jpg);
+   background-size: cover;
+   background-position: center;
+   opacity: 95%;
+   
+}
+
+.significado { /* Agrega estilo a nuestras primeras palabras del container */
+    text-align: left;
+    margin-top: 1%;
+    font-size: 280%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 8%;
+}
+
+.parrafo1{ /*Agrega tamaño a los parrafos*/
+    font-size: 230%;
+    color: #100f0f;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 9%;
+}
+
+.par1{ /* Hace que tengamos espaciado en la pantalla con nuestro apartado 1 */
+    width: 85%;
+    margin-left: 0%;
+    margin-top: 0%;
+    background-color:#f5efef;
+    padding: 7.5%;
+}
+
+#lado{  /*hace que el texto del primer div y la imagen aparezcan a un lado*/
+    display: flex;
+    margin-top: 3%;
+}
+
+#par2{ /*caracteristicas del apartado 2*/
+    background-image: url("depresion.img/chika_6-removebg-preview.webp");
+    background-size: 45%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-color:#f5efef;
+    padding: 0.5%;
+    margin-left: 120px;
+}
+
+#par3{ /*caracteristicas del apartado 3*/
+    background-color:#f5efef;
+    height: 600px;
+    width: 85%;
+    margin-left: 0%;
+    padding: 7.5%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-position-x: 85%;
+    background-size: 20%;
+    margin-bottom: 0%;
+}
+
+#columnas{ /*Que separe el texto del parrafo 3 en columnas*/
+    columns: 3 10px;
+    margin-top: 5%;
+    color: #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    column-rule: 15px #d7e1a3 dotted;
+}
+#frasepapas{
+    z-index: 1000%;
+}
+
+#par4{ /* caracteristicas del apartado 4 */
+    background-color:#ffffff;
+    height: 600px;
+    width: 85%;
+    margin-left: 0%;
+    padding: 7.5%;
+}
+
+#separacion{/*hace que nuestros cuadros esten separados*/
+    display: flex;
+    height: 600px;
+}
+
+#acuadro{/*Caracteristicas del 1er cuadro de la 4ta division*/
+    font-size: 300%;
+    background-color:#DDE6ED;
+    width: 30%;
+    height: 70%;
+    border-radius: 8%;
+    margin-right: 5%;
+    box-shadow:  0 0 17px rgb(118, 208, 240);
+    
+}
+
+#bcuadro{/*Caracteristicas del 2do cuadro de la 4ta division*/
+    font-size: 300%;
+    background-color: #d1e6f7;
+    width: 30%;
+    height: 70%;
+    border-radius: 8%;
+    margin-right: 5%;
+    box-shadow:  0 0 17px rgb(118, 208, 240);
 }
 
 
-#a1{ /*poner color y tamaño en el apartado de "volver al inicio"*/
-  text-decoration: none;
-  background-color: rgb(252, 13, 228);
-  font-size: 30px;
-  color: rgb(19, 17, 18);
-  
+#dcuadro{/*Caracteristicas del 3er cuadro de la 4ta division*/
+    font-size: 300%;
+    background-color: #b8ddfb;
+    width: 30%;
+    height: 70%;
+    border-radius: 8%;
+    box-shadow:  0 0 17px rgb(168, 168, 168);
 }
 
-.container { /*Ponerle color el tamaño en el container 1*/
-  background-color: rgb(246, 226, 160);
-  padding:0.15%;
-  text-align: center;
+#pie{ /*Caracteristicas del footer*/
+    background-color: #d6ddfd;
+    width: 100%;
+    height: 200px;
+    display: flex;
 }
 
-  .container2 { /*Poner color el tamaño en el container 2*/
-  background-color: rgb(183, 218, 239);
-  padding: 0.15%;
-  text-align: center;
-  
+#pielogo{ /*Propiedades del "AmorDePadres en footer*/
+    margin-top: 5%;
+    margin-left: 3%;
+    font-size: 200%;
+    margin-right: 50%;
+    font-family:  "Libre Baskerville", serif;
 }
 
-.container3 { /*Poner color el tamaño en el container 3*/
-  background-color: rgb(232, 176, 209);
-  padding: 0.15;
-  text-align:center;
+.text{
+    margin-left: 330px;
+    font-size: 60px;
+    font-family: "lexend", sans-serif;
+}
 
+/* Detalles para el boton donde  donde se veran varios padecimientos*/
+.hamburger-btn{
+    height: 110px;
+    width: 8%;
+    z-index: 8;
+    position: fixed;
+    margin-left: -4%;
+    transform: translateY(-190%) translateX(-50%);
+    background-color: #DDE6ED;
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    border: 1px solid #222;
+    border-radius: 30%;
+}
+
+/*Hover del boton*/
+.hamburger-btn:hover{
+    background-color: #2F4156;
+}
+
+/*Mueve la flecha del boton*/
+#picar{
+    height: 40%;
+    transform: translateX(80%);
+ }
+
+ /*Propiedades del submenu en la izquierda*/
+#padecimientos{
+    width: 13%;
+    height: 320px;
+    background-color:#D3DADC;
+    top: 25%;
+    left: -2%;
+    position:fixed;
+    z-index: 9;
+    border-radius: 5%;
+    transition: left 0.3s ease; /* Transición suave al mover el menú */
+}
+
+/* Estilos que utilizan todas las ventanas del submenu*/
+.ventana2{
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 180%;
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    color:#080808;
+    display: block; /* Hace que los enlaces ocupen toda la anchura disponible para mejorar la usabilidad */
+}
+
+.ventana2:hover{
+    background-color: #526166;
+    color: #f9f9f9 ;
+    height:40px;
+ }
+
+/*Cerrar el menu boton*/
+.cerrar2{
+    font-size: 30px; /* Tamaño del icono o texto del botón */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+    border: none; /* Elimina los bordes del botón */
+    background: none; /* Elimina cualquier fondo del botón */
+    color: black;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    width: 30%;
+    margin-top: 10%;
+    transform: translateX(130%);
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    display: block;
+}
+
+.cerrar2:hover{
+    background-color: #2F4156;
+    color: #e0d8cd;
+}
+
+
+/* Clase que activa el menú */
+.padecimientos.active {
+    margin-left: 0%; /* Mueve el menú a la posición visible cuando se activa */
+}
+
+/*Clase que desactiva el menu*/
+.padecimientos.disabled{
+    margin-left: -90%;
+}
+
+ /*PIE PAGINA*/
+
+#pie {/*Propiedades del footer*/
+    background-color: #F1Eada;
+    height: 300px;
+    width: 100%;
+    margin-top: -3%;
+}
+
+.nosotros{/* Propiedades para el apartado "sobre nosotras*/
+    font-size: 170%;
+    margin-left: 5%;
+    transform: translateY(200%);
+    width: 20%;
+    color: #362d18;
+    transition: color 0.32s ease;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+}
+
+.nosotros:hover{
+    color:  #d69601;
+    opacity: 100%;
+    
+}
+
+.redes1{/*Agrega el apartado de nuestras redes*/
+    font-size: 170%;
+    margin-left: 5%;
+    transform: translateY(220%);
+    width: 20%;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    color: #362d18;
+    transition: color 0.32s ease;
+}
+
+.redes1:hover{
+    color: #d69601;
+}
+
+/* estilos para el apartado que dice padecimientos*/
+#pie-padecimientos{
+    font-size: 170%;
+    margin-left: 30%;
+    width: 20%;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    color: #362d18;
+    transition: color 0.32s ease;
+    text-decoration: none;
+}
+#pie-padecimientos:hover{
+    color: #d69601;
+}
+
+/* agrega el estilo al segundo pie de cabeza*/
+#parte5{
+    background-color: #cec1a8;
+    height: 40%;
+    margin-top: 5%;
+}
+
+#pieFrase{/*Propiedades de la palabra "Amor de padres" en el footer*/
+    margin-right: 2%;
+    font-size: 220%;
+    opacity: 80%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 500;
+}
+
+/*Agrega los iconos de facebook y bitacora*/
+#lista4{
+   display: flex;
+   list-style: none;
+   opacity: 55%;
+}
+
+/*icono de la bitacora*/
+#bitacora{
+    margin-left: 35%;
+    height: 45%;
+    transform: translateX(570%);
+    margin-top: 37%;
+    opacity: 85%;
+}
+
+/*Icono facebook*/
+#facebook{
+    height: 40%;
+    transform: translateX(520px) translateY(40px);
+}
+
+
+.Copyright{/*Agrega el copyright en el footer*/
+    font-size: 130%;
+    opacity: 50%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 300;
+    margin-left: 611px;
+    margin-top: 6.3%;
 }
