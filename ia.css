@@ -338,13 +338,15 @@ button:hover{
     justify-content: center;
    text-align: center; 
 }
+
+
 /*PIE PAGINA*/
 
 #pie {/*Propiedades del footer*/
   background-color: #F1Eada;
   height: 400px;
   width: 107%;
-  margin-top: 8%;
+  margin-top: 10%;
   margin-left: -4%;
 }
 
@@ -405,7 +407,7 @@ button:hover{
 #parte5{
   background-color: #cec1a8;
   height: 40%;
-  margin-top: 2%;
+  margin-top: 10%;
 }
 
 #pieFrase{/*Propiedades de la palabra "Amor de padres" en el footer*/
@@ -413,9 +415,7 @@ button:hover{
   opacity: 80%;
   font-family:"Lexend", sans-serif;
   font-weight: 500;
-  text-align: right;
-  margin-right: 4%;
-  transform: translateY(-300%);
+  margin-left: 70%;
 }
 
 /*Agrega los iconos de facebook y bitacora*/
@@ -449,7 +449,6 @@ button:hover{
   margin-left: 611px;
   margin-top: 6.3%;
 }
-
 
 
 .container {
