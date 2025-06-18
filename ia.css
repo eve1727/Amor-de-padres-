@@ -1,147 +1,278 @@
 body{
-    background-color: #fbf6ed;
+    background-color: #ffffff;
 }
 
-.barra{
-   position: fixed;/*Hace que la barra se quede estatica*/
-    background-image: none;
-    background-color: #f8e6bb;
-    bottom: 90%;
-    right: 0%;
-    left: 0;
-    top: 0%;
-    height: 10%;
-    z-index: 100;
-    margin-top: 0%;
-    opacity: 100%;
-    width: 100%;
-    display: flex;
+/*Propiedades de la barra donde esta la flecha*/
+
+
+
+  /*Texto que vaya apareciendo estilos*/
+
+  #content {
+    background: white;
+    /* Fondo blanco para resaltar el contenido */
+  
+    border-radius: 8px;
+    /* Bordes redondeados para suavizar la caja */
+  
+  }
+  
+  /* Estilos para todos los párrafos dentro de #content */
+  /* Inicialmente están ocultos y desplazados hacia abajo */
+  #content p {
+    opacity: 0;
+    /* Transparencia total, párrafos invisibles inicialmente */
+  
+  
+    transition: 
+      opacity 0.6s cubic-bezier(.4,0,.2,1),
+      transform 0.6s cubic-bezier(.4,0,.2,1);
+    /* Transiciones suaves para opacidad y posición con curva de animación personalizada */
+  
+    will-change: opacity, transform;
+    /* Optimiza el rendimiento indicando que estos dos estilos cambiarán */
+  
+    margin-bottom: 1%;
+    /* Margen inferior para separar los párrafos */
+  }
+  
+  /* Estilos para párrafos que tienen la clase 'visible' */
+  /* Aquí están completamente visibles y en posición original */
+  #content p.visible {
+    opacity: 1;
+    /* Opacidad total, párrafo visible */
+  
+    transform: translateY(10);
+    /* Sin desplazamiento vertical, posición natural */
+  }
+
+
+/* Estilos para el boton donde  donde se veran varios padecimientos*/
+.hamburger-btn{
+    height: 115px;
+    width: 7%;
+    z-index: 8;
+    position: fixed;
+    margin-left: -4%;
+    transform: translateY(300%) translateX(-700%);
+    background-color: #eddab1;
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    border: 1px solid #222;
+    border-radius: 30%;
 }
 
-
-#container{
-  display: block;
-}
-
-.inicio{
-  font-size: 300%;
-  text-decoration: none;
-  color: #8d5f46;
-  transform: translateX(50%);
-  height: 995px;
-  font-weight: 300px ;
-  transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
-}
-
-.inicio:hover{
-  background-color: #d0af60;
-}
-
-/*agregamos propiedades para el apartado de ayuda*/
-#ayuda{
-  margin-left: 830%;
-  margin-top: 0%;
-  text-decoration: none;
-  font-size: 220%;
-  font-family:"Lexend", sans-serif ;
-  font-weight: 400;
-  color:#8d5f46;
-  transition: .3s linear ;
-}
-
-#ayuda:hover{
-  color: #d0af60;
-}
-
-/* Estilos para el botón de menú hamburguesa */
-.hamburger-btn {
-  font-size: 60px; /* Tamaño del icono o texto del botón */
-  cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
-  border: none; /* Elimina los bordes del botón */
-  background: none; /* Elimina cualquier fondo del botón */
-  position: fixed; /* Se posiciona de manera absoluta dentro de su contenedor */
-  top: 10px; /* Se coloca a 20 píxeles desde la parte superior */
-  right: 20px; /* Se coloca a 20 píxeles desde la derecha */
-  transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/ 
-  height: 80px;
-  width: 8%;
-  color: #8d5f46;
-  transform: translateY(-15%) translateX(-10%);
-}
-
+/*Hover del boton*/
 .hamburger-btn:hover{
-  background-color: #d0af60;
+    background-color: #c7a660;
 }
 
-/* Estilos del menú lateral */
-.side-menu {
-  position: fixed; /* Fija el menú en la pantalla sin moverse con el contenido */
-  right: -250px; /* Inicialmente, coloca el menú fuera de la vista en el lado derecho */
-  top: 0; /* Se coloca en la parte superior de la pantalla */
-  width: 250px; /* Ancho del menú lateral */
-  height: 100%; /* Ocupa toda la altura de la pantalla */
-  background-color: #b59e7d; /* Color de fondo */
-  color: white; /* Color del texto en blanco */
-  transition: right 0.3s ease; /* Transición suave al mover el menú */
-  padding-top: 60px; /* Espacio superior dentro del menú para evitar que los elementos queden pegados arriba */
+/*Mueve la flecha del boton*/
+#picar{
+    height: 40%;
+    transform: translateX(80%);
+ }
+
+/*Propiedades del submenu en la izquierda*/
+#padecimientos{
+    width: 14%;
+    height: 450px;
+    background-color:#fbf6d9;
+    top: 25%;
+    left: -2%;
+    position:fixed;
+    z-index: 9;
+    border-radius: 5%;
+    transition: left 0.3s ease; /* Transición suave al mover el menú */
 }
 
-/* Estilos de la lista dentro del menú */
-.side-menu ul {
-  list-style: none; /* Elimina los estilos predeterminados de la lista (viñetas) */
-  padding: 0; /* Elimina el padding por defecto de la lista */
+/* Estilos que utilizan todas las ventanas del submenu*/
+.ventana2{
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-size: 180%;
+    font-weight: 300;
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    color:#080808;
+    display: block; /* Hace que los enlaces ocupen toda la anchura disponible para mejorar la usabilidad */
 }
 
-/* Estilos para cada elemento de la lista */
-.side-menu ul li {
-  padding: 15px; /* Agrega espaciado dentro de cada elemento */
-  text-align: center; /* Centra el texto en cada elemento */
-  font-size: 170%;
-}
-
-/* Estilos para los enlaces dentro de la lista */
-.side-menu ul li a {
-  color: white; /* Color del texto en blanco */
-  text-decoration: none; /* Elimina el subrayado de los enlaces */
-  display: block; /* Hace que los enlaces ocupen toda la anchura disponible para mejorar la usabilidad */
-  transition: background-color 0.3s ease;
-  font-family: "Lexend", sans-serif;
-  font-weight: 300;
-  font-size: 90%;
-}
-
-/* Efecto al pasar el mouse sobre los enlaces */
-.side-menu ul li a:hover {
-  background-color: #ccc2aa; /* Cambia el fondo a un tono más claro cuando se pasa el mouse */
-}
+.ventana2:hover{
+    background-color: #c9ab69;
+    color: #f9f9f9 ;
+    height:40px;
+ }
 
 /*Cerrar el menu boton*/
 .cerrar2{
-  font-size: 30px; /* Tamaño del icono o texto del botón */
-  cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
-  border: none; /* Elimina los bordes del botón */
-  background: none; /* Elimina cualquier fondo del botón */
-  color: white;
-  font-family: "Lexend", sans-serif;
-  font-weight: 600;
-  width: 90%;
-  transform: translateX(6%);
-  transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    font-size: 30px; /* Tamaño del icono o texto del botón */
+    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
+    border: none; /* Elimina los bordes del botón */
+    background: none; /* Elimina cualquier fondo del botón */
+    color: black;
+    font-family: "Lexend", sans-serif;
+    font-weight: 600;
+    width: 30%;
+    margin-top: 10%;
+    transform: translateX(130%);
+    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
+    display: block;
 }
 
 .cerrar2:hover{
-  background-color: #d0af60;
+    background-color: #c9ab69;
+    color: #e0d8cd;
+    border-radius: 9%;
 }
+
 
 /* Clase que activa el menú */
-.side-menu.active {
-  right: 0; /* Mueve el menú a la posición visible cuando se activa */
+.padecimientos.active {
+    margin-left: 0%; /* Mueve el menú a la posición visible cuando se activa */
 }
 
-/*Clase que desactiva el menú */
-.side-menu.disabled {
-  left: 100%;
+/*Clase que desactiva el menu*/
+.padecimientos.disabled{
+    margin-left: -90%;
 }
+
+#pagina1{
+    width: 60%;
+    margin-left: 23%;
+    margin-top: 5%;
+}
+
+#pagina{
+    display: flex;
+    list-style: none;
+
+}
+
+#pagina li{
+    padding: 2%;
+}
+
+#pagina li a{
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+}
+
+#pagina li a:hover{
+    color: #ecad24;
+}
+
+.ventanas{
+    text-decoration: none;
+    font-size: 200%;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    color: #080808;
+    text-align: center;
+}
+
+
+
+
+#barra1{
+  background-color: #eddab1;
+  width: 100%;
+  height: 120px;
+  position: fixed;/*Hace que la barra quede estatica*/
+  bottom: 90%;
+  right: 0%;
+  left: 0;
+  top: 1%;
+  z-index: 10;
+}
+
+#barra1 ul{
+  list-style: none;
+}
+
+#barra1 ul li{
+  padding: 3%;
+}
+.controls{
+  transform: translateX(1150%);
+  margin-top: 0.8%;
+}
+
+/* Estilo general de los botones */
+button {
+  padding: 1px; /* Espaciado interno para hacerlos más grandes */
+  margin: 2px; /* Espaciado entre botones */
+  font-size: 35px; /* Tamaño de fuente adecuado */
+  font-family: "Lexend", sans-serif;
+  font-weight: 250;
+  transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+  cursor: pointer; /* Cambia el cursor a 'mano' cuando el usuario pase sobre ellos */
+  border: none; /* Elimina los bordes del botón */
+  background: none; /* Elimina cualquier fondo del botón */
+
+}
+
+button:hover{
+  color: #f8af07;
+}
+
+/*Se dan propiedades a la barra donde esta el icono y demas elementos*/
+.barra2{
+  background-color:#fff4da;
+  width: 100%;
+  height: 80px;
+  position: fixed;/*Hace qur la barra quede estatica*/
+  bottom: 90%;
+  right: 0%;
+  left: 0;
+  top: 0%;
+  z-index: 10;
+}
+
+#icono{
+  height: 110px;
+  margin-left: -2%;
+  margin-top: -2%;
+}
+
+.ayuda{
+  text-decoration: none;
+  font-size: 150%;
+  font-weight: 270;
+  color: #200f06;
+  font-family:"Lexend", sans-serif;
+  transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+  margin-left: 1250%;
+}
+
+.ayuda:hover{
+  color: #ffffff;
+}
+
+
+#mensajes2{
+  color: #200f06;
+  font-size: 400%;
+  font-weight: 200;
+  transform: translateX(1100px) translateY(20%);
+  transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+}
+
+#mensajes2:hover{
+  color: #f8af07;
+}
+
+#inicio2{
+  text-decoration: none;
+  font-size: 150%;
+  color: #200f06;
+  font-family:"Lexend", sans-serif;
+  transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+  font-weight: 270;
+  margin-left: 1500%;
+}
+
+#inicio2:hover{
+  color: #ffffff;
+}
+
 
 /* Propiedades para el header*/
 
@@ -156,14 +287,14 @@ body{
 .fondo{
    height: 300px;
    background-color: rgba(0, 0, 0, 0.1); /* Fondo negro semitransparente (50% de opacidad) */
-   margin-top: 3%;
+   margin-top: 8%;
  }
  
 #frase{
   font-size: 450%;
   font-family: "Lexend", sans-serif;
   text-align: center;
-  transform: translateY(80%) translateX(-1%);
+  transform: translateY(90%) translateX(-1%);
   color: #fbf6ed;
 }
 
@@ -174,7 +305,7 @@ body{
     position: relative;/*Posiciona la ia de manera relativa*/
     width: 230%;
     height: 500%;
-    margin-top: 25%;
+    margin-top: 65%;
     margin-left: 30%;
     color: aqua;
     z-index: 8;
@@ -182,80 +313,86 @@ body{
 
 /*Propiedades para presentar a Lia*/
 
-#presentar{
+.Lia2{
+    font-size: 270%;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    justify-content: center;
+    margin-left: 10%; 
+}
+
+#explicacion{
+    font-size: 170%;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 340;
+    justify-content: center;
+    margin-right: 5%;
+    margin-left: 8%;
+    
+}
+
+#ejemplos{
+    font-size: 220%;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    justify-content: center;
+   text-align: center; 
+}
+/*PIE PAGINA*/
+
+#pie {/*Propiedades del footer*/
   background-color: #F1Eada;
-  height: 500px;
-  width: 70%;
-  margin-left: 17%;
-  border-radius: 5%;
-  margin-top: -30%;
-  box-shadow: 5px 5px  20px #888885;
+  height: 400px;
+  width: 107%;
+  margin-top: 8%;
+  margin-left: -4%;
 }
 
-#lia{
-  font-size: 250%;
-  font-family: "DM Sans", sans-serif;
-  padding-top: 5%;
-  padding-left: 5%;
-}
 
-#lia-texto{
-  font-size: 170%;
-  font-family: "DM Sans", sans-serif;
-  padding: 6%;
+.nosotros{/* Propiedades para el apartado "sobre nosotras*/
+  font-size: 150%;
+  margin-left: 8%;
+  transform: translateY(270%);
+  width: 20%;
+  color: #362d18;
+  font-family: "Lexend", sans-serif;
   font-weight: 300;
 }
 
-/*Propiedades del footer*/
-
-#pie {
-  background-color: #F1Eada;
-  height: 300px;
-  width: 100%;
-  margin-top: 10%;
-}
- #perrito{
-  transform: translateY(-100%) translateX(-56%);
- }
-
-.nosotros{/* Propiedades para el apartado "sobre nosotras*/
-  font-size: 170%;
-  margin-left: 5%;
-  transform: translateY(200%);
-  width: 20%;
+.nosotros a{
+  text-decoration: none;
   color: #362d18;
   transition: color 0.32s ease;
-  font-family: "Lexend", sans-serif;
-  font-weight: 500;
 }
 
-.nosotros:hover{
+.nosotros a:hover{
   color:  #d69601;
   opacity: 100%;
-  
 }
 
 .redes1{/*Agrega el apartado de nuestras redes*/
-  font-size: 170%;
-  margin-left: 5%;
-  transform: translateY(220%);
+  font-size: 150%;
+  margin-left: 8%;
+  transform: translateY(290%);
   width: 20%;
   font-family: "Lexend", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   color: #362d18;
   transition: color 0.32s ease;
+  margin-bottom: 9.5%;
 }
 
 .redes1:hover{
   color: #d69601;
 }
 
+/* estilos para el apartado que dice padecimientos*/
 #pie-padecimientos{
-  font-size: 170%;
-  margin-left: 30%;
+  font-size: 150%;
+  margin-left: 8%;
   width: 20%;
   font-family: "Lexend", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   color: #362d18;
   transition: color 0.32s ease;
   text-decoration: none;
@@ -264,26 +401,85 @@ body{
   color: #d69601;
 }
 
+/* agrega el estilo al segundo pie de cabeza*/
+#parte5{
+  background-color: #cec1a8;
+  height: 40%;
+  margin-top: 2%;
+}
+
 #pieFrase{/*Propiedades de la palabra "Amor de padres" en el footer*/
-  transform: translateY(-50%) translateX(75%);
   font-size: 220%;
   opacity: 80%;
   font-family:"Lexend", sans-serif;
   font-weight: 500;
+  text-align: right;
+  margin-right: 4%;
+  transform: translateY(-300%);
 }
+
+/*Agrega los iconos de facebook y bitacora*/
+#lista4{
+ display: flex;
+ list-style: none;
+ opacity: 55%;
+}
+
+/*icono de la bitacora*/
+#bitacora{
+  margin-left: 35%;
+  height: 45%;
+  transform: translateX(570%);
+  margin-top: 37%;
+  opacity: 85%;
+}
+
+/*Icono facebook*/
+#facebook{
+  height: 40%;
+  transform: translateX(520px) translateY(40px);
+}
+
 
 .Copyright{/*Agrega el copyright en el footer*/
-  font-size: 160%;
-  transform: translateY(200%) translateX(45%);
+  font-size: 130%;
   opacity: 50%;
   font-family:"Lexend", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
+  margin-left: 611px;
+  margin-top: 6.3%;
 }
 
-#parte2{
-  background-color: #cec1a8;
-  height: 40%;
-  margin-top: 5%;
+
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-  
+.container .glass {
+  position: relative;
+  width: 550px;
+  height: 350px;
+  background-image: url(ia.img/foto1.webp);
+  background-size: 100%;
+  background-repeat: none;
+  background-position: cover;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0 -45px;
+
+}
+
+.container:hover .glass {
+  transform: rotate(0%);
+  margin: 0 10px;
+}
+

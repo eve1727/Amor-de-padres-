@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>autolesion</title>
     <link rel="stylesheet" type="text/css" href="autolesion.css">
-    <!--Fuente para frase-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">  
-     
+  
      <!--Fuente para casi todo el sitio-->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,24 +20,48 @@
 
 </head>
 <body>
-   
-    <!--Creacion de la barra para regresar-->
-        
-            
+
+  <!--Div para que el texto vaya apareciendo-->
+  <div id="content">
+          <!--Creación del pequeño menu para mostrar los padecimientos-->
+          <div class="container">
+              
+            <button id="hamburger-btn" class="hamburger-btn"><img src="iconos.tdah/flecha.svg"  id="picar"/>
+            </button>
+
+              <nav id="padecimientos" class="padecimientos">
+
+                <button id="cerrar" class="cerrar2"><img src="iconos.tdah/cerrar.svg" alt="cerrar" id="close"></button><!--agregamos el boton de cerrar el menu-->
+                <ul style="list-style: none;">
+                  <li> <a href="ansiedad.html" class="ventana2">Ansiedad</a></li>
+                  <hr>
+                  <li><a href="depresion.html" class="ventana2">Depresión</a></li>
+                  <hr>
+                  <li><a href="autolesion.html" class="ventana2">Autolesión</a></li>
+                  <hr>
+                  <li><a href="tdah.html" class="ventana2">TDAH</a></li>
+                  <hr>
+                  <li><a href="TOC.hmtl" class="ventana2">TOC</a></li>
+                  <hr>
+                  <li><a href="disocial.hmtl" class="ventana2">TD</a></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+
+                </ul>
+              
+              </nav>
+          </div>
+                      
               <!--Cracion de la barra donde estara la flecha-->
        <header id="barra1">
         <ul style="display: flex;">
          
-         <li style="margin-left: -5%;"><span class="material-symbols-outlined">
-            <a href="index.html" id="flecha">
-            arrow_back
-          </a></span>
+         <li style="margin-top: 1.2%;">
+          <a href="index.html" id="inicio2">Inicio</a>
          </li>
 
-         <li>
-        <h3><a href="sugerencias.html" id="sugerencias">Sugerencias</a></h3>
-         </li>
-         
+      
          <li>
         <h3><a href="contactos.html" class="ayuda">Ayuda</a></h3>
          </li>
@@ -76,9 +96,7 @@
 
         </header>
 
-    
 
-    
             <!--Imagen y frase del encabezado-->
             <header id="encabezado">
                 <center>
@@ -87,24 +105,37 @@
            </header>
 
         <br><!--Salto de linea entre encabezado y contenido-->
+
+ <!--Div para llamar el texto en js-->
+   <div id="text-content">
+        <!--Parte donde podra ir a las partes del sitio-->
+        <ul id="paginair">
+          
+          <li><a href="#quees">¿Qué es?</a></li>
+          <li><a href="#parrafo2">Causas</a></li>
+          <li><a href="#par3">Sintomas</a></li>
+          <li><a href="#parte4">Consejos</a></li>
+        
+        </ul>
+
+        <hr style="width: 45%; margin-left: 28%;">
          
         
         <!--Contenido-->
         
           <div class="par1"> <!--Crea la division del primer apartado-->
 
-               <h2 class="significado">¿QUÉ ES?</h2><!--le da estilo al "que es"-->
+               <h2 class="significado" id="quees">¿QUÉ ES?</h2><!--le da estilo al "que es"-->
             
                 <div id="lado"><!--Hace que la imagen y el texto esten cada una a un lado-->
                
-                 <p class="parrafo1"> Es un padecimiento que el adolescente realiza cuando se siente mal o quiere liberar sus
-                 emociones de alguna manera, es importante saber que <span style="color: #cab18e;">varias veces este padecimiento
-                 no se puede ver a simple vista </span> y para ello se necesita prestar más atención al comportamiento del adolescente. De igual
-                 manera tener en cuenta que las autolesiones se pueden presentar como rasguños, cortadas, quemaduras o golpes.
+                 <p class="parrafo1"> La autolesión no suicida, a menudo llamada simplemente autolesión, es el acto de lastimarse el propio cuerpo a propósito, por ejemplo, con cortes o quemaduras. 
+                   Es importante saber que <span style="color: #cab18e;">varias veces este padecimiento
+                 no se puede ver a simple vista </span> y para ello se necesita prestar más atención al comportamiento del adolescente.
                  </p>
             
                   <center>
-                  <img src="lineas-removebg-preview.png" id="lineas">
+                  <img src="img2/lineas-removebg-preview.webp" id="lineas">
                  </center>
                 
                 </div>
@@ -125,78 +156,149 @@
                   <br>
                   <li>Por afrontar situaciones difíciles. </li>
                   <br>
-                  <li>Tener incapacidad de expresar o procesar emociones fuertes</li>
+                  <li>Por tener incapacidad de expresar o procesar emociones fuertes</li>
                   <br>
                   <li>Sentirse aislado o sin apoyo por parte de la familia, amigos o compañeros </li>
                   <br>
-                  <li>La presión para ser perfecto, encajar en ciertas normas o alcanzar ciertas expectativas.</li>
+                  <li>Por la presión para ser perfecto, encajar en ciertas normas o alcanzar ciertas expectativas.</li>
                 </ul>
               </div>
-              <img src="img2/nota.webp" style="transform: translateX(5%) translateY(170%); width: 25%;">
+              
           </div>
 
           
          
           <div id="par3"><!--Crea la tercera division-->
          
-                <h2 style="font-family: DM Sans, sans-serif; font-size: 290%; text-align: center; font-weight: 600; color: #47423a;">¿CÓMO SE PUEDE SABER QUE TU HIJO PADECE DE ESTO?</h2>
+                <h2 id="causas">¿CÓMO SE PUEDE SABER QUE TU HIJO PADECE DE ESTO?</h2>
                 
-                <div class="card">
-                    <img src="iconos.autolesion/cursor-fill.svg" alt="">
-                    <div class="card__content">
-                      
-                      <p class="card__title"></p>
-                      <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <!--Agregamos consejos-->
+                <div class="tipos1" style="margin-top: -5%;">
+                        
+                  <div class="tipos2" style="background-color: #FCF2F3;">
+                        <div class="tipos3">
+                          <img src="iconos.autolesion/persona.svg" style="margin-left: 43%; margin-top: 5%;"/>
+                            <p>Comportamiento distante o evitador respecto a la expresión de sentimientos o emociones.</p>
+                        </div>
                     </div>
+
+                    <div class="tipos2" style="background-color:  #F8F2eF;">
+                      <div class="tipos3">
+                        <img src="iconos.autolesion/bandaid.svg" style="margin-left: 43%; margin-top: 5%;"/>
+                          <p>Presencia de cortes, quemaduras o moretones en brazos y/o piernas. </p>
+                      </div>
+                    </div>
+
+                      <div class="tipos2" style="background-color: #FEFAF8;">
+                        <div class="tipos3">
+                          <img src="iconos.autolesion/cloud-sun.svg" style="margin-left: 40%; margin-top: 5%;"/>
+                            <p>Notar que lleva ropa que no se adecua al clima (como mangas largas en verano) para ocultar cicatrices, heridas o moretones.  </p>
+                        </div>
+                      </div>
+
+                      
                   </div>
+
+
+                  <div class="tipos1" style="margin-top: -1.5%;">
+                        
+                    <div class="tipos2" style="background-color:  #F8F2eF;">
+                          <div class="tipos3">
+                            <img src="iconos.autolesion/fork-knife.svg" style="margin-left: 43%; margin-top: 5%;"/>
+                              <p>Encontrar objetos escondidos, como cuchillas de afeitar, cuchillos u otros objetos cortantes.</p>
+                          </div>
+                      </div>
+  
+                      <div class="tipos2" style="background-color: #FEFAF8;">
+                        <div class="tipos3">
+                          <img src="iconos.autolesion/bx-x.svg" style="margin-left: 43%; margin-top: 5%;"/>
+                            <p>Negándose a exponer ciertas partes del cuerpo o cubriéndose de otras formas que parezcan sospechosas. </p>
+                        </div>
+                      </div>
+  
+                        <div class="tipos2" style="background-color: #FCF2F3;">
+                          <div class="tipos3">
+                            <img src="iconos.autolesion/hablar.svg" style="margin-left: 43%; margin-top: -85%;"/>
+                              <p>Comentarte que solo son lesiones frecuentes accidentales. </p>
+                          </div>
+                        </div>
+  
+                        
+                    </div>
                   
            </div><!--Fin de la tercera division-->
 
     
-    
-    
-           <div id="par4"><!--Div para el 4to apartado-->
-       
-              <h3 id="consejos">CONSEJOS GENERALES</h3>
-                <div id="separacion"><!--Div para crear la separacion de los cuadros de la division-->
-                    
-                    <div id="acuadro"><!--Div para hacer el primer cuadro-->
-                        <h4 style="text-align: left; margin-left: 8%;">#1</h4>
-                        <img src="img2/imgen1.webp" style="height: 40%; transform: translateX(15%) translateY(-50%);">
-                        <p id="cons1">Intente cada cierto tiempo tener conversaciones con su hijo y preguntarle respecto a sus sentimientos. </p>
-                    </div>
+            <!--Creacion de la 4ta parte-->
 
-                    <div id="bcuadro"><!--Div para hacer el 2do cuadro-->
-                        <h4 style="text-align: left; margin-left: 8%;">#2</h4>
-                        <img src="img2/abrazo.webp" style="height: 50%; margin-top: -40%; margin-left: 13%;"/>
-                        <p id="cons2">Haga saber a su hijo que usted esta ahí para el cuando sus emociones sean difíciles de soportar. </p>
-                    </div>
+            <div id="parte4">
+                  
+              <h2 id="palabra4">CONSEJOS GENERALES</h2>
+              <hr style="width: 45%; margin-left: 28%;">
 
-                    <div id="dcuadro"><!--div para hacer el 3er cuadro-->
-                        <h4 style="text-align: left; margin-left: 8%;">#3</h4>
-                        <img src="img2/actividad2.webp" width="100%" style="margin-top: -30%;"/>
-                        <p id="cons3">Intente pasar tiempo junto a su hijo haciendo cosas divertidas, entretenidas o relajantes.</p>
-                    </div>
-        
-                </div><!--Fin del div que le da separacion a los cuadros-->
-          </div><!--Fin del div del 4to apartado con los cuadros-->
+              <p></p>
+
+              <div class="cuadros">
+                
+                <div class="cuadro" style="background-color: #e7e3f1;">
+                <h2>Calmarse</h2>
+                <img src="iconos.autolesion/mindfulness_46dp_000000_FILL0_wght400_GRAD0_opsz48.svg">
+                <p style="justify-content: center;">Si tienes muchas emociones encontradas, puede no ser 
+                  un buen momento para tener una conversación con su hijo/a. 
+                  Es importante que la conversación se produzca cuando estés más tranquilo/a y calmada. </p>
+                </div>
+
+                <div class="cuadro" style="background-color: #cbe6ee;">
+                  <h2>Discutir</h2>
+                  <img src="iconos.tdah/reloj2.svg">
+                  <p style="justify-content: center;">Trata de no discutir, acusar o amenazar. 
+                    Puede ser buena idea asegurarle al adolescente que no será castigado/a por autolesionarse.</p>
+                </div>
+
+                <div class="cuadro" style="background-color: #fdf8e2;">
+                  <h2>Paciencia</h2>
+                  <img src="iconos.tdah/libro.svg">
+                  <p style="justify-content: center;">Comprendamos que muchas veces para el adolecente debe de ser muy complicado hablar de ello
+                    así que sea paciente e intenta conversar con él en otro momento (sin minimizar el problema) </p>
+                </div>
+
+              </div>
+
+              
+          
+            </div>
+
+   </div><!--2-->
+
+
+  </div><!--1-->
 
 </body>
  <!--inicio del footer-->
+ <footer id="pie"><!--Cambia color footer-->
+            
+  <h5 class="nosotros"><a href="index.html">Sobre nosotros</a></h5>
+  <h5 class="redes1">Redes sociales</h5>
+  <a href="contactos.html" id="pie-padecimientos">Contactanos</a>
 
-<footer><!--le agrega un estilo a todo el footer-->
-    <div id="pie">
-       <div id="pie-cosas">
-        <a target="_blank" href="https://www.unicef.org/parenting/es/salud-mental/que-es-autolesion" id="Apie">Otro sitio de ayuda.</a><!--Da opcion de visitar oto sitio de ayuda-->
-        <p id="nosotras">Sobre nosotras</p>
-        <p id="redes">Redes sociales</p>
-        </div>
-        <img src="img1/icono.webp" id="icono"><!--agrega la imagen del icono-->
-        <h3 id="pielogo">AMOR DE PADRES</h3><!--palabras a un lado del icono-->
-    </div>
-        <div id="pie-2">
-            <p id="Copyright">Copyright 2025</p>
-        </div>
-</footer><!--fin del footer-->
+  <p id="pieFrase">AMOR DE PADRES</p>
+  
+  <!--Cambia el color donde este el nombre del sitio y otros-->
+  <div id="parte5">
+    
+    <!--Lista para agregar bitacora junto con redes sociales-->
+    <ul id="lista4">
+
+       <li><a href="bitacora.html"><img src="iconos.index/calendario.svg" id="bitacora"/></a></li>
+       <li style="background-color: #ff9d23; background: none;"><a href="#"><img src="iconos.index/facebook.svg" id="facebook"></a></li>
+       
+
+    </ul>
+      <div style="margin-top: -7%; display: flex; justify-content: space-between;">
+          <p class="Copyright">Copyright 2025</p>
+      </div>
+  </div>
+
+</footer>
  <script src="./js/autolesion.js"></script>
 </html> 

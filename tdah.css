@@ -120,7 +120,7 @@ button:hover{
     color: #200f06;
     font-family:"Lexend", sans-serif;
     transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
-    margin-left: 1150%;
+    margin-left: 1250%;
 }
 
 .ayuda:hover{
@@ -140,31 +140,17 @@ button:hover{
     color: #f8af07;
 }
 
-#sugerencias{
+#inicio2{
     text-decoration: none;
     font-size: 150%;
     color: #200f06;
     font-family:"Lexend", sans-serif;
     transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
     font-weight: 270;
-    margin-left: 630%;
+    margin-left: 1500%;
 }
 
-#sugerencias:hover{
-    color: #ffffff;
-}
-
-#flecha{
-   text-decoration: none;
-   font-size: 210%;
-   color: #080808;
-   font-weight: 500;
-   transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
-   position: fixed;
-   z-index: 100;
-}
-
-#flecha:hover{
+#inicio2:hover{
     color: #ffffff;
 }
 
@@ -538,7 +524,7 @@ button:hover{
 #parte4{
     margin-top: 15%;
     background-color: #f5f5ed;
-    background-size: 400%;
+    height: 850px;
 }
 
 #palabra4{
@@ -608,38 +594,44 @@ button:hover{
 
 #pie {/*Propiedades del footer*/
     background-color: #F1Eada;
-    height: 300px;
-    width: 100%;
-    margin-top: -3%;
+    height: 400px;
+    width: 107%;
+    margin-top: -4%;
+    margin-left: -4%;
 }
 
 
 .nosotros{/* Propiedades para el apartado "sobre nosotras*/
-    font-size: 170%;
-    margin-left: 5%;
-    transform: translateY(200%);
+    font-size: 150%;
+    margin-left: 8%;
+    transform: translateY(270%);
     width: 20%;
     color: #362d18;
-    transition: color 0.32s ease;
     font-family: "Lexend", sans-serif;
-    font-weight: 500;
+    font-weight: 300;
 }
 
-.nosotros:hover{
+.nosotros a{
+    text-decoration: none;
+    color: #362d18;
+    transition: color 0.32s ease;
+}
+
+.nosotros a:hover{
     color:  #d69601;
     opacity: 100%;
-    
 }
 
 .redes1{/*Agrega el apartado de nuestras redes*/
-    font-size: 170%;
-    margin-left: 5%;
-    transform: translateY(220%);
+    font-size: 150%;
+    margin-left: 8%;
+    transform: translateY(290%);
     width: 20%;
     font-family: "Lexend", sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     color: #362d18;
     transition: color 0.32s ease;
+    margin-bottom: 9.5%;
 }
 
 .redes1:hover{
@@ -648,11 +640,11 @@ button:hover{
 
 /* estilos para el apartado que dice padecimientos*/
 #pie-padecimientos{
-    font-size: 170%;
-    margin-left: 30%;
+    font-size: 150%;
+    margin-left: 8%;
     width: 20%;
     font-family: "Lexend", sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     color: #362d18;
     transition: color 0.32s ease;
     text-decoration: none;
@@ -665,15 +657,17 @@ button:hover{
 #parte5{
     background-color: #cec1a8;
     height: 40%;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 #pieFrase{/*Propiedades de la palabra "Amor de padres" en el footer*/
-    margin-right: 2%;
     font-size: 220%;
     opacity: 80%;
     font-family:"Lexend", sans-serif;
     font-weight: 500;
+    text-align: right;
+    margin-right: 4%;
+    transform: translateY(-300%);
 }
 
 /*Agrega los iconos de facebook y bitacora*/
