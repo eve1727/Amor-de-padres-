@@ -590,106 +590,114 @@ button:hover{
   }
 
 
-  /*PIE PAGINA*/
+ /*PIE PAGINA*/
 
 #pie {/*Propiedades del footer*/
     background-color: #F1Eada;
     height: 400px;
     width: 107%;
-    margin-top: -4%;
+    margin-top: 6%;
     margin-left: -4%;
 }
 
 
-.nosotros{/* Propiedades para el apartado "sobre nosotras*/
-    font-size: 150%;
-    margin-left: 8%;
-    transform: translateY(270%);
-    width: 20%;
-    color: #362d18;
-    font-family: "Lexend", sans-serif;
+#pieFrase{/*Propiedades de la palabra "Amor de padres" en el footer*/
+    font-size: 190%;
+    opacity: 80%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 450;
+    text-align: left;
+    transform: translateY(90%);
+    margin-left: 6%;
+}
+
+#pieparra{
+    font-size: 120%;
+    font-family: "DM Sans", sans-serif;
+    text-align:left;
+    justify-content: center;
+    margin-left: 6%;
+    margin-top: -8%;
+    opacity: 70%;
     font-weight: 300;
+    width: 25%;
 }
 
-.nosotros a{
-    text-decoration: none;
-    color: #362d18;
-    transition: color 0.32s ease;
-}
-
-.nosotros a:hover{
-    color:  #d69601;
-    opacity: 100%;
-}
-
-.redes1{/*Agrega el apartado de nuestras redes*/
+#seguir{
     font-size: 150%;
-    margin-left: 8%;
-    transform: translateY(290%);
-    width: 20%;
-    font-family: "Lexend", sans-serif;
-    font-weight: 300;
-    color: #362d18;
-    transition: color 0.32s ease;
-    margin-bottom: 9.5%;
+    opacity: 80%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 400;
 }
 
-.redes1:hover{
+#servicio{
+    font-size: 150%;
+    opacity: 80%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 400;
+}
+
+#redess{
+    font-size: 150%;
+    opacity: 80%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 400;
+}
+
+.p1{
+    font-size: 120%;
+    opacity: 80%;
+    font-family:"DM Sans", sans-serif;
+    font-weight: 400;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+}
+
+.p1:hover{
     color: #d69601;
 }
 
-/* estilos para el apartado que dice padecimientos*/
-#pie-padecimientos{
-    font-size: 150%;
-    margin-left: 8%;
-    width: 20%;
-    font-family: "Lexend", sans-serif;
-    font-weight: 300;
-    color: #362d18;
-    transition: color 0.32s ease;
+#p2{
+    color: #0a0808;
     text-decoration: none;
 }
-#pie-padecimientos:hover{
+
+#p2:hover{
     color: #d69601;
 }
 
 /* agrega el estilo al segundo pie de cabeza*/
 #parte5{
     background-color: #cec1a8;
-    height: 40%;
+    height: 20%;
     margin-top: 10%;
-}
-
-#pieFrase{/*Propiedades de la palabra "Amor de padres" en el footer*/
-    font-size: 220%;
-    opacity: 80%;
-    font-family:"Lexend", sans-serif;
-    font-weight: 500;
-    text-align: right;
-    margin-right: 4%;
-    transform: translateY(-300%);
 }
 
 /*Agrega los iconos de facebook y bitacora*/
 #lista4{
    display: flex;
    list-style: none;
-   opacity: 55%;
+   margin-left: 80%;
 }
 
 /*icono de la bitacora*/
 #bitacora{
-    margin-left: 35%;
-    height: 45%;
-    transform: translateX(570%);
-    margin-top: 37%;
-    opacity: 85%;
+    height: 75%;
+    opacity: 60%;
+    margin-top: 15%;
+    margin-left: 25%;
 }
 
 /*Icono facebook*/
 #facebook{
-    height: 40%;
-    transform: translateX(520px) translateY(40px);
+    height: 70%;
+    margin-top: 40%;
+    opacity: 60%;
+}
+
+#insta{
+    margin-top: 20%;
+    height: 90%;
+    opacity: 60%;
 }
 
 
@@ -698,6 +706,7 @@ button:hover{
     opacity: 50%;
     font-family:"Lexend", sans-serif;
     font-weight: 300;
-    margin-left: 611px;
-    margin-top: 6.3%;
+    margin-left: 681px;
+    margin-top: 10%;
 }
+

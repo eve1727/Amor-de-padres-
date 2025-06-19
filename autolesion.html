@@ -26,12 +26,12 @@
           <!--Creación del pequeño menu para mostrar los padecimientos-->
           <div class="container">
               
-            <button id="hamburger-btn" class="hamburger-btn"><img src="iconos.tdah/flecha.svg"  id="picar"/>
+            <button id="hamburger-btn" class="hamburger-btn"><img src="iconos.tdah/caret-right.svg"  id="picar"/>
             </button>
 
               <nav id="padecimientos" class="padecimientos">
 
-                <button id="cerrar" class="cerrar2"><img src="iconos.tdah/cerrar.svg" alt="cerrar" id="close"></button><!--agregamos el boton de cerrar el menu-->
+                <button id="cerrar" class="cerrar2"><img src="iconos.autolesion/bx-x.svg" alt="cerrar" id="close"></button><!--agregamos el boton de cerrar el menu-->
                 <ul style="list-style: none;">
                   <li> <a href="ansiedad.html" class="ventana2">Ansiedad</a></li>
                   <hr>
@@ -275,42 +275,58 @@
 
 </body>
        
-          <!-- Creacion del pie de cabeza -->
+         <!-- Creacion del pie de cabeza -->
 
-          <footer id="pie"><!--Cambia color footer-->
+  <footer id="pie"><!--Cambia color footer-->
+
+            
+    <p id="pieFrase">AMOR DE PADRES</p>
+
+    <div style="display: flex; margin-left: 35%; transform: translateY(-30%);">
+      <div style="margin-right: 10%;">
+            <h3 id="seguir">Conocenos</h3>
+            <p><a href="#quienes" class="p1" id="p2">Quienes somos</a></p>
+      </div>
+
+      <div style="margin-right: 10%;">
+        <h3 id="servicio">Servicios</h3>
+        <p><a href="contactos.html" class="p1" id="p2">Ayuda</a></p>
+      </div>
+
+      <div style="margin-right: 5%;">
+        <h2 id="redess">Redes sociales</h2>
+        <p class="p1">Facebook</p>
+        <p class="p1">Instagram</p>
+      </div>
+
+      <div>
+        <h2 id="redess">Privacidad</h2>
+        <p><a href="export.html" class="p1" id="p2">Políticas de Privacidad</a></p>
+        <p><a href="export-2.html" class="p1"id="p2">Terminos de uso</a></p>
+      </div>
+    </div>
+    <p id="pieparra">Nuestro principal objetivo es promover <br>el conocimiento para 
+      que los padres de <br> familia conozcan distintos padecimientos<br> y así estar
+      preparados para cualquier <br> situación.
+    </p>
     
-            <div style="display: block;">
-            <h5 class="nosotros"><a href="index.html">Sobre nosotros</a></h5>
-            <h5 class="redes1">Redes sociales</h5>
-            <a href="contactos.html" id="pie-padecimientos">Contactanos</a>
-            </div>
+    <!--Cambia el color donde este el nombre del sitio y otros-->
+    <div id="parte5">
+      
+      <!--Lista para agregar bitacora junto con redes sociales-->
+      <ul id="lista4">
+  
+         <li><a href="bitacora.html"><img src="iconos.index/calendario.svg" id="bitacora"/></a></li>
+         <li style="background-color: #ff9d23; background: none;"><a href="#"><img src="iconos.index/facebook.svg" id="facebook"></a></li>
+         <li><img src="icons8-instagram.svg" id="insta"></li>
+      </ul>
+        <div style="margin-top: -12%; display: flex;">
+            <p class="Copyright">Copyright 2025</p>
+        </div>
+    </div>
+  
+  </footer>
           
-            <div style="display: block; margin-left: 20%; margin-top: -21%;">
-              <h5 class="redes1">Ayuda</h5>
-            </div>
-          
-          
-            
-          
-            <p id="pieFrase">AMOR DE PADRES</p>
-            
-            <!--Cambia el color donde este el nombre del sitio y otros-->
-            <div id="parte5">
-              
-              <!--Lista para agregar bitacora junto con redes sociales-->
-              <ul id="lista4">
-          
-                 <li><a href="bitacora.html"><img src="iconos.index/calendario.svg" id="bitacora"/></a></li>
-                 <li style="background-color: #ff9d23; background: none;"><a href="#"><img src="iconos.index/facebook.svg" id="facebook"></a></li>
-                 
-          
-              </ul>
-                <div style="margin-top: -7%; display: flex; justify-content: space-between;">
-                    <p class="Copyright">Copyright 2025</p>
-                </div>
-            </div>
-          
-          </footer>
                   
  <script src="./js/autolesion.js"></script>
 </html> 
