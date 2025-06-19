@@ -1,35 +1,5 @@
 body {/*color de fondo*/
- background-color: #FFFDE7;
-}
-
-
-#a1 {/*Para volver al inicio de la pantalla */
-    text-decoration: none;
-    background-color: #f8e6bb;/*color del container*/
-    font-size: 40px;/*tamaño del volver al inicio*/
-    color: #ffffff;/*color de la letra*/
-}
-
-#a1:hover{/*hace que el "volver al inicio" cambie de color cuando el cursor pasa por ahi*/
-    color: rgb(255, 253, 253);
-    background-color: #ebc670;
-    box-shadow: 0 0 15px rgb(47, 47, 46);  
-  }
-
-#encabezado{ /*agrega la barra de volver al inicio */
-    position: fixed;/*Hace que la barra se quede estatica*/
-    background-image: none;
-    background-color: #f8e6bb;
-    bottom: 90%;
-    right: 0%;
-    left: 0;
-    top: 0%;
-    height: 10%;
-    z-index: 9;
-    margin-top: 0%;
-    opacity: 100%;
-    width: 100%;
-    display: flex;
+ background-color: #f8f7e5;
 }
 
 
@@ -57,6 +27,7 @@ header {/*Ajustes de mi encabezado*/
 
 .ventanas{
     text-decoration: none;
+    display: flex;
     font-size: 200%;
     font-family: "DM Sans", sans-serif;
     font-weight: 300;
@@ -64,6 +35,82 @@ header {/*Ajustes de mi encabezado*/
     text-align: center;
 }
 
+/*comienzo del menu*/
+
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Fuente de texto */
+    
+}
+
+
+/* Estilo del menú lateral */
+.sidebar {
+    height: 50%; /* Altura de la pantalla */
+    margin-left: -15px;
+    width: 0; /* Comienza cerrado (ancho = 0) */
+    border-radius: 30px;
+    position: fixed; /* Fijo en la pantalla */
+    top: 20%; /* Desde arriba */
+    background-color:#eddab1 ; /* Color de fondo */
+    overflow-x: hidden; /* Sin desplazamiento horizontal */
+    transition: 0.5s; /* Transición suave */
+    padding-top: 45px; /* Espacio arriba para el botón cerrar */
+}
+
+/* Enlaces dentro del menú */
+.sidebar a {
+    height: 20%;
+    text-decoration: none; /* Sin subrayado */
+    font-size: 25px; /* Tamaño del texto */
+    color: rgb(24, 24, 23); /* Color de texto */
+    display: block; /* Cada enlace en una línea */
+    margin-top: -5px;
+    transition: 0.4s; /* Efecto suave al pasar el ratón */
+    margin-left: 20px;
+}
+
+/* Efecto hover en los enlaces */
+.sidebar a:hover {
+    background-color:#c7a660 ; /* Color cuando pasas el ratón */
+   
+}
+
+/* Botón cerrar */
+.sidebar .closebtn {
+    position: absolute; /* Posición absoluta dentro de la sidebar */
+    top: 5px; /* A 10px desde arriba */
+    right: 88px; /* A 20px desde la derecha */
+    font-size: 35px; /* Tamaño del texto */
+    color: #111111;
+    cursor: pointer; /* Cursor en forma de mano */
+}
+
+/* Botón para abrir el menú */
+.abrirbtn {
+    font-size: 70px; /* Tamaño del texto */
+    cursor: pointer; /* Cursor en forma de mano */
+    position: fixed; /* Fijo en la pantalla */
+    top: 20%; /* 20px desde arriba */
+    left: 10px; /* 20px desde la izquierda */
+    background-color: #eddab1  ; /* Color de fondo */
+    padding: 5px 10px; /* Relleno interno */
+    border-radius: 10%; /* Bordes redondeados */
+    transition: 0.3s; /* Transición suave */
+    height: 18%;
+    width: 5%;
+    border-radius: 33px;
+    margin-left: -26px;
+
+}
+
+
+/* Efecto hover en el botón de abrir */
+.openbtn:hover {
+    background-color:#c7a660 ; /* Color al pasar el ratón */
+
+}
+/*fin del menu*/
 
 #descripcion{/*Tamaño de mi texto*/
     font-size: 230%;
@@ -124,9 +171,9 @@ header {/*Ajustes de mi encabezado*/
 }
 
 .imagen-ansiedad{/*ajustes de la imagen*/
-    width: 510px;
-    margin-top: 0%;
-    margin-right: 50px;
+    width: 710px;
+    margin-top: -5%;
+    margin-right: 20px;
     border-radius: 70px;
 }
 
@@ -211,7 +258,7 @@ header {/*Ajustes de mi encabezado*/
   
   /* Estilo base de cada tarjeta */
   .card {
-    background: #ffe985; /* Fondo*/
+    background: #FFFFCC ; /* Fondo*/
     width: 350px; /* Ancho fijo */
     border-radius: 10px; /* Bordes redondeados */
     overflow: hidden; /* Oculta lo que se salga del borde */
@@ -251,96 +298,113 @@ header {/*Ajustes de mi encabezado*/
   }
 
   /*PIE PAGINA*/
-
-#pie {/*Propiedades del footer*/
+  
+  #pie {/*Propiedades del footer*/
     background-color: #F1Eada;
-    height: 300px;
-    width: 100%;
-    margin-top: -3%;
+    height: 400px;
+    width: 107%;
+    margin-top: 6%;
+    margin-left: -4%;
 }
 
-.nosotros{/* Propiedades para el apartado "sobre nosotras*/
-    font-size: 170%;
-    margin-left: 5%;
-    transform: translateY(200%);
-    width: 20%;
-    color: #362d18;
-    transition: color 0.32s ease;
-    font-family: "Lexend", sans-serif;
-    font-weight: 500;
+
+#pieFrase{/*Propiedades de la palabra "Amor de padres" en el footer*/
+    font-size: 190%;
+    opacity: 80%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 450;
+    text-align: left;
+    transform: translateY(90%);
+    margin-left: 6%;
 }
 
-.nosotros:hover{
-    color:  #d69601;
-    opacity: 100%;
-    
+#pieparra{
+    font-size: 120%;
+    font-family: "DM Sans", sans-serif;
+    text-align:left;
+    justify-content: center;
+    margin-left: 6%;
+    margin-top: -8%;
+    opacity: 70%;
+    font-weight: 300;
+    width: 25%;
 }
 
-.redes1{/*Agrega el apartado de nuestras redes*/
-    font-size: 170%;
-    margin-left: 5%;
-    transform: translateY(220%);
-    width: 20%;
-    font-family: "Lexend", sans-serif;
-    font-weight: 500;
-    color: #362d18;
-    transition: color 0.32s ease;
+#seguir{
+    font-size: 150%;
+    opacity: 80%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 400;
 }
 
-.redes1:hover{
+#servicio{
+    font-size: 150%;
+    opacity: 80%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 400;
+}
+
+#redess{
+    font-size: 150%;
+    opacity: 80%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 400;
+}
+
+.p1{
+    font-size: 120%;
+    opacity: 80%;
+    font-family:"DM Sans", sans-serif;
+    font-weight: 400;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+}
+
+.p1:hover{
     color: #d69601;
 }
 
-/* estilos para el apartado que dice padecimientos*/
-#pie-padecimientos{
-    font-size: 170%;
-    margin-left: 30%;
-    width: 20%;
-    font-family: "Lexend", sans-serif;
-    font-weight: 500;
-    color: #362d18;
-    transition: color 0.32s ease;
+#p2{
+    color: #0a0808;
     text-decoration: none;
 }
-#pie-padecimientos:hover{
+
+#p2:hover{
     color: #d69601;
 }
 
 /* agrega el estilo al segundo pie de cabeza*/
 #parte5{
     background-color: #cec1a8;
-    height: 40%;
-    margin-top: 5%;
-}
-
-#pieFrase{/*Propiedades de la palabra "Amor de padres" en el footer*/
-    margin-right: 2%;
-    font-size: 220%;
-    opacity: 80%;
-    font-family:"Lexend", sans-serif;
-    font-weight: 500;
+    height: 20%;
+    margin-top: 10%;
 }
 
 /*Agrega los iconos de facebook y bitacora*/
 #lista4{
    display: flex;
    list-style: none;
-   opacity: 55%;
+   margin-left: 80%;
 }
 
 /*icono de la bitacora*/
 #bitacora{
-    margin-left: 35%;
-    height: 45%;
-    transform: translateX(570%);
-    margin-top: 37%;
-    opacity: 85%;
+    height: 75%;
+    opacity: 60%;
+    margin-top: 15%;
+    margin-left: 25%;
 }
 
 /*Icono facebook*/
 #facebook{
-    height: 40%;
-    transform: translateX(520px) translateY(40px);
+    height: 70%;
+    margin-top: 40%;
+    opacity: 60%;
+}
+
+#insta{
+    margin-top: 20%;
+    height: 90%;
+    opacity: 60%;
 }
 
 
@@ -349,6 +413,7 @@ header {/*Ajustes de mi encabezado*/
     opacity: 50%;
     font-family:"Lexend", sans-serif;
     font-weight: 300;
-    margin-left: 611px;
-    margin-top: 6.3%;
+    margin-left: 681px;
+    margin-top: 10%;
 }
+
