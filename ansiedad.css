@@ -2,6 +2,12 @@ body {/*color de fondo*/
  padding: 2%;
 }
 
+/*Para que tenga un desplazamiento más sueave*/
+html{
+    scroll-behavior: smooth;
+}
+
+    /*Texto que vaya apareciendo estilos*/
 
 /*Barra*/
 
@@ -118,13 +124,14 @@ body {/*color de fondo*/
 /*Creacion del encabezado con imagen de fondo*/
 
 .encabezado {/*Ajustes de mi encabezado*/
-    background-image: url(ansiedad.img/enca2.jpg);
-    background-size: cover;
-    background-position-y:70%; 
-    height:400px;
-    opacity: 95%;
-    transform: translateY(2.5%);
-    z-index: 100;
+    height: 400px;
+   background-image: url(ansiedad.img/enca2.jpg);
+   background-size: cover;
+   background-position: center;
+   opacity: 95%;
+   background-position-y: 90%;
+   position: static;
+   margin-top: 9%; 
     
 }
 
