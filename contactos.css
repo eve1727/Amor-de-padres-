@@ -296,11 +296,15 @@
     justify-content: center;
 }
 
+.container1{
+    margin-left: 120px;
+}
+
 /* Estilos para el boton*/
 .hamburger-btn1{
     height: 280px;
     width: 40%;
-    background-image: url(contactos.img/personas.webp);
+    background-image: url(ansiedad.img/color.png);
     background-size: 150%;
     background-repeat: no-repeat;
     background-position-y: 40%;
@@ -331,7 +335,7 @@
 }
 
 
-#servicio:hover{
+#ayuda:hover{
     color: #e3e9ef;
 }
 
@@ -384,3 +388,48 @@
     transform: rotate(-5deg) scale(1.0);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
+
+  .container2{
+    margin-top: -14%;
+    margin-left: 100px;
+  }
+
+  /* Estilos para el 2 boton*/
+.hamburger-btn2{
+    height: 280px;
+    width: 40%;
+    background-image: url(contactos.img/personas.webp);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+    background-position-x: 30%;
+    border-radius: 10%;
+    z-index: 5;
+    margin-right: 60%;
+    margin-top: -5%;
+    border: 1px solid rgba(43, 42, 42, 0.1);
+    box-shadow: 0 25px 25px rgba(95, 94, 94, 0.25);
+    transition: all 0.3s ease;
+}
+
+/*Hover del boton*/
+.hamburger-btn2:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+}
+
+#servicio{
+    font-family: "DM Sans", sans-serif;
+    font-size: 300%;
+    font-weight: 550;
+    color: rgb(11, 11, 11);
+    text-decoration: none;
+    transform: translateY(150%);
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+}
+
+#servicio:hover{
+    color: #e3e9ef;
+}
+
+

@@ -1,7 +1,132 @@
 body {/*color de fondo*/
- background-color: #f8f7e5;
+ padding: 2%;
 }
 
+
+/*Barra*/
+
+ /*Se dan propiedades a la barra donde esta el icono y demas elementos*/
+  .barra2{
+    background-color:#fff4da;
+    width: 100%;
+    height: 80px;
+    position: fixed;/*Hace qur la barra quede estatica*/
+    bottom: 90%;
+    right: 0%;
+    left: 0;
+    top: 0%;
+    z-index: 1000;
+}
+
+/*Propiedades del icono*/
+#icono{
+    height: 110px;
+    margin-left: -2%;
+    margin-top: -2%;
+}
+
+ /*Aumentar o disminuir el texto boton*/
+.controls{
+    transform: translateX(1150%);
+    margin-top: 0.8%;
+}
+
+/* Estilo general de los botones */
+.barra2 button {
+    padding: 1px; /* Espaciado interno para hacerlos más grandes */
+    margin: 2px; /* Espaciado entre botones */
+    font-size: 35px; /* Tamaño de fuente adecuado */
+    font-family: "Lexend", sans-serif;
+    font-weight: 250;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    cursor: pointer; /* Cambia el cursor a 'mano' cuando el usuario pase sobre ellos */
+    border: none; /* Elimina los bordes del botón */
+    background: none; /* Elimina cualquier fondo del botón */
+
+}
+
+.barra2 button:hover{
+    color: #5fa6f2;
+}
+
+/*Propiedades del icono de mensajes */
+#mensajes2{
+    color: #200f06;
+    font-size: 400%;
+    font-weight: 200;
+    transform: translateX(1100px) translateY(20%);
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+}
+
+#mensajes2:hover{
+    color: #5fa6f2;
+}
+
+/*Propiedades de la barra donde esta la flecha*/
+#barra1{
+    background-color: #eddab1;
+    width: 100%;
+    height: 120px;
+    position: fixed;/*Hace que la barra quede estatica*/
+    bottom: 90%;
+    right: 0%;
+    left: 0;
+    top: 1%;
+    z-index: 10;
+}
+
+/*Propiedades de la lista que contiene cada elemento de la 2da barra*/
+#barra1 ul{
+    list-style: none;
+}
+
+/*Padding de cada elemento de la lista de la 2da barra*/
+#barra1 ul li{
+    padding: 3%;
+}
+
+/*Propiedades para "sugerencias" en 2da mini barra*/
+#sugerencias{
+    text-decoration: none;
+    font-size: 150%;
+    color: #200f06;
+    font-family:"Lexend", sans-serif;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    font-weight: 270;
+    margin-left: 1490%;
+}
+
+#sugerencias:hover{
+    color: #ffffff;
+}
+
+/*Propiedades para "ayuda" en 2da mini barra*/
+.ayuda{
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: 270;
+    color: #200f06;
+    font-family:"Lexend", sans-serif;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    margin-left: 1250%;
+}
+
+.ayuda:hover{
+    color: #ffffff;
+}
+
+/*Creacion del encabezado con imagen de fondo*/
+
+.encabezado {/*Ajustes de mi encabezado*/
+    background-image: url(ansiedad.img/enca2.jpg);
+    background-size: cover;
+    background-position-y:70%; 
+    height:400px;
+    opacity: 95%;
+    transform: translateY(2.5%);
+    z-index: 100;
+    
+}
 
 #titulo{/*ajustes de mi frase*/
     font-family: "Lexend", sans-serif  ;/*estilo de letra de mi frase*/
@@ -16,15 +141,6 @@ body {/*color de fondo*/
 
 }
 
-header {/*Ajustes de mi encabezado*/
-    background-image: url(ansiedad.img/enca2.jpg);/*imagen que se presenta en el emcabezado*/
-    margin-top: 0%;
-    height: 500px;/*tamaño de la imagen*/
-    width: 100%;/*para que ocupe el 100% del espacio en el encabezado*/
-    background-position: center;
-    background-size: cover;
-}
-
 .ventanas{
     text-decoration: none;
     display: flex;
@@ -37,21 +153,14 @@ header {/*Ajustes de mi encabezado*/
 
 /*comienzo del menu*/
 
-/* Estilo general del cuerpo */
-body {
-    font-family: Arial, sans-serif; /* Fuente de texto */
-    
-}
-
-
 /* Estilo del menú lateral */
 .sidebar {
     height: 50%; /* Altura de la pantalla */
-    margin-left: -15px;
+    margin-left: -45px;
     width: 0; /* Comienza cerrado (ancho = 0) */
     border-radius: 30px;
     position: fixed; /* Fijo en la pantalla */
-    top: 20%; /* Desde arriba */
+    top: 170px; /* Desde arriba */
     background-color:#eddab1 ; /* Color de fondo */
     overflow-x: hidden; /* Sin desplazamiento horizontal */
     transition: 0.5s; /* Transición suave */
@@ -80,7 +189,7 @@ body {
 .sidebar .closebtn {
     position: absolute; /* Posición absoluta dentro de la sidebar */
     top: 5px; /* A 10px desde arriba */
-    right: 88px; /* A 20px desde la derecha */
+    right: 20px; /* A 20px desde la derecha */
     font-size: 35px; /* Tamaño del texto */
     color: #111111;
     cursor: pointer; /* Cursor en forma de mano */
@@ -91,8 +200,8 @@ body {
     font-size: 70px; /* Tamaño del texto */
     cursor: pointer; /* Cursor en forma de mano */
     position: fixed; /* Fijo en la pantalla */
-    top: 20%; /* 20px desde arriba */
-    left: 10px; /* 20px desde la izquierda */
+    top: 50%; /* 20px desde arriba */
+    left: 3px; /* 3px desde la izquierda */
     background-color: #eddab1  ; /* Color de fondo */
     padding: 5px 10px; /* Relleno interno */
     border-radius: 10%; /* Bordes redondeados */
@@ -171,7 +280,7 @@ body {
 }
 
 .imagen-ansiedad{/*ajustes de la imagen*/
-    width: 710px;
+    width: 370%;
     margin-top: -5%;
     margin-right: 20px;
     border-radius: 70px;
@@ -180,7 +289,7 @@ body {
 .texto-ansiedad p {/*Ajustes del texto */
     font-family: "DM Sans", sans-serif;
     font-size: 40px;
-    margin-top: 70px;
+    margin-top: 20px;
     line-height: 1.6;/*ajusta la altura de las lineas para mejorar la legibilidad*/
 }
 

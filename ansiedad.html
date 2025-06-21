@@ -16,7 +16,54 @@
 </head>
 <body>
 
+  <div>
 
+  <!--Creacion de la barra2 donde esta el icono y demás elementos-->
+     <header class="barra2">
+
+        <div style="display: flex;">
+         
+          
+        <img src="img1/icono2.png" alt="amor de padres" id="icono">
+  
+        <!-- Controles para aumentar y disminuir el tamaño de la fuente -->
+      <div class="controls">
+        <button id="increase-font" onclick="changeFontSize(1)">A+</button> <!-- Aumenta el tamaño de fuente -->
+        <button id="decrease-font" onclick="changeFontSize(-1)">a-</button> <!-- Disminuye el tamaño de fuente -->
+        
+     </div>
+  
+        <a href="ia.html">
+          <span class="material-symbols-outlined" id="mensajes2">
+          forum
+          </span>
+         </a>
+  
+  
+        </div>
+  
+      </header>
+
+       
+      <!--Cracion de 2da mini barra-->
+         <header id="barra1">
+          <ul style="display: flex;">
+           
+    
+           <!--Sugerencias-->
+           <li>
+          <h3><a href="index.html" id="sugerencias">Inicio</a></h3>
+           </li>
+           
+           <!--Ayuda-->
+           <li>
+          <h3><a href="contactos.html" class="ayuda">Ayuda</a></h3>
+           </li>
+  
+          </ul>
+         </header>
+
+      
        <header>
          <center>
           <div style=" background-color: rgba(0, 0, 0, 0.1); height: 500px;"><!--agrega fondo semitranparente y altura-->
@@ -71,11 +118,12 @@
          <ul id="pagina">
       
           <li><a href="#que es" class="ventanas">¿Qué es?</a></li>
-          <li><a href="#causass" class="ventanas">Causas</a></li>
+          <span><li><a href="#causass" class="ventanas">Causas</a> </span></li>
           <li><a href="#sintomas" class="ventanas">Sintomas</a></li>
           <li><a href="#consejos" class="ventanas">Consejos</a></li>
          
          </ul>
+        </span>
          <hr style="width: 75%; margin-left: 6%; ">
      </div>
 
