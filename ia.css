@@ -2,6 +2,8 @@ body{
     background-color: #ffffff;
 }
 
+
+
 /*Propiedades de la barra donde esta la flecha*/
 
 
@@ -46,6 +48,10 @@ body{
     /* Sin desplazamiento vertical, posición natural */
   }
 
+    
+  
+       /*Estilos para el menu que mostrara todos los padecimientos que hay en el sitio*/
+
 
 /* Estilos para el boton donde  donde se veran varios padecimientos*/
 .hamburger-btn{
@@ -54,7 +60,7 @@ body{
     z-index: 8;
     position: fixed;
     margin-left: -4%;
-    transform: translateY(300%) translateX(-700%);
+    transform: translateY(-120%) translateX(-10%);
     background-color: #eddab1;
     transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
     border: 1px solid #222;
@@ -135,67 +141,31 @@ body{
     margin-left: -90%;
 }
 
-#pagina1{
-    width: 60%;
-    margin-left: 23%;
-    margin-top: 5%;
-}
+    
 
-#pagina{
-    display: flex;
-    list-style: none;
+/*PRIMER BARRA*/
 
-}
-
-#pagina li{
-    padding: 2%;
-}
-
-#pagina li a{
-    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
-}
-
-#pagina li a:hover{
-    color: #ecad24;
-}
-
-.ventanas{
-    text-decoration: none;
-    font-size: 200%;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 300;
-    color: #080808;
-    text-align: center;
-}
-
-
-
-
-#barra1{
-  background-color: #eddab1;
+/*Se dan propiedades a la barra donde esta el icono y demas elementos*/
+.barra2{
+  background-color:#fff4da;
   width: 100%;
-  height: 120px;
-  position: fixed;/*Hace que la barra quede estatica*/
+  height: 80px;
+  position: fixed;/*Hace qur la barra quede estatica*/
   bottom: 90%;
   right: 0%;
   left: 0;
-  top: 1%;
+  top: 0%;
   z-index: 10;
 }
 
-#barra1 ul{
-  list-style: none;
-}
 
-#barra1 ul li{
-  padding: 3%;
-}
+/*Mueve los botones de incrementar y dismunir a la derecha*/
 .controls{
   transform: translateX(1150%);
   margin-top: 0.8%;
 }
 
-/* Estilo general de los botones */
+/* Estilo general de los botones de disminuir y aumentar*/
 button {
   padding: 1px; /* Espaciado interno para hacerlos más grandes */
   margin: 2px; /* Espaciado entre botones */
@@ -213,40 +183,14 @@ button:hover{
   color: #f8af07;
 }
 
-/*Se dan propiedades a la barra donde esta el icono y demas elementos*/
-.barra2{
-  background-color:#fff4da;
-  width: 100%;
-  height: 80px;
-  position: fixed;/*Hace qur la barra quede estatica*/
-  bottom: 90%;
-  right: 0%;
-  left: 0;
-  top: 0%;
-  z-index: 10;
-}
-
+/*Estilos para la imagen del icono*/
 #icono{
   height: 110px;
   margin-left: -2%;
   margin-top: -2%;
 }
 
-.ayuda{
-  text-decoration: none;
-  font-size: 150%;
-  font-weight: 270;
-  color: #200f06;
-  font-family:"Lexend", sans-serif;
-  transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
-  margin-left: 1250%;
-}
-
-.ayuda:hover{
-  color: #ffffff;
-}
-
-
+/*Estilos para el icono de mensajes que te lleva a la IA*/
 #mensajes2{
   color: #200f06;
   font-size: 400%;
@@ -259,6 +203,33 @@ button:hover{
   color: #f8af07;
 }
 
+ /*SEGUNDA BARRA*/
+
+/*Estilos de la barra*/
+#barra1{
+  background-color: #eddab1;
+  width: 100%;
+  height: 120px;
+  position: fixed;/*Hace que la barra quede estatica*/
+  bottom: 90%;
+  right: 0%;
+  left: 0;
+  top: 1%;
+  z-index: 10;
+}
+
+/*Estilo de la lista que contiene cada elemento de la barra*/
+#barra1 ul{
+  list-style: none;
+}
+
+/*Estilo de cada elemento de la lista*/
+#barra1 ul li{
+  padding: 3%;
+}
+
+
+/*Estilo especificamente de la palabra inicio para volver*/
 #inicio2{
   text-decoration: none;
   font-size: 150%;
@@ -273,9 +244,24 @@ button:hover{
   color: #ffffff;
 }
 
+/*Estilos para el apartado de ayuda*/
+.ayuda{
+  text-decoration: none;
+  font-size: 150%;
+  font-weight: 270;
+  color: #200f06;
+  font-family:"Lexend", sans-serif;
+  transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+  margin-left: 1250%;
+}
 
-/* Propiedades para el header*/
+.ayuda:hover{
+  color: #ffffff;
+}
 
+      /*ENCABEZADO*/
+
+/* Propiedades para el header del encabezado*/
 .cabecera{
     height: 300px;
     background-image: url(ia.img/ia\ header.webp);
@@ -284,12 +270,14 @@ button:hover{
     margin-top: 3%;
 }
 
+/*Propiedades para el div del header del encabezado*/
 .fondo{
    height: 300px;
    background-color: rgba(0, 0, 0, 0.1); /* Fondo negro semitransparente (50% de opacidad) */
    margin-top: 8%;
  }
  
+ /*Estilos para la palabra de "Ayuda al instante*/
 #frase{
   font-size: 450%;
   font-family: "Lexend", sans-serif;
@@ -313,6 +301,7 @@ button:hover{
 
 /*Propiedades para presentar a Lia*/
 
+/*Estilos para el titulo "Lía" al inicio*/
 .Lia2{
     font-size: 270%;
     font-family: "DM Sans", sans-serif;
@@ -321,6 +310,7 @@ button:hover{
     margin-left: 10%; 
 }
 
+/*Estilos para el parrafo que explica que es Lía*/
 #explicacion{
     font-size: 170%;
     font-family: "DM Sans", sans-serif;
@@ -331,6 +321,7 @@ button:hover{
     
 }
 
+/*Estilos para la palabra ejemplos... antes de las imagenes*/
 #ejemplos{
     font-size: 220%;
     font-family: "DM Sans", sans-serif;
@@ -345,7 +336,7 @@ button:hover{
   background-color: #F1Eada;
   height: 400px;
   width: 107%;
-  margin-top: 15%;
+  margin-top: 6%;
   margin-left: -4%;
 }
 
@@ -360,6 +351,7 @@ button:hover{
   margin-left: 6%;
 }
 
+/*Propiedades para el parrafo que explica un poco el stio web*/
 #pieparra{
   font-size: 120%;
   font-family: "DM Sans", sans-serif;
@@ -372,6 +364,7 @@ button:hover{
   width: 25%;
 }
 
+/*Estilos para la palabra conocernos en footer*/
 #seguir{
   font-size: 150%;
   opacity: 80%;
@@ -379,6 +372,7 @@ button:hover{
   font-weight: 400;
 }
 
+/*Estilo para palabra servio en footer*/
 #servicio{
   font-size: 150%;
   opacity: 80%;
@@ -386,6 +380,7 @@ button:hover{
   font-weight: 400;
 }
 
+/*Estilo para palabra Redes sociales en footer*/
 #redess{
   font-size: 150%;
   opacity: 80%;
@@ -393,6 +388,7 @@ button:hover{
   font-weight: 400;
 }
 
+/*Estilo para cada enlace del footer*/
 .p1{
   font-size: 120%;
   opacity: 80%;
@@ -405,6 +401,7 @@ button:hover{
   color: #d69601;
 }
 
+/*p2 para mas estilo de los enlaces*/
 #p2{
   color: #0a0808;
   text-decoration: none;
@@ -443,6 +440,7 @@ button:hover{
   opacity: 60%;
 }
 
+/*Para el icono de intagram*/
 #insta{
   margin-top: 20%;
   height: 90%;
@@ -461,15 +459,14 @@ button:hover{
 
 
 
-
-.container {
+.container3 {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.container .glass {
+.container3 .cuadro1 {
   position: relative;
   width: 550px;
   height: 350px;
@@ -488,7 +485,7 @@ button:hover{
 
 }
 
-.container:hover .glass {
+.container3:hover .cuadro1 {
   transform: rotate(0%);
   margin: 0 10px;
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IA</title>
     <link rel="stylesheet" type="text/css" href="ia.css">
       <!--Fuente para casi todo el sitio-->
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,50 +22,21 @@
 </head>
   <body>
 
+     <div class="container2">
+ 
+     <!--Div para que el texto vaya apareciendo-->
+     <div id="content">
 
-      <!--Creación del pequeño menu para mostrar los padecimientos-->
-      <div class="container">
-     
-        <button id="hamburger-btn" class="hamburger-btn"><img src="iconos.tdah/caret-right.svg"  id="picar"/>
-        </button>
-      
-          <nav id="padecimientos" class="padecimientos">
-  
-            <button id="cerrar" class="cerrar2"><img src="iconos.autolesion/bx-x.svg" alt="cerrar" id="close"></button><!--agregamos el boton de cerrar el menu-->
-            <ul style="list-style: none;">
-               <li> <a href="ansiedad.html" class="ventana2">Ansiedad</a></li>
-               <hr>
-               <li><a href="depresion.html" class="ventana2">Depresión</a></li>
-               <hr>
-               <li><a href="autolesion.html" class="ventana2">Autolesión</a></li>
-               <hr>
-               <li><a href="tdah.html" class="ventana2">TDAH</a></li>
-               <hr>
-               <li><a href="TOC.hmtl" class="ventana2">TOC</a></li>
-               <hr>
-               <li><a href="disocial.hmtl" class="ventana2">TD</a></li>
-               <li></li>
-               <li></li>
-               <li></li>
-  
-            </ul>
-          
-          </nav>
-      </div>
-
-    <!--Div para que el texto vaya apareciendo-->
-  <div id="content">
-
-        <!--Cracion de la barra donde estara la flecha-->
+        <!--Cracion de la barra donde estara lo de ayuda e inicio-->
         <header id="barra1">
           <ul style="display: flex;">
           
            <li>
-          <h3><a href="index.html" id="inicio2">Inicio</a></h3>
+          <h3><a href="index.html" id="inicio2">Inicio</a></h3><!--Ir al inicio-->
            </li>
            
            <li>
-          <h3><a href="contactos.html" class="ayuda">Ayuda</a></h3>
+          <h3><a href="contactos.html" class="ayuda">Ayuda</a></h3><!--Ir a la ventana de ayuda-->
            </li>
   
           </ul>
@@ -75,10 +46,10 @@
           <!--Creacion de la barra2 donde esta el icono y demás elementos-->
           <header class="barra2">
   
-            <div style="display: flex;">
+            <div style="display: flex;"><!--Posiciona los elementos uno a un lado del otro-->
              
               
-            <img src="img1/icono2.png" alt="amor de padres" id="icono">
+            <img src="img1/icono2.png" alt="amor de padres" id="icono"><!--Imagen del icono-->
   
   
               <!-- Controles para aumentar y disminuir el tamaño de la fuente -->
@@ -86,7 +57,7 @@
             <button id="increase-font" onclick="changeFontSize(1)">A+</button> <!-- Aumenta el tamaño de fuente -->
             <button id="decrease-font" onclick="changeFontSize(-1)">a-</button> <!-- Disminuye el tamaño de fuente -->
          </div>
-  
+             <!--Icono para ir con la IA-->
             <a href="ia.html">
               <span class="material-symbols-outlined" id="mensajes2">
               forum
@@ -105,8 +76,38 @@
         </div>
       </header>
 
+
+       <!--Creación del pequeño menu para mostrar los padecimientos-->
+       <div class="container">
+     
+        <button id="hamburger-btn" class="hamburger-btn"><img src="iconos.tdah/caret-right.svg"  id="picar"/><!--Boton para abrir-->
+        </button>
+      
+          <nav id="padecimientos" class="padecimientos">
+  
+            <button id="cerrar" class="cerrar2"><img src="iconos.autolesion/bx-x.svg" alt="cerrar" id="close"></button><!--agregamos el boton de cerrar el menu-->
+            <ul style="list-style: none;"><!--Agregamos en una lista todas las ventanas a las que el padre podra ir-->
+               <li> <a href="ansiedad.html" class="ventana2">Ansiedad</a></li>
+               <hr>
+               <li><a href="depresion.html" class="ventana2">Depresión</a></li>
+               <hr>
+               <li><a href="autolesion.html" class="ventana2">Autolesión</a></li>
+               <hr>
+               <li><a href="tdah.html" class="ventana2">TDAH</a></li>
+               <hr>
+               <li><a href="TOC.hmtl" class="ventana2">TOC</a></li>
+               <hr>
+               <li></li>
+               <li></li>
+  
+            </ul>
+          
+          </nav>
+      </div>
+
+
       <!--Div para llamar el texto en js-->
-   <div id="text-content">
+     <div id="text-content">
 
       <h2 class="Lia2">Lía</h2>
       <p id="explicacion">Lía es una IA (inteligencia artificial) que fue creada con el mero propósito de brindarte ayuda o consejo a tiempo real; 
@@ -118,74 +119,92 @@
 
          <h2 id="ejemplos">Ejemplos de como ayuda Lia:</h2>
 
-         <div class="container">
-          
-          <div class="glass">
-            
+         <div class="container3"><!--Div que contiene las dos imagenes-->
+         
+          <div class="cuadro1"><!--1er div que tiene la 1era imagen-->
           </div>
-          <div class="glass" style="background-image: url(ia.img/foto2.webp);">
-           
+
+          <div class="cuadro1" style="background-image: url(ia.img/foto2.webp);"><!--2do div que tiene la segunda imagen-->
           </div>
+
         </div>
         
      <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js"></script>
      <script src="https://files.bpcontent.cloud/2025/04/26/01/20250426013744-9Z0NHLSN.js"></script>
 
-   </div><!--2-->
+      </div><!--2-->
 
-  </div><!--1-->
+      </div><!--1-->
+
+     </div>
+     
     
    <!-- Creacion del pie de cabeza -->
 
    <footer id="pie"><!--Cambia color footer-->
 
-            
+    <!--Iniia cosas del footer-->
     <p id="pieFrase">AMOR DE PADRES</p>
 
+    <!--Primer div que agarra todos los elementos de la 1er division del footer posicionandolos-->
     <div style="display: flex; margin-left: 35%; transform: translateY(-30%);">
-      <div style="margin-right: 10%;">
-            <h3 id="seguir">Conocenos</h3>
-            <p><a href="#quienes" class="p1" id="p2">Quienes somos</a></p>
-      </div>
+              
+           <!--Cada elemento del footer tiene un div que separa cada uno por secciones-->
+              <!--1era seccion-->
+              <div style="margin-right: 10%;">
+                    <h3 id="seguir">Conocenos</h3>
+                    <p><a href="#quienes" class="p1" id="p2">Quienes somos</a></p>
+              </div>
 
-      <div style="margin-right: 10%;">
-        <h3 id="servicio">Servicios</h3>
-        <p><a href="contactos.html" class="p1" id="p2">Ayuda</a></p>
-      </div>
+              <!--2da seccion-->
+              <div style="margin-right: 10%;">
+                <h3 id="servicio">Servicios</h3>
+                <p><a href="contactos.html" class="p1" id="p2">Ayuda</a></p>
+              </div>
 
-      <div style="margin-right: 5%;">
-        <h2 id="redess">Redes sociales</h2>
-        <p class="p1">Facebook</p>
-        <p class="p1">Instagram</p>
-      </div>
+              <!--3era seccion-->
+              <div style="margin-right: 5%;">
+                <h2 id="redess">Redes sociales</h2>
+                <p class="p1">Facebook</p>
+                <p class="p1">Instagram</p>
+              </div>
 
-      <div>
-        <h2 id="redess">Privacidad</h2>
-        <p><a href="export.html" class="p1" id="p2">Políticas de Privacidad</a></p>
-        <p><a href="export-2.html" class="p1"id="p2">Terminos de uso</a></p>
-      </div>
-    </div>
+              <!--4ta seccion y ultima de la 1era division del footer-->
+              <div>
+                <h2 id="redess">Privacidad</h2>
+                <p><a href="export.html" class="p1" id="p2">Políticas de Privacidad</a></p>
+                <p><a href="export-2.html" class="p1"id="p2">Terminos de uso</a></p>
+              </div>
+
+    </div><!---Termina div que posiciona algunos elementos de la 1era parte-->
+   
+    <!--Parrafo que explica nuestro proposito-->
     <p id="pieparra">Nuestro principal objetivo es promover <br>el conocimiento para 
       que los padres de <br> familia conozcan distintos padecimientos<br> y así estar
       preparados para cualquier <br> situación.
     </p>
     
-    <!--Cambia el color donde este el nombre del sitio y otros-->
+    <!--Cambia el color para comenzar con la 2da parte del footer-->
     <div id="parte5">
       
       <!--Lista para agregar bitacora junto con redes sociales-->
       <ul id="lista4">
   
+        <!--Icono bitacora-->
          <li><a href="bitacora.html"><img src="iconos.index/calendario.svg" id="bitacora"/></a></li>
+         <!--Icono facebook-->
          <li style="background-color: #ff9d23; background: none;"><a href="#"><img src="iconos.index/facebook.svg" id="facebook"></a></li>
+         <!--Icono instagram-->
          <li><img src="icons8-instagram.svg" id="insta"></li>
-      </ul>
+       </ul>
+       <!--Agregamos copyright-->
         <div style="margin-top: -12%; display: flex;">
             <p class="Copyright">Copyright 2025</p>
         </div>
     </div>
-  
   </footer>
-  
-      <script src="./js/ia.js"></script>
-      </html>
+
+  <!--Enlazamos el javascript-->
+  <script src="./js/ia.js"></script>
+
+  </html>

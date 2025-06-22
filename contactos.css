@@ -2,6 +2,49 @@
     padding: 2%;
 }
     
+/*Para que tenga un desplazamiento más sueave*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*Texto que vaya apareciendo estilos*/
+
+#content {
+    background: white;
+    /* Fondo blanco para resaltar el contenido */
+  
+    border-radius: 8px;
+    /* Bordes redondeados para suavizar la caja */
+  
+  }
+  
+  /* Estilos para todos los párrafos dentro de #content */
+  /* Inicialmente están ocultos y desplazados hacia abajo */
+  #content p {
+    opacity: 0;
+    /* Transparencia total, párrafos invisibles inicialmente */
+
+    transition: 
+      opacity 0.9s cubic-bezier(.4,0,.2,1),
+      transform 0.9s cubic-bezier(.4,0,.2,1);
+    /* Transiciones suaves para opacidad y posición con curva de animación personalizada */
+  
+    will-change: opacity, transform;
+    /* Optimiza el rendimiento indicando que estos dos estilos cambiarán */
+  
+    margin-bottom: 1%;
+    /* Margen inferior para separar los párrafos */
+  }
+  
+  /* Estilos para párrafos que tienen la clase 'visible' */
+  /* Aquí están completamente visibles y en posición original */
+  #content p.visible {
+    opacity: 1;
+    /* Opacidad total, párrafo visible */
+  
+    transform: translateY(10);
+    /* Sin desplazamiento vertical, posición natural */
+  }
 
 
 /* Estilos para el boton donde  donde se veran varios padecimientos*/
@@ -19,7 +62,7 @@
 }
 
 /*Hover del boton*/
-.hamburger-btn:hover{
+.hamburger-btn:hover #padecimientos{
     background-color: #c7a660;
 }
 
@@ -91,40 +134,6 @@
 .padecimientos.disabled{
     margin-left: -90%;
 }
-
-#pagina1{
-    width: 60%;
-    margin-left: 23%;
-    margin-top: 5%;
-}
-
-#pagina{
-    display: flex;
-    list-style: none;
-
-}
-
-#pagina li{
-    padding: 2%;
-}
-
-#pagina li a{
-    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
-}
-
-#pagina li a:hover{
-    color: #ecad24;
-}
-
-.ventanas{
-    text-decoration: none;
-    font-size: 200%;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 300;
-    color: #080808;
-    text-align: center;
-}
-
 
     /*Barra*/
 
@@ -240,8 +249,9 @@
     color: #ffffff;
 }
 
+        /*ENCABEZADO*/
 
-#encabezado{
+#encabezado{/*Estilos para la imagen del encabezado*/
     background-image: url(contactos.img/IMG_0922.webp);
     background-size: cover;
     background-position-y:50%; 
@@ -252,23 +262,18 @@
     padding: 5%;
 }
 
-#encabezado div{
-    background-color: rgba(0, 0, 0, 0.1); /* Fondo negro semitransparente (50% de opacidad) */
-    height: 500px;
-    width: 111%;
-    transform: translateX(-5%) translateY(-21%);
-}
-
-#encabezado h2{
+#encabezado h2{/*Estilo para la palabra ayuda en el encabezado*/
     font-size: 600%;
     color: rgb(255, 255, 255);
     text-align: center;
-    transform: translateY(180%);
+    transform: translateY(100%);
     opacity: 100%;
     font-family: "Lexend", sans-serif  ;
 }
 
-.par1{
+    /*CONTENIDO*/
+
+.par1{/*Estilos del parrafo introductorio y del pequeño renglon donde explica como funciona*/
     font-size: 170%;
     font-family: "DM Sans", sans-serif;
     font-weight: 300;
@@ -278,7 +283,7 @@
     justify-content: center;
 }
 
-#funciona{
+#funciona{/*Estilo pregunta ¿Cómo funciona?*/
     text-align: center;
     font-family:"DM Sans", sans-serif ;
     font-weight: 500;
@@ -286,61 +291,9 @@
     margin-top: 5%;
 }
 
-#continuacion{
-    font-size: 170%;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 300;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-left: 10%;
-    justify-content: center;
-}
+   /*CUADROS QUE EXPLICAN CADA PARTE DE AYUDA*/
 
-.container1{
-    margin-left: 120px;
-}
-
-/* Estilos para el boton*/
-.hamburger-btn1{
-    height: 280px;
-    width: 40%;
-    background-image: url(contactos.img/personas.webp);
-    background-size: 150%;
-    background-repeat: no-repeat;
-    background-position-y: 40%;
-    background-position-x: 30%;
-    border-radius: 10%;
-    z-index: 5;
-    margin-left: 50%;
-    margin-top: 5%;
-    border: 1px solid rgba(43, 42, 42, 0.1);
-    box-shadow: 0 25px 25px rgba(95, 94, 94, 0.25);
-    transition: all 0.3s ease;
-}
-
-/*Hover del boton*/
-.hamburger-btn1:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
-}
-
-#servicio{
-    font-family: "DM Sans", sans-serif;
-    font-size: 300%;
-    font-weight: 550;
-    color: rgb(11, 11, 11);
-    text-decoration: none;
-    transform: translateY(150%);
-    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
-}
-
-#servicio:hover{
-    color: #e3e9ef;
-}
-
-
-
-.cuadro {
+.cuadro {/*Estilo del cuadro de ayuda autodidacta*/
     width: 400px;
     height: 350px;
     background-color: #f3e1e1 ;
@@ -363,6 +316,7 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
 
+    /*Estilos del cuadro de servicio de ayuda*/
   #cuadro2{
     padding-left: 5%;
   }
@@ -389,35 +343,42 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
 
-  .container2{
+
+     /*CUADROS PARA ELEGIR QUE TIPO DE AYUDA QUIERES*/
+
+     /* 1er cuadro (AYUDA AUTODIDACTA) */
+
+.container2{
     margin-top: -14%;
     margin-left: 100px;
-  }
+ }
 
-  /* Estilos para el 2 boton*/
+  /* Estilos para el 1er cuadro*/
 .hamburger-btn2{
     height: 280px;
     width: 40%;
-    background-image: url(ansiedad.img/color.png);
+    background-image: url(contactos.img/autonomo.webp);
     background-size: 150%;
     background-repeat: no-repeat;
-    background-position-y: 40%;
+    background-position-y: 30%;
     background-position-x: 30%;
     border-radius: 10%;
     z-index: 5;
     margin-right: 60%;
-    margin-top: -5%;
+    margin-left: 5%;
+    margin-top: -5.5%;
     border: 1px solid rgba(43, 42, 42, 0.1);
     box-shadow: 0 25px 25px rgba(95, 94, 94, 0.25);
     transition: all 0.3s ease;
 }
 
-/*Hover del boton*/
+/*Hover del cuadro*/
 .hamburger-btn2:hover{
     transform: translateY(-5px);
     box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
 }
 
+/*Estilos de la palabra "Ayuda autodidacta" dentro del cuadro*/
 #ayuda{
     font-family: "DM Sans", sans-serif;
     font-size: 300%;
@@ -433,3 +394,110 @@
 }
 
 
+ /*2do cuadro estilos (SERVICIO DE AYUDA) */
+
+#servicio{/*Estilos para la palabra Servicio de ayuda en el 2do cuadro para ir al formulario*/
+    font-family: "DM Sans", sans-serif;
+    font-size: 300%;
+    font-weight: 550;
+    color: rgb(11, 11, 11);
+    text-decoration: none;
+    transform: translateY(150%);
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+}
+
+#servicio:hover{
+    color: #e3e9ef;
+}
+
+.container1{
+    margin-left: 120px;
+}
+
+/* Estilos el cuadro de servicio de ayuda*/
+.hamburger-btn1{
+    height: 280px;
+    width: 40%;
+    background-image: url(contactos.img/servicio.webp);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position-y: 10%;
+    background-position-x: 30%;
+    border-radius: 10%;
+    z-index: 5;
+    margin-left: 47%;
+    margin-top: 5%;
+    border: 1px solid rgba(43, 42, 42, 0.1);
+    box-shadow: 0 25px 25px rgba(95, 94, 94, 0.25);
+    transition: all 0.3s ease;
+}
+
+/*Hover del cuadro*/
+.hamburger-btn1:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+}
+
+  
+
+/*Inicia algunos lugares estilos para ayuda autodidacta*/
+
+/*Estilos del div que tiene toda esta seccion*/
+#fotos{
+    margin-top: 10%;
+    margin-left: 10%;
+    position: relative;
+}
+
+#fotos:hover .texto{
+    opacity: 1; /*Mostrar el texto al pasar el cursor*/
+}
+
+.texto{/*Estilo de todo el texto que aparece en el primer lugar*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5); /*Fondo semi-transparente*/
+  color: white;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /*Inicialmente el texto no se ve*/
+  transition: opacity 0.3s ease; /*Transición suave*/
+}
+
+
+#foto1{/*Estilo de la imagen de este lugar*/
+    border-radius: 15px;
+}
+
+#centro{/*Estilo para nombre del lugar*/
+    font-family: "Lexend", sans-serif;
+    margin-left: 5%;
+    font-weight: 400;
+}
+
+#Direccion{/*Estilo para la palabra "Direccion"*/
+    font-family: "Lexend", sans-serif;
+    margin-left: 5%;
+    font-weight: 300;
+}
+
+.informacion{/*Estilo para la informacion del lugar*/
+    font-family: "DM Sans", sans-serif;
+    font-size: 120%;
+    font-weight: 200;
+    margin-left: 5%;
+}
+
+#quehace{/*Estilo para el pequeño parrafo que explica el lugar*/
+    margin-top: 30%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-weight: 240%;
+    font-family: "DM Sans", sans-serif;
+    font-size: 140%;
+    margin-left: 5%;
+}

@@ -8,6 +8,28 @@ html{
     scroll-behavior: smooth;
 }
 
+@media (max-width: 500px){
+    header #unos{
+          font-size: 100%;
+          transform: translateY(-80%);
+          margin-left: 4%;
+          
+    }
+
+    header #video{
+        height: 430px;
+        transform: translateY(-90%);
+    }
+
+    #encabezado{
+        height: 3%;
+    }
+
+    #icono{
+        height: 40px;
+    }
+}
+
 /*BARRA*/
 
     /*Texto que vaya apareciendo estilos*/
@@ -224,7 +246,6 @@ header video{/*Propiedades para el video*/
 }
 header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     position: absolute;/* Nos sirve para poder posicionar nuestra frase arriba del video*/
-    width: 100%;
     top: 50%;
     transform: translateY(-50%);/*Nos permite mover la frase(como los margin pero mejor)*/
     text-align: center;
@@ -575,6 +596,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     margin-left: 6%;
 }
 
+/*Propiedades para el parrafo que explica un poco el stio web*/
 #pieparra{
     font-size: 120%;
     font-family: "DM Sans", sans-serif;
@@ -587,6 +609,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     width: 25%;
 }
 
+/*Estilos para la palabra conocernos en footer*/
 #seguir{
     font-size: 150%;
     opacity: 80%;
@@ -594,6 +617,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     font-weight: 400;
 }
 
+/*Estilo para palabra servio en footer*/
 #servicio{
     font-size: 150%;
     opacity: 80%;
@@ -601,6 +625,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     font-weight: 400;
 }
 
+/*Estilo para palabra Redes sociales en footer*/
 #redess{
     font-size: 150%;
     opacity: 80%;
@@ -608,6 +633,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     font-weight: 400;
 }
 
+/*Estilo para cada enlace del footer*/
 .p1{
     font-size: 120%;
     opacity: 80%;
@@ -620,6 +646,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     color: #d69601;
 }
 
+/*p2 para mas estilo de los enlaces*/
 #p2{
     color: #0a0808;
     text-decoration: none;
@@ -658,6 +685,7 @@ header .imagen{/*Le da caracteristicas a la frase del encabezado*/
     opacity: 60%;
 }
 
+/*Para el icono de intagram*/
 #insta{
     margin-top: 20%;
     height: 90%;

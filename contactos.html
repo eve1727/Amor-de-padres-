@@ -19,7 +19,7 @@
 </head>
 <body>
 
-
+<div id="content"> 
     <!--Creación del pequeño menu para mostrar los padecimientos-->
     <div class="container">
      
@@ -95,35 +95,39 @@
           </ul>
          </header>
 
+         <!--Creamos encabezado-->
          <header id="encabezado">
             <div>
                 <h2>AYUDA</h2>
             </div>
          </header>
+        
+         <!--Div para llamar el texto en js-->
+   <div id="text-content">
 
-         <div id="cuerpo">
-               <h3 class="par1"><span style="color: #ff9d23;">¿Necesitas ayuda?</span> Bienvenido al espacio donde encontraras la ayuda adecuada 
+         <div id="cuerpo"><!--Le agrega padding a nuestra ventana-->
+               
+               <p class="par1"><span style="color: #ff9d23;">¿Necesitas ayuda?</span> Bienvenido al espacio donde encontraras la ayuda adecuada 
                 para ti, tanto si requieres de nuestra ayuda o si deseas buscar la ayuda adecuada para ti al momento. Sientete seguro de explorar y pedir o encontrar
                 la ayuda que para ti sea la mejor.
-              </h3>
+               </p>
 
                 <h2 id="funciona">¿CÓMO FUNCIONA?</h2>
-
-                <p class="par1">Navegar en este apartado es sencillo todo basta con algunos cliks y listo, sin embargo aquí te dejamos una breve explicación:</p>
-              <div style="display: flex;">
+                        <p class="par1">Navegar en este apartado es sencillo todo basta con algunos cliks y listo, sin embargo aquí te dejamos una breve explicación:</p>
+              
+            
+              <div style="display: flex;"><!--Pone a los cuadros que explican uno a un lado de otro-->
+                 
                 <div class="cuadro">
-  
-                
-                  <div id="cuadro2">
-                    <img src="iconos.contactos/person-walking.svg" style="margin: 5% 0 0 40%;">
-                    <p style="margin-left: 2%; font-family: Lexend, sans-serif;">Ayuda autodidacta</p>
-                    <p style="justify-content: center;">En este espacio podrás buscar por tu propia cuenta el lugar que
-                      crees que se adecue a tu situación siendo asi completamente autodidacto</p>
-                  </div>
+                    <div id="cuadro2">
+                      <img src="iconos.contactos/person-walking.svg" style="margin: 5% 0 0 40%;">
+                      <p style="margin-left: 2%; font-family: Lexend, sans-serif;">Ayuda autodidacta</p>
+                      <p style="justify-content: center;">En este espacio podrás buscar por tu propia cuenta el lugar que
+                        crees que se adecue a tu situación siendo asi completamente autodidacto</p>
+                    </div>
                 </div>
 
                 <div class="cuadro2">
-
                   <div>
                     <img src="iconos.contactos/people.svg" style="margin: 5% 0 0 40%;">
                     <p style="margin-left: 3%; font-family: Lexend, sans-serif;">Servicio de ayuda</p>
@@ -131,43 +135,68 @@
                       encontrar el sitio o doctor adecuado para ti de una forma más privada y segura.</p>
                   </div>
                 </div>
-              </div>
+              </div><!--Fin del display de los cuadros-->
+      
+                  <!--Creación de cuadros para ayuda-->
 
-             
-
-               
-                <div>
-   <!--Creación del pequeño menu para mostrar los padecimientos-->
+         <!--un cuadro-->
    <div class="container1">
-     
-    <!--Boton para abrirlo-->
-    <button id="hamburger-btn1" class="hamburger-btn1">
-      <h2><a href="servicio.html" id="servicio">Servicio de ayuda</a></h2>
-    </button>
+        
+        <!--Boton del cuadro "SERVICIO DE AYUDA"-->
+        <button id="hamburger-btn1" class="hamburger-btn1">
+          <h2><a href="servicio.html" id="servicio">Servicio de ayuda</a></h2>
+        </button>
 
 
-</div>
+   </div>
   
 
-<div>
-   <!--Creación del pequeño menu para mostrar los padecimientos-->
+     <!--otro cuadro-->
    <div class="container2">
      
-    <!--Boton para abrirlo-->
-    <button id="hamburger-btn2" class="hamburger-btn2">
-      <h2><a id="ayuda">Ayuda autodidacta</a></h2>
-    </button>
+        <!--Boton del cuadro "AYUDA AUTODIDACTA"-->
+        <button id="hamburger-btn2" class="hamburger-btn2">
+          <h2><a href="#foto1"  id="ayuda">Ayuda autodidacta</a></h2>
+        </button>
+
+   </div>
+
+<!--Inician lugares que pueden visitar los papás para pedir ayuda-->
+
+<div id="fotos"><!--DENTRO DE ESTE DIV VAN TODOS LOS LUGARES-->
+
+    <div><!--Div para apartar el 1er lugar-->
+      <img src="contactos.img/centro.webp" id="foto1"><!--Imagen del 1er lugar-->
+
+      <div style="display: flex;" class="texto"><!--Div que nos ayuda a separar la informacion una al lado de otra-->
+            
+             <div>
+                <h1 id="centro">Centro de Atención Integral de Salud Mental y Adicciones (Cisame)</h1>
+                <h2 id="Direccion">Dirección:</h2>
+                <p class="informacion"> Calle: Niños Héroes Oriente s/n, atrás del Santuario Guadalupano.</p>
+                <p class="informacion"> Col. Centro. Zamora, Michoacán.</p>
+                <p class="informacion">Teléfono: 351 515 6374</p>
+              </div>
+
+              <div>
+                  <p id="quehace">Atiende a la población con servicios gratuitos de lunes a viernes de 7:00 a 20:00 horas,
+                    y dentro del complejo se cuenta con área de atención médica general y especializada en los ramos de psicología y psiquiatría.</p>
+              </div>
+
+        </div>
+    </div><!--Fin del 1er div con el primer lugar-->
 
 
-</div>
-<br>
+    <!--Aqui inicia el segundo div para el segundo lugar-->
+      <div>
 
+      </div>
 
+</div><!--Fin del div con TODOS LOS LUGARES-->
 
-<br>
-
-<br>
-<br>
+<!--Divs para que vaya apareciendo todo el texto-->
+  </div><!--2-->
+</div><!--1-->
 
 </body>
 
