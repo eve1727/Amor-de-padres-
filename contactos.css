@@ -366,7 +366,7 @@ html{
     z-index: 5;
     margin-right: 60%;
     margin-left: 5%;
-    margin-top: -5.5%;
+    margin-top: -2.6%;
     border: 1px solid rgba(43, 42, 42, 0.1);
     box-shadow: 0 25px 25px rgba(95, 94, 94, 0.25);
     transition: all 0.3s ease;
@@ -426,7 +426,7 @@ html{
     border-radius: 10%;
     z-index: 5;
     margin-left: 47%;
-    margin-top: 5%;
+    margin-top: 6%;
     border: 1px solid rgba(43, 42, 42, 0.1);
     box-shadow: 0 25px 25px rgba(95, 94, 94, 0.25);
     transition: all 0.3s ease;
@@ -457,8 +457,8 @@ html{
   position: absolute;
   top: 0;
   left: 0;
-  width: 90%;
-  height: 100%;
+  width: 77%;
+  height: 44%;
   border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.5); /*Fondo semi-transparente*/
   color: white;
@@ -471,6 +471,9 @@ html{
 
 #foto1{/*Estilo de la imagen de este lugar*/
     border-radius: 15px;
+    width: 77%;
+    height: 570px;
+   
 }
 
 #centro{/*Estilo para nombre del lugar*/
@@ -501,4 +504,74 @@ html{
     font-size: 140%;
     margin-left: 5%;
 }
+
+/*SEGUNDA AYUDA*/
+
+/*Estilos del div que tiene toda esta seccion*/
+#fotoss{
+    margin-top: 5%;
+    margin-left: 1%;
+    position: relative;
+}
+
+#fotoss:hover .texto2{
+    opacity: 1; /*Mostrar el texto al pasar el cursor*/
+}
+
+.texto2{/*Estilo de todo el texto que aparece en el segundo lugar*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 77%;
+  height: 99%;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5); /*Fondo semi-transparente*/
+  color: white;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /*Inicialmente el texto no se ve*/
+  transition: opacity 0.3s ease; /*Transición suave*/
+}
+
+
+#fotoo{/*Estilo de la imagen de este lugar*/
+    border-radius: 15px;
+    height: 600px;
+    width: 77%;
+}
+
+#centro{/*Estilo para nombre del lugar*/
+    font-family: "Lexend", sans-serif;
+    margin-left: 5%;
+    font-weight: 400;
+}
+
+#Direccion{/*Estilo para la palabra "Direccion"*/
+    font-family: "Lexend", sans-serif;
+    margin-left: 5%;
+    font-weight: 300;
+}
+
+.informacion{/*Estilo para la informacion del lugar*/
+    font-family: "DM Sans", sans-serif;
+    font-size: 120%;
+    font-weight: 200;
+    margin-left: 5%;
+}
+
+#quehace{/*Estilo para el pequeño parrafo que explica el lugar*/
+    margin-top: 30%;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-weight: 240%;
+    font-family: "DM Sans", sans-serif;
+    font-size: 140%;
+    margin-left: 5%;
+}
+
+
+
+
+
+
 
