@@ -1,3 +1,28 @@
+//PARA LA MODAL
+
+// Espera a que el contenido del DOM se cargue completamente antes de ejecutar el script
+//Document es tu html
+document.addEventListener('DOMContentLoaded', function() {
+
+  // Selección de elementos del DOM
+  var cerrar = document.getElementById('cerrar'); // Obtiene el botón de cerrar (X)
+  var modal = document.getElementById('miModal'); // Obtiene el modal por su ID
+
+//Si tu cajita obtiene modalAbierto tendra ese valor(seria como que esto es como asignarle las consecuencias si le asignas un valor a tu cajita)
+  if(localStorage.getItem("modalAbierto"))
+    {
+      modal.style.display = 'none';
+    }
+
+    
+    //====== Evento para cerrar el modal al hacer clic en la 'X' ======
+    cerrar.onclick = function() {
+        modal.style.display = 'none'; // Oculta el modal cambiando su propiedad display si o si lo tiene que hacer el boton
+        localStorage.setItem("modalAbierto", true);//Aqui tu cajita ahora si coloca modalAbierto con un valor dentro de ella de verdadero y pasa lo que vendrian siendo sus consecuensias que vimos en el if
+  }
+});  
+
+
 
 // Función para cambiar el tamaño de la fuente
 
@@ -14,9 +39,6 @@ function changeFontSize(delta) {
     // Aplica el nuevo tamaño de fuente sumando el incremento (delta)
     textElement.style.fontSize = (currentSize + delta) + 'px';
 }
-
-
-
 
 
 // Seleccionamos todos los elementos <p> dentro del contenedor #content
@@ -41,11 +63,6 @@ const observer = new IntersectionObserver(
       }
     });
   }, 
-  {
-    threshold: 0.1 // Opcional: determina el porcentaje visible necesario para activar el efecto.
-    // threshold: 0.1 significa que cuando al menos el 10% del párrafo es visible, se activa la detección.
-    // Puedes ajustar este valor para hacer el efecto más o menos sensible.
-  }
 );
 
 // Recorremos cada párrafo y lo registramos en el observer.

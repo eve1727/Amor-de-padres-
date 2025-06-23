@@ -20,6 +20,27 @@
        </head>
           <body id="cuerpo" >
 
+
+    <!-- ====== Ventana emergente modal ====== -->
+    <div id="miModal" class="modal">
+      <div class="modal-contenido">
+          <!-- Botón para cerrar la ventana emergente -->
+          <span id="cerrar" class="cerrar">&times;</span>
+          
+          <!-- Contenido dentro de la ventana emergente -->
+           <div style="display: flex;">
+           <!--Animacion para que se vea mas bonito-->
+                <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+                <dotlottie-player src="https://lottie.host/0af6d8cb-5083-434c-ac8c-daecf1abf304/qjU7MspHEO.lottie" background="transparent" speed="1" style="width: 3000px; height: 400px;" id="modalvideo" loop autoplay></dotlottie-player>
+              <!--Elementos de bienvenida-->
+                <div style="display: block;">
+                <h1 id="modalb">¡Bienvenidos!</h1>
+                <p id="modalpa">Este es un espacio es dedicado a ustedes, padres y madres, que buscan comprender y apoyar a sus hijos adolescentes</p>
+               </div>
+           </div>
+      </div>
+    </div>
+
             <!--Header para la barra-->
             <header id="encabezado"><!--hace que se muestre la barra arriba-->
 
@@ -39,11 +60,6 @@
                                     <li><a href="depresion.html">Depresión</a></li>
                                     <li><a href="autolesion.html">Autolesión</a></li>
                                     <li><a href="tdah.html">TDAH</a></li>
-                                    <li><a href="toc.hmtl">TOC</a></li>
-                                    <li><a href="#">SFC</a></li>
-                                    <li><a href="disocial.html">TD</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
                               </ul>
                      </li>
                       
@@ -143,9 +159,7 @@
                                
                                    <div class="item"> <a href="estres.html" class="vmenus">TOC</a></div>
                                    <div class="item"> <a href="problemas fam.html" class="vmenus">SFC</a></div>
-                                   <div class="item"> <a href="aislamiento social" class="vmenus">Transtorno Disocial</a></div>
-                               
-           
+
                                </div>
                            </div>
                           </ul><!--Fin de la lista para las ventanas-->
@@ -245,7 +259,7 @@
                       <div style="margin-right: 5%;">
                         <h2 id="redess">Redes sociales</h2>
                         <p class="p1">Facebook</p>
-                        <p class="p1">Instagram</p>
+                        <p><a href="https://www.instagram.com/amordepadres2025/profilecard/?igsh=bGFjdGJvZ2VpZDY4" class="p1" id="p2">Instagram</a></p>
                       </div>
 
                       <!--4ta seccion y ultima de la 1era division del footer-->

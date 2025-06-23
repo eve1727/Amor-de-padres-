@@ -23,7 +23,7 @@
 <!--Div para que el texto vaya apareciendo-->
   <div id="content">
      
-    <!--Cracion de la barra donde estara la flecha-->
+    <!--Cracion de la barra donde estara ayuda y regresar al inicio-->
        <header id="barra1">
         <ul style="display: flex;">
         
@@ -54,6 +54,7 @@
           <button id="decrease-font" onclick="changeFontSize(-1)">a-</button> <!-- Disminuye el tamaño de fuente -->
        </div>
 
+       <!--Agregamos icono de mensajes para ir con la IA-->
           <a href="ia.html">
             <span class="material-symbols-outlined" id="mensajes2">
             forum
@@ -92,11 +93,6 @@
              <hr>
              <li><a href="tdah.html" class="ventana2">TDAH</a></li>
              <hr>
-             <li><a href="TOC.hmtl" class="ventana2">TOC</a></li>
-             <hr>
-             <li></li>
-             <li></li>
-
           </ul>
         
         </nav>
@@ -104,6 +100,7 @@
 
     <!--Div para llamar el texto en js-->
    <div id="text-content">
+    <!--Parte donde el usuario puede viajar dentro de la ventana-->
      <div id="pagina1">
 
          <ul id="pagina">
@@ -129,7 +126,7 @@
                  
                 <!--Agregamos tipos de tdah-->
                   <div class="tipos1">
-                        
+                        <!--Parte donde estan los cuadros de cada tipo de TDAH-->
                       <div class="tipos2">
                             <div class="tipos3">
                               <img src="iconos.tdah/inatencion.svg" style="transform: translateY(190%) translateX(320%); "/>
@@ -253,49 +250,65 @@
 
   <!-- Creacion del pie de cabeza -->
 
+  <!-- Creacion del pie de cabeza -->
+
   <footer id="pie"><!--Cambia color footer-->
 
-            
+    <!--Iniia cosas del footer-->
     <p id="pieFrase">AMOR DE PADRES</p>
 
+    <!--Primer div que agarra todos los elementos de la 1er division del footer posicionandolos-->
     <div style="display: flex; margin-left: 35%; transform: translateY(-30%);">
-      <div style="margin-right: 10%;">
-            <h3 id="seguir">Conocenos</h3>
-            <p><a href="#quienes" class="p1" id="p2">Quienes somos</a></p>
-      </div>
+              
+           <!--Cada elemento del footer tiene un div que separa cada uno por secciones-->
+              <!--1era seccion-->
+              <div style="margin-right: 10%;">
+                    <h3 id="seguir">Conocenos</h3>
+                    <p><a href="#quienes" class="p1" id="p2">Quienes somos</a></p>
+              </div>
 
-      <div style="margin-right: 10%;">
-        <h3 id="servicio">Servicios</h3>
-        <p><a href="contactos.html" class="p1" id="p2">Ayuda</a></p>
-      </div>
+              <!--2da seccion-->
+              <div style="margin-right: 10%;">
+                <h3 id="servicio">Servicios</h3>
+                <p><a href="contactos.html" class="p1" id="p2">Ayuda</a></p>
+              </div>
 
-      <div style="margin-right: 5%;">
-        <h2 id="redess">Redes sociales</h2>
-        <p class="p1">Facebook</p>
-        <p class="p1">Instagram</p>
-      </div>
+              <!--3era seccion-->
+              <div style="margin-right: 5%;">
+                <h2 id="redess">Redes sociales</h2>
+                <p class="p1">Facebook</p>
+                <p><a href="https://www.instagram.com/amordepadres2025/profilecard/?igsh=bGFjdGJvZ2VpZDY4" class="p1" id="p2">Instagram</a></p>
+              </div>
 
-      <div>
-        <h2 id="redess">Privacidad</h2>
-        <p><a href="export.html" class="p1" id="p2">Políticas de Privacidad</a></p>
-        <p><a href="export-2.html" class="p1"id="p2">Terminos de uso</a></p>
-      </div>
-    </div>
+              <!--4ta seccion y ultima de la 1era division del footer-->
+              <div>
+                <h2 id="redess">Privacidad</h2>
+                <p><a href="export.html" class="p1" id="p2">Políticas de Privacidad</a></p>
+                <p><a href="export-2.html" class="p1"id="p2">Terminos de uso</a></p>
+              </div>
+
+    </div><!---Termina div que posiciona algunos elementos de la 1era parte-->
+   
+    <!--Parrafo que explica nuestro proposito-->
     <p id="pieparra">Nuestro principal objetivo es promover <br>el conocimiento para 
       que los padres de <br> familia conozcan distintos padecimientos<br> y así estar
       preparados para cualquier <br> situación.
     </p>
     
-    <!--Cambia el color donde este el nombre del sitio y otros-->
+    <!--Cambia el color para comenzar con la 2da parte del footer-->
     <div id="parte5">
       
       <!--Lista para agregar bitacora junto con redes sociales-->
       <ul id="lista4">
   
+        <!--Icono bitacora-->
          <li><a href="bitacora.html"><img src="iconos.index/calendario.svg" id="bitacora"/></a></li>
+         <!--Icono facebook-->
          <li style="background-color: #ff9d23; background: none;"><a href="#"><img src="iconos.index/facebook.svg" id="facebook"></a></li>
+         <!--Icono instagram-->
          <li><img src="icons8-instagram.svg" id="insta"></li>
-      </ul>
+       </ul>
+       <!--Agregamos copyright-->
         <div style="margin-top: -12%; display: flex;">
             <p class="Copyright">Copyright 2025</p>
         </div>

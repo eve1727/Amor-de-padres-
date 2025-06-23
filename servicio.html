@@ -14,21 +14,20 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
      
     <title>servicio</title>
 </head>
 <body>
-    <header style="background-color: #fff4da; margin: -1% 0% 0% -2%; width: 103%; height: 80px;">
+
+    <!--Agregamos 1era barra con icono del sitio-->
+    <header style="background-color: #fef9ef; margin: -1% 0% 0% -2%; width: 103%; height: 80px;">
 
     <img src="img1/icono2.png" id="icono">
 
     </header>
 
+    <!--Agregamos 2da mini barra con flecha para regresar a ayuda-->
     <header style="background-color: #eddab1; margin: -1% 0% 0% -2%; width: 103%; height: 35px;">
         
         <span class="material-symbols-outlined">
@@ -37,9 +36,10 @@
           </a></span>
     </header>
 
+    <!--Creamos el formulario-->
     <form class="formulario2" action="https://formspree.io/f/mjkrwjdb" method="POST" > 
     
-        <h2 id="amordepadres">Ayuda con Amor de Padres</h2>
+        <h2 id="amordepadres">Rellene el siguiente formulario para poder comunicarnos con usted</h2>
        
 
         <label>Nombre</label> <!--agrega nombre a costado de la casilla-->
@@ -56,18 +56,25 @@
         <input type="text" placeholder="Agregue su correo" name="correo electronico" class="espacios"/> 
         <br><br>
 
+           <!--Textarea permite poner una zona (como un cuadrado) en donde el usuario podra escribir, 
+            cols ayuda a que se alargue tu zona de comentario y rows ayuda a 
+            se se ensanche-->
+        <label for="comentario">Comentario (Opcional)</label>
+        <textarea  cols="5"  rows="10%" id="comentario" name="comentario" placeholder="Escribe aqui"></textarea>
+        <br>
+
+        <!--Texto con pequeño aviso de la privacidad del usuario-->
         <div style="display: flex;">
             <img src="servicio.iconos/aviso.svg" id="aviso">
             <p id="aviso2">Esta información es tomada solo con fines de comunicación. Respetando su privacidad y derechos, para más dudas contactenos </p>
         </div>
         
         <div style="display: flex;">
+            <!--Botones para enviar y borrar-->
         <button type="reset" id="borrar"><img src="servicio.iconos/borrar.svg"></button>
         <button type="submit" id="enviar"><img src="servicio.iconos/enviar.svg"></button>
         </form>
 
 </body>
-<footer id="pie">
- 
-</footer>
+
 </html>

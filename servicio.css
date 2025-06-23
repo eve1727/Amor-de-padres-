@@ -7,12 +7,13 @@ body{
     background-repeat: no-repeat;
 }
 
+/*Estilo para la imagen del icono en barra*/
 #icono{
     height: 80px;
     margin: -1% 0% 0% -1%;
 }
 
-
+/*Estilo para flecha de volver a la ventana de ayuda*/
 #flecha{
     text-decoration: none;
     font-size: 170%;
@@ -29,15 +30,15 @@ body{
     color: #ffffff;
 }
 
+/*Estilos de todo el formulario*/
 .formulario2{
-    height: 570px;
-    width: 35%;
+    height: 770px;
+    width: 45%;
     border-radius: 15px;
-    margin-left: 30%;
+    margin-left: 25%;
     margin-top: 4%;
     padding: 32px 36px 5px; 
-    background: transparent;
-    backdrop-filter: blur(20px);
+    background-color: #fffbf3;
     box-shadow: 0 0 30px rgb(0, 0, 0, 0.5);
     border: 2px solid rgba(72, 71, 71, 0.5);
 }
@@ -48,6 +49,7 @@ form {
     flex-direction: column; /* Disposición vertical de campos */
   }
 
+/*Estilos para label que acompaña cada casilla*/
 form label{
     font-family: "DM Sans", sans-serif; /* Fuente diferenciada para títulos */
     font-weight: 500;                  /* Negrita para énfasis */
@@ -58,6 +60,7 @@ form label{
     margin-left: 12%;
 }
 
+/*Estilos para el texto del formulario*/
 form h2{
     font-family: "DM Sans", sans-serif; /* Fuente diferenciada para títulos */
     font-weight: 500;     
@@ -77,6 +80,7 @@ input[type="text"] {
     align-items: left;
 }
 
+/*Mueve las partes de escribir en el formulario*/
 .espacios{
    transform: translateX(14%);
 }
@@ -85,17 +89,19 @@ input[type="text"] {
     border: 2px solid #5d8736;              /* Borde gris claro */
 }
 
+/*Estilos del icono de exclamacion hasta el ultimo en el formulario*/
 #aviso{
     font-weight: 700;
     margin-top: -8%;
     margin-left: 9%;
 }
-
+/*Estilos del texto de aviso hasta el ultimo en el formulario*/
 #aviso2{
     font-family: "DM Sans", sans-serif;
     font-size: 85%;
     transform: translateY(-60%) translateX(3%);
 }
+/*Estilos del boton de borrar*/
 #borrar{
     height: 50px;
     width: 20%;
@@ -110,6 +116,7 @@ input[type="text"] {
 #borrar:hover{
     background-color: #ebc7ca;
 }
+/*Estilo del boton de enviar*/
 #enviar{
     height: 50px;
     width: 20%;
@@ -126,4 +133,15 @@ input[type="text"] {
 
 #enviar:hover{
     background-color: #dcb2b6;
+}
+
+/*Estilos para el apartado de cometarios*/
+#comentario{
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 5px;
+}
+
+#comentario:hover{
+    border: 2px solid #5d8736; 
 }
