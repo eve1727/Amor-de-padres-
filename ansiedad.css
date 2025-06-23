@@ -124,29 +124,27 @@ html{
 
 /*Creacion del encabezado con imagen de fondo*/
 
- .Encabezado{/*Ajustes de mi encabezado*/
-    height: 400px;
-   background-image: url(ansiedad.img/enca2.jpg);
-   background-size: cover;
-   background-position: center;
-   opacity: 95%;
-   background-position-y: 90%;
-   position: static;
-   margin-top: 9%; 
+ /* Estilos para el encabezado */
+.encabezado{
+    background-image: url(ansiedad.img/enca2.jpg);
+    background-size: cover;
+    background-position-y:70%; 
+    height:400px;
+    opacity: 95%;
+    transform: translateY(2.5%);
+    z-index: 100;
     
 }
 
-#titulo{/*ajustes de mi frase*/
-    font-family: "Lexend", sans-serif  ;/*estilo de letra de mi frase*/
+/*Palabra de tdah en adolescentes*/
+#palabra{
+    font-size: 580%;
+    color: beige;
+    margin-left: 15%;
+    transform: translateY(28%);
+    opacity: 100%;
+    font-family: "Lexend", sans-serif  ;
     text-shadow: 4px 4px 10px black;
-    font-style: italic;
-    font-weight: 900;
-    display: flex;
-    font-size: 100px;/*tamaño de mi frase*/
-    color: beige ;/*color de mi frase*/
-    margin-left: 20%;/*separacion del lado derecho de mi frase*/
-    padding-top: 8%;/*separacion de mi frase con el para que este mas abajo */
-
 }
 
 .ventanas{
@@ -317,7 +315,7 @@ html{
 .texto-ansiedad2 {/*Ajustes del texto */
     font-family: "DM Sans", sans-serif;
     font-size: 40px;
-    margin-top: 90px;
+    margin-top: 2%;
     margin-left: 50px;
     line-height: 1.6;/*ajusta la altura de las lineas para mejorar la legibilidad*/
     flex: 1;/*ocupa todo el espacio disponible ala izquierda */
