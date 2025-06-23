@@ -20,14 +20,56 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>
-<body>
+<body>  
+  
+
+ <!--Cracion de la barra donde estara la flecha-->
+       <header id="barra1">
+        <ul style="display: flex;">
+        
+         <li>
+        <h3><a href="index.html" id="inicio2">Inicio</a></h3>
+         </li>
+         
+         <li>
+        <h3><a href="contactos.html" class="ayuda">Ayuda</a></h3>
+         </li>
+
+        </ul>
+       </header>
+  
+
+        <!--Creacion de la barra2 donde esta el icono y demás elementos-->
+        <header class="barra2">
+
+          <div style="display: flex;">
+           
+            
+          <img src="img1/icono2.png" alt="amor de padres" id="icono">
+
+
+            <!-- Controles para aumentar y disminuir el tamaño de la fuente -->
+        <div class="controls">
+          <button id="increase-font" onclick="changeFontSize(1)">A+</button> <!-- Aumenta el tamaño de fuente -->
+          <button id="decrease-font" onclick="changeFontSize(-1)">a-</button> <!-- Disminuye el tamaño de fuente -->
+       </div>
+
+          <a href="ia.html">
+            <span class="material-symbols-outlined" id="mensajes2">
+            forum
+            </span>
+           </a>
+
+
+          </div>
+
+        </header>
+           
 
         <!-- Creacion del encabezado con palabra introductoria -->
         <header class="encabezado"> 
               <h2 id="palabra"> <br>BITACORA</h2>
         </header>
-
-       <header><a href="index.html" id="inicio">Regresar</a></header>
 
        <div>
         
@@ -39,28 +81,70 @@
      <iframe src="reportes.pdf/Reporte 2 .pdf.pdf" height="900px" width="50%" style="margin-left: 25%; margin-top: 5%;"></iframe>
      <iframe src="reportes.pdf/Reporte 3.pdf.pdf" height="900px" width="50%" style="margin-left: 25%; margin-top: 2%;"></iframe>
      <iframe src="reportes.pdf/reporte 4.pdf.pdf" height="900px" width="50%" style="margin-left: 25%; margin-top: 5%;"></iframe>
-
+     <iframe src="reportes.pdf/reporte 5.pdf" height="900px" width="50%" style="margin-left: 25%; margin-top: 5%;"></iframe>
      <!-- From Uiverse.io by gharsh11032000 --> 
 <div class="card">
     
     <div class="card__content">
-      <p class="card__title">Card Title
-      </p><p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <p class="card__title">NOTA
+      </p><p class="card__description"> Estos fueron todos los cambios que se realizarón en todo momento.</p>
     </div>
   </div>
-  <button class="btn"><a href="index.html">hi</a></button>
+  <button class="btn"><a href=>MENSAJE</a></button>
+  
+  
+  <!--PIE DE CABEZA-->
 
-  <div class="container">
-    <div class="cuadro">
-     <h2>1</h2>
-    </div>
-    <div class="cuadro">
-      <h2>2</h2>
-    </div>
-    <div class="cuadro">
-      <h2>3</h2>
-    </div>
-  </div>
+<footer id="pie"><!--Cambia color footer-->
 
-</body>
+            
+    <p id="pieFrase">AMOR DE PADRES</p>
+
+    <div style="display: flex; margin-left: 35%; transform: translateY(-30%);">
+      <div style="margin-right: 10%;">
+            <h3 id="seguir">Conocenos</h3>
+            <p><a href="#quienes" class="p1" id="p2">Quienes somos</a></p>
+      </div>
+
+      <div style="margin-right: 10%;">
+        <h3 id="servicio">Servicios</h3>
+        <p><a href="contactos.html" class="p1" id="p2">Ayuda</a></p>
+      </div>
+
+      <div style="margin-right: 5%;">
+        <h2 id="redess">Redes sociales</h2>
+        <p class="p1">Facebook</p>
+        <p class="p1">Instagram</p>
+      </div>
+
+      <div>
+        <h2 id="redess">Privacidad</h2>
+        <p><a href="export.html" class="p1" id="p2">Políticas de Privacidad</a></p>
+        <p><a href="export-2.html" class="p1"id="p2">Terminos de uso</a></p>
+      </div>
+    </div>
+    <p id="pieparra">Nuestro principal objetivo es promover <br>el conocimiento para 
+      que los padres de <br> familia conozcan distintos padecimientos<br> y así estar
+      preparados para cualquier <br> situación.
+    </p>
+    
+    <!--Cambia el color donde este el nombre del sitio y otros-->
+    <div id="parte5">
+      
+      <!--Lista para agregar bitacora junto con redes sociales-->
+      <ul id="lista4">
+  
+         <li><a href="bitacora.html"><img src="iconos.index/calendario.svg" id="bitacora"/></a></li>
+         <li style="background-color: #ff9d23; background: none;"><a href="#"><img src="iconos.index/facebook.svg" id="facebook"></a></li>
+         <li><img src="icons8-instagram.svg" id="insta"></li>
+      </ul>
+        <div style="margin-top: -12%; display: flex;">
+            <p class="Copyright">Copyright 2025</p>
+        </div>
+    </div>
+  
+
+  </footer>
+          
+<script src="./js/ansiedad.js"></script>
 </html>

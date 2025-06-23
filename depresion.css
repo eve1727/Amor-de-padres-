@@ -1,59 +1,187 @@
 ody{/*color del fondo*/
    background-color:#f2e1e1;
+   padding: 2%;
+}
+/*Para que tenga un desplazamiento más sueave*/
+html{
+    scroll-behavior: smooth;
+}
+/*Propiedades de la barra donde esta la flecha*/
+
+#barra1{
+    background-color: #eddab1;
+    width: 100%;
+    height: 120px;
+    position: fixed;/*Hace que la barra quede estatica*/
+    bottom: 90%;
+    right: 0%;
+    left: 0;
+    top: 1%;
+    z-index: 10;
 }
 
-.a1 { /*Volver al inicio*/
-    text-decoration: none;
-    font-size: 40px;
-    color: #fefcfc;
-    margin-left: 2%;
-    font-family: "Cinzel",serif;
-    size:100%;
-}
-.a1:hover{/*hace que el "volver al inicio" cambie de color cuando el cursor pasa por ahi*/
-  color: rgb(219, 219, 219);
-  background-color: #e0e0c4;
-  box-shadow: 0 0 15px rgb(47, 47, 46);  
+#barra1 ul{
+    list-style: none;
 }
 
-/*Estilos del icono*/
+#barra1 ul li{
+    padding: 3%;
+}
+
+.controls{
+    transform: translateX(1150%);
+    margin-top: 0.8%;
+}
+
+/* Estilo general de los botones */
+button {
+    padding: 1px; /* Espaciado interno para hacerlos más grandes */
+    margin: 2px; /* Espaciado entre botones */
+    font-size: 35px; /* Tamaño de fuente adecuado */
+    font-family: "Lexend", sans-serif;
+    font-weight: 250;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    cursor: pointer; /* Cambia el cursor a 'mano' cuando el usuario pase sobre ellos */
+    border: none; /* Elimina los bordes del botón */
+    background: none; /* Elimina cualquier fondo del botón */
+
+}
+
+button:hover{
+    color: #f8af07;
+}
+
+/*Se dan propiedades a la barra donde esta el icono y demas elementos*/
+.barra2{
+    background-color:#fff4da;
+    width: 100%;
+    height: 80px;
+    position: fixed;/*Hace qur la barra quede estatica*/
+    bottom: 90%;
+    right: 0%;
+    left: 0;
+    top: 0%;
+    z-index: 10;
+}
+
 #icono{
     height: 110px;
     margin-left: -2%;
     margin-top: -2%;
 }
 
-#encabezado{ /*agrega el encabezado de volver al inicio */
-    position: fixed;/*Hace que la barra se quede estatica*/
-    background-image: none;
-    background-color: #f6e1b1;
-    bottom: 90%;
-    right: 0%;
-    left: 0;
-    top: 0%;
-    height: 10%;
-    z-index: 9;
-    margin-top: 0%;
-    opacity: 100%;
-    width: 100%;
+.ayuda{
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: 270;
+    color: #200f06;
+    font-family:"Lexend", sans-serif;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    margin-left: 1250%;
 }
+
+.ayuda:hover{
+    color: #ffffff;
+}
+
+
+#mensajes2{
+    color: #200f06;
+    font-size: 400%;
+    font-weight: 200;
+    transform: translateX(1100px) translateY(20%);
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+}
+
+#mensajes2:hover{
+    color: #f8af07;
+}
+
+#inicio2{
+    text-decoration: none;
+    font-size: 150%;
+    color: #200f06;
+    font-family:"Lexend", sans-serif;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    font-weight: 270;
+    margin-left: 1500%;
+}
+
+#inicio2:hover{
+    color: #ffffff;
+}
+
+#palabra{
+    font-size: 500%;
+    text-align: center;
+    margin-left: 30%;
+    font-family:  "Lexend", sans-serif  ;
+    color: beige;
+}
+
+#inicio{
+    font-size: 230%;
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    color: #ebb34c;
+}
+
+#icono{
+    height: 110px;
+    margin-left: -2%;
+    margin-top: -2%;
+}
+
+
+#inicio:hover{
+    background-color: rgb(244, 205, 205);
+    color: azure;
+}
+
+
+/* Estilos para el encabezado */
+.encabezado{
+    background-image: url(depresion.img/imagen\ 2.jpg);
+    background-size: cover;
+    background-position-y:70%; 
+    height:400px;
+    opacity: 95%;
+    transform: translateY(2.5%);
+    z-index: 100;
+    
+}
+
+/*Palabra de depresion en adolescentes*/
+#palabra{
+    font-size: 600%;
+    color: beige;
+    margin-left: -3%;
+    transform: translateY(28%);
+    opacity: 100%;
+    font-family: "Lexend", sans-serif  ;
+    text-shadow: 4px 4px 10px black;
+}
+
+
 
 #titulo{ /*Palabra introductoria*/
     font-size: 100px;
     color: rgb(255, 255, 255);
     display: flex;
     margin-top: 4%;
-    transform: translateY(35%) translateX(10%);
-    font-family: "Cinzel", serif;
+   transform: translateY(35%) translateX(10);
+    font-family: "Laxend", sans-serif ;
     opacity: 89%;
 }
 
-header { /*Imegen de fondo encabezado*/
-   height: 500px;
+.header { /*Imegen de fondo encabezado*/
+   height: 350px;
    background-image: url(depresion.img/imagen\ 2.jpg);
    background-size: cover;
-   background-position: center;
-   opacity: 95%;
+   background-position-y: 70%;
+   transform: translateY(2.5);
+   z-index: 1;
    
 }
 
@@ -113,7 +241,7 @@ header { /*Imegen de fondo encabezado*/
     margin-top: 5%;
     color: #000000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    column-rule: 15px #d7e1a3 dotted;
+    column-rule: 15px #afd5e0 dotted;
 }
 #frasepapas{
     z-index: 1000%;
@@ -150,13 +278,13 @@ header { /*Imegen de fondo encabezado*/
     height: 70%;
     border-radius: 8%;
     margin-right: 5%;
-    box-shadow:  0 0 17px rgb(118, 208, 240);
+    box-shadow:  0 0 17px #C8D9E6;
 }
 
 
 #dcuadro{/*Caracteristicas del 3er cuadro de la 4ta division*/
     font-size: 300%;
-    background-color: #b8ddfb;
+    background-color: #c9e5fb;
     width: 30%;
     height: 70%;
     border-radius: 8%;
@@ -179,196 +307,81 @@ header { /*Imegen de fondo encabezado*/
 }
 
 .text{
-    margin-left: 330px;
-    font-size: 60px;
-    font-family: "lexend", sans-serif;
-}
-
-/* Detalles para el boton donde  donde se veran varios padecimientos*/
-.hamburger-btn{
-    height: 110px;
-    width: 8%;
-    z-index: 8;
-    position: fixed;
-    margin-left: -4%;
-    transform: translateY(-190%) translateX(-50%);
-    background-color: #DDE6ED;
-    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
-    border: 1px solid #222;
-    border-radius: 30%;
-}
-
-/*Hover del boton*/
-.hamburger-btn:hover{
-    background-color: #2F4156;
-}
-
-/*Mueve la flecha del boton*/
-#picar{
-    height: 40%;
-    transform: translateX(80%);
- }
-
- /*Propiedades del submenu en la izquierda*/
-#padecimientos{
-    width: 13%;
-    height: 320px;
-    background-color:#D3DADC;
-    top: 25%;
-    left: -2%;
-    position:fixed;
-    z-index: 9;
-    border-radius: 5%;
-    transition: left 0.3s ease; /* Transición suave al mover el menú */
-}
-
-/* Estilos que utilizan todas las ventanas del submenu*/
-.ventana2{
-    text-decoration: none;
-    font-family: "DM Sans", sans-serif;
-    font-size: 180%;
-    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
-    color:#080808;
-    display: block; /* Hace que los enlaces ocupen toda la anchura disponible para mejorar la usabilidad */
-}
-
-.ventana2:hover{
-    background-color: #526166;
-    color: #f9f9f9 ;
-    height:40px;
- }
-
-/*Cerrar el menu boton*/
-.cerrar2{
-    font-size: 30px; /* Tamaño del icono o texto del botón */
-    cursor: pointer; /* Cambia el cursor a una mano para indicar que es clickeable */
-    border: none; /* Elimina los bordes del botón */
-    background: none; /* Elimina cualquier fondo del botón */
-    color: black;
-    font-family: "Lexend", sans-serif;
-    font-weight: 600;
-    width: 30%;
-    margin-top: 10%;
-    transform: translateX(130%);
-    transition: background-color 0.3s ease;/*Agrega una transicion suave para el fondo*/
-    display: block;
-}
-
-.cerrar2:hover{
-    background-color: #2F4156;
-    color: #e0d8cd;
-}
-
-
-/* Clase que activa el menú */
-.padecimientos.active {
-    margin-left: 0%; /* Mueve el menú a la posición visible cuando se activa */
-}
-
-/*Clase que desactiva el menu*/
-.padecimientos.disabled{
-    margin-left: -90%;
-}
-
- /*PIE PAGINA*/
-
-#pie {/*Propiedades del footer*/
-    background-color: #F1Eada;
-    height: 300px;
-    width: 100%;
-    margin-top: -3%;
-}
-
-.nosotros{/* Propiedades para el apartado "sobre nosotras*/
-    font-size: 170%;
-    margin-left: 5%;
-    transform: translateY(200%);
-    width: 20%;
-    color: #362d18;
-    transition: color 0.32s ease;
-    font-family: "Lexend", sans-serif;
-    font-weight: 500;
-}
-
-.nosotros:hover{
-    color:  #d69601;
-    opacity: 100%;
-    
-}
-
-.redes1{/*Agrega el apartado de nuestras redes*/
-    font-size: 170%;
-    margin-left: 5%;
-    transform: translateY(220%);
-    width: 20%;
-    font-family: "Lexend", sans-serif;
-    font-weight: 500;
-    color: #362d18;
-    transition: color 0.32s ease;
-}
-
-.redes1:hover{
-    color: #d69601;
-}
-
-/* estilos para el apartado que dice padecimientos*/
-#pie-padecimientos{
-    font-size: 170%;
-    margin-left: 30%;
-    width: 20%;
-    font-family: "Lexend", sans-serif;
-    font-weight: 500;
-    color: #362d18;
-    transition: color 0.32s ease;
-    text-decoration: none;
-}
-#pie-padecimientos:hover{
-    color: #d69601;
-}
-
-/* agrega el estilo al segundo pie de cabeza*/
-#parte5{
-    background-color: #cec1a8;
-    height: 40%;
-    margin-top: 5%;
-}
-
-#pieFrase{/*Propiedades de la palabra "Amor de padres" en el footer*/
+    text-align: center;
+    font-size: 250%;
     margin-right: 2%;
-    font-size: 220%;
-    opacity: 80%;
-    font-family:"Lexend", sans-serif;
-    font-weight: 500;
+    padding-top: 5%;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
 }
 
-/*Agrega los iconos de facebook y bitacora*/
-#lista4{
-   display: flex;
-   list-style: none;
-   opacity: 55%;
+/*comienzo del menu*/
+
+/* Estilo del menú lateral */
+.sidebar {
+    height: 50%; /* Altura de la pantalla */
+    margin-left: -45px;
+    width: 0; /* Comienza cerrado (ancho = 0) */
+    border-radius: 30px;
+    position: fixed; /* Fijo en la pantalla */
+    top: 170px; /* Desde arriba */
+    background-color:#eddab1 ; /* Color de fondo */
+    overflow-x: hidden; /* Sin desplazamiento horizontal */
+    transition: 0.5s; /* Transición suave */
+    padding-top: 45px; /* Espacio arriba para el botón cerrar */
 }
 
-/*icono de la bitacora*/
-#bitacora{
-    margin-left: 35%;
-    height: 45%;
-    transform: translateX(570%);
-    margin-top: 37%;
-    opacity: 85%;
+/* Enlaces dentro del menú */
+.sidebar a {
+    height: 10%;
+    text-decoration: none; /* Sin subrayado */
+    font-size: 25px; /* Tamaño del texto */
+    color: rgb(24, 24, 23); /* Color de texto */
+    display: block; /* Cada enlace en una línea */
+    margin-top: -5px;
+    transition: 0.4s; /* Efecto suave al pasar el ratón */
+    margin-left: 20px;
 }
 
-/*Icono facebook*/
-#facebook{
-    height: 40%;
-    transform: translateX(520px) translateY(40px);
+/* Efecto hover en los enlaces */
+.sidebar a:hover {
+    background-color:#c7a660 ; /* Color cuando pasas el ratón */
+   
+}
+
+/* Botón cerrar */
+.sidebar .closebtn {
+    position: absolute; /* Posición absoluta dentro de la sidebar */
+    top: 5px; /* A 10px desde arriba */
+    right: 20px; /* A 20px desde la derecha */
+    font-size: 35px; /* Tamaño del texto */
+    color: #111111;
+    cursor: pointer; /* Cursor en forma de mano */
+}
+
+/* Botón para abrir el menú */
+.abrirbtn {
+    font-size: 60px; /* Tamaño del texto */
+    cursor: pointer; /* Cursor en forma de mano */
+    position: fixed; /* Fijo en la pantalla */
+    top: 50%; /* 20px desde arriba */
+    left: 3px; /* 3px desde la izquierda */
+    background-color: #eddab1  ; /* Color de fondo */
+    padding: 5px 10px; /* Relleno interno */
+    border-radius: 10%; /* Bordes redondeados */
+    transition: 0.3s; /* Transición suave */
+    height: 18%;
+    width: 5%;
+    border-radius: 33px;
+    margin-left: -26px;
+
 }
 
 
-.Copyright{/*Agrega el copyright en el footer*/
-    font-size: 130%;
-    opacity: 50%;
-    font-family:"Lexend", sans-serif;
-    font-weight: 300;
-    margin-left: 611px;
-    margin-top: 6.3%;
+/* Efecto hover en el botón de abrir */
+.openbtn:hover {
+    background-color:#c7a660 ; /* Color al pasar el ratón */
+
 }
+/*fin del menu*/
+

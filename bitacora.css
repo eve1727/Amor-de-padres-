@@ -1,18 +1,139 @@
-.encabezado{
-    background-image: url(bitacora.img/fondo.webp);
-    height: 270px;
-    margin-top: -5%;
-    background-size: cover;
-    background-position: 60%; 
-    opacity: 85%;
-    background-repeat: no-repeat;
-    display: flex;
+body{
+  background-color: #fdf2dc;
 }
 
+
+.encabezado{
+    background-image: url(depresion.img/fondo-3-bitacora.webp);
+    height: 350px;
+    background-size: cover;
+    background-position-y: 70%;
+    transform: translateY(2.5);
+    z-index: 100;
+}
+/*Palabra de BITACORA*/
 #palabra{
+    font-size: 600%;
+    color: beige;
+    margin-left: 10%;
+    margin-right: 30%;
+    transform: translateY(28%);
+    opacity: 100%;
+    font-family: "Lexend", sans-serif  ;
+    text-shadow: 4px 4px 10px black;
+}
+
+
+/*Propiedades de la barra donde esta la flecha*/
+
+#barra1{
+    background-color: #eddab1;
+    width: 100%;
+    height: 120px;
+    position: fixed;/*Hace que la barra quede estatica*/
+    bottom: 90%;
+    right: 0%;
+    left: 0;
+    top: 1%;
+    z-index: 10;
+}
+
+#barra1 ul{
+    list-style: none;
+}
+
+#barra1 ul li{
+    padding: 3%;
+}
+.controls{
+    transform: translateX(1150%);
+    margin-top: 0.8%;
+}
+
+/* Estilo general de los botones */
+button {
+    padding: 1px; /* Espaciado interno para hacerlos más grandes */
+    margin: 2px; /* Espaciado entre botones */
+    font-size: 35px; /* Tamaño de fuente adecuado */
+    font-family: "Lexend", sans-serif;
+    font-weight: 250;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    cursor: pointer; /* Cambia el cursor a 'mano' cuando el usuario pase sobre ellos */
+    border: none; /* Elimina los bordes del botón */
+    background: none; /* Elimina cualquier fondo del botón */
+
+}
+
+button:hover{
+    color: #f8af07;
+}
+
+/*Se dan propiedades a la barra donde esta el icono y demas elementos*/
+.barra2{
+    background-color:#fff4da;
+    width: 100%;
+    height: 80px;
+    position: fixed;/*Hace qur la barra quede estatica*/
+    bottom: 90%;
+    right: 0%;
+    left: 0;
+    top: 0%;
+    z-index: 10;
+}
+
+#icono{
+    height: 110px;
+    margin-left: -2%;
+    margin-top: -2%;
+}
+
+.ayuda{
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: 270;
+    color: #200f06;
+    font-family:"Lexend", sans-serif;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    margin-left: 1250%;
+}
+
+.ayuda:hover{
+    color: #ffffff;
+}
+
+
+#mensajes2{
+    color: #200f06;
     font-size: 400%;
+    font-weight: 200;
+    transform: translateX(1100px) translateY(20%);
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+}
+
+#mensajes2:hover{
+    color: #f8af07;
+}
+
+#inicio2{
+    text-decoration: none;
+    font-size: 150%;
+    color: #200f06;
+    font-family:"Lexend", sans-serif;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+    font-weight: 270;
+    margin-left: 1500%;
+}
+
+#inicio2:hover{
+    color: #ffffff;
+}
+
+
+
+#palabra{
+    font-size: 500%;
     text-align: center;
-    margin-left: 35%;
+    margin-left: 30%;
     font-family:  "Lexend", sans-serif  ;
     color: beige;
 }
@@ -25,8 +146,15 @@
     color: #ebb34c;
 }
 
+#icono{
+    height: 110px;
+    margin-left: -2%;
+    margin-top: -2%;
+}
+
+
 #inicio:hover{
-    background-color: rgb(159, 159, 159);
+    background-color: rgb(244, 205, 205);
     color: azure;
 }
 
@@ -88,14 +216,15 @@
   .card__title {
     margin: 0;
     font-size: 24px;
-    color: #333;
+    color: #090908;
     font-weight: 700;
+    transform: translateX(10%) translateY(15%);
   }
   
   .card__description {
-    margin: 10px 0 0;
-    font-size: 14px;
-    color: #777;
+    margin: 12px 0 0;
+    font-size: 20px;
+    color: #2e2d2d;
     line-height: 1.4;
   }
   
@@ -106,11 +235,11 @@
 
 
   .btn {
-    width: 6.5em;
-    height: 2.3em;
+    width: 15em;
+    height: 10em;
     margin: 0.5em;
-    background: black;
-    color: white;
+    background: rgb(228, 208, 159);
+    color: rgb(251, 216, 241);
     border: none;
     border-radius: 0.625em;
     font-size: 20px;
@@ -119,15 +248,16 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
+    transform: translateX(15%) translateY(20%);
   }
   
   button:hover {
-    color: black;
+    color: rgb(222, 215, 156);
   }
   
   button:after {
     content: "";
-    background: white;
+    background: rgb(237, 209, 209);
     position: absolute;
     z-index: -1;
     left: -20%;
@@ -154,35 +284,123 @@
     align-items: center;
   }
   
-  /*Propiedades de cada cuadro que se despliega*/
-  .container .cuadro {
-    position: relative;
-    width: 180px;
-    height: 200px;
-    background-color: #ece4d1;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
-    display: flex;
+  /*PIE PAGINA*/
+  
+  #pie {/*Propiedades del footer*/
+    background-color: #F1Eada;
+    height: 400px;
+    width: 107%;
+    margin-top: 6%;
+    margin-left: -4%;
+}
+
+
+#pieFrase{/*Propiedades de la palabra "Amor de padres" en el footer*/
+    font-size: 190%;
+    opacity: 80%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 450;
+    text-align: left;
+    transform: translateY(90%);
+    margin-left: 6%;
+}
+
+#pieparra{
+    font-size: 120%;
+    font-family: "DM Sans", sans-serif;
+    text-align:left;
     justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    border-radius: 10px;
-    margin: 0 -45px;
-  }
-  
-  .container:hover .cuadro {
-    margin: 0 10px;
-  }
-  
-  .container .cuadro::before {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.05);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-  }
-  
+    margin-left: 6%;
+    margin-top: -8%;
+    opacity: 70%;
+    font-weight: 300;
+    width: 25%;
+}
+
+#seguir{
+    font-size: 150%;
+    opacity: 80%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 400;
+}
+
+#servicio{
+    font-size: 150%;
+    opacity: 80%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 400;
+}
+
+#redess{
+    font-size: 150%;
+    opacity: 80%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 400;
+}
+
+.p1{
+    font-size: 120%;
+    opacity: 80%;
+    font-family:"DM Sans", sans-serif;
+    font-weight: 400;
+    transition: .3s linear ; /*Agrega una transicion suave para el fondo*/
+}
+
+.p1:hover{
+    color: #d69601;
+}
+
+#p2{
+    color: #0a0808;
+    text-decoration: none;
+}
+
+#p2:hover{
+    color: #d69601;
+}
+
+/* agrega el estilo al segundo pie de cabeza*/
+#parte5{
+    background-color: #cec1a8;
+    height: 20%;
+    margin-top: 10%;
+}
+
+/*Agrega los iconos de facebook y bitacora*/
+#lista4{
+   display: flex;
+   list-style: none;
+   margin-left: 80%;
+}
+
+/*icono de la bitacora*/
+#bitacora{
+    height: 75%;
+    opacity: 60%;
+    margin-top: 15%;
+    margin-left: 25%;
+}
+
+/*Icono facebook*/
+#facebook{
+    height: 70%;
+    margin-top: 40%;
+    opacity: 60%;
+}
+
+#insta{
+    margin-top: 20%;
+    height: 90%;
+    opacity: 60%;
+}
+
+
+.Copyright{/*Agrega el copyright en el footer*/
+    font-size: 130%;
+    opacity: 50%;
+    font-family:"Lexend", sans-serif;
+    font-weight: 300;
+    margin-left: 681px;
+    margin-top: 10%;
+}
+
