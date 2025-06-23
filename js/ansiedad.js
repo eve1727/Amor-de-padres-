@@ -14,5 +14,3 @@ function changeFontSize(delta) {
     // Aplica el nuevo tamaño de fuente sumando el incremento (delta)
     textElement.style.fontSize = (currentSize + delta) + 'px';
 }
-
-
